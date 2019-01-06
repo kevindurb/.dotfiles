@@ -1,0 +1,21 @@
+snippet react
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class MyComponent extends React.PureComponent \{
+	static propTypes = \{
+		classes: PropTypes.object,
+	\};
+
+	static defaultProps = \{
+	\};
+
+	render() \{
+		return (
+			<div/>
+		);
+	\}
+\}
+
+export default MyComponent
+endsnippet

@@ -1,0 +1,51 @@
+snippet ccb_index "ccb component index file"
+import $1 from './$1';
+import connect from './connect$1';
+
+export default connect($1);
+endsnippet
+
+snippet ccb_component "ccb component file"
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class $1 extends React.PureComponent {
+	render() {
+		return (
+			<div />
+		);
+	}
+}
+
+export default $1;
+endsnippet
+
+snippet ccb_connect "ccb connect file"
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+const mapState = () =>
+	createStructuredSelector({
+	});
+
+const mapActions = {
+};
+
+export default connect(mapState, mapActions);
+endsnippet
+
+snippet ccb_component_test "ccb component test file"
+import { shallowFactory } from 'test/enzymeHelpers';
+import $1 from './$1';
+
+const defaultProps = {
+};
+
+const factory = shallowFactory($1, {}, defaultProps);
+
+describe('<$1 />', () => {
+	test('it renders', () => {
+		expect(factory()).toExist();
+	});
+});
+endsnippet
