@@ -8,8 +8,7 @@ new repo denotes my change to using `rcm` to manage them.
 1) install `rcm`
 2) clone .dotfiles to ~/.dotfiles
 3) `rcup`
-4) INSTALL `bat` OR ZPLUG WONT WORK
-5) `zplug install`
-6) `vim +PlugInstall +qa`
-7) `tmux` & `C-a I`
+4) `zplug install`
+5) `vim +PlugInstall +qa`
+6) `tmux` & `C-a I`
 
