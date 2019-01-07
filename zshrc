@@ -85,16 +85,24 @@ $(__git_prompt) $(shrink_path -f) ► '
 # }}}
 
 # {{{ Aliases
+if [ -x "$(command -v bat)" ]; then
+  alias cat="bat"
+fi
+if [ -x "$(command -v prettyping)" ]; then
+  alias ping="prettyping"
+fi
+if [ -x "$(command -v ncdu)" ]; then
+  alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+fi
+if [ -x "$(command -v nvim)" ]; then
+  alias vim="nvim"
+fi
+
 alias c="clear"
 alias maketags="ctags --exclude=@.gitignore -R ."
 alias weather="curl wttr.in"
 alias unmerged="git diff --name-only --diff-filter=U"
-alias cat="bat"
-alias ping="prettyping"
-alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias ll="ls -lahF"
-alias vim="nvim"
-alias tasks='grep --exclude-dir=.git -rEI "TODO|FIXME" . 2>/dev/null'
 alias mysqlccb='mysql -u ccb_app -p ccb_dev -h 127.0.0.1'
 # }}}
 
