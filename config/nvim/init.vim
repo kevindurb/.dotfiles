@@ -22,7 +22,6 @@ Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
 
 Plug 'vim-airline/vim-airline'          " statusline
 Plug 'vim-airline/vim-airline-themes'   " statusline themes
-Plug 'airblade/vim-gitgutter'           " show the git status in the left side
 
 Plug 'tpope/vim-commentary'             " sweet commenting
 Plug 'tpope/vim-fugitive'               " git commands in vim
@@ -37,10 +36,8 @@ Plug 'rust-lang/rust.vim'               " rust syntax
 Plug 'pangloss/vim-javascript'          " js syntax
 Plug 'mxw/vim-jsx'                      " jsx syntax
 Plug 'leafgarland/typescript-vim'       " typescript syntax
-Plug 'alvan/vim-closetag'               " autoclose tags
 
-Plug 'SirVer/ultisnips'                 " snippet engine
-Plug 'honza/vim-snippets'               " snippets
+Plug 'alvan/vim-closetag'               " autoclose tags
 Plug 'Raimondi/delimitMate'             " auto close
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
 Plug 'w0rp/ale'                         " syntax and style checking
@@ -52,11 +49,6 @@ call plug#end()
 " }}}
 
 " {{{ Plugin Settings
-" ultisnips
-let g:UltiSnipsExpandTrigger = '<C-j>'
-let g:UltiSnipsJumpForwardTrigger = '<C-j>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
-
 " statusline settings
 let g:airline#extensions#tabline#enabled = 1
 
@@ -71,15 +63,6 @@ let g:ale_linters = {
 let g:ale_php_phpcs_standard = '/Users/kdurbin/Development/churchcommunitybuilder/app/src/phpcs_ruleset.xml'
 let g:ale_php_phpcs_executable = '/Users/kdurbin/Development/churchcommunitybuilder/app/vendor/bin/phpcs'
 let g:ale_php_phpcs_use_global = 0
-
-" you complete me
-let g:ycm_show_diagnostics_ui = 0
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_filetype_specific_completion_to_disable = {
-\ 'gitcommit': 1,
-\ 'ruby': 1,
-\}
 
 " vdebug
 let g:vdebug_options = {
@@ -99,6 +82,9 @@ let g:vdebug_options = {
 let g:vdebug_features = {
 \   'max_children': 2048,
 \ }
+
+" match pairs
+let delimitMate_matchpairs = "(:),[:],{:}"
 
 " autoclose jsx
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js"
