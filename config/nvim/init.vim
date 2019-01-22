@@ -37,13 +37,15 @@ Plug 'pangloss/vim-javascript'          " js syntax
 Plug 'mxw/vim-jsx'                      " jsx syntax
 Plug 'leafgarland/typescript-vim'       " typescript syntax
 
+Plug 'vim-scripts/AutoComplPop'         " auto open the omnicomplete
 Plug 'alvan/vim-closetag'               " autoclose tags
-Plug 'Raimondi/delimitMate'             " auto close
+Plug 'Raimondi/delimitMate'             " auto close everything else
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
 Plug 'w0rp/ale'                         " syntax and style checking
+Plug 'vim-vdebug/vdebug'                " debug php
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'vim-vdebug/vdebug'
 
 call plug#end()
 " }}}
@@ -98,8 +100,6 @@ set wildmode=longest:list,full  " make command completion more like zsh
 set autowrite                   " save when you change buffers
 set clipboard=unnamed           " copy and paste in system clipboard
 set showtabline=2               " always show the tabline
-set complete+=kspell            " add dictionary to completion
-set complete-=i                 " speeds up php
 set wildignore+=**/node_modules/**
 set nowrap                      " NO WRAPPING LINES
 set smartindent                 " auto indents c-like blocks
@@ -219,4 +219,17 @@ cnoremap <c-n>  <down>
 " fix all the screen reprint issues
 nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 
+" }}}
+
+" {{{ Autocomplete
+set complete+=kspell            " add dictionary to completion
+set complete-=i                 " speeds up php
+set completeopt=longest,menuone " dont select first, insert longest common text
+
+" enter to select item
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" preselect first item in menu
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 " }}}
