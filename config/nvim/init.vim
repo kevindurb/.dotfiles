@@ -223,7 +223,6 @@ nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 
 " {{{ Autocomplete
 set complete+=kspell            " add dictionary to completion
-set complete-=i                 " speeds up php
 set completeopt=longest,menuone " dont select first, insert longest common text
 
 " preselect first item in menu
