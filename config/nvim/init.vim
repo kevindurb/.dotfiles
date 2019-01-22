@@ -113,8 +113,8 @@ set ignorecase                  " ignore search case
 set smartcase                   " dont ignore case once you use a capital
 set hlsearch                    " highlight all search matches
 set undolevels=1000             " holds last 1000 undos
-set backupdir=$HOME/.vim/backup " backup files in one place
-set directory=$HOME/.vim/backup " swp files in one place
+set backupdir=$HOME/.vimbackup  " backup files in one place
+set directory=$HOME/.vimbackup  " swp files in one place
 set path=.,src,**               " gf search current, src and recurrsive dir
 set suffixesadd=.js,/index.js   " gf try adding .js to files
 set lazyredraw                  " dont redraw during macros
