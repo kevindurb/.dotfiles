@@ -226,9 +226,6 @@ set complete+=kspell            " add dictionary to completion
 set complete-=i                 " speeds up php
 set completeopt=longest,menuone " dont select first, insert longest common text
 
-" enter to select item
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
 " preselect first item in menu
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
