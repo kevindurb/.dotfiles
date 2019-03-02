@@ -121,3 +121,5 @@ FZF="$HOME/.fzf.zsh"
 
 [ -f "$FZF" ] && source "$FZF"
 # }}}
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

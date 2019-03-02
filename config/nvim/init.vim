@@ -14,8 +14,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-sensible'               " a good place to start
-
-Plug 'jnurmine/Zenburn'
+Plug 'tomasiser/vim-code-dark'          " theme
 
 Plug 'kevindurb/vim-splits'             " split settings and keymaps
 Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
@@ -34,8 +33,9 @@ Plug 'tpope/vim-dispatch'               " add backgrounding
 Plug 'cespare/vim-toml'                 " rust config files
 Plug 'rust-lang/rust.vim'               " rust syntax
 Plug 'pangloss/vim-javascript'          " js syntax
-Plug 'mxw/vim-jsx'                      " jsx syntax
+Plug 'MaxMEllon/vim-jsx-pretty'         " jsx syntax
 Plug 'leafgarland/typescript-vim'       " typescript syntax
+Plug 'Quramy/tsuquyomi'                 " typescript omnicomplete
 
 Plug 'vim-scripts/AutoComplPop'         " auto open the omnicomplete
 Plug 'alvan/vim-closetag'               " autoclose tags
@@ -53,6 +53,7 @@ call plug#end()
 " {{{ Plugin Settings
 " statusline settings
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'codedark'
 
 " ale settings
 let g:ale_linters = {
@@ -100,7 +101,6 @@ set wildmode=longest:list,full  " make command completion more like zsh
 set autowrite                   " save when you change buffers
 set clipboard=unnamed           " copy and paste in system clipboard
 set showtabline=2               " always show the tabline
-set wildignore+=**/node_modules/**
 set nowrap                      " NO WRAPPING LINES
 set smartindent                 " auto indents c-like blocks
 set shiftround                  " round indent to shiftwidth
@@ -118,12 +118,13 @@ set directory=$HOME/.vimbackup  " swp files in one place
 set path=.,src,**               " gf search current, src and recurrsive dir
 set suffixesadd=.js,/index.js   " gf try adding .js to files
 set lazyredraw                  " dont redraw during macros
+set regexpengine=1              " make syntax faster
 set noeb vb t_vb=               " turn off the most annoying thing ever
 " }}}
 
 " {{{ Colorscheme
 set background=dark
-colorscheme zenburn
+colorscheme codedark
 
 set t_ZH=[3m
 set t_ZR=[23m
@@ -211,14 +212,6 @@ onoremap <expr> n  'Nn'[v:searchforward]
 nnoremap <expr> N  'nN'[v:searchforward]
 xnoremap <expr> N  'nN'[v:searchforward]
 onoremap <expr> N  'nN'[v:searchforward]
-
-" c-n and c-p for command line history
-cnoremap <c-p>  <up>
-cnoremap <c-n>  <down>
-
-" fix all the screen reprint issues
-nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
-
 " }}}
 
 " {{{ Autocomplete
