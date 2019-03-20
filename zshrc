@@ -33,12 +33,8 @@ zplug "plugins/tmux",         from:oh-my-zsh
 zplug "plugins/yarn",         from:oh-my-zsh
 zplug "plugins/shrink-path",  from:oh-my-zsh
 
-zplug "supercrabtree/k"
 zplug "sharat87/zsh-vim-mode"
 zplug "chrissicool/zsh-256color"
-
-# zplug "mafredri/zsh-async"
-# zplug "sindresorhus/pure", use:pure.zsh, as:theme
 
 # if ! zplug check; then
 #   zplug install

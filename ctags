@@ -21,6 +21,7 @@
 --exclude=\*.tar.\*
 --exclude=node_modules
 --exclude=bower_components
+--exclude=resources
 --exclude=dist
 --exclude=test
 --exclude=tests

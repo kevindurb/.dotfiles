@@ -43,6 +43,7 @@ Plug 'Raimondi/delimitMate'             " auto close everything else
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
 Plug 'w0rp/ale'                         " syntax and style checking
 Plug 'vim-vdebug/vdebug'                " debug php
+Plug 'ludovicchabant/vim-gutentags'     " auto tag file management
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -120,6 +121,9 @@ set suffixesadd=.js,/index.js   " gf try adding .js to files
 set lazyredraw                  " dont redraw during macros
 set regexpengine=1              " make syntax faster
 set noeb vb t_vb=               " turn off the most annoying thing ever
+set undodir=$HOME/.vimundodir   " store undo history in a directory
+set undofile                    " so if i close and reopen a file i can still undo
+set termguicolors               " better colors??
 " }}}
 
 " {{{ Colorscheme
