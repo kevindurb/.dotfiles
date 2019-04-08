@@ -35,9 +35,11 @@ Plug 'rust-lang/rust.vim'               " rust syntax
 Plug 'pangloss/vim-javascript'          " js syntax
 Plug 'MaxMEllon/vim-jsx-pretty'         " jsx syntax
 Plug 'leafgarland/typescript-vim'       " typescript syntax
-Plug 'Quramy/tsuquyomi'                 " typescript omnicomplete
+" Plug 'Quramy/tsuquyomi'                 " typescript omnicomplete
 
-Plug 'vim-scripts/AutoComplPop'         " auto open the omnicomplete
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+" Plug 'vim-scripts/AutoComplPop'         " auto open the omnicomplete
+
 Plug 'alvan/vim-closetag'               " autoclose tags
 Plug 'Raimondi/delimitMate'             " auto close everything else
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
@@ -124,6 +126,7 @@ set noeb vb t_vb=               " turn off the most annoying thing ever
 set undodir=$HOME/.vimundodir   " store undo history in a directory
 set undofile                    " so if i close and reopen a file i can still undo
 set termguicolors               " better colors??
+set mouse=a                     " enable the mouse :shrug:
 " }}}
 
 " {{{ Colorscheme
@@ -219,10 +222,10 @@ onoremap <expr> N  'nN'[v:searchforward]
 " }}}
 
 " {{{ Autocomplete
-set complete+=kspell            " add dictionary to completion
-set completeopt=longest,menuone " dont select first, insert longest common text
+" set complete+=kspell            " add dictionary to completion
+" set completeopt=longest,menuone " dont select first, insert longest common text
 
 " preselect first item in menu
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+" inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+"   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 " }}}
