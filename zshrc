@@ -36,48 +36,13 @@ zplug "plugins/shrink-path",  from:oh-my-zsh
 zplug "sharat87/zsh-vim-mode"
 zplug "chrissicool/zsh-256color"
 
+zplug "mafredri/zsh-async", from:github
+zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+
 # if ! zplug check; then
 #   zplug install
 # fi
 zplug load
-# }}}
-
-# {{{ Prompt
-setopt prompt_subst
-function __git_prompt {
-  local DIRTY="%{$fg[yellow]%}*"
-  local CLEAN="%{$fg[green]%}✔"
-  local UNMERGED="%{$fg[red]%}✘"
-  local RESET="%{$terminfo[sgr0]%}"
-  git rev-parse --git-dir >& /dev/null
-  if [[ $? == 0 ]]
-  then
-    echo -n " "
-    if [[ `git ls-files -u >& /dev/null` == '' ]]
-    then
-      git diff --quiet >& /dev/null
-      if [[ $? == 1 ]]
-      then
-        echo -n $DIRTY
-      else
-        git diff --cached --quiet >& /dev/null
-        if [[ $? == 1 ]]
-        then
-          echo -n $DIRTY
-        else
-          echo -n $CLEAN
-        fi
-      fi
-    else
-      echo -n $UNMERGED
-    fi
-    echo -n $RESET
-  fi
-}
-
-RPROMPT=''
-PROMPT='
-$(__git_prompt) $(shrink_path -f) ► '
 # }}}
 
 # {{{ Aliases
@@ -113,9 +78,5 @@ bindkey "^[[A" history-beginning-search-backward-end
 # }}}
 
 # {{{ Add FZF
-FZF="$HOME/.fzf.zsh"
-
-[ -f "$FZF" ] && source "$FZF"
-# }}}
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# }}}
