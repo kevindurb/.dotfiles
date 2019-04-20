@@ -28,7 +28,3 @@ DOCKER_HELPERS=$HOME/Dropbox\ (CCBHQ)/Docker/.docker_helpers
 
 # Added by docker rebuild Mon Mar 25 08:17:42 MDT 2019
 [ -f $DOCKER_HELPERS ] && source $DOCKER_HELPERS
-
-# Added by docker rebuild Thu Apr  4 15:37:05 MDT 2019
-source ~/Dropbox\ \(CCBHQ\)/Docker/.docker_helpers
-
