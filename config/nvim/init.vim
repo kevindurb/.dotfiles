@@ -14,7 +14,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-sensible'               " a good place to start
-Plug 'tomasiser/vim-code-dark'          " theme
+Plug 'NLKNguyen/papercolor-theme'       " theme
 
 Plug 'kevindurb/vim-splits'             " split settings and keymaps
 Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
@@ -56,7 +56,7 @@ call plug#end()
 " {{{ Plugin Settings
 " statusline settings
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'codedark'
+let g:airline_theme = 'papercolor'
 
 " ale settings
 let g:ale_linters = {
@@ -75,6 +75,7 @@ let g:vdebug_options = {
 \   'path_maps': {
 \     '/var/www/app': '/Users/kdurbin/Development/churchcommunitybuilder/app',
 \     '/var/www/am': '/Users/kdurbin/Development/churchcommunitybuilder/am',
+\     '/var/www/intranet-api': '/Users/kdurbin/Development/intranet-api/app',
 \   },
 \   'port': 9000,
 \   'server': '',
@@ -84,6 +85,7 @@ let g:vdebug_options = {
 \   'continuous_mode': 1,
 \   'debug_file': '~/vdebug.log',
 \   'debug_file_level': 2,
+\   'watch_window_style': 'compact',
 \ }
 let g:vdebug_features = {
 \   'max_children': 2048,
@@ -126,12 +128,12 @@ set noeb vb t_vb=               " turn off the most annoying thing ever
 set undodir=$HOME/.vimundodir   " store undo history in a directory
 set undofile                    " so if i close and reopen a file i can still undo
 set termguicolors               " better colors??
-set mouse=a                     " enable the mouse :shrug:
+" set mouse=a                     " enable the mouse :shrug:
 " }}}
 
 " {{{ Colorscheme
-set background=dark
-colorscheme codedark
+set background=light
+colorscheme PaperColor
 
 set t_ZH=[3m
 set t_ZR=[23m
@@ -211,6 +213,9 @@ nnoremap <leader>r :so $HOME/.vim/vimrc<CR>
 nnoremap <C-p> :FZF<CR>
 nnoremap <C-o> :BTags<CR>
 nnoremap <leader>b :Buffers<CR>
+
+" fing docker
+nnoremap <leader>w :w!<CR>
 
 " saner searching directions
 nnoremap <expr> n  'Nn'[v:searchforward]
