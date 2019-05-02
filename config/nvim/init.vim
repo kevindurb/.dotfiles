@@ -35,10 +35,8 @@ Plug 'rust-lang/rust.vim'               " rust syntax
 Plug 'pangloss/vim-javascript'          " js syntax
 Plug 'MaxMEllon/vim-jsx-pretty'         " jsx syntax
 Plug 'leafgarland/typescript-vim'       " typescript syntax
-" Plug 'Quramy/tsuquyomi'                 " typescript omnicomplete
 
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-" Plug 'vim-scripts/AutoComplPop'         " auto open the omnicomplete
 
 Plug 'alvan/vim-closetag'               " autoclose tags
 Plug 'Raimondi/delimitMate'             " auto close everything else
