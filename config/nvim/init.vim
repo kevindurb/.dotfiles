@@ -14,7 +14,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-sensible'               " a good place to start
-Plug 'NLKNguyen/papercolor-theme'       " theme
+Plug 'tomasiser/vim-code-dark'       " theme
 
 Plug 'kevindurb/vim-splits'             " split settings and keymaps
 Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
@@ -54,7 +54,7 @@ call plug#end()
 " {{{ Plugin Settings
 " statusline settings
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'papercolor'
+let g:airline_theme = 'codedark'
 
 " ale settings
 let g:ale_linters = {
@@ -130,8 +130,8 @@ set termguicolors               " better colors??
 " }}}
 
 " {{{ Colorscheme
-set background=light
-colorscheme PaperColor
+set background=dark
+colorscheme codedark
 
 set t_ZH=[3m
 set t_ZR=[23m

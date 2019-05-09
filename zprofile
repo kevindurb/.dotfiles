@@ -1,5 +1,4 @@
 # vi: ft=zsh
-set +e
 
 # my term paths
 DROPBOX_BIN=$HOME/Dropbox/bin
@@ -25,5 +24,7 @@ YARN_BIN=`yarn global bin`
 # path
 export PATH=$HOME_DOT_BIN:$YARN_BIN:$LOCAL_NPM_BIN:$CARGO_BIN:$DEV_SCRIPTS:$DROPBOX_BIN:$HEROKU_BIN:$HOME_BIN:$NPM_BIN:$PEAR_BIN:$RUBY_BIN:$USR_LOCAL_BIN:$USR_LOCAL_SBIN:$USR_BIN:$USR_SBIN:$ROOT_BIN:$ROOT_SBIN:$X11_BIN:$GIT_BIN
 
-DOCKER_HELPERS=$HOME/Dropbox\ \(CCBHQ\)/Docker/.docker_helpers
-[ -f $DOCKER_HELPERS ] && source $DOCKER_HELPERS
+DOCKER_HELPERS="$HOME/Dropbox (CCBHQ)/Docker/.docker_helpers"
+[[ -f $DOCKER_HELPERS ]] && source $DOCKER_HELPERS
+
+export PATH="$HOME/.cargo/bin:$PATH"
