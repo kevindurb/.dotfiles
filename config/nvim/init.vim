@@ -78,7 +78,7 @@ let g:vdebug_options = {
 \   'port': 9000,
 \   'server': '',
 \   'timeout': 20,
-\   'ide_key': 'vagrant',
+\   'ide_key': 'XDEBUG_ECLIPSE',
 \   'break_on_open': 0,
 \   'continuous_mode': 1,
 \   'debug_file': '~/vdebug.log',
@@ -126,6 +126,7 @@ set noeb vb t_vb=               " turn off the most annoying thing ever
 set undodir=$HOME/.vimundodir   " store undo history in a directory
 set undofile                    " so if i close and reopen a file i can still undo
 set termguicolors               " better colors??
+set signcolumn=yes              " always show the gutter
 " set mouse=a                     " enable the mouse :shrug:
 " }}}
 
