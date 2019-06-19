@@ -78,7 +78,7 @@ let g:vdebug_options = {
 \   'port': 9000,
 \   'server': '',
 \   'timeout': 20,
-\   'ide_key': 'XDEBUG_ECLIPSE',
+\   'ide_key': 'vagrant',
 \   'break_on_open': 0,
 \   'continuous_mode': 1,
 \   'debug_file': '~/vdebug.log',
