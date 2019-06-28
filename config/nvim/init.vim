@@ -67,6 +67,11 @@ let g:ale_linters = {
 let g:ale_php_phpcs_standard = '/Users/kdurbin/Development/churchcommunitybuilder/app/src/phpcs_ruleset.xml'
 let g:ale_php_phpcs_executable = '/Users/kdurbin/Development/churchcommunitybuilder/app/vendor/bin/phpcs'
 let g:ale_php_phpcs_use_global = 0
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\}
+let g:ale_fix_on_save = 1
 
 " vdebug
 let g:vdebug_options = {
