@@ -3,7 +3,8 @@
 # vim: set fdm=marker expandtab ts=2 sw=2 ft=zsh:
 
 # {{{ Exports
-export TERM=xterm-256color-italic
+export TERM=xterm-256color
+# export TERM=xterm-256color-italic
 export ZSH_HOME=$HOME/dotfiles/zsh
 export ZPLUG_HOME=$HOME/.zplug
 export CLICOLOR=1
@@ -83,4 +84,3 @@ bindkey "^[[A" history-beginning-search-backward-end
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -69,7 +69,7 @@ let g:ale_php_phpcs_executable = '/Users/kdurbin/Development/churchcommunitybuil
 let g:ale_php_phpcs_use_global = 0
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['prettier', 'eslint'],
+\   'javascript': ['eslint'],
 \  'rust': ['rustfmt'],
 \  'go': ['gofmt'],
 \}
