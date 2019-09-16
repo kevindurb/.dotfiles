@@ -14,7 +14,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-sensible'               " a good place to start
-Plug 'tomasiser/vim-code-dark'       " theme
+Plug 'tomasiser/vim-code-dark'          " theme
+Plug 'ryanoasis/vim-devicons'           " icons for things
 
 Plug 'kevindurb/vim-splits'             " split settings and keymaps
 Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
