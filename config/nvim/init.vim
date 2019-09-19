@@ -36,6 +36,7 @@ Plug 'rust-lang/rust.vim'               " rust syntax
 Plug 'pangloss/vim-javascript'          " js syntax
 Plug 'MaxMEllon/vim-jsx-pretty'         " jsx syntax
 Plug 'leafgarland/typescript-vim'       " typescript syntax
+Plug 'nikvdp/ejs-syntax'                " ejs syntax
 
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
