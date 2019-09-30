@@ -32,13 +32,8 @@ zplug "plugins/git",          from:oh-my-zsh
 zplug "plugins/nvm",          from:oh-my-zsh
 zplug "plugins/tmux",         from:oh-my-zsh
 zplug "plugins/yarn",         from:oh-my-zsh
-zplug "plugins/shrink-path",  from:oh-my-zsh
 
-zplug "sharat87/zsh-vim-mode"
 zplug "chrissicool/zsh-256color"
-
-zplug "mafredri/zsh-async", from:github
-zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 
 # if ! zplug check; then
 #   zplug install
@@ -81,6 +76,8 @@ bindkey "^[[A" history-beginning-search-backward-end
 # {{{ Add FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }}}
+
+eval "$(starship init zsh)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
