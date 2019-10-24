@@ -9,3 +9,9 @@ disabled=true
 
 [cmd_duration]
 prefix=""
+
+[username]
+disabled=true
+
+[hostname]
+disabled=true

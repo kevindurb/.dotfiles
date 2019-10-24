@@ -45,9 +45,12 @@ Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'alvan/vim-closetag'               " autoclose tags
 Plug 'Raimondi/delimitMate'             " auto close everything else
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
-Plug 'w0rp/ale'                         " syntax and style checking
+Plug 'dense-analysis/ale'               " syntax and style checking
 Plug 'vim-vdebug/vdebug'                " debug php
 Plug 'ludovicchabant/vim-gutentags'     " auto tag file management
+Plug 'SirVer/ultisnips'                 " snippet engine
+Plug 'honza/vim-snippets'               " common snippets
+Plug 'epilande/vim-react-snippets'      " react snippets
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
