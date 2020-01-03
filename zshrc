@@ -32,6 +32,7 @@ zplug "plugins/git",          from:oh-my-zsh
 zplug "plugins/nvm",          from:oh-my-zsh
 zplug "plugins/tmux",         from:oh-my-zsh
 zplug "plugins/yarn",         from:oh-my-zsh
+zplug "plugins/ansible",      from:oh-my-zsh
 
 zplug "chrissicool/zsh-256color"
 

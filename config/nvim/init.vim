@@ -39,6 +39,7 @@ Plug 'leafgarland/typescript-vim'       " typescript syntax
 Plug 'nikvdp/ejs-syntax'                " ejs syntax
 Plug 'mustache/vim-mustache-handlebars' " mustache templating syntax
 Plug 'digitaltoad/vim-pug'              " pug syntax
+Plug 'Glench/Vim-Jinja2-Syntax'         " jinja syntax
 
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
