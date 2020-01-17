@@ -40,6 +40,7 @@ Plug 'nikvdp/ejs-syntax'                " ejs syntax
 Plug 'mustache/vim-mustache-handlebars' " mustache templating syntax
 Plug 'digitaltoad/vim-pug'              " pug syntax
 Plug 'Glench/Vim-Jinja2-Syntax'         " jinja syntax
+Plug 'reasonml-editor/vim-reason-plus'  " reasonml syntax
 
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
@@ -72,8 +73,8 @@ let g:ale_linters = {
 \ 'css': ['stylelint'],
 \ 'ruby': [],
 \}
-let g:ale_php_phpcs_standard = '/Users/kdurbin/Development/churchcommunitybuilder/app/src/phpcs_ruleset.xml'
-let g:ale_php_phpcs_executable = '/Users/kdurbin/Development/churchcommunitybuilder/app/vendor/bin/phpcs'
+let g:ale_php_phpcs_standard = $HOME.'/Development/churchcommunitybuilder/app/src/phpcs_ruleset.xml'
+let g:ale_php_phpcs_executable = $HOME.'/Development/churchcommunitybuilder/app/vendor/bin/phpcs'
 let g:ale_php_phpcs_use_global = 0
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -86,9 +87,9 @@ let g:ale_fix_on_save = 1
 " vdebug
 let g:vdebug_options = {
 \   'path_maps': {
-\     '/var/www/app': '/Users/kdurbin/Development/churchcommunitybuilder/app',
-\     '/var/www/am': '/Users/kdurbin/Development/churchcommunitybuilder/am',
-\     '/var/www/intranet-api': '/Users/kdurbin/Development/intranet-api/app',
+\     '/var/www/app': $HOME + '/Development/churchcommunitybuilder/app',
+\     '/var/www/am': $HOME + '/Development/churchcommunitybuilder/am',
+\     '/var/www/intranet-api': $HOME + '/Development/intranet-api/app',
 \   },
 \   'port': 9000,
 \   'server': '',
@@ -142,7 +143,9 @@ set undodir=$HOME/.vimundodir   " store undo history in a directory
 set undofile                    " so if i close and reopen a file i can still undo
 set termguicolors               " better colors??
 set signcolumn=yes              " always show the gutter
-" set mouse=a                     " enable the mouse :shrug:
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
 " }}}
 
 " {{{ Colorscheme
@@ -241,10 +244,11 @@ onoremap <expr> N  'nN'[v:searchforward]
 " }}}
 
 " {{{ Autocomplete
-" set complete+=kspell            " add dictionary to completion
-" set completeopt=longest,menuone " dont select first, insert longest common text
-
-" preselect first item in menu
-" inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-"   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+autocmd CursorHold * silent call CocActionAsync('highlight')
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
 " }}}
