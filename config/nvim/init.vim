@@ -49,7 +49,7 @@ Plug 'Raimondi/delimitMate'             " auto close everything else
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
 Plug 'dense-analysis/ale'               " syntax and style checking
 Plug 'vim-vdebug/vdebug'                " debug php
-Plug 'ludovicchabant/vim-gutentags'     " auto tag file management
+" Plug 'ludovicchabant/vim-gutentags'     " auto tag file management
 Plug 'SirVer/ultisnips'                 " snippet engine
 Plug 'honza/vim-snippets'               " common snippets
 Plug 'epilande/vim-react-snippets'      " react snippets
@@ -87,9 +87,9 @@ let g:ale_fix_on_save = 1
 " vdebug
 let g:vdebug_options = {
 \   'path_maps': {
-\     '/var/www/app': $HOME + '/Development/churchcommunitybuilder/app',
-\     '/var/www/am': $HOME + '/Development/churchcommunitybuilder/am',
-\     '/var/www/intranet-api': $HOME + '/Development/intranet-api/app',
+\     '/var/www/app': $HOME.'/Development/churchcommunitybuilder/app',
+\     '/var/www/am': $HOME.'/Development/churchcommunitybuilder/am',
+\     '/var/www/intranet-api': $HOME.'/Development/intranet-api/app',
 \   },
 \   'port': 9000,
 \   'server': '',
