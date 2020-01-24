@@ -146,6 +146,7 @@ set signcolumn=yes              " always show the gutter
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
+set mouse=a
 " }}}
 
 " {{{ Colorscheme
