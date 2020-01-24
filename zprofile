@@ -1,5 +1,7 @@
 # vi: ft=zsh
 
+TERMINFO=/etc/terminfo
+
 # my term paths
 DROPBOX_BIN=$HOME/Dropbox/bin
 HEROKU_BIN=/usr/local/heroku/bin
@@ -19,13 +21,30 @@ GIT_BIN=/usr/local/git/bin
 DEV_SCRIPTS=$HOME/Development/scripts
 CARGO_BIN=$HOME/.cargo/bin
 HOME_DOT_BIN=$HOME/.bin
-YARN_BIN=`yarn global bin`
 DOT_LOCAL_BIN=/home/kevindurb/.local/bin
 
 # path
-export PATH=$HOME_DOT_BIN:$DOT_LOCAL_BIN:$YARN_BIN:$LOCAL_NPM_BIN:$CARGO_BIN:$DEV_SCRIPTS:$DROPBOX_BIN:$HEROKU_BIN:$HOME_BIN:$NPM_BIN:$PEAR_BIN:$RUBY_BIN:$USR_LOCAL_BIN:$USR_LOCAL_SBIN:$USR_BIN:$USR_SBIN:$ROOT_BIN:$ROOT_SBIN:$X11_BIN:$GIT_BIN
-
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH=\
+$HOME_DOT_BIN:\
+$DOT_LOCAL_BIN:\
+$LOCAL_NPM_BIN:\
+$CARGO_BIN:\
+$DEV_SCRIPTS:\
+$DROPBOX_BIN:\
+$HEROKU_BIN:\
+$HOME_BIN:\
+$NPM_BIN:\
+$PEAR_BIN:\
+$RUBY_BIN:\
+$USR_LOCAL_BIN:\
+$USR_LOCAL_SBIN:\
+$USR_BIN:\
+$USR_SBIN:\
+$ROOT_BIN:\
+$ROOT_SBIN:\
+$X11_BIN:\
+$GIT_BIN:\
+$PATH
 
 # Added by docker rebuild Fri Nov 15 10:42:21 MST 2019
 source ~/Development/ccb-local/.docker_helpers

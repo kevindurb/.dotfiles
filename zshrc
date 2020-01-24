@@ -84,3 +84,6 @@ eval "$(starship init zsh)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# yarn bin needs to be added after nvm exists
+export PATH="$(yarn global bin):$PATH"
