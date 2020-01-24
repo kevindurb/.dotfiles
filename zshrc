@@ -4,7 +4,6 @@
 
 # {{{ Exports
 export TERM=xterm-256color
-# export TERM=xterm-256color-italic
 export ZSH_HOME=$HOME/dotfiles/zsh
 export ZPLUG_HOME=$HOME/.zplug
 export CLICOLOR=1
@@ -14,6 +13,7 @@ export SKIP_RESOURCES=1
 export APP_NO_CHECKOUT_HOOK=1
 export FZF_DEFAULT_COMMAND='rg --files'
 export LESS="-SRXF"
+export HISTFILE=$HOME/.zhistory
 # }}}
 
 # {{{ Plugins
