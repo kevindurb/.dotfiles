@@ -52,4 +52,3 @@ new repo denotes my change to using `rcm` to manage them.
 4) `zplug install`
 5) `vim +PlugInstall +qa`
 6) `tmux` & `C-a I`
-7) `tic ~/xterm-256-italic.terminfo`
