@@ -10,8 +10,8 @@ disabled=true
 [cmd_duration]
 prefix=""
 
-[username]
-disabled=true
-
 [hostname]
+ssh_only=true
+
+[php]
 disabled=true
