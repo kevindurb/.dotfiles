@@ -1,0 +1,286 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+<C-o>	config/nvim/init.vim	/^nnoremap <C-o> :BTags<CR>$/;"	m
+<C-p>	config/nvim/init.vim	/^nnoremap <C-p> :FZF<CR>$/;"	m
+<leader>b	config/nvim/init.vim	/^nnoremap <leader>b :Buffers<CR>$/;"	m
+<leader>r	config/nvim/init.vim	/^nnoremap <leader>r :so $HOME\/.vim\/vimrc<CR>$/;"	m
+<leader>w	config/nvim/init.vim	/^nnoremap <leader>w :w!<CR>$/;"	m
+ACTIVATE	bin/vimr	/^    ACTIVATE = "activate"$/;"	v	class:Action
+Action	bin/vimr	/^class Action:$/;"	c
+CWD	bin/vimr	/^    CWD = "cwd"$/;"	v	class:QueryParamKey
+ENV_PATH	bin/vimr	/^    ENV_PATH = "env-path"$/;"	v	class:QueryParamKey
+FILE	bin/vimr	/^    FILE = "file"$/;"	v	class:QueryParamKey
+K	config/nvim/init.vim	/^nnoremap K :grep! "\\b<C-R><C-W>\\b"<CR>:cw<CR>$/;"	m
+LINE	bin/vimr	/^    LINE = "line"$/;"	v	class:QueryParamKey
+MakeTags	config/nvim/init.vim	/^command! MakeTags !ctags -R .$/;"	c
+N	config/nvim/init.vim	/^nnoremap <expr> N  'nN'[v:searchforward]$/;"	m
+N	config/nvim/init.vim	/^onoremap <expr> N  'nN'[v:searchforward]$/;"	m
+NEW_WINDOW	bin/vimr	/^    NEW_WINDOW = "open-in-new-window"$/;"	v	class:Action
+NVIM	bin/vimr	/^    NVIM = "nvim"$/;"	v	class:Action
+NVIM_ARGS	bin/vimr	/^    NVIM_ARGS = "nvim-args"$/;"	v	class:QueryParamKey
+OPEN	bin/vimr	/^    OPEN = "open"$/;"	v	class:Action
+PIPE_PATH	bin/vimr	/^    PIPE_PATH = "pipe-path"$/;"	v	class:QueryParamKey
+QueryParamKey	bin/vimr	/^class QueryParamKey:$/;"	c
+Rg	config/nvim/init.vim	/^command! -nargs=+ -complete=file -bar Rg silent! grep! <args>|cwindow|redraw!$/;"	c
+SEPARATE_WINDOWS	bin/vimr	/^    SEPARATE_WINDOWS = "open-in-separate-windows"$/;"	v	class:Action
+WAIT	bin/vimr	/^    WAIT = "wait"$/;"	v	class:QueryParamKey
+XML	config/nvim/init.vim	/^augroup XML$/;"	a
+_fatal_error_abort	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_fatal_error_abort() {$/;"	f
+_get_user_tmux_conf	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_get_user_tmux_conf() {$/;"	f
+_has_emacs_mode_keys	tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^_has_emacs_mode_keys() {$/;"	f
+_manual_expansion	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_manual_expansion() {$/;"	f
+_sourced_files	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_sourced_files() {$/;"	f
+_tmux_conf_contents	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_tmux_conf_contents() {$/;"	f
+_tpm_path	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_tpm_path() {$/;"	f
+abspath	bin/vimr	/^def abspath(path):$/;"	f
+add_files_to_gitignore	tmux/plugins/tpm/lib/tmux-test/setup	/^add_files_to_gitignore() {$/;"	f
+append_ul	config/nvim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+args	bin/vimr	/^    args = parse_args()$/;"	v
+ask	config/nvim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+ask_no_interrupt	config/nvim/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+assign_name	config/nvim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+assoc	config/nvim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+bang	config/nvim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+bar	config/nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
+call_open	bin/vimr	/^def call_open(action, query_params, args):$/;"	f
+check_ruby	config/nvim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+checkout	config/nvim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+chsh	config/nvim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+clean	config/nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+clean_plugins	tmux/plugins/tpm/scripts/clean_plugins.sh	/^clean_plugins() {$/;"	f
+clone	tmux/plugins/tpm/scripts/install_plugins.sh	/^clone() {$/;"	f
+clone_plugin	tmux/plugins/tpm/scripts/install_plugins.sh	/^clone_plugin() {$/;"	f
+compare_git_uri	config/nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+copy_travis_yml	tmux/plugins/tpm/lib/tmux-test/setup	/^copy_travis_yml() {$/;"	f
+create_directory_for_tests	tmux/plugins/tpm/lib/tmux-test/setup	/^create_directory_for_tests() {$/;"	f
+define_commands	config/nvim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+delete	config/nvim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+delete_op	config/nvim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+delimitMate_matchpairs	config/nvim/init.vim	/^let delimitMate_matchpairs = "(:),[:],{:}"$/;"	v
+diff	config/nvim/autoload/plug.vim	/^function! s:diff()$/;"	f
+dirpath	config/nvim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+display_help	tmux/plugins/tpm/lib/tmux-test/run_tests	/^display_help() {$/;"	f
+display_message	tmux/plugins/tpm/scripts/check_tmux_version.sh	/^display_message() {$/;"	f
+display_plugin_update_list	tmux/plugins/tpm/bindings/update_plugins	/^display_plugin_update_list() {$/;"	f
+do	config/nvim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+doautocmd	config/nvim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+dobufread	config/nvim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+echo_err	tmux/plugins/tpm/scripts/helpers/shell_echo_functions.sh	/^echo_err() {$/;"	f
+echo_err	tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^echo_err() {$/;"	f
+echo_ok	tmux/plugins/tpm/scripts/helpers/shell_echo_functions.sh	/^echo_ok() {$/;"	f
+echo_ok	tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^echo_ok() {$/;"	f
+end_message	tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^end_message() {$/;"	f
+ensure_tpm_path_exists	tmux/plugins/tpm/scripts/helpers/utility.sh	/^ensure_tpm_path_exists() {$/;"	f
+err	config/nvim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+error	bin/imgcat	/^function error() {$/;"	f
+esc	config/nvim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+escrtp	config/nvim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+exit_if_unsupported_version	tmux/plugins/tpm/scripts/check_tmux_version.sh	/^exit_if_unsupported_version() {$/;"	f
+exit_message	tmux/plugins/tpm/lib/tmux-test/run_tests	/^exit_message() {$/;"	f
+exit_value_helper	tmux/plugins/tpm/scripts/helpers/utility.sh	/^exit_value_helper() {$/;"	f
+extract_name	config/nvim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+fail_helper	tmux/plugins/tpm/scripts/helpers/utility.sh	/^fail_helper() {$/;"	f
+find_name	config/nvim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+finish	config/nvim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+finish_bindings	config/nvim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
+format_git_log	config/nvim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+format_message	config/nvim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+g:airline#extensions#tabline#enabled	config/nvim/init.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
+g:airline_theme	config/nvim/init.vim	/^let g:airline_theme = 'codedark'$/;"	v
+g:ale_fix_on_save	config/nvim/init.vim	/^let g:ale_fix_on_save = 1$/;"	v
+g:ale_fixers	config/nvim/init.vim	/^let g:ale_fixers = {$/;"	v
+g:ale_linters	config/nvim/init.vim	/^let g:ale_linters = {$/;"	v
+g:ale_php_phpcs_executable	config/nvim/init.vim	/^let g:ale_php_phpcs_executable = '\/Users\/kdurbin\/Development\/churchcommunitybuilder\/app\/vendor\/bin\/phpcs'$/;"	v
+g:ale_php_phpcs_standard	config/nvim/init.vim	/^let g:ale_php_phpcs_standard = '\/Users\/kdurbin\/Development\/churchcommunitybuilder\/app\/src\/phpcs_ruleset.xml'$/;"	v
+g:ale_php_phpcs_use_global	config/nvim/init.vim	/^let g:ale_php_phpcs_use_global = 0$/;"	v
+g:closetag_filenames	config/nvim/init.vim	/^let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js"$/;"	v
+g:loaded_plug	config/nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:plugs_order	config/nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:vdebug_features	config/nvim/init.vim	/^let g:vdebug_features = {$/;"	v
+g:vdebug_options	config/nvim/init.vim	/^let g:vdebug_options = {$/;"	v
+get_digits_from_string	tmux/plugins/tpm/scripts/check_tmux_version.sh	/^get_digits_from_string() {$/;"	f
+get_tmux_option	tmux/plugins/tpm/scripts/check_tmux_version.sh	/^get_tmux_option() {$/;"	f
+get_tmux_option	tmux/plugins/tpm/tpm	/^get_tmux_option() {$/;"	f
+gh_is_url	bin/gh-md-toc	/^gh_is_url() {$/;"	f
+gh_toc	bin/gh-md-toc	/^gh_toc(){$/;"	f
+gh_toc_app	bin/gh-md-toc	/^gh_toc_app() {$/;"	f
+gh_toc_get_filename	bin/gh-md-toc	/^gh_toc_get_filename() {$/;"	f
+gh_toc_grab	bin/gh-md-toc	/^gh_toc_grab() {$/;"	f
+gh_toc_load	bin/gh-md-toc	/^gh_toc_load() {$/;"	f
+gh_toc_md2html	bin/gh-md-toc	/^gh_toc_md2html() {$/;"	f
+git_validate	config/nvim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+git_version_requirement	config/nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+gitignore	tmux/plugins/tpm/lib/tmux-test/setup	/^gitignore() {$/;"	f
+glob	config/nvim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+glob_dir	config/nvim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+hash_match	config/nvim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+infer_properties	config/nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+install	config/nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+install_plugin	tmux/plugins/tpm/scripts/install_plugins.sh	/^install_plugin() {$/;"	f
+install_plugins	tmux/plugins/tpm/scripts/install_plugins.sh	/^install_plugins() {$/;"	f
+is_local_plug	config/nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+is_managed	config/nvim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+is_preview_window_open	config/nvim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+is_updated	config/nvim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+job_abort	config/nvim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+job_cb	config/nvim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+job_exit_cb	config/nvim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+job_out_cb	config/nvim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+language_tabbing	config/nvim/init.vim	/^augroup language_tabbing$/;"	a
+last_non_empty_line	config/nvim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+lastline	config/nvim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+lines	config/nvim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+list_file	bin/imgls	/^function list_file() {$/;"	f
+load_plugin	config/nvim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+loaded_names	config/nvim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+lod	config/nvim/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+lod_cmd	config/nvim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+lod_ft	config/nvim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+lod_map	config/nvim/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+log	config/nvim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+log4	config/nvim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+logpos	config/nvim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+lpad	config/nvim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+main	bin/vimr	/^def main(args):$/;"	f
+main	tmux/plugins/tpm/bin/clean_plugins	/^main() {$/;"	f
+main	tmux/plugins/tpm/bin/install_plugins	/^main() {$/;"	f
+main	tmux/plugins/tpm/bin/update_plugins	/^main() {$/;"	f
+main	tmux/plugins/tpm/bindings/clean_plugins	/^main() {$/;"	f
+main	tmux/plugins/tpm/bindings/install_plugins	/^main() {$/;"	f
+main	tmux/plugins/tpm/bindings/update_plugins	/^main() {$/;"	f
+main	tmux/plugins/tpm/lib/tmux-test/run_framework_tests	/^main() {$/;"	f
+main	tmux/plugins/tpm/lib/tmux-test/run_tests	/^main() {$/;"	f
+main	tmux/plugins/tpm/lib/tmux-test/setup	/^main() {$/;"	f
+main	tmux/plugins/tpm/scripts/check_tmux_version.sh	/^main() {$/;"	f
+main	tmux/plugins/tpm/scripts/clean_plugins.sh	/^main() {$/;"	f
+main	tmux/plugins/tpm/scripts/install_plugins.sh	/^main() {$/;"	f
+main	tmux/plugins/tpm/scripts/source_plugins.sh	/^main() {$/;"	f
+main	tmux/plugins/tpm/scripts/update_plugin.sh	/^main() {$/;"	f
+main	tmux/plugins/tpm/scripts/update_plugin_prompt_handler.sh	/^main() {$/;"	f
+main	tmux/plugins/tpm/tpm	/^main() {$/;"	f
+mapleader	config/nvim/init.vim	/^let mapleader=','$/;"	v
+n	config/nvim/init.vim	/^nnoremap <expr> n  'Nn'[v:searchforward]$/;"	m
+n	config/nvim/init.vim	/^onoremap <expr> n  'Nn'[v:searchforward]$/;"	m
+names	config/nvim/autoload/plug.vim	/^function! s:names(...)$/;"	f
+new_window	config/nvim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+nvim_cb	config/nvim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+parse_args	bin/vimr	/^def parse_args():$/;"	f
+parse_arguments	tmux/plugins/tpm/lib/tmux-test/run_tests	/^parse_arguments() {$/;"	f
+parse_options	config/nvim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+path	config/nvim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+plug#	config/nvim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#begin	config/nvim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#end	config/nvim/autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#helptags	config/nvim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#load	config/nvim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plug_window_exists	config/nvim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+plugin_already_installed	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^plugin_already_installed() {$/;"	f
+plugin_dir_exists	tmux/plugins/tpm/scripts/source_plugins.sh	/^plugin_dir_exists() {$/;"	f
+plugin_name_helper	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^plugin_name_helper() {$/;"	f
+plugin_path_helper	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^plugin_path_helper() {$/;"	f
+prepare	config/nvim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+preview_commit	config/nvim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+print_image	bin/imgcat	/^function print_image() {$/;"	f
+print_osc	bin/imgcat	/^function print_osc() {$/;"	f
+print_osc	bin/imgls	/^function print_osc() {$/;"	f
+print_st	bin/imgcat	/^function print_st() {$/;"	f
+print_st	bin/imgls	/^function print_st() {$/;"	f
+progress_bar	config/nvim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+progress_opt	config/nvim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+pull_changes	tmux/plugins/tpm/scripts/update_plugin.sh	/^pull_changes() {$/;"	f
+reap	config/nvim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
+register_failing_tests	tmux/plugins/tpm/lib/tmux-test/run_tests	/^register_failing_tests() {$/;"	f
+regress_bar	config/nvim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+reload_plugins	config/nvim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+reload_tmux_environment	tmux/plugins/tpm/scripts/helpers/tmux_utils.sh	/^reload_tmux_environment() {$/;"	f
+remove_from_gitignore	tmux/plugins/tpm/lib/tmux-test/setup	/^remove_from_gitignore() {$/;"	f
+remove_rtp	config/nvim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+remove_triggers	config/nvim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+render	bin/mkcomp	/^  render() {$/;"	f
+reorg_rtp	config/nvim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+restore	tmux/plugins/tpm/lib/tmux-test/setup	/^restore() {$/;"	f
+retry	config/nvim/autoload/plug.vim	/^function! s:retry()$/;"	f
+revert	config/nvim/autoload/plug.vim	/^function! s:revert()$/;"	f
+rm_rf	config/nvim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+rollback	config/nvim/init.vim	/^augroup rollback$/;"	a
+rtp	config/nvim/autoload/plug.vim	/^  function! s:rtp(spec)$/;"	f
+run_tests	tmux/plugins/tpm/lib/tmux-test/run_tests	/^run_tests() {$/;"	f
+run_tests_on_virtual_machines	tmux/plugins/tpm/lib/tmux-test/run_tests	/^run_tests_on_virtual_machines() {$/;"	f
+run_tests_on_vm	tmux/plugins/tpm/lib/tmux-test/run_tests	/^run_tests_on_vm() {$/;"	f
+run_vagrant	tmux/plugins/tpm/lib/tmux-test/run_tests	/^run_vagrant() {$/;"	f
+s:TYPE	config/nvim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:base_spec	config/nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': 'master', 'frozen': 0 }$/;"	v
+s:cpo_save	config/nvim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:first_rtp	config/nvim/autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
+s:is_win	config/nvim/autoload/plug.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
+s:last_rtp	config/nvim/autoload/plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp(), -1, ''))$/;"	v
+s:loaded	config/nvim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:mac_gui	config/nvim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:me	config/nvim/autoload/plug.vim	/^let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:nvim	config/nvim/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:plug_buf	config/nvim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_src	config/nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_tab	config/nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:triggers	config/nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:vim8	config/nvim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+section	config/nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+set_default_tpm_path	tmux/plugins/tpm/tpm	/^set_default_tpm_path() {$/;"	f
+set_tpm_key_bindings	tmux/plugins/tpm/tpm	/^set_tpm_key_bindings() {$/;"	f
+set_tpm_path	tmux/plugins/tpm/tpm	/^set_tpm_path() {$/;"	f
+shellesc	config/nvim/autoload/plug.vim	/^function! s:shellesc(arg)$/;"	f
+shellesc_cmd	config/nvim/autoload/plug.vim	/^function! s:shellesc_cmd(arg)$/;"	f
+show_help	bin/imgcat	/^function show_help() {$/;"	f
+silently_source_all_tmux_files	tmux/plugins/tpm/scripts/source_plugins.sh	/^silently_source_all_tmux_files() {$/;"	f
+snapshot	config/nvim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+source	config/nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+source_plugins	tmux/plugins/tpm/scripts/source_plugins.sh	/^source_plugins() {$/;"	f
+source_plugins	tmux/plugins/tpm/tpm	/^source_plugins() {$/;"	f
+spawn	config/nvim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+split_rtp	config/nvim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+status	config/nvim/autoload/plug.vim	/^function! s:status()$/;"	f
+status_load	config/nvim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+status_update	config/nvim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+stop_vagrant	tmux/plugins/tpm/lib/tmux-test/run_tests	/^stop_vagrant() {$/;"	f
+supported_tmux_version_ok	tmux/plugins/tpm/tpm	/^supported_tmux_version_ok() {$/;"	f
+switch_in	config/nvim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+switch_out	config/nvim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+symlink_internal_test_runner	tmux/plugins/tpm/lib/tmux-test/setup	/^symlink_internal_test_runner() {$/;"	f
+symlink_test_helpers	tmux/plugins/tpm/lib/tmux-test/setup	/^symlink_test_helpers() {$/;"	f
+symlink_user_test_runner	tmux/plugins/tpm/lib/tmux-test/setup	/^symlink_user_test_runner() {$/;"	f
+syntax	config/nvim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+system	config/nvim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+system_chomp	config/nvim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+tick	config/nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
+tmux_echo	tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^tmux_echo() {$/;"	f
+tmux_version_int	tmux/plugins/tpm/scripts/check_tmux_version.sh	/^tmux_version_int() {$/;"	f
+to_a	config/nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+to_s	config/nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+tpm_path	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^tpm_path() {$/;"	f
+tpm_path_set	tmux/plugins/tpm/tpm	/^tpm_path_set() {$/;"	f
+tpm_plugins_list_helper	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^tpm_plugins_list_helper() {$/;"	f
+trim	config/nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+undo	tmux/plugins/tpm/lib/tmux-test/setup	/^undo() {$/;"	f
+unsupported_version_message	tmux/plugins/tpm/scripts/check_tmux_version.sh	/^unsupported_version_message() {$/;"	f
+update	config/nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+update	tmux/plugins/tpm/scripts/update_plugin.sh	/^update() {$/;"	f
+update_all	tmux/plugins/tpm/scripts/update_plugin.sh	/^update_all() {$/;"	f
+update_finish	config/nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+update_impl	config/nvim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+update_plugin_prompt	tmux/plugins/tpm/bindings/update_plugins	/^update_plugin_prompt() {$/;"	f
+update_plugins	tmux/plugins/tpm/scripts/update_plugin.sh	/^update_plugins() {$/;"	f
+update_python	config/nvim/autoload/plug.vim	/^function! s:update_python()$/;"	f
+update_ruby	config/nvim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+update_vim	config/nvim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+upgrade	config/nvim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+upgrade_specs	config/nvim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+verify_tpm_path_permissions	tmux/plugins/tpm/scripts/install_plugins.sh	/^verify_tpm_path_permissions() {$/;"	f
+version_requirement	config/nvim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+vimr	bin/vimr	/^def vimr(action, args, query_params):$/;"	f
+vimr_nvim	bin/vimr	/^def vimr_nvim(other_args, nvim_args, query_params):$/;"	f
+wait_for_ui_to_close	bin/vimr	/^def wait_for_ui_to_close(pipe_path):$/;"	f
+warn	config/nvim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+with_cd	config/nvim/autoload/plug.vim	/^function! s:with_cd(cmd, dir)$/;"	f

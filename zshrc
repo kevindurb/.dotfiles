@@ -62,6 +62,8 @@ alias weather="curl wttr.in"
 alias unmerged="git diff --name-only --diff-filter=U"
 alias ll="ls -lahF"
 alias mysqlccb='mysql -u ccb_app -p ccb_dev -h 127.0.0.1'
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 # }}}
 
 # {{{ Config
@@ -82,3 +84,6 @@ eval "$(starship init zsh)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# yarn bin needs to be added after nvm exists
+export PATH="$(yarn global bin):$PATH"
