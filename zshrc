@@ -62,8 +62,11 @@ alias weather="curl wttr.in"
 alias unmerged="git diff --name-only --diff-filter=U"
 alias ll="ls -lahF"
 alias mysqlccb='mysql -u ccb_app -p ccb_dev -h 127.0.0.1'
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+
+if ! type pbcopy > /dev/null; then
+  alias pbcopy='xsel --clipboard --input'
+  alias pbpaste='xsel --clipboard --output'
+fi
 # }}}
 
 # {{{ Config
