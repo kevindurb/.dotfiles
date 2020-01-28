@@ -15,6 +15,3 @@ ssh_only=true
 
 [php]
 disabled=true
-
-[memory_usage]
-disabled=false
