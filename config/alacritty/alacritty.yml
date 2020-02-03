@@ -1,0 +1,17 @@
+env:
+  TERM: xterm-256color
+
+font:
+  size: 15.0
+  normal:
+    family: "FuraCode Nerd Font"
+    style: Regular
+  bold:
+    family: "FuraCode Nerd Font"
+    style: Bold
+  italic:
+    family: "FuraCode Nerd Font"
+    style: Italic
+  bold_italic:
+    family: "FuraCode Nerd Font"
+    style: Bold Italic

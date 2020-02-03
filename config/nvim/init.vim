@@ -71,6 +71,7 @@ let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \ 'javascript jsx': ['eslint'],
 \ 'css': ['stylelint'],
+\ 'sql': ['sqlfmt'],
 \ 'ruby': [],
 \}
 let g:ale_php_phpcs_standard = $HOME.'/Development/churchcommunitybuilder/app/src/phpcs_ruleset.xml'

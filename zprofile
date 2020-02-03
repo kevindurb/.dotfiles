@@ -20,6 +20,7 @@ X11_BIN=/opt/X11/bin
 GIT_BIN=/usr/local/git/bin
 DEV_SCRIPTS=$HOME/Development/scripts
 CARGO_BIN=$HOME/.cargo/bin
+GO_BIN=$HOME/go/bin
 HOME_DOT_BIN=$HOME/.bin
 DOT_LOCAL_BIN=/home/kevindurb/.local/bin
 
@@ -29,6 +30,7 @@ $HOME_DOT_BIN:\
 $DOT_LOCAL_BIN:\
 $LOCAL_NPM_BIN:\
 $CARGO_BIN:\
+$GO_BIN:\
 $DEV_SCRIPTS:\
 $DROPBOX_BIN:\
 $HEROKU_BIN:\
