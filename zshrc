@@ -23,6 +23,7 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "zsh-users/zsh-syntax-highlighting", defer:3
+zplug "zsh-users/zsh-autosuggestions", defer:3
 
 zplug "modules/completion",   from:prezto
 zplug "modules/history",      from:prezto
