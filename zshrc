@@ -17,6 +17,8 @@ export HISTFILE=$HOME/.zhistory
 # {{{ Plugins
 source /usr/local/share/antigen/antigen.zsh
 
+antigen use oh-my-zsh
+
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
