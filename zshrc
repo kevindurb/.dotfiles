@@ -4,8 +4,6 @@
 
 # {{{ Exports
 export TERM=xterm-256color
-export ZSH_HOME=$HOME/dotfiles/zsh
-export ZPLUG_HOME=$HOME/.zplug
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR='nvim'
@@ -17,30 +15,16 @@ export HISTFILE=$HOME/.zhistory
 # }}}
 
 # {{{ Plugins
-source $ZPLUG_HOME/init.zsh
+source /usr/local/share/antigen/antigen.zsh
 
-zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle git
+antigen bundle chrissicool/zsh-256color
 
-zplug "zsh-users/zsh-history-substring-search", defer:3
-zplug "zsh-users/zsh-syntax-highlighting", defer:3
-zplug "zsh-users/zsh-autosuggestions", defer:3
-
-zplug "modules/completion",   from:prezto
-zplug "modules/history",      from:prezto
-zplug "plugins/autoenv",      from:oh-my-zsh
-zplug "plugins/autojump",     from:oh-my-zsh
-zplug "plugins/git",          from:oh-my-zsh
-zplug "plugins/nvm",          from:oh-my-zsh
-zplug "plugins/tmux",         from:oh-my-zsh
-zplug "plugins/yarn",         from:oh-my-zsh
-zplug "plugins/ansible",      from:oh-my-zsh
-
-zplug "chrissicool/zsh-256color"
-
-# if ! zplug check; then
-#   zplug install
-# fi
-zplug load
+antigen apply
 # }}}
 
 # {{{ Aliases
@@ -84,10 +68,14 @@ bindkey "^[[A" history-beginning-search-backward-end
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }}}
 
+# {{{ Add Starship Prompt
 eval "$(starship init zsh)"
+# }}}
 
+# {{{ Node Stuff
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # yarn bin needs to be added after nvm exists
 export PATH="$(yarn global bin):$PATH"
+# }}}
