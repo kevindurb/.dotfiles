@@ -24,7 +24,11 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle git
+antigen bundle autojump
+antigen bundle colored-man-pages
 antigen bundle chrissicool/zsh-256color
+antigen bundle supercrabtree/k
+antigen bundle lukechilds/zsh-nvm
 
 antigen apply
 # }}}
@@ -75,9 +79,6 @@ eval "$(starship init zsh)"
 # }}}
 
 # {{{ Node Stuff
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
 # yarn bin needs to be added after nvm exists
 export PATH="$(yarn global bin):$PATH"
 # }}}
