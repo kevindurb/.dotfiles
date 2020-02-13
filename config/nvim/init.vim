@@ -125,6 +125,7 @@ set nowrap                      " NO WRAPPING LINES
 set smartindent                 " auto indents c-like blocks
 set shiftround                  " round indent to shiftwidth
 set cursorline                  " turn on cursor horizontal line
+set cursorcolumn                " turn on cursor vertical line
 set colorcolumn=80              " color line at 80 columns
 set number                      " but still show current line number
 set relativenumber              " show relative line numbers
