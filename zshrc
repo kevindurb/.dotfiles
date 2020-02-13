@@ -15,7 +15,7 @@ export HISTFILE=$HOME/.zhistory
 # }}}
 
 # {{{ Plugins
-source /usr/local/share/antigen/antigen.zsh
+source $HOME/antigen.zsh
 
 antigen use oh-my-zsh
 
