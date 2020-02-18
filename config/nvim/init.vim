@@ -41,6 +41,7 @@ Plug 'mustache/vim-mustache-handlebars' " mustache templating syntax
 Plug 'digitaltoad/vim-pug'              " pug syntax
 Plug 'Glench/Vim-Jinja2-Syntax'         " jinja syntax
 Plug 'reasonml-editor/vim-reason-plus'  " reasonml syntax
+Plug 'ElmCast/elm-vim'                  " elm lang
 
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
