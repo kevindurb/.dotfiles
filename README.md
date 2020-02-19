@@ -41,14 +41,16 @@
           `-.___/
 ```
 
-These are my **new** rc/config files for my development system. The move to a
-new repo denotes my change to using `rcm` to manage them.
+These are my **new** rc/config files for my development system.
+
+# Requirements
+- `stow`
+- `nvim`
+- `tmux`
+- `zsh`
+- `antigen` (`curl -L git.io/antigen > ~/antigen.zsh`)
 
 # Setup
-
-1) install `rcm`
-2) clone .dotfiles to ~/.dotfiles
-3) `rcup`
-4) `zplug install`
-5) `vim +PlugInstall +qa`
-6) `tmux` & `C-a I`
+1) clone to ~/.dotfiles
+2) `cd ~/.dotfiles`
+3) `make`
