@@ -24,6 +24,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle git
+antigen bundle tmux
 antigen bundle autojump
 antigen bundle colored-man-pages
 antigen bundle chrissicool/zsh-256color
