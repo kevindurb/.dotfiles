@@ -1,14 +1,14 @@
 [core]
-	editor = nvim
-	excludesfile = /Users/kdurbin/.gitignore
-	pager = diff-so-fancy | less --tabs=4 -RFX
+  editor = nvim
+  excludesfile = /Users/kdurbin/.gitignore
+  pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
-	name = Kevin Durbin
-	email = kevindurb@gmail.com
+  name = Kevin Durbin
+  email = kevindurb@gmail.com
 [color]
   status = auto
   branch = auto
-	ui = true
+  ui = true
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -18,27 +18,27 @@
   changed = red
   untracked = cyan
 [push]
-	default = current
+  default = current
 [rerere]
   enabled = 1
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [commit]
   template = /Users/kdurbin/.stCommitMsg
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [color "diff"]
-	meta = yellow
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
