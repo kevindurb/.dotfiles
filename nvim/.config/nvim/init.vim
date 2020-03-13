@@ -50,7 +50,6 @@ Plug 'Raimondi/delimitMate'             " auto close everything else
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
 Plug 'dense-analysis/ale'               " syntax and style checking
 Plug 'vim-vdebug/vdebug'                " debug php
-" Plug 'ludovicchabant/vim-gutentags'     " auto tag file management
 Plug 'SirVer/ultisnips'                 " snippet engine
 Plug 'honza/vim-snippets'               " common snippets
 Plug 'epilande/vim-react-snippets'      " react snippets
@@ -158,7 +157,14 @@ colorscheme codedark
 
 set t_ZH=[3m
 set t_ZR=[23m
-highlight Comment cterm=italic
+
+" Set a transparent background
+highlight Normal      ctermbg=NONE guibg=NONE
+highlight LineNr      ctermbg=NONE guibg=NONE
+highlight SignColumn  ctermbg=NONE guibg=NONE
+highlight VertSplit   ctermbg=NONE guibg=NONE
+highlight NonText     ctermbg=NONE guibg=NONE
+highlight EndOfBuffer ctermbg=NONE guibg=NONE
 " }}}
 
 " {{{ Custom Commands
