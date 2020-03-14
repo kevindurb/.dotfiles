@@ -16,6 +16,8 @@ font:
     family: "FuraCode Nerd Font"
     style: Bold Italic
 
+background_opacity: 0.9
+
 colors:
   # Default colors
   primary:
