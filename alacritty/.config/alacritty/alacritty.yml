@@ -4,16 +4,16 @@ env:
 font:
   size: 14.0
   normal:
-    family: "FuraCode Nerd Font"
+    family: "FiraCode Nerd Font"
     style: Regular
   bold:
-    family: "FuraCode Nerd Font"
+    family: "FiraCode Nerd Font"
     style: Bold
   italic:
-    family: "FuraCode Nerd Font"
+    family: "FiraCode Nerd Font"
     style: Italic
   bold_italic:
-    family: "FuraCode Nerd Font"
+    family: "FiraCode Nerd Font"
     style: Bold Italic
 
 background_opacity: 0.9
