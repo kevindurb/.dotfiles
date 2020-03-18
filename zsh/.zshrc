@@ -12,6 +12,7 @@ export APP_NO_CHECKOUT_HOOK=1
 export FZF_DEFAULT_COMMAND='rg --files'
 export LESS="-SRXF"
 export HISTFILE=$HOME/.zhistory
+export WATSON_DIR=$HOME/.config/watson
 # }}}
 
 # {{{ Plugins
