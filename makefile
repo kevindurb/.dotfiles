@@ -10,6 +10,7 @@ link:
 	stow $(FLAGS) starship
 	stow $(FLAGS) tmux
 	stow $(FLAGS) watson
+	stow $(FLAGS) razer
 
 vim_install_plugins:
 	vim +PlugInstall +qa
