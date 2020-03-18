@@ -1,3 +1,7 @@
 tags
 nvim/.config/nvim/plugged
 nvim/.config/nvim/.netrwhist
+watson/.config/watson/frames
+watson/.config/watson/frames.bak
+watson/.config/watson/state
+watson/.config/watson/state.bak
