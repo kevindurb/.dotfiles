@@ -27,6 +27,7 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle git
 antigen bundle tmux
 antigen bundle autojump
+antigen bundle fzf
 antigen bundle colored-man-pages
 antigen bundle chrissicool/zsh-256color
 antigen bundle supercrabtree/k
@@ -72,15 +73,6 @@ zle -N history-beginning-search-backward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 # }}}
 
-# {{{ Add FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# }}}
-
 # {{{ Add Starship Prompt
 eval "$(starship init zsh)"
-# }}}
-
-# {{{ Node Stuff
-# yarn bin needs to be added after nvm exists
-export PATH="$(yarn global bin):$PATH"
 # }}}
