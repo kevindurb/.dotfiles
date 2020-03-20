@@ -1,0 +1,7 @@
+[options]
+log_current = true
+start_on_stop = true
+stop_on_start = true
+stop_on_restart = true
+report_current = true
+
