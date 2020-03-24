@@ -242,7 +242,7 @@ let mapleader=','
 nnoremap <leader>r :so $HOME/.vim/vimrc<CR>
 
 " fzf
-nnoremap <C-p> :FZF<CR>
+nnoremap <C-p> :Files<CR>
 nnoremap <C-o> :BTags<CR>
 nnoremap <leader>b :Buffers<CR>
 
