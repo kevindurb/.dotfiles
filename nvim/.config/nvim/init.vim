@@ -54,6 +54,8 @@ Plug 'vim-vdebug/vdebug'                " debug php
 Plug 'SirVer/ultisnips'                 " snippet engine
 Plug 'honza/vim-snippets'               " common snippets
 Plug 'epilande/vim-react-snippets'      " react snippets
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
