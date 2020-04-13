@@ -31,6 +31,7 @@ Plug 'tpope/vim-unimpaired'             " mappings for things with '['
 Plug 'tpope/vim-vinegar'                " browse directories with -
 Plug 'tpope/vim-dispatch'               " add backgrounding
 
+Plug 'pearofducks/ansible-vim'          " ansible syntax
 Plug 'cespare/vim-toml'                 " rust config files
 Plug 'rust-lang/rust.vim'               " rust syntax
 Plug 'pangloss/vim-javascript'          " js syntax
