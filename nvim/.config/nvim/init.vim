@@ -125,7 +125,7 @@ set encoding=utf-8
 set title                       " set title in terminal
 set wildmode=longest:list,full  " make command completion more like zsh
 set autowrite                   " save when you change buffers
-set clipboard=unnamed           " copy and paste in system clipboard
+set clipboard=unnamedplus       " copy and paste in system clipboard
 set showtabline=2               " always show the tabline
 set nowrap                      " NO WRAPPING LINES
 set smartindent                 " auto indents c-like blocks
