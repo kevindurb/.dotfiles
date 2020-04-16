@@ -18,7 +18,7 @@ X11_BIN=/opt/X11/bin
 GIT_BIN=/usr/local/git/bin
 CARGO_BIN=$HOME/.cargo/bin
 GO_BIN=$HOME/go/bin
-DOT_LOCAL_BIN=/home/kevindurb/.local/bin
+DOT_LOCAL_BIN=$HOME/.local/bin
 YARN_GLOBAL_BIN=$HOME/.config/yarn/global
 
 # path
