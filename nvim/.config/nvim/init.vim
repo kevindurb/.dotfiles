@@ -74,8 +74,6 @@ let g:ale_linters = {
 \ 'graphql': ['gqlint'],
 \ 'javascript': ['eslint'],
 \ 'javascript jsx': ['eslint'],
-\ 'typescript': ['prettier', 'eslint'],
-\ 'typescript jsx': ['prettier', 'eslint'],
 \ 'css': ['stylelint'],
 \ 'sql': ['sqlfmt'],
 \ 'ruby': [],
@@ -88,6 +86,8 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \  'rust': ['rustfmt'],
 \  'go': ['gofmt'],
+\ 'typescript': ['prettier', 'eslint'],
+\ 'typescript.tsx': ['prettier', 'eslint'],
 \}
 let g:ale_fix_on_save = 1
 
