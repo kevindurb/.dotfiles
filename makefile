@@ -1,6 +1,6 @@
 FLAGS=-d ~/.dotfiles -t ~
 
-install: link vim_install_plugins
+all: link vim_install_plugins
 
 link:
 	stow $(FLAGS) zsh
@@ -18,5 +18,5 @@ link:
 vim_install_plugins:
 	vim +PlugInstall +qa
 
-starship:
+install_starship:
 	curl -fsSL https://starship.rs/install.sh | bash
