@@ -11,7 +11,10 @@ disabled=true
 prefix=""
 
 [hostname]
-ssh_only=true
+ssh_only=false
 
 [php]
 disabled=true
+
+[username]
+show_always=true
