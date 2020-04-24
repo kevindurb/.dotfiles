@@ -19,7 +19,7 @@ GIT_BIN=/usr/local/git/bin
 CARGO_BIN=$HOME/.cargo/bin
 GO_BIN=$HOME/go/bin
 DOT_LOCAL_BIN=$HOME/.local/bin
-YARN_GLOBAL_BIN=$HOME/.config/yarn/global
+YARN_GLOBAL_BIN=$HOME/.config/yarn/global/node_modules/.bin
 
 # path
 export PATH=\
