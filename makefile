@@ -1,9 +1,5 @@
 FLAGS=-d ~/.dotfiles -t ~
 
-all: link vim_install_plugins
-
-install: all install_starship install_antigen
-
 link:
 	stow $(FLAGS) zsh
 	stow $(FLAGS) nvim
