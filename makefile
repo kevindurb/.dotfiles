@@ -1,5 +1,7 @@
 FLAGS=-d ~/.dotfiles -t ~
 
+install: link vim_install_plugins
+
 link:
 	stow $(FLAGS) zsh
 	stow $(FLAGS) nvim
@@ -11,8 +13,7 @@ link:
 	stow $(FLAGS) tmux
 	stow $(FLAGS) watson
 	stow $(FLAGS) razer
+	stow $(FLAGS) ssh
 
 vim_install_plugins:
 	vim +PlugInstall +qa
-
-install: link vim_install_plugins
