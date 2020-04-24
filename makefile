@@ -2,6 +2,8 @@ FLAGS=-d ~/.dotfiles -t ~
 
 all: link vim_install_plugins
 
+install: all install_starship install_antigen
+
 link:
 	stow $(FLAGS) zsh
 	stow $(FLAGS) nvim
@@ -19,4 +21,7 @@ vim_install_plugins:
 	vim +PlugInstall +qa
 
 install_starship:
-	curl -fsSL https://starship.rs/install.sh | bash
+	curl -fsSL https://starship.rs/install.sh | FORCE=true bash
+
+install_antigen:
+	curl -L git.io/antigen > ~/antigen.zsh
