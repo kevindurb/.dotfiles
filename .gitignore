@@ -5,3 +5,4 @@ watson/.config/watson/frames
 watson/.config/watson/frames.bak
 watson/.config/watson/state
 watson/.config/watson/state.bak
+!.rgignore
