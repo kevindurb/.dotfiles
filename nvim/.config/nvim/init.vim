@@ -10,27 +10,18 @@
 "  \ V /| | | | | | | | | (__
 "   \_/ |_|_| |_| |_|_|  \___|
 
-" {{{ Plugins
 call plug#begin('~/.config/nvim/plugged')
 
+" {{{ Plugins: Appearence
 Plug 'tpope/vim-sensible'               " a good place to start
 Plug 'tomasiser/vim-code-dark'          " theme
 Plug 'ryanoasis/vim-devicons'           " icons for things
-
-Plug 'kevindurb/vim-splits'             " split settings and keymaps
 Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
-
 Plug 'vim-airline/vim-airline'          " statusline
 Plug 'vim-airline/vim-airline-themes'   " statusline themes
+" }}}
 
-Plug 'tpope/vim-commentary'             " sweet commenting
-Plug 'tpope/vim-fugitive'               " git commands in vim
-Plug 'tpope/vim-repeat'                 " repeating plugin commands
-Plug 'tpope/vim-surround'               " surround with things
-Plug 'tpope/vim-unimpaired'             " mappings for things with '['
-Plug 'tpope/vim-vinegar'                " browse directories with -
-Plug 'tpope/vim-dispatch'               " add backgrounding
-
+" {{{ Plugins: Syntax
 Plug 'pearofducks/ansible-vim'          " ansible syntax
 Plug 'cespare/vim-toml'                 " rust config files
 Plug 'rust-lang/rust.vim'               " rust syntax
@@ -44,25 +35,29 @@ Plug 'digitaltoad/vim-pug'              " pug syntax
 Plug 'Glench/Vim-Jinja2-Syntax'         " jinja syntax
 Plug 'reasonml-editor/vim-reason-plus'  " reasonml syntax
 Plug 'ElmCast/elm-vim'                  " elm lang
-
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'dense-analysis/ale'               " syntax and style checking
+" }}}
 
+" {{{ Plugins: Misc
+Plug 'kevindurb/vim-splits'             " split settings and keymaps
+Plug 'tpope/vim-commentary'             " sweet commenting
+Plug 'tpope/vim-fugitive'               " git commands in vim
+Plug 'tpope/vim-repeat'                 " repeating plugin commands
+Plug 'tpope/vim-surround'               " surround with things
+Plug 'tpope/vim-unimpaired'             " mappings for things with '['
+Plug 'tpope/vim-vinegar'                " browse directories with -
+Plug 'tpope/vim-dispatch'               " add backgrounding
 Plug 'alvan/vim-closetag'               " autoclose tags
 Plug 'Raimondi/delimitMate'             " auto close everything else
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
-Plug 'dense-analysis/ale'               " syntax and style checking
 Plug 'vim-vdebug/vdebug'                " debug php
-Plug 'SirVer/ultisnips'                 " snippet engine
-Plug 'honza/vim-snippets'               " common snippets
-Plug 'epilande/vim-react-snippets'      " react snippets
-Plug 'camspiers/animate.vim'
-Plug 'camspiers/lens.vim'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+" }}}
 
 call plug#end()
-" }}}
 
 " {{{ Plugin Settings
 " statusline settings
@@ -82,10 +77,10 @@ let g:ale_php_phpcs_standard = $HOME.'/Development/churchcommunitybuilder/app/sr
 let g:ale_php_phpcs_executable = $HOME.'/Development/churchcommunitybuilder/app/vendor/bin/phpcs'
 let g:ale_php_phpcs_use_global = 0
 let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['eslint'],
-\  'rust': ['rustfmt'],
-\  'go': ['gofmt'],
+\ '*': ['remove_trailing_lines', 'trim_whitespace'],
+\ 'javascript': ['eslint'],
+\ 'rust': ['rustfmt'],
+\ 'go': ['gofmt'],
 \ 'typescript': ['prettier', 'eslint'],
 \ 'typescript.tsx': ['prettier', 'eslint'],
 \}
@@ -93,30 +88,30 @@ let g:ale_fix_on_save = 1
 
 " vdebug
 let g:vdebug_options = {
-\   'path_maps': {
-\     '/var/www/app': $HOME.'/Development/churchcommunitybuilder/app',
-\     '/var/www/am': $HOME.'/Development/churchcommunitybuilder/am',
-\     '/var/www/intranet-api': $HOME.'/Development/intranet-api/app',
-\   },
-\   'port': 9000,
-\   'server': '',
-\   'timeout': 20,
-\   'ide_key': 'vagrant',
-\   'break_on_open': 0,
-\   'continuous_mode': 1,
-\   'debug_file': '~/vdebug.log',
-\   'debug_file_level': 2,
-\   'watch_window_style': 'compact',
+\ 'path_maps': {
+\   '/var/www/app': $HOME.'/Development/churchcommunitybuilder/app',
+\   '/var/www/am': $HOME.'/Development/churchcommunitybuilder/am',
+\   '/var/www/intranet-api': $HOME.'/Development/intranet-api/app',
+\ },
+\ 'port': 9000,
+\ 'server': '',
+\ 'timeout': 20,
+\ 'ide_key': 'vagrant',
+\ 'break_on_open': 0,
+\ 'continuous_mode': 1,
+\ 'debug_file': '~/vdebug.log',
+\ 'debug_file_level': 2,
+\ 'watch_window_style': 'compact',
 \ }
 let g:vdebug_features = {
-\   'max_children': 2048,
+\ 'max_children': 2048,
 \ }
 
 " match pairs
 let delimitMate_matchpairs = "(:),[:],{:}"
 
 " autoclose jsx
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js,*.tsx"
 
 " }}}
 
