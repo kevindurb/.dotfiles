@@ -13,8 +13,6 @@ export FZF_DEFAULT_COMMAND='rg --files'
 export LESS="-SRXF"
 export HISTFILE=$HOME/.zhistory
 export WATSON_DIR=$HOME/.config/watson
-export ZSH_TMUX_AUTOSTART=true
-export ZSH_TMUX_AUTOQUIT=false
 # }}}
 
 # {{{ Plugins
