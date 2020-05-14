@@ -69,6 +69,13 @@ let g:coc_global_extensions = [
 \ 'coc-json',
 \ 'coc-tsserver',
 \ 'coc-phpls',
+\ 'coc-yank',
+\ 'coc-eslint',
+\ 'coc-tag',
+\ 'coc-html',
+\ 'coc-stylelint',
+\ 'coc-css',
+\ 'coc-rls',
 \]
 
 " ale settings
