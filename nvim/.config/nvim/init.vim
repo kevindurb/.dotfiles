@@ -64,6 +64,13 @@ call plug#end()
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'codedark'
 
+" coc settings
+let g:coc_global_extensions = [
+\ 'coc-json',
+\ 'coc-tsserver',
+\ 'coc-phpls',
+\]
+
 " ale settings
 let g:ale_linters = {
 \ 'graphql': ['gqlint'],
