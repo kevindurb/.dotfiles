@@ -12,6 +12,7 @@ link:
 	stow $(FLAGS) watson
 	stow $(FLAGS) razer
 	stow $(FLAGS) ssh
+	stow $(FLAGS) tmate
 
 vim_install_plugins:
 	vim +PlugInstall +qa
