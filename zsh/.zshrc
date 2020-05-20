@@ -76,3 +76,7 @@ bindkey "^[[A" history-beginning-search-backward-end
 # {{{ Add Starship Prompt
 eval "$(starship init zsh)"
 # }}}
+
+# Keep this here to prevent fzf from adding
+# unneeded line
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
