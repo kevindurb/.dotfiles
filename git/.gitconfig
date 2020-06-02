@@ -1,6 +1,6 @@
 [core]
   editor = nvim
-  excludesfile = /Users/kdurbin/.gitignore
+  excludesfile = ~/.gitignore
 [user]
   name = Kevin Durbin
   email = kevindurb@gmail.com
@@ -26,7 +26,7 @@
   process = git-lfs filter-process
   required = true
 [commit]
-  template = /Users/kdurbin/.stCommitMsg
+  template = ~/.stCommitMsg
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
