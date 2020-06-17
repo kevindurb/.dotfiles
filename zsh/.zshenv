@@ -1,5 +1,6 @@
 # vi: ft=zsh
 
+export DOTFILES=$HOME/.dotfiles
 export TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
