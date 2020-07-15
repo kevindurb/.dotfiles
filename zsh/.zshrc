@@ -67,3 +67,7 @@ eval "$(starship init zsh)"
 # Keep this here to prevent fzf from adding
 # unneeded line
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# begin ccbmenu completion
+. <(ccbmenu --completion)
+# end ccbmenu completion

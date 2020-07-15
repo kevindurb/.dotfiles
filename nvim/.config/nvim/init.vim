@@ -48,6 +48,7 @@ Plug 'tpope/vim-surround'               " surround with things
 Plug 'tpope/vim-unimpaired'             " mappings for things with '['
 Plug 'tpope/vim-vinegar'                " browse directories with -
 Plug 'tpope/vim-dispatch'               " add backgrounding
+Plug 'tpope/vim-eunuch'                 " helpful unixy commands
 Plug 'alvan/vim-closetag'               " autoclose tags
 Plug 'Raimondi/delimitMate'             " auto close everything else
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
