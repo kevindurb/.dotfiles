@@ -11,6 +11,8 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
+antigen bundle git-auto-fetch
+antigen bundle ssh-agent
 antigen bundle git
 antigen bundle tmux
 antigen bundle autojump
