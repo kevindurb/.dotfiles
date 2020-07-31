@@ -1,2 +1,5 @@
+!.*
 !.config
 nvim/.config/nvim/autoload
+fonts
+.git
