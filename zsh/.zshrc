@@ -40,7 +40,7 @@ if [ -x "$(command -v nvim)" ]; then
 fi
 
 alias c="clear"
-alias maketags="ctags --exclude=@.gitignore -R ."
+alias maketags="ctags -R ."
 alias weather="curl wttr.in"
 alias unmerged="git diff --name-only --diff-filter=U"
 alias ll="ls -lahF"
