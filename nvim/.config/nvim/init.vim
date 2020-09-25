@@ -54,6 +54,7 @@ Plug 'Raimondi/delimitMate'             " auto close everything else
 Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
 Plug 'vim-vdebug/vdebug'                " debug php
 Plug 'christoomey/vim-sort-motion'      " sort in directions with 'gs'
+Plug 'mbbill/undotree'                  " add an undo tree
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
