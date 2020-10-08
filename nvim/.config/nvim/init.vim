@@ -37,6 +37,7 @@ Plug 'reasonml-editor/vim-reason-plus'  " reasonml syntax
 Plug 'ElmCast/elm-vim'                  " elm lang
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'               " syntax and style checking
+Plug 'jxnblk/vim-mdx-js'
 " }}}
 
 " {{{ Plugins: Misc
@@ -58,6 +59,8 @@ Plug 'mbbill/undotree'                  " add an undo tree
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+Plug 'https://gitlab.com/tcucco/vim-quickfix'
 " }}}
 
 call plug#end()
@@ -95,7 +98,7 @@ let g:ale_php_phpcs_executable = $HOME.'/Development/churchcommunitybuilder/app/
 let g:ale_php_phpcs_use_global = 0
 let g:ale_fixers = {
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-\ 'javascript': ['eslint'],
+\ 'javascript': ['prettier', 'eslint'],
 \ 'rust': ['rustfmt'],
 \ 'go': ['gofmt'],
 \ 'typescript': ['prettier', 'eslint'],
