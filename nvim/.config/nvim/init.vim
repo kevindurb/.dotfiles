@@ -13,8 +13,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " {{{ Plugins: Appearence
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-sensible'               " a good place to start
-Plug 'tomasiser/vim-code-dark'          " theme
 Plug 'ryanoasis/vim-devicons'           " icons for things
 Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
 Plug 'vim-airline/vim-airline'          " statusline
@@ -68,7 +68,7 @@ call plug#end()
 " {{{ Plugin Settings
 " statusline settings
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'codedark'
+let g:airline_theme = 'dracula'
 
 " coc settings
 let g:coc_global_extensions = [
@@ -174,7 +174,7 @@ set mouse=a
 
 " {{{ Colorscheme
 set background=dark
-colorscheme codedark
+colorscheme dracula
 
 set t_ZH=[3m
 set t_ZR=[23m
