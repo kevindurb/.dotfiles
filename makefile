@@ -14,6 +14,7 @@ link:
 	stow $(FLAGS) ssh
 	stow $(FLAGS) tmate
 	stow $(FLAGS) kitty
+	stow $(FLAGS) prettier
 
 vim_install_plugins:
 	vim +PlugInstall +qa
