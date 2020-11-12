@@ -1,6 +1,8 @@
 tags
 nvim/.config/nvim/plugged
 nvim/.config/nvim/.netrwhist
+nvim/.vimbackup/
+!nvim/.vimbackup/.gitkeep
 watson/.config/watson/frames
 watson/.config/watson/frames.bak
 watson/.config/watson/state
