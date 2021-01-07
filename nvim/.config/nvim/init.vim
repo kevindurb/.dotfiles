@@ -41,21 +41,22 @@ Plug 'jxnblk/vim-mdx-js'
 " }}}
 
 " {{{ Plugins: Misc
-Plug 'kevindurb/vim-splits'             " split settings and keymaps
-Plug 'tpope/vim-commentary'             " sweet commenting
-Plug 'tpope/vim-fugitive'               " git commands in vim
-Plug 'tpope/vim-repeat'                 " repeating plugin commands
-Plug 'tpope/vim-surround'               " surround with things
-Plug 'tpope/vim-unimpaired'             " mappings for things with '['
-Plug 'tpope/vim-vinegar'                " browse directories with -
-Plug 'tpope/vim-dispatch'               " add backgrounding
-Plug 'tpope/vim-eunuch'                 " helpful unixy commands
-Plug 'alvan/vim-closetag'               " autoclose tags
-Plug 'Raimondi/delimitMate'             " auto close everything else
-Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
-Plug 'vim-vdebug/vdebug'                " debug php
-Plug 'christoomey/vim-sort-motion'      " sort in directions with 'gs'
-Plug 'mbbill/undotree'                  " add an undo tree
+Plug 'kevindurb/vim-splits'           " split settings and keymaps
+Plug 'tpope/vim-commentary'           " sweet commenting
+Plug 'tpope/vim-fugitive'             " git commands in vim
+Plug 'tpope/vim-repeat'               " repeating plugin commands
+Plug 'tpope/vim-surround'             " surround with things
+Plug 'tpope/vim-unimpaired'           " mappings for things with '['
+Plug 'tpope/vim-vinegar'              " browse directories with -
+Plug 'tpope/vim-dispatch'             " add backgrounding
+Plug 'tpope/vim-eunuch'               " helpful unixy commands
+Plug 'alvan/vim-closetag'             " autoclose tags
+Plug 'Raimondi/delimitMate'           " auto close everything else
+Plug 'christoomey/vim-tmux-navigator' " navigate panes in tmux && vim
+Plug 'vim-vdebug/vdebug'              " debug php
+Plug 'christoomey/vim-sort-motion'    " sort in directions with 'gs'
+Plug 'mbbill/undotree'                " add an undo tree
+Plug 'godlygeek/tabular'              " auto alignment
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
