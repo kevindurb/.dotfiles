@@ -105,6 +105,8 @@ let g:ale_fixers = {
 \ 'go': ['gofmt'],
 \ 'typescript': ['prettier', 'eslint'],
 \ 'typescript.tsx': ['prettier', 'eslint'],
+\ 'pug': ['prettier'],
+\ 'json': ['prettier']
 \}
 let g:ale_fix_on_save = 1
 
