@@ -46,6 +46,7 @@ alias unmerged="git diff --name-only --diff-filter=U"
 alias ll="ls -lahF"
 alias mysqlccb='mysql -u ccb_app -p ccb_dev -h 127.0.0.1'
 alias httpserver='python -m http.server 8080'
+alias dadjoke='curl -H "Accept: text/plain" https://icanhazdadjoke.com/'
 
 if ! type pbcopy > /dev/null; then
   alias pbcopy='xsel --clipboard --input'
