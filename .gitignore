@@ -3,6 +3,7 @@ nvim/.config/nvim/plugged
 nvim/.config/nvim/.netrwhist
 nvim/.vimbackup/
 !nvim/.vimbackup/.gitkeep
+nvim/.config/nvim/spell/*.spl
 watson/.config/watson/frames
 watson/.config/watson/frames.bak
 watson/.config/watson/state
