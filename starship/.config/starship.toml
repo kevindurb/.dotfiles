@@ -20,5 +20,5 @@ disabled=true
 show_always=true
 
 [directory.substitutions]
-"~/projects" = "🚧"
 "~" = "🏠"
+"~/projects" = "🚧"

@@ -9,3 +9,7 @@ watson/.config/watson/frames.bak
 watson/.config/watson/state
 watson/.config/watson/state.bak
 !.rgignore
+todotxt/.config/todotxt/done.txt
+todotxt/.config/todotxt/report.txt
+todotxt/.config/todotxt/todo.txt
+todotxt/.config/todotxt/todo.txt.bak

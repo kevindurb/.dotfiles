@@ -5,13 +5,9 @@ export TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR='nvim'
-export SKIP_RESOURCES=1
-export APP_NO_CHECKOUT_HOOK=1
 export FZF_DEFAULT_COMMAND='rg --files'
 export LESS="-SRXF"
 export HISTFILE=$HOME/.zhistory
-export WATSON_DIR=$HOME/.config/watson
-export DOCKER_SYNC=1
 
 TERMINFO=/etc/terminfo
 
