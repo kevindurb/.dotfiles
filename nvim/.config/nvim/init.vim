@@ -34,6 +34,7 @@ Plug 'mustache/vim-mustache-handlebars'         " mustache
 Plug 'digitaltoad/vim-pug'                      " pug
 Plug 'Glench/Vim-Jinja2-Syntax'                 " jinja
 Plug 'jxnblk/vim-mdx-js'                        " storybook mdx
+Plug 'ledger/vim-ledger'                        " ledger
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " vscode complete engine
 Plug 'dense-analysis/ale'                       " syntax and style checking
 " }}}
