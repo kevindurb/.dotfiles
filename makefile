@@ -16,6 +16,7 @@ link:
 	stow $(FLAGS) kitty
 	stow $(FLAGS) prettier
 	stow $(FLAGS) polybar
+	stow $(FLAGS) todotxt
 
 vim_install_plugins:
 	vim +PlugInstall +qa

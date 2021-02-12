@@ -22,40 +22,40 @@ Plug 'vim-airline/vim-airline-themes'   " statusline themes
 " }}}
 
 " {{{ Plugins: Syntax
-Plug 'pearofducks/ansible-vim'          " ansible syntax
-Plug 'cespare/vim-toml'                 " rust config files
-Plug 'rust-lang/rust.vim'               " rust syntax
-Plug 'pangloss/vim-javascript'          " js syntax
-Plug 'MaxMEllon/vim-jsx-pretty'         " jsx syntax
-Plug 'leafgarland/typescript-vim'       " typescript syntax
-Plug 'peitalin/vim-jsx-typescript'      " tsx
-Plug 'nikvdp/ejs-syntax'                " ejs syntax
-Plug 'mustache/vim-mustache-handlebars' " mustache templating syntax
-Plug 'digitaltoad/vim-pug'              " pug syntax
-Plug 'Glench/Vim-Jinja2-Syntax'         " jinja syntax
-Plug 'reasonml-editor/vim-reason-plus'  " reasonml syntax
-Plug 'ElmCast/elm-vim'                  " elm lang
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dense-analysis/ale'               " syntax and style checking
-Plug 'jxnblk/vim-mdx-js'
+Plug 'pearofducks/ansible-vim'                  " ansible
+Plug 'cespare/vim-toml'                         " toml
+Plug 'rust-lang/rust.vim'                       " rust
+Plug 'pangloss/vim-javascript'                  " javascript
+Plug 'MaxMEllon/vim-jsx-pretty'                 " jsx
+Plug 'leafgarland/typescript-vim'               " typescript
+Plug 'peitalin/vim-jsx-typescript'              " tsx
+Plug 'nikvdp/ejs-syntax'                        " ejs
+Plug 'mustache/vim-mustache-handlebars'         " mustache
+Plug 'digitaltoad/vim-pug'                      " pug
+Plug 'Glench/Vim-Jinja2-Syntax'                 " jinja
+Plug 'jxnblk/vim-mdx-js'                        " storybook mdx
+Plug 'ledger/vim-ledger'                        " ledger
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " vscode complete engine
+Plug 'dense-analysis/ale'                       " syntax and style checking
 " }}}
 
 " {{{ Plugins: Misc
-Plug 'kevindurb/vim-splits'             " split settings and keymaps
-Plug 'tpope/vim-commentary'             " sweet commenting
-Plug 'tpope/vim-fugitive'               " git commands in vim
-Plug 'tpope/vim-repeat'                 " repeating plugin commands
-Plug 'tpope/vim-surround'               " surround with things
-Plug 'tpope/vim-unimpaired'             " mappings for things with '['
-Plug 'tpope/vim-vinegar'                " browse directories with -
-Plug 'tpope/vim-dispatch'               " add backgrounding
-Plug 'tpope/vim-eunuch'                 " helpful unixy commands
-Plug 'alvan/vim-closetag'               " autoclose tags
-Plug 'Raimondi/delimitMate'             " auto close everything else
-Plug 'christoomey/vim-tmux-navigator'   " navigate panes in tmux && vim
-Plug 'vim-vdebug/vdebug'                " debug php
-Plug 'christoomey/vim-sort-motion'      " sort in directions with 'gs'
-Plug 'mbbill/undotree'                  " add an undo tree
+Plug 'kevindurb/vim-splits'           " split settings and keymaps
+Plug 'tpope/vim-commentary'           " sweet commenting
+Plug 'tpope/vim-fugitive'             " git commands in vim
+Plug 'tpope/vim-repeat'               " repeating plugin commands
+Plug 'tpope/vim-surround'             " surround with things
+Plug 'tpope/vim-unimpaired'           " mappings for things with '['
+Plug 'tpope/vim-vinegar'              " browse directories with -
+Plug 'tpope/vim-dispatch'             " add backgrounding
+Plug 'tpope/vim-eunuch'               " helpful unixy commands
+Plug 'alvan/vim-closetag'             " autoclose tags
+Plug 'Raimondi/delimitMate'           " auto close everything else
+Plug 'christoomey/vim-tmux-navigator' " navigate panes in tmux && vim
+Plug 'vim-vdebug/vdebug'              " debug php
+Plug 'christoomey/vim-sort-motion'    " sort in directions with 'gs'
+Plug 'mbbill/undotree'                " add an undo tree
+Plug 'godlygeek/tabular'              " auto alignment
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
