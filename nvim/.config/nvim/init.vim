@@ -103,6 +103,7 @@ let g:ale_fixers = {
 \ 'go': ['gofmt'],
 \ 'typescript': ['prettier', 'eslint'],
 \ 'typescript.tsx': ['prettier', 'eslint'],
+\ 'typescriptreact': ['prettier', 'eslint'],
 \ 'pug': ['prettier'],
 \ 'json': ['prettier']
 \}
@@ -133,7 +134,7 @@ let g:vdebug_features = {
 let delimitMate_matchpairs = "(:),[:],{:}"
 
 " autoclose jsx
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js,*.tsx"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js"
 
 " }}}
 
