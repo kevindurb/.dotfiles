@@ -15,7 +15,9 @@ link:
 	stow $(FLAGS) tmate
 	stow $(FLAGS) kitty
 	stow $(FLAGS) prettier
+	stow $(FLAGS) polybar
 	stow $(FLAGS) todotxt
+	stow $(FLAGS) i3
 
 vim_install_plugins:
 	vim +PlugInstall +qa
