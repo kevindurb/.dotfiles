@@ -8,6 +8,8 @@ export EDITOR='nvim'
 export FZF_DEFAULT_COMMAND='rg --files'
 export LESS="-SRXF"
 export HISTFILE=$HOME/.zhistory
+export DENO_INSTALL=$HOME/.deno
+export NPM_CONFIG_PREFIX=~/.npm-global
 
 TERMINFO=/etc/terminfo
 
@@ -29,9 +31,13 @@ CARGO_BIN=$HOME/.cargo/bin
 GO_BIN=$HOME/go/bin
 DOT_LOCAL_BIN=$HOME/.local/bin
 YARN_GLOBAL_BIN=$HOME/.config/yarn/global/node_modules/.bin
+DENO_PATH=$DENO_INSTALL/bin
+NPM_GLOBAL=$HOME/.npm-global/bin
 
 # path
 export PATH=\
+$NPM_GLOBAL:\
+$DENO_PATH:\
 $YARN_GLOBAL_BIN:\
 $DOT_LOCAL_BIN:\
 $LOCAL_NPM_BIN:\

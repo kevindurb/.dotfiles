@@ -48,6 +48,7 @@ alias mysqlccb='mysql -u ccb_app -p ccb_dev -h 127.0.0.1'
 alias httpserver='python -m http.server 8080'
 alias dadjoke='curl -H "Accept: text/plain" https://icanhazdadjoke.com/'
 alias t='todo.sh -d ~/.config/todotxt/todo.cfg'
+alias icat="kitty +kitten icat"
 
 if ! type pbcopy > /dev/null; then
   alias pbcopy='xsel --clipboard --input'

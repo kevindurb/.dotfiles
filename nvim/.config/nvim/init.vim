@@ -38,6 +38,7 @@ Plug 'ledger/vim-ledger'                        " ledger
 Plug 'dbeniamine/todo.txt-vim'                  " todo.txt
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " vscode complete engine
 Plug 'dense-analysis/ale'                       " syntax and style checking
+Plug 'hashivim/vim-terraform'                   " terraform
 " }}}
 
 " {{{ Plugins: Misc
@@ -107,6 +108,7 @@ let g:ale_fixers = {
 \ 'typescript.tsx': ['prettier', 'eslint'],
 \ 'typescriptreact': ['prettier', 'eslint'],
 \ 'pug': ['prettier'],
+\ 'yaml': ['prettier'],
 \ 'json': ['prettier']
 \}
 let g:ale_fix_on_save = 1
