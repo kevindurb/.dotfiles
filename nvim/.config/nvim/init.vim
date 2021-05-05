@@ -76,14 +76,15 @@ let g:airline_powerline_fonts = 1
 let g:coc_global_extensions = [
 \ 'coc-json',
 \ 'coc-tsserver',
-\ 'coc-phpls',
 \ 'coc-yank',
+\ 'coc-phpls',
 \ 'coc-eslint',
 \ 'coc-tag',
 \ 'coc-html',
 \ 'coc-stylelint',
 \ 'coc-css',
 \ 'coc-rls',
+\ 'coc-psalm',
 \]
 
 " ale settings
@@ -100,7 +101,6 @@ let g:ale_php_phpcs_executable = $HOME.'/Development/churchcommunitybuilder/app/
 let g:ale_php_phpcs_use_global = 0
 let g:ale_fixers = {
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-\ 'javascript': ['prettier', 'eslint'],
 \ 'rust': ['rustfmt'],
 \ 'go': ['gofmt'],
 \ 'typescript': ['prettier', 'eslint'],
@@ -116,7 +116,6 @@ let g:vdebug_options = {
 \ 'path_maps': {
 \   '/var/www/app': $HOME.'/Development/churchcommunitybuilder/app',
 \   '/var/www/am': $HOME.'/Development/churchcommunitybuilder/am',
-\   '/var/www/intranet-api': $HOME.'/Development/intranet-api/app',
 \ },
 \ 'port': 9000,
 \ 'server': '',
