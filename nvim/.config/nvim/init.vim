@@ -39,6 +39,7 @@ Plug 'dbeniamine/todo.txt-vim'                  " todo.txt
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " vscode complete engine
 Plug 'dense-analysis/ale'                       " syntax and style checking
 Plug 'hashivim/vim-terraform'                   " terraform
+Plug 'martinda/Jenkinsfile-vim-syntax'          " jenkinsfile
 " }}}
 
 " {{{ Plugins: Misc
@@ -112,26 +113,6 @@ let g:ale_fixers = {
 \ 'json': ['prettier']
 \}
 let g:ale_fix_on_save = 1
-
-" vdebug
-let g:vdebug_options = {
-\ 'path_maps': {
-\   '/var/www/app': $HOME.'/Development/churchcommunitybuilder/app',
-\   '/var/www/am': $HOME.'/Development/churchcommunitybuilder/am',
-\ },
-\ 'port': 9000,
-\ 'server': '',
-\ 'timeout': 20,
-\ 'ide_key': 'vagrant',
-\ 'break_on_open': 0,
-\ 'continuous_mode': 1,
-\ 'debug_file': '~/vdebug.log',
-\ 'debug_file_level': 2,
-\ 'watch_window_style': 'compact',
-\ }
-let g:vdebug_features = {
-\ 'max_children': 2048,
-\ }
 
 " match pairs
 let delimitMate_matchpairs = "(:),[:],{:}"

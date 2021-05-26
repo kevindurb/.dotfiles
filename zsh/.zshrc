@@ -20,7 +20,6 @@ antigen bundle fzf
 antigen bundle colored-man-pages
 antigen bundle chrissicool/zsh-256color
 antigen bundle supercrabtree/k
-antigen bundle lukechilds/zsh-nvm
 
 antigen apply
 # }}}
