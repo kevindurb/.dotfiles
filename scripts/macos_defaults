@@ -1,0 +1,8 @@
+#! /bin/bash
+
+# Set screenshot location to ~/Pictures/Screenshots
+mkdir -p ~/Pictures/Screenshots
+defaults write com.apple.screencapture location ~/Pictures/Screenshots/
+
+# Enable safari develop menu
+defaults write com.apple.safari IncludeDevelopMenu -bool true
