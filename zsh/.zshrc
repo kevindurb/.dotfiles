@@ -40,8 +40,8 @@ fi
 
 if [ -x "$(command -v exa)" ]; then
   alias ll="exa -lahF"
-elif; then
-  alias ll="ll -lahF"
+else
+  alias ll="ls -lahF"
 fi
 
 alias c="clear"
