@@ -39,9 +39,9 @@ if [ -x "$(command -v nvim)" ]; then
 fi
 
 if [ -x "$(command -v exa)" ]; then
-  alias ll="exa -lahF"
-elif; then
-  alias ll="ll -lahF"
+  alias ll="exa -laF"
+else
+  alias ll="ls -lahF"
 fi
 
 alias c="clear"
