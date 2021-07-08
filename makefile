@@ -18,12 +18,3 @@ link:
 	stow $(FLAGS) polybar
 	stow $(FLAGS) todotxt
 	stow $(FLAGS) i3
-
-vim_install_plugins:
-	vim +PlugInstall +qa
-
-install_starship:
-	curl -fsSL https://starship.rs/install.sh | FORCE=true bash
-
-install_antigen:
-	curl -L git.io/antigen > ~/antigen.zsh
