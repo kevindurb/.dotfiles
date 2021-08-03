@@ -10,8 +10,7 @@ sudo apt install \
   zsh \
   stow \
   ripgrep \
-  neovim \
-  fd
+  neovim
 
 # install antigen
 curl -L git.io/antigen > ~/antigen.zsh
