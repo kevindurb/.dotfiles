@@ -40,6 +40,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " vscode complete engine
 Plug 'dense-analysis/ale'                       " syntax and style checking
 Plug 'hashivim/vim-terraform'                   " terraform
 Plug 'martinda/Jenkinsfile-vim-syntax'          " jenkinsfile
+Plug 'sirtaj/vim-openscad'                      " openSCAD
 " }}}
 
 " {{{ Plugins: Misc
