@@ -19,6 +19,7 @@ Plug 'ryanoasis/vim-devicons'           " icons for things
 Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
 Plug 'vim-airline/vim-airline'          " statusline
 Plug 'vim-airline/vim-airline-themes'   " statusline themes
+
 " }}}
 
 " {{{ Plugins: Syntax
@@ -60,6 +61,7 @@ Plug 'vim-vdebug/vdebug'              " debug php
 Plug 'christoomey/vim-sort-motion'    " sort in directions with 'gs'
 Plug 'mbbill/undotree'                " add an undo tree
 Plug 'godlygeek/tabular'              " auto alignment
+Plug 'mhinz/vim-startify'             " cool start screen
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
