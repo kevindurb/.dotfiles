@@ -17,6 +17,7 @@ antigen bundle git
 antigen bundle tmux
 antigen bundle autojump
 antigen bundle fzf
+antigen bundle kubectl
 antigen bundle colored-man-pages
 antigen bundle chrissicool/zsh-256color
 antigen bundle supercrabtree/k
