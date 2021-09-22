@@ -45,3 +45,5 @@
 	rebase = false
 [init]
 	defaultBranch = main
+[cola]
+	spellcheck = false
