@@ -23,3 +23,8 @@ curl -fsSL https://starship.rs/install.sh | FORCE=true bash
 git clone git@github.com:kevindurb/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 make
+
+# install gh cli
+./scripts/install_gh_cli
+
+echo "run \"gh auth login\" to upload ssh key"
