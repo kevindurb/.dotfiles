@@ -10,6 +10,7 @@ sudo apt install \
   zsh \
   stow \
   ripgrep \
+  autojump \
   neovim
 
 # install antigen
