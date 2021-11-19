@@ -79,17 +79,18 @@ let g:airline_powerline_fonts = 1
 
 " coc settings
 let g:coc_global_extensions = [
+\ 'coc-css',
+\ 'coc-eslint',
+\ 'coc-go',
+\ 'coc-html',
 \ 'coc-json',
+\ 'coc-phpls',
+\ 'coc-psalm',
+\ 'coc-rls',
+\ 'coc-stylelint',
+\ 'coc-tag',
 \ 'coc-tsserver',
 \ 'coc-yank',
-\ 'coc-phpls',
-\ 'coc-eslint',
-\ 'coc-tag',
-\ 'coc-html',
-\ 'coc-stylelint',
-\ 'coc-css',
-\ 'coc-rls',
-\ 'coc-psalm',
 \]
 
 " ale settings
