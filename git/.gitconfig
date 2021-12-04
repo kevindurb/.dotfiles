@@ -27,7 +27,7 @@
   required = true
 [commit]
   template = ~/.stCommitMsg
-	gpgsign = true
+	; gpgsign = true
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
@@ -48,9 +48,9 @@
 	defaultBranch = main
 [cola]
 	spellcheck = false
-[gpg]
-	format = ssh
-[gpg "ssh"]
-	defaultKeyCommand = ssh-add -L
-[tag]
-	gpgsign = true
+; [gpg]
+; 	format = ssh
+; [gpg "ssh"]
+; 	defaultKeyCommand = ssh-add -L
+; [tag]
+; 	gpgsign = true
