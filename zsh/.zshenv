@@ -56,4 +56,3 @@ $ROOT_SBIN:\
 $X11_BIN:\
 $GIT_BIN:\
 $PATH
-source "$HOME/.cargo/env"
