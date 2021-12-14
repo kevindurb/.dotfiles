@@ -218,6 +218,12 @@ augroup XML
   autocmd FileType xml setlocal foldmethod=indent
 augroup END
 
+" folding json files
+augroup JSON
+  autocmd!
+  autocmd FileType json setlocal foldmethod=syntax
+augroup END
+
 " add syntax for rollback
 augroup rollback
   autocmd!
