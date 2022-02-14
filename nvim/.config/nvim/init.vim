@@ -167,8 +167,11 @@ set mouse=a
 set background=dark
 colorscheme dracula
 
+" italic comments
 set t_ZH=[3m
 set t_ZR=[23m
+highlight Comment cterm=italic gui=italic
+
 
 " Set a transparent background
 highlight Normal      ctermbg=NONE guibg=NONE

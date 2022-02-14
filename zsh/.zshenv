@@ -33,9 +33,11 @@ DOT_LOCAL_BIN=$HOME/.local/bin
 YARN_GLOBAL_BIN=$HOME/.config/yarn/global/node_modules/.bin
 DENO_PATH=$DENO_INSTALL/bin
 NPM_GLOBAL=$HOME/.npm-global/bin
+BREW=/opt/homebrew/bin
 
 # path
 export PATH=\
+$BREW:\
 $NPM_GLOBAL:\
 $DENO_PATH:\
 $YARN_GLOBAL_BIN:\
