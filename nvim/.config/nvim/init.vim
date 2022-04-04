@@ -93,6 +93,26 @@ let g:coc_global_extensions = [
 \ 'coc-yank',
 \]
 
+" vdebug
+let g:vdebug_options = {
+\ 'path_maps': {
+\   '/var/www/app': $HOME.'/Development/churchcommunitybuilder/app',
+\   '/var/www/am': $HOME.'/Development/churchcommunitybuilder/am',
+\ },
+\ 'port': 9000,
+\ 'server': '',
+\ 'timeout': 20,
+\ 'ide_key': 'vagrant',
+\ 'break_on_open': 0,
+\ 'continuous_mode': 1,
+\ 'debug_file': '~/vdebug.log',
+\ 'debug_file_level': 2,
+\ 'watch_window_style': 'compact',
+\ }
+let g:vdebug_features = {
+\ 'max_children': 2048,
+\ }
+
 " ale settings
 let g:ale_linters = {
 \ 'graphql': ['gqlint'],
