@@ -1,6 +1,18 @@
 # .dotfiles
+
 These are my **new** rc/config files for my development system.
 
-# Installation
-`curl -fsSL
-https://raw.githubusercontent.com/kevindurb/.dotfiles/master/install.sh | bash`
+# other tools
+
+- gh
+- bat
+- tmux
+- exa
+- prettyping
+- make
+- git
+- zsh
+- stow
+- ripgrep
+- autojump
+- neovim

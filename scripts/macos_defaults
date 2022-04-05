@@ -6,3 +6,12 @@ defaults write com.apple.screencapture location ~/Pictures/Screenshots/
 
 # Enable safari develop menu
 defaults write com.apple.safari IncludeDevelopMenu -bool true
+
+# disable hot corners
+defaults write com.apple.dock wvous-tl-corner -int 0
+defaults write com.apple.dock wvous-tr-corner -int 0
+defaults write com.apple.dock wvous-bl-corner -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
+
+# autohide dock
+defaults write com.apple.dock autohide 1
