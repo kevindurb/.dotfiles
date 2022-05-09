@@ -2,7 +2,7 @@
 
 These are my **new** rc/config files for my development system.
 
-# Favorite Tools
+## Favorite Tools
 - autojump
 - bat
 - entr
@@ -22,3 +22,14 @@ These are my **new** rc/config files for my development system.
 - tig
 - tmux
 - zsh
+- ncdu
+
+## Aliases
+- `cat` => `bat`
+- `ping` => `prettyping`
+- `du` => `ncdu`
+- `vim` => `nvim`
+- `ll` => `exa`
+- `c` => `clear`
+- `weather` => `curl wttr.in`
+- `dadjoke` => `curl icanhasdadjoke.com`
