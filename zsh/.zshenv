@@ -10,6 +10,7 @@ export LESS="-SRXF"
 export HISTFILE=$HOME/.zhistory
 export DENO_INSTALL=$HOME/.deno
 export NPM_CONFIG_PREFIX=~/.npm-global
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 TERMINFO=/etc/terminfo
 
