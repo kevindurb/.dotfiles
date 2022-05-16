@@ -79,6 +79,7 @@ let g:airline_powerline_fonts = 1
 
 " coc settings
 let g:coc_global_extensions = [
+\ 'coc-yaml',
 \ 'coc-css',
 \ 'coc-eslint',
 \ 'coc-go',
