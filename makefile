@@ -18,3 +18,4 @@ link:
 	stow $(FLAGS) polybar
 	stow $(FLAGS) todotxt
 	stow $(FLAGS) i3
+	stow $(FLAGS) gh
