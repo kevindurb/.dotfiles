@@ -2,6 +2,14 @@
 
 These are my **new** rc/config files for my development system.
 
+```mermaid
+  graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 ## Favorite Tools
 - autojump
 - bat
