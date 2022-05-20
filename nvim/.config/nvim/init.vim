@@ -42,7 +42,6 @@ Plug 'dense-analysis/ale'                       " syntax and style checking
 Plug 'hashivim/vim-terraform'                   " terraform
 Plug 'martinda/Jenkinsfile-vim-syntax'          " jenkinsfile
 Plug 'sirtaj/vim-openscad'                      " openSCAD
-Plug 'mracos/mermaid.vim'                       " mermaid diagrams
 " }}}
 
 " {{{ Plugins: Misc
