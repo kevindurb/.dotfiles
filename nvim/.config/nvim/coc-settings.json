@@ -2,9 +2,6 @@
   "diagnostic.displayByAle": true,
   "codeLens.enable": false,
   "yaml.schemaStore.enable": true,
-  "yaml.schemas": {
-    "kubernetes": ["manifests/**/*.yaml", "manifests/**/*.yml"]
-  },
   "languageserver": {
     "bash": {
       "command": "bash-language-server",
