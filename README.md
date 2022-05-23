@@ -10,9 +10,11 @@ These are my **new** rc/config files for my development system.
 - fzf
 - gh
 - git
+- jq
 - kitty
 - make
 - mycli
+- ncdu
 - neovim
 - pgcli
 - prettyping
@@ -22,7 +24,6 @@ These are my **new** rc/config files for my development system.
 - tig
 - tmux
 - zsh
-- ncdu
 
 ## Aliases
 - `cat` => `bat`
