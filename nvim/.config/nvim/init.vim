@@ -42,6 +42,7 @@ Plug 'dense-analysis/ale'                       " syntax and style checking
 Plug 'hashivim/vim-terraform'                   " terraform
 Plug 'martinda/Jenkinsfile-vim-syntax'          " jenkinsfile
 Plug 'sirtaj/vim-openscad'                      " openSCAD
+Plug 'vim-scripts/liquid.vim'                   " liquid
 " }}}
 
 " {{{ Plugins: Misc
@@ -61,7 +62,6 @@ Plug 'vim-vdebug/vdebug'              " debug php
 Plug 'christoomey/vim-sort-motion'    " sort in directions with 'gs'
 Plug 'mbbill/undotree'                " add an undo tree
 Plug 'godlygeek/tabular'              " auto alignment
-Plug 'mhinz/vim-startify'             " cool start screen
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'

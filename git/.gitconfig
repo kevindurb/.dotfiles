@@ -1,6 +1,8 @@
 [core]
   editor = nvim
   excludesfile = ~/.gitignore
+	fsmonitor = true
+	untrackedcache = true
 [user]
   name = Kevin Durbin
   email = kevindurb@gmail.com
