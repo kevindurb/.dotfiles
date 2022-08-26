@@ -14,6 +14,7 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle git-auto-fetch
 antigen bundle ssh-agent
 antigen bundle git
+antigen bundle nvm
 antigen bundle tmux
 antigen bundle autojump
 antigen bundle fzf
@@ -80,3 +81,7 @@ eval "$(starship init zsh)"
 # Keep this here to prevent fzf from adding
 # unneeded line
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
