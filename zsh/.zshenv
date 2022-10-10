@@ -30,6 +30,7 @@ USR_LOCAL_SBIN=/usr/local/sbin
 USR_SBIN=/usr/sbin
 X11_BIN=/opt/X11/bin
 YARN_GLOBAL_BIN=$HOME/.config/yarn/global/node_modules/.bin
+PODMAN_BIN=$HOME/.local/podman/bin
 
 # path
 export PATH=\
@@ -41,6 +42,7 @@ $LOCAL_NPM_BIN:\
 $CARGO_BIN:\
 $GO_BIN:\
 $NPM_BIN:\
+$PODMAN_BIN:\
 $USR_LOCAL_BIN:\
 $USR_LOCAL_SBIN:\
 $USR_BIN:\

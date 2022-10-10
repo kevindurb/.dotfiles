@@ -22,3 +22,6 @@ show_always=true
 [directory.substitutions]
 "~" = "🏠"
 "~/projects" = "🚧"
+
+[container]
+disabled=true
