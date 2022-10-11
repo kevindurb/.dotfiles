@@ -26,3 +26,6 @@ show_always=true
 [shell]
 powershell_indicator = "_"
 disabled=false
+
+[container]
+disabled=true
