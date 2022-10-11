@@ -2,7 +2,7 @@
 disabled=true
 
 [nodejs]
-disabled=true
+# disabled=true
 
 [ruby]
 disabled=true
@@ -14,7 +14,7 @@ format=""
 ssh_only=false
 
 [php]
-disabled=true
+# disabled=true
 
 [username]
 show_always=true
@@ -22,3 +22,7 @@ show_always=true
 [directory.substitutions]
 "~" = "🏠"
 "~/projects" = "🚧"
+
+[shell]
+powershell_indicator = "_"
+disabled=false
