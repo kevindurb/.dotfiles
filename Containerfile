@@ -29,5 +29,3 @@ RUN dnf install -y \
   vte-profile \
   wget \
   zsh
-
-ENV SHELL=/usr/bin/zsh
