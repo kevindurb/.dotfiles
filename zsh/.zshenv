@@ -11,6 +11,7 @@ export HISTFILE=$HOME/.zhistory
 export DENO_INSTALL=$HOME/.deno
 export HOMEBREW_NO_AUTO_UPDATE=1
 export ASPNETCORE_ENVIRONMENT="Development"
+export DISABLE_AUTO_TITLE="true"
 
 TERMINFO=/etc/terminfo
 
