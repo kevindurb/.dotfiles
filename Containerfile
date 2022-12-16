@@ -12,6 +12,7 @@ RUN dnf install -y \
   git \
   jq \
   less \
+  make \
   ncurses \
   neovim \
   passwd \
@@ -22,6 +23,7 @@ RUN dnf install -y \
   ripgrep \
   shadow-utils \
   starship \
+  stow \
   tig \
   tmux \
   util-linux \
