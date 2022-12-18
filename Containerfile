@@ -9,6 +9,7 @@ RUN dnf install -y \
   entr \
   exa \
   findutils \
+  gh \
   git \
   jq \
   less \
