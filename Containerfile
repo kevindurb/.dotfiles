@@ -22,7 +22,6 @@ RUN dnf install -y \
   python-pip \
   ripgrep \
   shadow-utils \
-  starship \
   stow \
   tig \
   tmux \
@@ -31,3 +30,9 @@ RUN dnf install -y \
   vte-profile \
   wget \
   zsh
+
+# Install starship prompt
+RUN curl -sS https://starship.rs/install.sh | sh -s -- --yes
+
+# Install nvm
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash

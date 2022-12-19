@@ -7,7 +7,7 @@ if ! command -v git || ! command -v make || ! command -v stow || ! command -v zs
 fi
 
 echo "Store current dir and move to home"
-pushd .
+pushd . &> /dev/null
 cd ~
 
 echo "Clone dotfiles repo"
@@ -21,4 +21,4 @@ echo "Setup zsh as default shell"
 chsh -s $(which zsh)
 
 echo "Return to where ever we were at the beginning"
-popd
+popd &> /dev/null

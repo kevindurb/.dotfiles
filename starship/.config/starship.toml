@@ -1,31 +1,27 @@
 [package]
-disabled=true
+disabled = true
 
 [nodejs]
-# disabled=true
 
 [ruby]
-disabled=true
+disabled = true
 
 [cmd_duration]
-format=""
+format = ''
 
 [hostname]
-ssh_only=false
+ssh_only = false
 
 [php]
-# disabled=true
 
 [username]
-show_always=true
-
+show_always = true
 [directory.substitutions]
-"~" = "🏠"
-"~/projects" = "🚧"
+"~" = '🏠'
+"~/projects" = '🚧'
 
 [shell]
-powershell_indicator = "_"
-disabled=false
+disabled = false
 
 [container]
-disabled=true
+disabled = true
