@@ -31,8 +31,11 @@ RUN dnf install -y \
   wget \
   zsh
 
+
 # Install starship prompt
-RUN curl -sS https://starship.rs/install.sh | sh -s -- --yes
+RUN wget -O /tmp/install_starship.sh https://starship.rs/install.sh
+RUN sh /tmp/install_starship.sh --yes
 
 # Install nvm
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+RUN wget -O /tmp/install_nvm.sh https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh
+RUN bash /tmp/install_nvm.sh
