@@ -12,7 +12,6 @@ These are my **new** rc/config files for my development system.
 - git
 - jq
 - kitty
-- make
 - mycli
 - ncdu
 - neovim

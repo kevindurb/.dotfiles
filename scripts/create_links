@@ -1,0 +1,22 @@
+#! /bin/bash
+
+DIRS=(
+  ctags
+  gh
+  git
+  kitty
+  mycli
+  nvim
+  prettier
+  razer
+  ssh
+  starship
+  tmate
+  tmux
+  zsh
+)
+
+for DIR in "${DIRS[@]}"; do
+  echo "linking $DIR"
+  stow -d ~/.dotfiles -t ~ "$DIR"
+done

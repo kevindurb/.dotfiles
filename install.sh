@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "Check for dependencies"
-if ! command -v git || ! command -v make || ! command -v stow || ! command -v zsh; then
+if ! command -v git || ! command -v stow || ! command -v zsh; then
   echo "Missing dependencies!"
   exit 1;
 fi
@@ -15,7 +15,7 @@ git clone git@github.com:kevindurb/.dotfiles.git
 cd ~/.dotfiles
 
 echo "Setup symlinks"
-make
+./scripts/create_links
 
 echo "Setup zsh as default shell"
 chsh -s $(which zsh)
