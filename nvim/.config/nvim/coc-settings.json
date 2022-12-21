@@ -1,4 +1,5 @@
 {
+  "suggest.noselect": true,
   "diagnostic.displayByAle": true,
   "codeLens.enable": false,
   "yaml.schemaStore.enable": true,
