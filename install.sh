@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "Check for dependencies"
-if ! command -v git || ! command -v stow || ! command -v zsh; then
+if ! command -v git || ! command -v rcup || ! command -v zsh; then
   echo "Missing dependencies!"
   exit 1;
 fi
@@ -14,8 +14,8 @@ echo "Clone dotfiles repo"
 git clone git@github.com:kevindurb/.dotfiles.git
 cd ~/.dotfiles
 
-echo "Setup symlinks"
-./scripts/create_links
+echo "Do first rcup to get .rcrc setup correctly"
+RCRC=~/.dotfiles/rcrc rcup
 
 echo "Setup zsh as default shell"
 chsh -s $(which zsh)

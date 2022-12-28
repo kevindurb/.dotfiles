@@ -20,9 +20,9 @@ RUN dnf install -y \
   prettyping \
   procps-ng \
   python-pip \
+  rcm \
   ripgrep \
   shadow-utils \
-  stow \
   tig \
   tmux \
   util-linux \
