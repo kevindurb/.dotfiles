@@ -8,7 +8,6 @@ DIRS=(
   mycli
   nvim
   prettier
-  razer
   ssh
   starship
   tmate
