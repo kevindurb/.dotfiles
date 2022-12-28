@@ -1,1 +1,1 @@
-EXCLUDES="antigen.zsh Containerfile README.md install.sh fonts scripts"
+EXCLUDES="Containerfile README.md fonts scripts"
