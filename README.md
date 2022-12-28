@@ -1,6 +1,6 @@
 # .dotfiles
 
-These are my **new** rc/config files for my development system.
+My personal dotfiles managed by (rcm)[https://github.com/thoughtbot/rcm]
 
 ## Favorite Tools
 - autojump
@@ -17,9 +17,9 @@ These are my **new** rc/config files for my development system.
 - neovim
 - pgcli
 - prettyping
+- rcm
 - ripgrep
 - starship
-- stow
 - tig
 - tmux
 - zsh
