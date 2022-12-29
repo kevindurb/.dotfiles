@@ -6,6 +6,7 @@ RUN dnf install -y \
   bc \
   curl \
   diffutils \
+  distrobox \
   entr \
   exa \
   findutils \
@@ -18,6 +19,7 @@ RUN dnf install -y \
   neovim \
   passwd \
   pinentry \
+  podman \
   prettyping \
   procps-ng \
   python-pip \
