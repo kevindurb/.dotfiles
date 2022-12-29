@@ -50,4 +50,8 @@ RUN wget -O /tmp/install_nvm.sh https://raw.githubusercontent.com/nvm-sh/nvm/v0.
 RUN bash /tmp/install_nvm.sh
 RUN source "${NVM_DIR}/nvm.sh" && nvm install lts/*
 
+# Preinstall host-spawn
+RUN wget -O /usr/bin/host-spawn "https://github.com/1player/host-spawn/releases/download/1.2.1/host-spawn-$(uname -m)"
+RUN chmod +x /usr/bin/host-spawn
+
 ENTRYPOINT ["/bin/zsh"]
