@@ -36,6 +36,7 @@ RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
 
+RUN pip install neovim
 
 # Install starship prompt
 RUN wget -O /tmp/install_starship.sh https://starship.rs/install.sh
