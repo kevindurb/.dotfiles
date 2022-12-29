@@ -48,19 +48,6 @@ ENV NVM_DIR=/opt/nvm
 RUN mkdir -p "${NVM_DIR}"
 RUN wget -O /tmp/install_nvm.sh https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh
 RUN bash /tmp/install_nvm.sh
-
-# Install antigen
-ENV ANTIGEN_DIR=/opt/antigen
-RUN mkdir -p "${ANTIGEN_DIR}"
-RUN wget -O "${ANTIGEN_DIR}/antigen.zsh" git.io/antigen
-
-# Copy in dotfiles
-COPY ./zshrc /etc/
-COPY ./zprofile /etc/
-COPY ./zshenv /etc/
-
-# make antigen plugins happy
-RUN mkdir -p /root/.ssh
-RUN touch /root/.zshrc
+RUN source "${NVM_DIR}/nvm.sh" && nvm install lts/*
 
 ENTRYPOINT ["/bin/zsh"]

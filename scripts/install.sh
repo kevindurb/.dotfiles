@@ -1,5 +1,7 @@
 #! /bin/bash
 
+set -e # exit if any of the commands fail
+
 echo "-- Check for dependencies"
 if ! command -v git || ! command -v rcup || ! command -v zsh; then
   echo "Missing dependencies!"
