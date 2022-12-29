@@ -26,6 +26,7 @@ RUN dnf install -y \
   ripgrep \
   shadow-utils \
   tig \
+  tldr \
   tmux \
   util-linux \
   util-linux-user \
