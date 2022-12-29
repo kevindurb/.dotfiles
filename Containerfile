@@ -6,7 +6,6 @@ RUN dnf install -y \
   bc \
   curl \
   diffutils \
-  distrobox \
   entr \
   exa \
   findutils \
@@ -19,7 +18,6 @@ RUN dnf install -y \
   neovim \
   passwd \
   pinentry \
-  podman \
   prettyping \
   procps-ng \
   python-pip \
@@ -33,6 +31,10 @@ RUN dnf install -y \
   vte-profile \
   wget \
   zsh
+
+RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
+RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
+RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
 
 
 # Install starship prompt
