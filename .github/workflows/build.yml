@@ -11,14 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Buildah Action
       id: build_image
       uses: redhat-actions/buildah-build@v2
       with:
         image: dev
-        archs: amd64, arm64
         tags: latest v1 ${{ github.sha }}
         containerfiles: |
           ./Containerfile
