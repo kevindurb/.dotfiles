@@ -1,6 +1,9 @@
 # .dotfiles
 
-These are my **new** rc/config files for my development system.
+My personal dotfiles managed by [rcm](https://github.com/thoughtbot/rcm)
+
+## Installing
+`curl -o- https://raw.githubusercontent.com/kevindurb/.dotfiles/main/scripts/install.sh | bash`
 
 ## Favorite Tools
 - autojump
@@ -12,15 +15,14 @@ These are my **new** rc/config files for my development system.
 - git
 - jq
 - kitty
-- make
 - mycli
 - ncdu
 - neovim
 - pgcli
 - prettyping
+- rcm
 - ripgrep
 - starship
-- stow
 - tig
 - tmux
 - zsh

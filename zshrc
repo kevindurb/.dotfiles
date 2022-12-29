@@ -3,7 +3,7 @@
 # vim: set fdm=marker expandtab ts=2 sw=2 ft=zsh:
 
 # {{{ Plugins
-source $HOME/.dotfiles/antigen.zsh
+source $HOME/antigen.zsh
 
 antigen use oh-my-zsh
 

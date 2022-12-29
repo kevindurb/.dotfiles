@@ -21,10 +21,9 @@ RUN dnf install -y \
   prettyping \
   procps-ng \
   python-pip \
+  rcm \
   ripgrep \
   shadow-utils \
-  starship \
-  stow \
   tig \
   tmux \
   util-linux \
@@ -32,3 +31,12 @@ RUN dnf install -y \
   vte-profile \
   wget \
   zsh
+
+
+# Install starship prompt
+RUN wget -O /tmp/install_starship.sh https://starship.rs/install.sh
+RUN sh /tmp/install_starship.sh --yes
+
+# Install nvm
+RUN wget -O /tmp/install_nvm.sh https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh
+RUN bash /tmp/install_nvm.sh
