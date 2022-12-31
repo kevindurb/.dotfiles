@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-toolbox:36
+FROM registry.fedoraproject.org/fedora-toolbox:37
 
 RUN dnf install -y \
   autojump-zsh \
@@ -9,6 +9,7 @@ RUN dnf install -y \
   entr \
   exa \
   findutils \
+  fzf \
   gh \
   git \
   httpie \
@@ -26,6 +27,7 @@ RUN dnf install -y \
   ripgrep \
   shadow-utils \
   tig \
+  tldr \
   tmux \
   util-linux \
   util-linux-user \
@@ -36,6 +38,7 @@ RUN dnf install -y \
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
+RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/flatpak
 
 RUN pip install neovim
 
@@ -44,5 +47,14 @@ RUN wget -O /tmp/install_starship.sh https://starship.rs/install.sh
 RUN sh /tmp/install_starship.sh --yes
 
 # Install nvm
+ENV NVM_DIR=/opt/nvm
+RUN mkdir -p "${NVM_DIR}"
 RUN wget -O /tmp/install_nvm.sh https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh
 RUN bash /tmp/install_nvm.sh
+RUN source "${NVM_DIR}/nvm.sh" && nvm install lts/*
+
+# Preinstall host-spawn
+RUN wget -O /usr/bin/host-spawn "https://github.com/1player/host-spawn/releases/download/1.2.1/host-spawn-$(uname -m)"
+RUN chmod +x /usr/bin/host-spawn
+
+ENTRYPOINT ["/bin/zsh"]

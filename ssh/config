@@ -1,29 +1,3 @@
-Host hoth
-  HostName 100.71.32.52
-
-Host corellia
-  HostName 100.110.154.75
-
-Host workmac
-  HostName 100.93.126.76
-  User kevindurbin
-
-Host homelab
-  HostName 100.86.149.128
-
-Host router
-  HostName 100.74.197.63
-
-Host backuppi
-  HostName 100.97.40.25
-
-Host octopi
-  HostName 100.108.185.4
-  User pi
-
-Host cumulus
-  HostName 100.93.137.38
-
 Host github.com
   HostName ssh.github.com
   Port 443
