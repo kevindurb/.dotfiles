@@ -11,6 +11,7 @@ RUN dnf install -y \
   findutils \
   gh \
   git \
+  httpie \
   jq \
   less \
   make \
