@@ -51,12 +51,9 @@ fi
 alias c="clear"
 alias maketags="ctags -R ."
 alias weather="curl wttr.in"
-alias unmerged="git diff --name-only --diff-filter=U"
 alias httpserver='python -m http.server 8080'
 alias dadjoke='curl -H "Accept: text/plain" https://icanhazdadjoke.com/'
-alias t='todo.sh -d ~/.config/todotxt/todo.cfg'
-alias icat="kitty +kitten icat"
-alias screensaver="pipes.sh -p 10 -f 60 -r 0 -R"
+alias wtf="clear;cal;date;echo;pwd;echo;git branch"
 
 if ! type pbcopy > /dev/null; then
   alias pbcopy='xsel --clipboard --input'

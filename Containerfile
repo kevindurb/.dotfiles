@@ -16,6 +16,7 @@ RUN dnf install -y \
   jq \
   less \
   make \
+  ncdu \
   ncurses \
   neovim \
   passwd \
