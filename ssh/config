@@ -2,6 +2,9 @@ Host github.com
   HostName ssh.github.com
   Port 443
 
+Host steamdeck
+  User deck
+
 Host *
   User kevindurb
 

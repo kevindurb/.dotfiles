@@ -1,6 +1,6 @@
 # .dotfiles
 
-My personal dotfiles managed by [rcm](https://github.com/thoughtbot/rcm)
+My dotfiles managed by [rcm](https://github.com/thoughtbot/rcm)
 
 ## Installing
 `curl -o- https://raw.githubusercontent.com/kevindurb/.dotfiles/main/scripts/install.sh | bash`
