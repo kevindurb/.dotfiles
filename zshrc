@@ -18,8 +18,14 @@ antigen bundle nvm
 antigen bundle tmux
 antigen bundle autojump
 antigen bundle fzf
+antigen bundle yarn
+antigen bundle npm
+antigen bundle brew
+antigen bundle docker
+antigen bundle docker-compose
 antigen bundle kubectl
 antigen bundle colored-man-pages
+antigen bundle command-not-found
 antigen bundle chrissicool/zsh-256color
 
 antigen apply
