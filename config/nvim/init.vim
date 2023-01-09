@@ -144,7 +144,7 @@ let g:ale_fix_on_save = 1
 let delimitMate_matchpairs = "(:),[:],{:}"
 
 " autoclose jsx
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.tsx,*.js"
 
 " }}}
 
