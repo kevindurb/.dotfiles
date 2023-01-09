@@ -16,7 +16,6 @@ export TERMINFO=/etc/terminfo
 # Package Manager Bins
 CARGO_BIN=$HOME/.cargo/bin
 GO_BIN=/usr/local/go/bin
-HOMEBREW_BIN=/opt/homebrew/bin
 
 # Custom Bins
 DOT_LOCAL_BIN=$HOME/.local/bin
@@ -43,5 +42,4 @@ $USR_LOCAL_SBIN:\
 $DOT_LOCAL_BIN:\
 $PODMAN_BIN:\
 $CARGO_BIN:\
-$GO_BIN:\
-$HOMEBREW_BIN
+$GO_BIN
