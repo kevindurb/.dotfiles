@@ -14,6 +14,7 @@ RUN dnf install -y \
   git \
   httpie \
   jq \
+  just \
   less \
   make \
   ncdu \
