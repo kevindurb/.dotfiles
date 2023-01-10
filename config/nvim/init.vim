@@ -52,6 +52,7 @@ Plug 'martinda/Jenkinsfile-vim-syntax'          " jenkinsfile
 Plug 'sirtaj/vim-openscad'                      " openSCAD
 Plug 'vim-scripts/liquid.vim'                   " liquid
 Plug 'jparise/vim-graphql'                      " graphql
+Plug 'NoahTheDuke/vim-just'                     " justfile
 " }}}
 
 " {{{ Plugins: Misc
