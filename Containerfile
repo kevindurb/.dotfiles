@@ -40,6 +40,9 @@ RUN dnf install -y \
   wget \
   zsh
 
+RUN dnf install -y \
+  https://github.com/watchexec/watchexec/releases/download/v1.21.0/watchexec-1.21.0-x86_64-unknown-linux-gnu.rpm
+
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
