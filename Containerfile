@@ -16,11 +16,14 @@ RUN dnf install -y \
   jq \
   just \
   less \
+  litecli \
   make \
+  mycli \
   ncdu \
   ncurses \
   neovim \
   passwd \
+  pgcli \
   pinentry \
   prettyping \
   procps-ng \
