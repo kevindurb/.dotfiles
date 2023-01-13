@@ -47,6 +47,7 @@ RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
 RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/flatpak
+RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/xdg-open
 
 RUN pip install neovim
 
