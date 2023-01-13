@@ -43,11 +43,11 @@ RUN dnf install -y \
 RUN dnf install -y \
   https://github.com/watchexec/watchexec/releases/download/v1.21.0/watchexec-1.21.0-x86_64-unknown-linux-gnu.rpm
 
-RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
-RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
-RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
-RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/flatpak
-RUN sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/xdg-open
+RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
+RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
+RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
+RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/flatpak
+RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/xdg-open
 
 RUN pip install neovim
 
