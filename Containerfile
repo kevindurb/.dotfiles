@@ -1,5 +1,7 @@
 FROM registry.fedoraproject.org/fedora-toolbox:37
 
+RUN dnf update -y
+
 RUN dnf install -y \
   autojump-zsh \
   bat \
