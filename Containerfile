@@ -22,6 +22,7 @@ RUN dnf install -y \
   ncdu \
   ncurses \
   neovim \
+  openssl \
   passwd \
   pgcli \
   pinentry \
