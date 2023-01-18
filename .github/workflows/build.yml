@@ -33,7 +33,7 @@ jobs:
     - name: Scan image
       uses: anchore/scan-action@v3
       with:
-        image: "dev:latest"
+        image: "localbuild/dev:latest"
         severity-cutoff: critical
 
     - name: Push To GHCR
