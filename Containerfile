@@ -23,6 +23,7 @@ RUN dnf install -y \
   mycli \
   ncdu \
   ncurses \
+  neofetch \
   neovim \
   openssl \
   passwd \
