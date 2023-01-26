@@ -72,6 +72,7 @@ Plug 'vim-vdebug/vdebug'              " debug php
 Plug 'christoomey/vim-sort-motion'    " sort in directions with 'gs'
 Plug 'mbbill/undotree'                " add an undo tree
 Plug 'godlygeek/tabular'              " auto alignment
+Plug 'folke/zen-mode.nvim'            " zen mode
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'

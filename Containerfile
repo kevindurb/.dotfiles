@@ -1,5 +1,7 @@
 FROM registry.fedoraproject.org/fedora-toolbox:37
 
+RUN dnf copr enable atim/lazygit -y
+
 RUN dnf update -y
 
 RUN dnf install -y \
@@ -17,6 +19,7 @@ RUN dnf install -y \
   httpie \
   jq \
   just \
+  lazygit \
   less \
   litecli \
   make \
