@@ -34,7 +34,7 @@ jobs:
       uses: anchore/scan-action@v3
       with:
         image: "podman:dev:latest"
-        # severity-cutoff: critical
+        severity-cutoff: critical
 
     - name: Push To GHCR
       uses: redhat-actions/push-to-registry@v2
