@@ -1,1 +1,2 @@
-EXCLUDES="Containerfile README.md fonts scripts"
+EXCLUDES="Containerfile README.md scripts"
+UNDOTTED="Brewfile"

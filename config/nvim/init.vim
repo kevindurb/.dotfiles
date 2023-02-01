@@ -53,6 +53,7 @@ Plug 'sirtaj/vim-openscad'                      " openSCAD
 Plug 'vim-scripts/liquid.vim'                   " liquid
 Plug 'jparise/vim-graphql'                      " graphql
 Plug 'NoahTheDuke/vim-just'                     " justfile
+Plug 'bfontaine/Brewfile.vim'                   " brewfile
 " }}}
 
 " {{{ Plugins: Misc
