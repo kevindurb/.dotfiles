@@ -2366,6 +2366,8 @@
             }
           }
         }
+      },
+      "xquartz": {
       }
     },
     "cask": {
@@ -2565,6 +2567,12 @@
         "version": "1.11.22",
         "options": {
           "full_name": "element"
+        }
+      },
+      "xquartz": {
+        "version": "2.8.5",
+        "options": {
+          "full_name": "xquartz"
         }
       }
     },

@@ -93,6 +93,7 @@ cask "todoist"
 cask "utm"
 cask "visual-studio-code"
 cask "vlc"
+cask "xquartz"
 cask "zoom"
 
 # MAS
