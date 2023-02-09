@@ -1,0 +1,17 @@
+name: Test MacOS
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0' # Every Sunday at Midnight
+
+jobs:
+  brew-install:
+    name: Brew Install Test
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install homebrew
+        run: 'NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
