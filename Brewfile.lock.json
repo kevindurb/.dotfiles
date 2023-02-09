@@ -12,6 +12,9 @@
       },
       "homebrew/services": {
         "revision": "3f97853a2c7bc27eba94076cb08ab93d90bc2211"
+      },
+      "homebrew/cask-versions": {
+        "revision": "62ad1aa692feac767213914af97932bb8347d154"
       }
     },
     "brew": {

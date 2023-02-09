@@ -3,7 +3,8 @@ default: up
 up:
   rcup
 
-brew-install:
+brew:
+  brew update
   brew bundle
 
 create:
