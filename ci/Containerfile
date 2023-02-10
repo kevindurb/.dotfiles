@@ -1,6 +1,8 @@
 FROM registry.fedoraproject.org/fedora-toolbox:37
 
-RUN dnf copr enable atim/lazygit -y
+ARG TARGETARCH
+
+COPY ./ci/files/kubernetes.$TARGETARCH.repo /etc/yum.repos.d/kubernetes.repo
 
 RUN dnf update -y
 
@@ -19,7 +21,7 @@ RUN dnf install -y \
   httpie \
   jq \
   just \
-  lazygit \
+  kubectl \
   less \
   litecli \
   make \
@@ -47,8 +49,8 @@ RUN dnf install -y \
   wget \
   zsh
 
-RUN dnf install -y \
-  https://github.com/watchexec/watchexec/releases/download/v1.21.0/watchexec-1.21.0-x86_64-unknown-linux-gnu.rpm
+RUN curl -Lo /usr/local/bin/kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-$TARGETARCH
+RUN chmod +x /usr/local/bin/kind
 
 RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
 RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker

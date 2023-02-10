@@ -24,10 +24,10 @@ jobs:
         with:
           image: dev
           layers: true
-          # platforms: linux/amd64, linux/arm64
+          platforms: linux/amd64, linux/arm64
           tags: latest v1 ${{ github.sha }}
           containerfiles: |
-            ./Containerfile
+            ./ci/Containerfile
 
       - name: Push To GHCR
         uses: redhat-actions/push-to-registry@v2

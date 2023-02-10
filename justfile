@@ -9,3 +9,6 @@ brew:
 
 create:
   distrobox create
+
+build:
+  podman build -f ./ci/Containerfile .
