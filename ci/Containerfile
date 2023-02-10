@@ -54,6 +54,7 @@ RUN dnf install -y \
 RUN wget -O /usr/local/bin/kind "https://kind.sigs.k8s.io/dl/${KIND_VERSION}/kind-linux-${TARGETARCH}"
 RUN chmod +x /usr/local/bin/kind
 
+RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/minikube
 RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
 RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
 RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
