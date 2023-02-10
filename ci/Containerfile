@@ -1,7 +1,6 @@
 FROM registry.fedoraproject.org/fedora-toolbox:37
 
 ARG TARGETARCH
-ARG KIND_VERSION="v0.17.0"
 ARG NVM_VERSION="v0.39.2"
 
 COPY ./ci/files/kubernetes.$TARGETARCH.repo /etc/yum.repos.d/kubernetes.repo
@@ -50,9 +49,6 @@ RUN dnf install -y \
   vte-profile \
   wget \
   zsh
-
-RUN wget -O /usr/local/bin/kind "https://kind.sigs.k8s.io/dl/${KIND_VERSION}/kind-linux-${TARGETARCH}"
-RUN chmod +x /usr/local/bin/kind
 
 RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/minikube
 RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
