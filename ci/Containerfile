@@ -1,6 +1,8 @@
 FROM registry.fedoraproject.org/fedora-toolbox:37
 
 ARG TARGETARCH
+ARG KIND_VERSION="v0.17.0"
+ARG NVM_VERSION="v0.39.2"
 
 COPY ./ci/files/kubernetes.$TARGETARCH.repo /etc/yum.repos.d/kubernetes.repo
 
@@ -49,7 +51,7 @@ RUN dnf install -y \
   wget \
   zsh
 
-RUN curl -Lo /usr/local/bin/kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-$TARGETARCH
+RUN wget -O /usr/local/bin/kind "https://kind.sigs.k8s.io/dl/${KIND_VERSION}/kind-linux-${TARGETARCH}"
 RUN chmod +x /usr/local/bin/kind
 
 RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
@@ -67,7 +69,7 @@ RUN sh /tmp/install_starship.sh --yes
 # Install nvm
 ENV NVM_DIR=/opt/nvm
 RUN mkdir -p "${NVM_DIR}"
-RUN wget -O /tmp/install_nvm.sh https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh
+RUN wget -O /tmp/install_nvm.sh "https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_VERSION}/install.sh"
 RUN bash /tmp/install_nvm.sh
 RUN source "${NVM_DIR}/nvm.sh" && nvm install lts/*
 
@@ -79,7 +81,6 @@ RUN source "${NVM_DIR}/nvm.sh" && npm install -g \
 RUN chmod -R a+rw /opt/nvm
 
 # Preinstall host-spawn
-RUN wget -O /usr/bin/host-spawn "https://github.com/1player/host-spawn/releases/download/1.2.1/host-spawn-$(uname -m)"
-RUN chmod +x /usr/bin/host-spawn
+COPY ./ci/files/host-spawn-$TARGETARCH /usr/bin/host-spawn
 
 ENTRYPOINT ["/bin/zsh"]
