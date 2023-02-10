@@ -1,2 +1,2 @@
-EXCLUDES="Containerfile README.md scripts"
+EXCLUDES="Containerfile README.md scripts ci"
 UNDOTTED="Brewfile Brewfile.lock.json"
