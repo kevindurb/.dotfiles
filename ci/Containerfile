@@ -81,4 +81,6 @@ RUN chmod -R a+rw /opt/nvm
 # Preinstall host-spawn
 COPY ./ci/files/host-spawn-$TARGETARCH /usr/bin/host-spawn
 
+ENV SHELL=/usr/bin/zsh
+
 ENTRYPOINT ["/bin/zsh"]
