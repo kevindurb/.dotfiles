@@ -22,6 +22,7 @@ antigen bundle yarn
 antigen bundle npm
 antigen bundle brew
 antigen bundle docker
+antigen bundle kubectl
 antigen bundle docker-compose
 antigen bundle kubectl
 antigen bundle colored-man-pages
