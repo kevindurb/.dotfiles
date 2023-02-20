@@ -1,3 +1,5 @@
+export RCRC := "~/.dotfiles/rcrc"
+
 default: up
 
 up:
