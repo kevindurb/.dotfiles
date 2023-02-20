@@ -2749,6 +2749,12 @@
         "options": {
           "full_name": "thunderbird-beta"
         }
+      },
+      "openscad-snapshot": {
+        "version": "2023.01.30",
+        "options": {
+          "full_name": "openscad-snapshot"
+        }
       }
     },
     "mas": {
@@ -2758,7 +2764,7 @@
       },
       "Bitwarden": {
         "id": "1352778147",
-        "version": "2023.1.1"
+        "version": "2023.2.0"
       }
     }
   },
