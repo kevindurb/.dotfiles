@@ -3,6 +3,9 @@
   "diagnostic.displayByAle": true,
   "codeLens.enable": false,
   "yaml.schemaStore.enable": true,
+  "yaml.schemas": {
+    "Kubernetes": "manifests/**/*.yml"
+  },
   "languageserver": {
     "bash": {
       "command": "bash-language-server",
@@ -17,17 +20,12 @@
     },
     "sql": {
       "command": "sql-language-server",
-      "args" : ["up", "--method", "stdio"],
+      "args": ["up", "--method", "stdio"],
       "filetypes": ["sql", "mysql"]
     },
     "ccls": {
       "command": "ccls",
-      "filetypes": [
-        "c",
-        "cpp",
-        "objc",
-        "objcpp"
-      ],
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
       "rootPatterns": [
         ".ccls",
         "compile_commands.json",

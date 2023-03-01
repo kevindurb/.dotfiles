@@ -48,6 +48,9 @@ fi
 if [ -x "$(command -v nvim)" ]; then
   alias vim="nvim"
 fi
+if [ -x "$(command -v kubecolor)" ]; then
+  alias kubectl="kubecolor"
+fi
 
 if [ -x "$(command -v exa)" ]; then
   alias ll="exa -laF"
