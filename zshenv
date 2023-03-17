@@ -33,6 +33,7 @@ USR_LOCAL_SBIN=/usr/local/sbin
 
 # path
 export PATH=\
+$BREW_BIN:\
 $PATH:\
 $ROOT_BIN:\
 $ROOT_SBIN:\
@@ -43,5 +44,4 @@ $USR_LOCAL_SBIN:\
 $DOT_LOCAL_BIN:\
 $PODMAN_BIN:\
 $CARGO_BIN:\
-$GO_BIN:\
-$BREW_BIN
+$GO_BIN
