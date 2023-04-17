@@ -27,6 +27,7 @@ Plug 'ryanoasis/vim-devicons'           " icons for things
 Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
 Plug 'vim-airline/vim-airline'          " statusline
 Plug 'vim-airline/vim-airline-themes'   " statusline themes
+Plug 'chrisbra/Colorizer'
 
 " }}}
 
@@ -84,6 +85,9 @@ Plug 'https://gitlab.com/tcucco/vim-quickfix'
 call plug#end()
 
 " {{{ Plugin Settings
+" Colorizer
+let g:colorizer_auto_filetype='css,html,typescript,openscad'
+
 " statusline settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'dracula'
