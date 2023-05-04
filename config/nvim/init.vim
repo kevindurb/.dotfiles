@@ -33,6 +33,8 @@ Plug 'chrisbra/Colorizer'
 " }}}
 
 " {{{ Plugins: Syntax
+" Plug 'sheerun/vim-polyglot'
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'pearofducks/ansible-vim'                  " ansible
 Plug 'cespare/vim-toml'                         " toml
 Plug 'rust-lang/rust.vim'                       " rust
@@ -47,8 +49,6 @@ Plug 'Glench/Vim-Jinja2-Syntax'                 " jinja
 Plug 'jxnblk/vim-mdx-js'                        " storybook mdx
 Plug 'ledger/vim-ledger'                        " ledger
 Plug 'dbeniamine/todo.txt-vim'                  " todo.txt
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " vscode complete engine
-Plug 'dense-analysis/ale'                       " syntax and style checking
 Plug 'hashivim/vim-terraform'                   " terraform
 Plug 'martinda/Jenkinsfile-vim-syntax'          " jenkinsfile
 Plug 'sirtaj/vim-openscad'                      " openSCAD
@@ -76,6 +76,8 @@ Plug 'christoomey/vim-sort-motion'    " sort in directions with 'gs'
 Plug 'mbbill/undotree'                " add an undo tree
 Plug 'godlygeek/tabular'              " auto alignment
 Plug 'folke/zen-mode.nvim'            " zen mode
+Plug 'dense-analysis/ale'                       " syntax and style checking
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " vscode complete engine
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
