@@ -151,7 +151,8 @@ let g:ale_fixers = {
 \ 'typescriptreact': ['prettier', 'eslint'],
 \ 'pug': ['prettier'],
 \ 'yaml': ['prettier'],
-\ 'json': ['prettier']
+\ 'json': ['prettier'],
+\ 'html': ['prettier']
 \}
 let g:ale_fix_on_save = 1
 
