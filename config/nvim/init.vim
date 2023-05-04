@@ -22,6 +22,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " {{{ Plugins: Appearence
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'tpope/vim-sensible'               " a good place to start
 Plug 'ryanoasis/vim-devicons'           " icons for things
 Plug 'kevindurb/vim-whiteout'           " show trailing whitespace
@@ -90,7 +91,7 @@ let g:colorizer_auto_filetype='css,html,typescript,openscad'
 
 " statusline settings
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'dracula'
+let g:airline_theme = 'catppuccin'
 let g:airline_powerline_fonts = 1
 
 " coc settings
@@ -203,7 +204,7 @@ set mouse=a
 
 " {{{ Colorscheme
 set background=dark
-colorscheme dracula
+colorscheme catppuccin
 
 " italic comments
 set t_ZH=[3m
