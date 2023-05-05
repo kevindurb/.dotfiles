@@ -21,7 +21,6 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " {{{ Plugins: Appearence
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'tpope/vim-sensible'               " a good place to start
 Plug 'ryanoasis/vim-devicons'           " icons for things
