@@ -1,0 +1,37 @@
+-- vim: set fdm=marker expandtab ts=2 sw=2:
+
+vim.g.mapleader=','
+vim.g.encoding = 'utf-8'
+vim.g.title = true                       -- set title in terminal
+vim.g.wildmode = 'longest:list,full'  -- make command completion more like zsh
+vim.g.autowrite = true                   -- save when you change buffers
+vim.g.clipboard='unnamedplus'       -- copy and paste in system clipboard
+vim.g.showtabline=2               -- always show the tabline
+vim.g.nowrap = true                      -- NO WRAPPING LINES
+vim.g.smartindent = true                 -- auto indents c-like blocks
+vim.g.shiftround = true                  -- round indent to shiftwidth
+vim.g.cursorline = true                  -- turn on cursor horizontal line
+vim.g.cursorcolumn = true                -- turn on cursor vertical line
+vim.g.colorcolumn=80              -- color line at 80 columns
+vim.g.number = true                      -- but still show current line number
+vim.g.relativenumber = true              -- show relative line numbers
+vim.g.showmatch = true                   -- highlight matching brace
+vim.g.ignorecase = true                  -- ignore search case
+vim.g.smartcase = true                   -- dont ignore case once you use a capital
+vim.g.hlsearch = true                    -- highlight all search matches
+vim.g.undolevels=1000             -- holds last 1000 undos
+-- vim.g.backupdir=$HOME/.vimbackup  -- backup files in one place
+-- vim.g.directory=$HOME/.vimbackup  -- swp files in one place
+vim.g.path='.,src,**'               -- gf search current, src and recurrsive dir
+vim.g.suffixesadd='.js,/index.js'   -- gf try adding .js to files
+vim.g.lazyredraw=true                  -- dont redraw during macros
+vim.g.regexpengine=1              -- make syntax faster
+-- vim.g.noeb vb t_vb=               -- turn off the most annoying thing ever
+-- vim.g.undodir=$HOME/.vimundodir   -- store undo history in a directory
+vim.g.undofile=true                    -- so if i close and reopen a file i can still undo
+vim.g.termguicolors=true               -- better colors??
+vim.g.signcolumn='yes'              -- always show the gutter
+vim.g.cmdheight=2
+vim.g.updatetime=300
+-- vim.g.shortmess+='c'
+vim.g.mouse='a'
