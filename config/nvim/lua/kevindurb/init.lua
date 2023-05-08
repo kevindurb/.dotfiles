@@ -1,5 +1,6 @@
 require('kevindurb.colorscheme')
 require('kevindurb.filetype')
+require('kevindurb.keymaps')
 
 vim.g.mapleader = ','
 vim.opt.encoding = 'utf-8'
