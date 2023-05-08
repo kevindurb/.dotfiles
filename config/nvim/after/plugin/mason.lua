@@ -14,7 +14,3 @@ require("lspconfig").jsonls.setup {}
 require("lspconfig").intelephense.setup {}
 require("lspconfig").sqlls.setup {}
 require("lspconfig").yamlls.setup {}
-
-require("mason-null-ls").setup({
-  automatic_setup = true,
-})

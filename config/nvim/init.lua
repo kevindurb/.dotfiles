@@ -44,14 +44,10 @@ return require('packer').startup(function(use)
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
-    "jose-elias-alvarez/null-ls.nvim",
-    "jay-babu/mason-null-ls.nvim"
   }
 
-  use {
-    "folke/trouble.nvim",
-    requires = "nvim-tree/nvim-web-devicons",
-  }
+  use "mhartington/formatter.nvim"
+  use "nvim-tree/nvim-web-devicons"
 
   if packer_bootstrap then
     require('packer').sync()
