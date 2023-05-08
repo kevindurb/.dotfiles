@@ -1,4 +1,5 @@
--- vim: set fdm=marker expandtab ts=2 sw=2:
+require('kevindurb.colorscheme')
+require('kevindurb.filetype')
 
 vim.g.mapleader = ','
 vim.opt.encoding = 'utf-8'
@@ -38,3 +39,23 @@ vim.opt.mouse = 'a'
 vim.g.eb = false
 vim.g.vb = false
 vim.g.t_vb = false
+
+-- if you have rg use rg for vimgrep
+vim.cmd([[
+  if executable('rg')
+    set grepprg=rg\ --vimgrep
+  endif
+
+  " Rg command for searching in vim
+  command! -nargs=+ -complete=file -bar Rg silent! grep! <args>|cwindow|redraw!
+
+  " Auto open quickfix after search
+  augroup quickfix
+      autocmd!
+      autocmd QuickFixCmdPost [^l]* cwindow
+      autocmd QuickFixCmdPost l* lwindow
+  augroup END
+
+  " K keymap for searching word under cursor
+  nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+]])

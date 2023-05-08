@@ -1,4 +1,3 @@
--- vim: set fdm=marker expandtab ts=2 sw=2:
 require('kevindurb')
 require('packer-install')
 
@@ -27,6 +26,11 @@ return require('packer').startup(function(use)
   use 'christoomey/vim-sort-motion'      -- sort in directions with 'gs'
   use 'mbbill/undotree'                  -- add an undo tree
   use 'godlygeek/tabular'                -- auto alignment
+
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
