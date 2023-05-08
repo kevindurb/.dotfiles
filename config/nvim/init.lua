@@ -44,11 +44,15 @@ return require('packer').startup(function(use)
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
+    "jose-elias-alvarez/null-ls.nvim",
+    "jay-babu/mason-null-ls.nvim"
   }
 
+  use {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons",
+  }
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
   end
