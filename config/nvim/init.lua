@@ -51,6 +51,10 @@ return require('packer').startup(function(use)
   use "mhartington/formatter.nvim"
   use "nvim-tree/nvim-web-devicons"
 
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/nvim-cmp'
+
   if packer_bootstrap then
     require('packer').sync()
   end
