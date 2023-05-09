@@ -55,6 +55,8 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/nvim-cmp'
 
+  use "b0o/schemastore.nvim"
+
   if packer_bootstrap then
     require('packer').sync()
   end
