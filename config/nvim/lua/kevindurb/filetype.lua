@@ -25,9 +25,14 @@ vim.cmd([[
   augroup END
 
   " add syntax for babelrc
-  augroup rollback
+  augroup babelrc
     autocmd!
     autocmd BufNewFile,BufRead .babelrc set syntax=json
+  augroup END
+
+  augroup jenkinsfile
+    autocmd!
+    autocmd BufRead,BufNewFile Jenkinsfile set filetype=groovy
   augroup END
 
   set tabstop=2                   " columns per tab
