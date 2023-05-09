@@ -1,3 +1,12 @@
+require('telescope').setup({
+  defaults = {
+    mappings = {
+      i = {
+        ["<Esc>"] = require('telescope.actions').close,
+      },
+    }
+  },
+})
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
