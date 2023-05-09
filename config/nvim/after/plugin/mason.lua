@@ -1,7 +1,10 @@
 require("mason").setup()
 require("mason-lspconfig").setup()
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 require("lspconfig").lua_ls.setup {
+  capabilities = capabilities,
   settings = {
     Lua = {
       diagnostics = {
@@ -10,15 +13,15 @@ require("lspconfig").lua_ls.setup {
     }
   }
 }
-require("lspconfig").tsserver.setup {}
-require("lspconfig").ansiblels.setup {}
-require("lspconfig").bashls.setup {}
-require("lspconfig").cssls.setup {}
-require("lspconfig").dockerls.setup {}
-require("lspconfig").eslint.setup {}
-require("lspconfig").graphql.setup {}
-require("lspconfig").html.setup {}
-require("lspconfig").jsonls.setup {}
-require("lspconfig").intelephense.setup {}
-require("lspconfig").sqlls.setup {}
-require("lspconfig").yamlls.setup {}
+require("lspconfig").tsserver.setup { capabilities = capabilities }
+require("lspconfig").ansiblels.setup { capabilities = capabilities }
+require("lspconfig").bashls.setup { capabilities = capabilities }
+require("lspconfig").cssls.setup { capabilities = capabilities }
+require("lspconfig").dockerls.setup { capabilities = capabilities }
+require("lspconfig").eslint.setup { capabilities = capabilities }
+require("lspconfig").graphql.setup { capabilities = capabilities }
+require("lspconfig").html.setup { capabilities = capabilities }
+require("lspconfig").jsonls.setup { capabilities = capabilities }
+require("lspconfig").intelephense.setup { capabilities = capabilities }
+require("lspconfig").sqlls.setup { capabilities = capabilities }
+require("lspconfig").yamlls.setup { capabilities = capabilities }
