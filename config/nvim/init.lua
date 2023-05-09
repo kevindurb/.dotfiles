@@ -1,5 +1,5 @@
 require('kevindurb')
-require('packer-install')
+local packer_bootstrap = require('packer-install').ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
