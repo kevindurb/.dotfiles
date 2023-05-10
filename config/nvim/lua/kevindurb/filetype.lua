@@ -35,13 +35,6 @@ vim.cmd([[
     autocmd BufRead,BufNewFile Jenkinsfile set filetype=groovy
   augroup END
 
-  set tabstop=2                   " columns per tab
-  set shiftwidth=2                " spaces per indent
-  set softtabstop=2               " spaces per tab
-  set expandtab                   " use soft tabs
-  set smartindent                 " auto indents c-like blocks
-  set shiftround                  " round indent to shiftwidth
-
   augroup language_tabbing
     autocmd!
     autocmd Filetype php        setlocal ts=4 sts=4 sw=4 noexpandtab
