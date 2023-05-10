@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Catppuccin-Macchiato
-Font=Hack NF,10,-1,5,50,0,0,0,0,0
+Font=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 UseFontLineChararacters=false
 
 [General]
