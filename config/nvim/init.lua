@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
   use 'godlygeek/tabular'              -- auto alignment
   use 'NvChad/nvim-colorizer.lua'      -- colorize css colors
   use 'nvim-tree/nvim-tree.lua'        -- file explorer
+  use 'onsails/lspkind.nvim'           -- Vscode style icons
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.x',
