@@ -8,7 +8,6 @@ return require('packer').startup(function(use)
   use 'kevindurb/vim-whiteout'         -- show trailing whitespace
   use 'vim-airline/vim-airline'        -- statusline
   use 'vim-airline/vim-airline-themes' -- statusline themes
-  use 'chrisbra/Colorizer'             -- colorize css colors
   use 'kevindurb/vim-splits'           -- split settings and keymaps
   use 'tpope/vim-commentary'           -- sweet commenting
   use 'tpope/vim-fugitive'             -- git commands in vim
@@ -20,7 +19,8 @@ return require('packer').startup(function(use)
   use 'Raimondi/delimitMate'           -- auto close everything else
   use 'christoomey/vim-tmux-navigator' -- navigate panes in tmux && vim
   use 'godlygeek/tabular'              -- auto alignment
-  use 'stevearc/oil.nvim'              -- Browse directories with -
+  use 'NvChad/nvim-colorizer.lua'      -- colorize css colors
+  use 'nvim-tree/nvim-tree.lua'        -- file explorer
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.x',
