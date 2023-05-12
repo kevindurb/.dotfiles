@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
   use 'vim-airline/vim-airline'        -- statusline
   use 'vim-airline/vim-airline-themes' -- statusline themes
   use 'kevindurb/vim-splits'           -- split settings and keymaps
+  use 'tpope/vim-vinegar'              -- best navigation with -
   use 'tpope/vim-commentary'           -- sweet commenting
   use 'tpope/vim-fugitive'             -- git commands in vim
   use 'tpope/vim-repeat'               -- repeating plugin commands
@@ -20,7 +21,6 @@ return require('packer').startup(function(use)
   use 'christoomey/vim-tmux-navigator' -- navigate panes in tmux && vim
   use 'godlygeek/tabular'              -- auto alignment
   use 'NvChad/nvim-colorizer.lua'      -- colorize css colors
-  use 'nvim-tree/nvim-tree.lua'        -- file explorer
   use 'onsails/lspkind.nvim'           -- Vscode style icons
 
   use {
