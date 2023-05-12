@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
   use 'NvChad/nvim-colorizer.lua'      -- colorize css colors
   use 'onsails/lspkind.nvim'           -- Vscode style icons
   use 'L3MON4D3/LuaSnip'               -- snippet engine
+  use 'NoahTheDuke/vim-just'           -- justfile
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.x',
