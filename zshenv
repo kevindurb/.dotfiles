@@ -1,7 +1,8 @@
 # vi: ft=zsh
 
 export DOTFILES=$HOME/.dotfiles
-export TERM=screen-256color
+export TERM=tmux-256color
+export SHELL=$(which zsh)
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR='nvim'
