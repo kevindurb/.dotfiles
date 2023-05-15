@@ -1,7 +1,7 @@
 # vi: ft=zsh
 
 export DOTFILES=$HOME/.dotfiles
-export TERM=tmux-256color
+export TERM=xterm-256color
 export SHELL=$(which zsh)
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
@@ -12,7 +12,7 @@ export HISTFILE=$HOME/.zhistory
 export HOMEBREW_NO_AUTO_UPDATE=1
 export ASPNETCORE_ENVIRONMENT="Development"
 export DISABLE_AUTO_TITLE="true"
-export TERMINFO=/etc/terminfo
+export TERMINFO=/usr/share/terminfo
 
 # Package Manager Bins
 CARGO_BIN=$HOME/.cargo/bin
@@ -30,7 +30,6 @@ USR_BIN=/usr/bin
 USR_SBIN=/usr/sbin
 USR_LOCAL_BIN=/usr/local/bin
 USR_LOCAL_SBIN=/usr/local/sbin
-# X11_BIN=/opt/X11/bin Do I need this?
 
 # path
 export PATH=\
