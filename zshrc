@@ -49,7 +49,9 @@ if [ -x "$(command -v nvim)" ]; then
   alias vim="nvim"
 fi
 if [ -x "$(command -v kubecolor)" ]; then
+  source <(kubectl completion zsh)
   alias kubectl="kubecolor"
+  compdef kubecolor=kubectl
 fi
 
 if [ -x "$(command -v exa)" ]; then
