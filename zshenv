@@ -1,7 +1,6 @@
 # vi: ft=zsh
 
 export DOTFILES=$HOME/.dotfiles
-export TERM=xterm-256color
 export SHELL=$(which zsh)
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
@@ -12,7 +11,6 @@ export HISTFILE=$HOME/.zhistory
 export HOMEBREW_NO_AUTO_UPDATE=1
 export ASPNETCORE_ENVIRONMENT="Development"
 export DISABLE_AUTO_TITLE="true"
-export TERMINFO=/usr/share/terminfo
 
 # Package Manager Bins
 CARGO_BIN=$HOME/.cargo/bin
