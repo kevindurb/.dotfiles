@@ -21,3 +21,13 @@ parser_config.groovy = {
     requires_generate_from_grammar = false, -- if folder contains pre-generated src/parser.c
   }
 }
+
+parser_config.openscad = {
+  install_info = {
+    url = "https://github.com/bollian/tree-sitter-openscad",
+    files = {"src/parser.c"},
+    -- optional entries:
+    generate_requires_npm = false, -- if stand-alone parser without npm dependencies
+    requires_generate_from_grammar = false, -- if folder contains pre-generated src/parser.c
+  }
+}

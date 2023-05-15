@@ -24,6 +24,7 @@ return require('packer').startup(function(use)
   use 'onsails/lspkind.nvim'           -- Vscode style icons
   use 'L3MON4D3/LuaSnip'               -- snippet engine
   use 'NoahTheDuke/vim-just'           -- justfile
+  use 'lewis6991/gitsigns.nvim'
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.x',
@@ -53,6 +54,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use "b0o/schemastore.nvim"
   use 'folke/twilight.nvim'
+  use "folke/zen-mode.nvim"
   use { 'utilyre/barbecue.nvim', requires = { 'SmiteshP/nvim-navic' } }
 
   if packer_bootstrap then
