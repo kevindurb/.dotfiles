@@ -1,5 +1,9 @@
 require('catppuccin').setup({
-  flavor = 'macchiato'
+  background = { -- :h background
+    light = "latte",
+    dark = "macchiato",
+  },
 })
 
 vim.cmd.colorscheme 'catppuccin'
+vim.o.background = 'light'
