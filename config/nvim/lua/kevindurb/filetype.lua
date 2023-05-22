@@ -24,6 +24,12 @@ vim.cmd([[
     autocmd BufNewFile,BufRead *.rollback set syntax=sql
   augroup END
 
+  " add syntax for dbt
+  augroup dbt
+    autocmd!
+    autocmd BufNewFile,BufRead *.sql set ft=jinja.sql
+  augroup END
+
   " add syntax for babelrc
   augroup babelrc
     autocmd!
