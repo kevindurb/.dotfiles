@@ -6,8 +6,6 @@ return require('packer').startup(function(use)
   use { 'catppuccin/nvim', as = 'catppuccin' }
   use 'tpope/vim-sensible'             -- a good place to start
   use 'kevindurb/vim-whiteout'         -- show trailing whitespace
-  use 'vim-airline/vim-airline'        -- statusline
-  use 'vim-airline/vim-airline-themes' -- statusline themes
   use 'kevindurb/vim-splits'           -- split settings and keymaps
   use 'tpope/vim-vinegar'              -- best navigation with -
   use 'tpope/vim-commentary'           -- sweet commenting
@@ -26,6 +24,11 @@ return require('packer').startup(function(use)
   use 'NoahTheDuke/vim-just'           -- justfile
   use 'Glench/Vim-Jinja2-Syntax'
   use 'lewis6991/gitsigns.nvim'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.x',
