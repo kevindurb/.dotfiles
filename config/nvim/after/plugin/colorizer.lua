@@ -1,8 +1,3 @@
 require('colorizer').setup({
-  filetypes = {
-    'css',
-    'html',
-    'typescript',
-    'openscad'
-  }
+  filetypes = {'css', 'html', 'typescript', 'openscad'}
 })

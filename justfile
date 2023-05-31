@@ -2,15 +2,18 @@ export RCRC := "~/.dotfiles/rcrc"
 
 default: up
 
+fmt:
+    lua-format -i ./**/*.lua
+
 up:
-  rcup
+    rcup
 
 brew:
-  brew update
-  brew bundle
+    brew update
+    brew bundle
 
 create:
-  distrobox create
+    distrobox create
 
 build:
-  podman build -f ./ci/Containerfile .
+    podman build -f ./ci/Containerfile .
