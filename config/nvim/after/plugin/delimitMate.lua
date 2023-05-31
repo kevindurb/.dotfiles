@@ -1,1 +1,1 @@
-vim.g.delimitMate_matchpairs = "(:),[:],{:}"
+vim.g.delimitMate_matchpairs = '(:),[:],{:}'
