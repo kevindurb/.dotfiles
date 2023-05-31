@@ -1,0 +1,32 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "My dotfiles managed by [rcm](https://github.com/thoughtbot/rcm)",
+  "main": "",
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{yml,yaml,json,md}": "prettier -w",
+    "*.lua": "stylua",
+    "justfile": [
+      "bash -c \"just --unstable --fmt\""
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevindurb/.dotfiles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevindurb/.dotfiles/issues"
+  },
+  "homepage": "https://github.com/kevindurb/.dotfiles#readme",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.4"
+  }
+}
