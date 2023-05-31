@@ -1,3 +1,3 @@
-require('colorizer').setup({
-  filetypes = {'css', 'html', 'typescript', 'openscad'}
+require("colorizer").setup({
+  filetypes = { "css", "html", "typescript", "openscad" },
 })

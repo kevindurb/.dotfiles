@@ -3,7 +3,7 @@ export RCRC := "~/.dotfiles/rcrc"
 default: up
 
 fmt:
-    lua-format -i ./**/*.lua
+    stylua .
 
 up:
     rcup
