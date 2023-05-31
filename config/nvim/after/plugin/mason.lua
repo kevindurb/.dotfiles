@@ -33,3 +33,7 @@ require("lspconfig").graphql.setup {capabilities = capabilities}
 require("lspconfig").html.setup {capabilities = capabilities}
 require("lspconfig").intelephense.setup {capabilities = capabilities}
 require("lspconfig").sqlls.setup {capabilities = capabilities}
+
+require("mason-null-ls").setup({
+  automatic_setup = true,
+})
