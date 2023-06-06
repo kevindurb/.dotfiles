@@ -36,6 +36,7 @@ require('lspconfig').sqlls.setup({ capabilities = capabilities })
 
 local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 require('null-ls').setup({
+  temp_dir = '/tmp',
   on_attach = function(client, bufnr)
     if client.supports_method('textDocument/formatting') then
       vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
