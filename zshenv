@@ -8,7 +8,6 @@ export EDITOR='nvim'
 export FZF_DEFAULT_COMMAND='rg --files'
 export LESS="-SRXF"
 export HISTFILE=$HOME/.zhistory
-export HOMEBREW_NO_AUTO_UPDATE=1
 export ASPNETCORE_ENVIRONMENT="Development"
 export DISABLE_AUTO_TITLE="true"
 
