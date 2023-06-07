@@ -54,3 +54,14 @@
 	defaultKeyCommand = ssh-add -L
 [tag]
 	gpgsign = true
+[core]
+  pager = delta -s
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  light = false
+[merge]
+  conflictstyle = diff3
+[diff]
+  colorMoved = default

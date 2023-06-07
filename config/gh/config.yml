@@ -1,7 +1,7 @@
 git_protocol: ssh
 editor:
 prompt: enabled
-pager:
+pager: delta -s
 aliases:
   co: pr checkout
   myprs: pr list -S 'author:@me is:open'
