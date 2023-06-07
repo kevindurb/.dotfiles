@@ -3,8 +3,9 @@ editor:
 prompt: enabled
 pager:
 aliases:
-    co: pr checkout
-    myprs: pr list -S 'author:@me is:open'
-    prurl: pr view --json url -q '.url'
+  co: pr checkout
+  myprs: pr list -S 'author:@me is:open'
+  prurl: pr view --json url -q '.url'
+  prv: pr view --comments
 http_unix_socket:
 browser:
