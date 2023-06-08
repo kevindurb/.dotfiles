@@ -74,7 +74,15 @@ cmp.setup({
   sources = {
     { name = 'nvim_lsp' },
     { name = 'path' },
-    { name = 'buffer', keyword_length = 5 },
+    {
+      name = 'buffer',
+      option = {
+        keyword_length = 2,
+        get_bufnrs = function()
+          return vim.api.nvim_list_bufs()
+        end,
+      },
+    },
   },
   experimental = { ghost_text = { hl_group = 'NonText' } },
   window = {
