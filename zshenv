@@ -1,5 +1,6 @@
 # vi: ft=zsh
 
+export XDG_CONFIG_HOME=$HOME/.config
 export DOTFILES=$HOME/.dotfiles
 export SHELL=$(which zsh)
 export CLICOLOR=1
