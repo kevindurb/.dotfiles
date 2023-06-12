@@ -1,0 +1,55 @@
+# vim: set ft=yaml.ansible:
+---
+- hosts: localhost
+  connection: local
+  vars_files:
+    - ../vars/main.yml
+    - ../vars/packages.yml
+
+  tasks:
+    - name: Install packages
+      ansible.builtin.package:
+        state: latest
+        name: '{{ host_packages }}'
+      tags: packages
+
+    - name: Install pip packages
+      ansible.builtin.pip:
+        name:
+          - neovim
+      tags: packages
+
+    - name: Download starship installer
+      ansible.builtin.get_url:
+        url: https://starship.rs/install.sh
+        dest: /tmp/install_starship.sh
+        mode: 'u+rwx'
+      register: download_starship
+      tags: starship
+
+    - name: Run starship installer
+      ansible.builtin.command:
+        cmd: /tmp/install_starship.sh --yes
+      when: download_starship.changed
+      tags: starship
+
+    - name: Download nvm installer
+      ansible.builtin.get_url:
+        url: 'https://raw.githubusercontent.com/nvm-sh/nvm/{{ nvm_version }}/install.sh'
+        dest: /tmp/install_nvm.sh
+        mode: 'u+rwx'
+      register: download_nvm
+      tags: nvm
+
+    - name: Run nvm installer
+      ansible.builtin.command:
+        cmd: /tmp/install_nvm.sh
+      when: download_nvm.changed
+      tags: nvm
+
+    - name: Ensure latest node lts installed
+      ansible.builtin.shell: 'source ~/.nvm/nvm.sh && nvm install {{ node_version }}'
+      args:
+        executable: /bin/bash
+        creates: '~/.nvm/versions/node/{{ node_version }}'
+      tags: nvm

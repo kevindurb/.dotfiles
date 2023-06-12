@@ -5,8 +5,5 @@ Host github.com
 Host steamdeck
   User deck
 
-Host *
-  User kevindurb
-
 ServerAliveInterval 5
 ServerAliveCountMax 1
