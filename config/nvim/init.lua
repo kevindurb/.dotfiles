@@ -8,7 +8,6 @@ return require('packer').startup(function(use)
   use('kevindurb/vim-whiteout') -- show trailing whitespace
   use('kevindurb/vim-splits') -- split settings and keymaps
   use('tpope/vim-vinegar') -- best navigation with -
-  use('tpope/vim-commentary') -- sweet commenting
   use('tpope/vim-fugitive') -- git commands in vim
   use('tpope/vim-repeat') -- repeating plugin commands
   use('tpope/vim-surround') -- surround with things
@@ -72,6 +71,13 @@ return require('packer').startup(function(use)
   use({ 'utilyre/barbecue.nvim', requires = { 'SmiteshP/nvim-navic' } })
 
   use({ 'jay-babu/mason-null-ls.nvim', 'jose-elias-alvarez/null-ls.nvim' })
+
+  use({
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end,
+  })
 
   if packer_bootstrap then
     require('packer').sync()
