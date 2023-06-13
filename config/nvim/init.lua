@@ -1,7 +1,7 @@
 require('kevindurb')
 local packer_bootstrap = require('packer-install').ensure_packer()
 
-return require('packer').startup(function(use)
+require('packer').startup(function(use)
   use('wbthomason/packer.nvim')
   use({ 'catppuccin/nvim', as = 'catppuccin' })
   use('tpope/vim-sensible') -- a good place to start

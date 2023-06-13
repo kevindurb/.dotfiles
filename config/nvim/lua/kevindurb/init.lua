@@ -1,7 +1,6 @@
 require('kevindurb.colorscheme')
 require('kevindurb.filetype')
 require('kevindurb.keymaps')
-require('kevindurb.splits')
 require('kevindurb.whitespace')
 
 -- General
@@ -74,3 +73,5 @@ vim.cmd([[
   " K keymap for searching word under cursor
   nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 ]])
+
+require('kevindurb.splits')
