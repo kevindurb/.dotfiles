@@ -1,10 +1,10 @@
 vim.cmd([[
-  " set markdown to 80 characters wide
-  autocmd BufRead,BufNewFile *.md setlocal textwidth=80
-
   " spelling in markdown and commit messages
   autocmd FileType markdown setlocal spell
   autocmd FileType gitcommit setlocal spell
+
+  " wordwrap for markdown
+  autocmd FileType markdown setlocal wrap
 
   " folding xml files
   augroup XML

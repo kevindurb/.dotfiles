@@ -60,9 +60,14 @@ return require('packer').startup(function(use)
 
   use('mhartington/formatter.nvim')
   use('nvim-tree/nvim-web-devicons')
-  use('hrsh7th/cmp-nvim-lsp')
-  use('hrsh7th/cmp-buffer')
-  use('hrsh7th/nvim-cmp')
+  use({
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/nvim-cmp',
+    'f3fora/cmp-spell',
+    'petertriho/cmp-git',
+    'davidsierradz/cmp-conventionalcommits',
+  })
   use('b0o/schemastore.nvim')
   use('folke/twilight.nvim')
   use('folke/zen-mode.nvim')
