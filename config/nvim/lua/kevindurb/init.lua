@@ -1,6 +1,8 @@
 require('kevindurb.colorscheme')
 require('kevindurb.filetype')
 require('kevindurb.keymaps')
+require('kevindurb.splits')
+require('kevindurb.whitespace')
 
 -- General
 vim.g.mapleader = ','

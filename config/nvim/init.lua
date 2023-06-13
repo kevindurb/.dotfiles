@@ -5,8 +5,6 @@ return require('packer').startup(function(use)
   use('wbthomason/packer.nvim')
   use({ 'catppuccin/nvim', as = 'catppuccin' })
   use('tpope/vim-sensible') -- a good place to start
-  use('kevindurb/vim-whiteout') -- show trailing whitespace
-  use('kevindurb/vim-splits') -- split settings and keymaps
   use('tpope/vim-vinegar') -- best navigation with -
   use('tpope/vim-fugitive') -- git commands in vim
   use('tpope/vim-repeat') -- repeating plugin commands
