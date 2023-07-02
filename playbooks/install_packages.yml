@@ -1,12 +1,26 @@
-# vim: set ft=yaml.ansible:
 ---
-- hosts: localhost
+# vim: set ft=yaml.ansible:
+- name: Install Packages
+  hosts: localhost
   connection: local
   vars_files:
     - ../vars/main.yml
-    - ../vars/packages.yml
-
   tasks:
+    - name: Gather os specific variables
+      ansible.builtin.include_vars: '{{ item }}'
+      with_first_found:
+        - "../vars/{{ ansible_facts['os_family'] }}.yml"
+
+    - name: Add kubernetes repository
+      ansible.builtin.yum_repository:
+        name: kubernetes
+        description: Kubernetes
+        baseurl: https://packages.cloud.google.com/yum/repos/kubernetes-el7-$basearch
+        enabled: true
+        gpgcheck: true
+        gpgkey: https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+      when: ansible_facts.os_family == "RedHat"
+
     - name: Install packages
       ansible.builtin.package:
         state: latest
