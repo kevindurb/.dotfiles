@@ -23,7 +23,7 @@ update-k8s:
     bw create attachment --itemid {{ bw_k8s_item_id }} --file ~/.kube/config
 
 get-k8s:
-    bw get attachment tailscale.env --itemid {{ bw_k8s_item_id }} --output ~/.kube/config
+    bw get attachment config --itemid {{ bw_k8s_item_id }} --output ~/.kube/config
 
 install-packages:
     ansible-playbook ./playbooks/install_packages.yml

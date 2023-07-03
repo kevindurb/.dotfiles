@@ -2,6 +2,7 @@
 host_packages:
   - 'ansible'
   - 'autojump'
+  - 'autojump-zsh'
   # - 'aws-vault'
   - 'awscli'
   - 'bash'
@@ -25,7 +26,7 @@ host_packages:
   - 'kubectl'
   - 'litecli'
   - 'make'
-  - 'minikube'
+  # - 'minikube'
   - 'mosh'
   - 'mycli'
   - 'ncdu'
