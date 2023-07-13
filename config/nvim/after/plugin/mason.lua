@@ -35,7 +35,7 @@ require('lspconfig').intelephense.setup({ capabilities = capabilities })
 require('lspconfig').sqlls.setup({ capabilities = capabilities })
 require('lspconfig').rnix.setup({ capabilities = capabilities })
 
--- TODO: switch to formatter.nvim
+-- TODO: switch to formatter.nvim and mfussenegger/nvim-lint
 local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 require('null-ls').setup({
   temp_dir = '/tmp',
