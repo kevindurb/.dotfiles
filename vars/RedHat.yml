@@ -19,6 +19,7 @@ host_packages:
   - 'git'
   - 'git-delta'
   - 'git-lfs'
+  - 'gnupg'
   - 'htop'
   - 'httpie'
   - 'jq'
