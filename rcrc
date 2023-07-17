@@ -1,2 +1,2 @@
-EXCLUDES="Containerfile README.md scripts ci playbooks vars node_modules package-lock.json package.json justfile"
+EXCLUDES="Containerfile README.md scripts ci playbooks vars node_modules package-lock.json package.json"
 UNDOTTED="Brewfile Brewfile.lock.json"
