@@ -85,8 +85,6 @@ COPY --chown=kevindurb:kevindurb ./ /home/kevindurb/.dotfiles
 WORKDIR /home/kevindurb/.dotfiles
 RUN just
 
-RUN nvim +PackerInstall +qa
-
 WORKDIR /home/kevindurb/
 ENV SHELL=/usr/bin/zsh
 ENTRYPOINT ["/usr/bin/zsh"]
