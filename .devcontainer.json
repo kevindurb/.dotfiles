@@ -1,0 +1,5 @@
+{
+  "image": "ghcr.io/kevindurb/dev:latest",
+  "containerUser": "kevindurb",
+  "build": {}
+}

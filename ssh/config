@@ -7,3 +7,12 @@ Host steamdeck
 
 ServerAliveInterval 5
 ServerAliveCountMax 1
+# DevPod Start teardrop.devpod
+Host teardrop.devpod
+  ForwardAgent yes
+  LogLevel error
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+  ProxyCommand /Applications/DevPod.app/Contents/MacOS/devpod-cli ssh --stdio --context default --user vscode teardrop
+  User vscode
+# DevPod End teardrop.devpod
