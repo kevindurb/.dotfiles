@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-toolbox:37
+FROM registry.fedoraproject.org/fedora:37
 
 ARG TARGETARCH
 ARG NVM_VERSION="v0.39.2"
@@ -30,6 +30,7 @@ RUN dnf install -y \
   less \
   litecli \
   make \
+  man \
   mycli \
   ncdu \
   ncurses \
@@ -54,12 +55,12 @@ RUN dnf install -y \
   wget \
   zsh
 
-RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/minikube
-RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
-RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
-RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
-RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/flatpak
-RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/xdg-open
+# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/minikube
+# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
+# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
+# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
+# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/flatpak
+# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/xdg-open
 
 RUN pip install neovim
 
@@ -67,8 +68,15 @@ RUN pip install neovim
 RUN wget -O /tmp/install_starship.sh https://starship.rs/install.sh
 RUN sh /tmp/install_starship.sh --yes
 
+# Setup kevindurb user
+RUN useradd -m kevindurb
+USER kevindurb
+
+# Install antigen
+RUN curl -L git.io/antigen > /home/kevindurb/antigen.zsh
+
 # Install nvm
-ENV NVM_DIR=/opt/nvm
+ENV NVM_DIR=/home/kevindurb/.nvm
 RUN mkdir -p "${NVM_DIR}"
 RUN wget -O /tmp/install_nvm.sh "https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_VERSION}/install.sh"
 RUN bash /tmp/install_nvm.sh
@@ -80,11 +88,16 @@ RUN source "${NVM_DIR}/nvm.sh" && npm install -g \
   bash-language-server \
   neovim
 
-RUN chmod -R a+rw /opt/nvm
-
 # Preinstall host-spawn
-COPY ./ci/files/host-spawn-$TARGETARCH /usr/bin/host-spawn
+# COPY ./ci/files/host-spawn-$TARGETARCH /usr/bin/host-spawn
 
+# Copy over dotfiles
+COPY --chown=kevindurb:kevindurb ./ /home/kevindurb/.dotfiles
+WORKDIR /home/kevindurb/.dotfiles
+RUN just
+
+RUN nvim +PackerInstall +qa
+
+WORKDIR /home/kevindurb/
 ENV SHELL=/usr/bin/zsh
-
-ENTRYPOINT ["/bin/zsh"]
+ENTRYPOINT ["/usr/bin/zsh"]

@@ -7,7 +7,7 @@ fmt:
     stylua .
 
 up:
-    rcup
+    rcup -f
 
 brew:
     brew update
