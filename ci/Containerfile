@@ -55,13 +55,7 @@ RUN dnf install -y \
   wget \
   zsh
 
-# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/minikube
-# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
-# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/docker
-# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/distrobox
-# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/flatpak
-# RUN ln -s /usr/bin/distrobox-host-exec /usr/local/bin/xdg-open
-
+# install neovim dependency
 RUN pip install neovim
 
 # Install starship prompt
@@ -82,14 +76,9 @@ RUN wget -O /tmp/install_nvm.sh "https://raw.githubusercontent.com/nvm-sh/nvm/${
 RUN bash /tmp/install_nvm.sh
 RUN source "${NVM_DIR}/nvm.sh" && nvm install lts/*
 
-# coc.vim language servers
+# install neovim dependency
 RUN source "${NVM_DIR}/nvm.sh" && npm install -g \
-  dockerfile-language-server-nodejs \
-  bash-language-server \
   neovim
-
-# Preinstall host-spawn
-# COPY ./ci/files/host-spawn-$TARGETARCH /usr/bin/host-spawn
 
 # Copy over dotfiles
 COPY --chown=kevindurb:kevindurb ./ /home/kevindurb/.dotfiles
