@@ -69,7 +69,7 @@ RUN wget -O /tmp/install_starship.sh https://starship.rs/install.sh
 RUN sh /tmp/install_starship.sh --yes
 
 # Setup kevindurb user
-RUN useradd -m kevindurb
+RUN useradd -s /usr/bin/zsh -m kevindurb
 USER kevindurb
 
 # Install antigen
