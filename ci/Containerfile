@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:37
+FROM docker.io/library/fedora:37
 
 ARG TARGETARCH
 ARG NVM_VERSION="v0.39.2"
