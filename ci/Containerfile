@@ -55,6 +55,8 @@ RUN dnf install -y \
   wget \
   zsh
 
+RUN dnf clean all
+
 # install neovim dependency
 RUN pip install neovim
 
