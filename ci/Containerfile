@@ -5,9 +5,8 @@ ARG NVM_VERSION="v0.39.2"
 
 COPY ./ci/files/kubernetes.$TARGETARCH.repo /etc/yum.repos.d/kubernetes.repo
 
-RUN dnf update -y
-
-RUN dnf install -y \
+RUN dnf update -y && \
+  dnf install -y \
   ansible \
   autojump-zsh \
   bat \
@@ -53,9 +52,8 @@ RUN dnf install -y \
   util-linux-user \
   vte-profile \
   wget \
-  zsh
-
-RUN dnf clean all
+  zsh && \
+  dnf clean all
 
 # install neovim dependency
 RUN pip install neovim
