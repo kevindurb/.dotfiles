@@ -52,6 +52,7 @@ RUN dnf update -y && \
   util-linux-user \
   vte-profile \
   wget \
+  which \
   zsh && \
   dnf clean all
 
