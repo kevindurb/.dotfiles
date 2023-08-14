@@ -63,9 +63,15 @@ RUN pip install neovim
 RUN wget -O /tmp/install_starship.sh https://starship.rs/install.sh
 RUN sh /tmp/install_starship.sh --yes
 
+# Install git-credential-manager
+RUN wget -O /tmp/install_gcm.sh "https://aka.ms/gcm/linux-install-source.sh"
+RUN sh /tmp/install_gcm.sh -y
+
 # Setup kevindurb user
 RUN useradd -s /usr/bin/zsh -m kevindurb
 USER kevindurb
+ENV GCM_CREDENTIAL_STORE=cache
+RUN git-credential-manager configure
 
 # Install antigen
 RUN curl -L git.io/antigen > /home/kevindurb/antigen.zsh
@@ -87,5 +93,4 @@ WORKDIR /home/kevindurb/.dotfiles
 RUN just
 
 WORKDIR /home/kevindurb/
-ENV SHELL=/usr/bin/zsh
 ENTRYPOINT ["/usr/bin/zsh"]
