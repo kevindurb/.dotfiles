@@ -2,6 +2,11 @@
   "image": "ghcr.io/kevindurb/dev:latest",
   "build": {},
   "settings": {
-    "terminal.integrated.shell.linux": "/usr/bin/zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+        "path": "/usr/bin/zsh"
+      }
+    }
   }
 }
