@@ -1,11 +1,7 @@
 {
   "image": "ghcr.io/kevindurb/dev:latest",
   "build": {},
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "terminal.integrated.shell.linux": "zsh"
-      }
-    }
+  "settings": {
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
   }
 }
