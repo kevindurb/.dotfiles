@@ -1,4 +1,5 @@
 {
   "image": "ghcr.io/kevindurb/dev:latest",
-  "build": {}
+  "build": {},
+  "postCreateCommand": "sudo chsh -s $(which zsh) $(whoami)"
 }
