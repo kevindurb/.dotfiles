@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/kevindurb/.dotfiles#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.4"
