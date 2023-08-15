@@ -1,17 +1,16 @@
-export RCRC := "~/.dotfiles/rcrc"
 bw_k8s_item_id := 'dba6245f-a6eb-4fe7-9e70-b01b01148b85'
 
-default: up
+default: install up
 
 fmt:
     stylua .
 
-up:
-    rcup -f
+install:
+    npm install
 
-brew:
-    brew update
-    brew bundle
+up:
+    cp ~/.dotfiles/.rcrc ~/.rcrc
+    rcup -fv
 
 create:
     distrobox create
