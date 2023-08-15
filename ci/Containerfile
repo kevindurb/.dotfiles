@@ -67,11 +67,15 @@ RUN sh /tmp/install_starship.sh --yes
 RUN wget -O /tmp/install_gcm.sh "https://aka.ms/gcm/linux-install-source.sh"
 RUN sh /tmp/install_gcm.sh -y
 
+COPY ./ci/files/sudo_group /etc/sudoers.d/
+
 # Setup kevindurb user
 RUN useradd -s /usr/bin/zsh -m kevindurb
+RUN groupadd sudo
+RUN usermod -a -G sudo kevindurb
 USER kevindurb
 ENV GCM_CREDENTIAL_STORE=cache
-RUN git-credential-manager configure
+# RUN git-credential-manager configure
 
 # Install antigen
 RUN curl -L git.io/antigen > /home/kevindurb/antigen.zsh
@@ -90,7 +94,7 @@ RUN source "${NVM_DIR}/nvm.sh" && npm install -g \
 # Copy over dotfiles
 COPY --chown=kevindurb:kevindurb ./ /home/kevindurb/.dotfiles
 WORKDIR /home/kevindurb/.dotfiles
-RUN just
+RUN source "${NVM_DIR}/nvm.sh" && just
 
 WORKDIR /home/kevindurb/
 ENTRYPOINT ["/usr/bin/zsh"]
