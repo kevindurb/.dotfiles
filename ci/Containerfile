@@ -57,15 +57,15 @@ RUN dnf update -y && \
   dnf clean all
 
 # install neovim dependency
-RUN pip install neovim
+# RUN pip install neovim
 
 # Install starship prompt
-RUN wget -O /tmp/install_starship.sh https://starship.rs/install.sh
-RUN sh /tmp/install_starship.sh --yes
+# RUN wget -O /tmp/install_starship.sh https://starship.rs/install.sh
+# RUN sh /tmp/install_starship.sh --yes
 
 # Install git-credential-manager
-RUN wget -O /tmp/install_gcm.sh "https://aka.ms/gcm/linux-install-source.sh"
-RUN sh /tmp/install_gcm.sh -y
+# RUN wget -O /tmp/install_gcm.sh "https://aka.ms/gcm/linux-install-source.sh"
+# RUN sh /tmp/install_gcm.sh -y
 
 COPY ./ci/files/sudo_group /etc/sudoers.d/
 
@@ -74,26 +74,26 @@ RUN useradd -s /usr/bin/zsh -m kevindurb
 RUN groupadd sudo
 RUN usermod -a -G sudo kevindurb
 USER kevindurb
-ENV GCM_CREDENTIAL_STORE=cache
+# ENV GCM_CREDENTIAL_STORE=cache
 # RUN git-credential-manager configure
 
 # Install antigen
-RUN curl -L git.io/antigen > /home/kevindurb/antigen.zsh
+# RUN curl -L git.io/antigen > /home/kevindurb/antigen.zsh
 
 # Install nvm
-ENV NVM_DIR=/home/kevindurb/.nvm
-RUN mkdir -p "${NVM_DIR}"
-RUN wget -O /tmp/install_nvm.sh "https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_VERSION}/install.sh"
-RUN bash /tmp/install_nvm.sh
-RUN source "${NVM_DIR}/nvm.sh" && nvm install lts/*
+# ENV NVM_DIR=/home/kevindurb/.nvm
+# RUN mkdir -p "${NVM_DIR}"
+# RUN wget -O /tmp/install_nvm.sh "https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_VERSION}/install.sh"
+# RUN bash /tmp/install_nvm.sh
+# RUN source "${NVM_DIR}/nvm.sh" && nvm install lts/*
 
 # install neovim dependency
-RUN source "${NVM_DIR}/nvm.sh" && npm install -g \
-  neovim
+# RUN source "${NVM_DIR}/nvm.sh" && npm install -g \
+#   neovim
 
 # Copy over dotfiles
-COPY --chown=kevindurb:kevindurb ./ /home/kevindurb/.dotfiles
-WORKDIR /home/kevindurb/.dotfiles
-RUN source "${NVM_DIR}/nvm.sh" && just
+# COPY --chown=kevindurb:kevindurb ./ /home/kevindurb/.dotfiles
+# WORKDIR /home/kevindurb/.dotfiles
+# RUN source "${NVM_DIR}/nvm.sh" && just
 
-WORKDIR /home/kevindurb/
+# WORKDIR /home/kevindurb/
