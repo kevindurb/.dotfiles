@@ -97,4 +97,3 @@ WORKDIR /home/kevindurb/.dotfiles
 RUN source "${NVM_DIR}/nvm.sh" && just
 
 WORKDIR /home/kevindurb/
-ENTRYPOINT ["/usr/bin/zsh"]
