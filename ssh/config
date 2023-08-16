@@ -9,12 +9,3 @@ Host steamdeck
 
 ServerAliveInterval 5
 ServerAliveCountMax 1
-# DevPod Start dotfiles.devpod
-Host dotfiles.devpod
-  ForwardAgent yes
-  LogLevel error
-  StrictHostKeyChecking no
-  UserKnownHostsFile /dev/null
-  ProxyCommand /Users/kevindurbin/.local/bin/devpod ssh --stdio --context default --user kevindurb dotfiles
-  User kevindurb
-# DevPod End dotfiles.devpod
