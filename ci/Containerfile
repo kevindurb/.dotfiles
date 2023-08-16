@@ -70,7 +70,7 @@ RUN dnf update -y && \
 COPY ./ci/files/sudo_group /etc/sudoers.d/
 
 # Setup kevindurb user
-RUN useradd -s /usr/bin/zsh -m kevindurb
+RUN useradd -s /usr/bin/zsh -c Kevin -m kevindurb
 RUN groupadd sudo
 RUN usermod -a -G sudo kevindurb
 USER kevindurb
