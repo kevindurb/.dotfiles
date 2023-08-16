@@ -1,60 +1,60 @@
 FROM docker.io/library/fedora:37
-
-ARG TARGETARCH
-ARG NVM_VERSION="v0.39.2"
-
-COPY ./ci/files/kubernetes.$TARGETARCH.repo /etc/yum.repos.d/kubernetes.repo
+#
+# ARG TARGETARCH
+# ARG NVM_VERSION="v0.39.2"
+#
+# COPY ./ci/files/kubernetes.$TARGETARCH.repo /etc/yum.repos.d/kubernetes.repo
 
 RUN dnf update -y && \
   dnf install -y \
-  ansible \
-  autojump-zsh \
-  bat \
-  bc \
-  curl \
-  diffutils \
-  entr \
-  exa \
-  findutils \
-  fzf \
-  gcc \
-  gcc-c++ \
-  gh \
-  git \
-  git-delta \
-  httpie \
-  jq \
-  just \
-  kubectl \
-  less \
-  litecli \
-  make \
-  man \
-  mycli \
-  ncdu \
-  ncurses \
-  neofetch \
-  neovim \
-  openssl \
-  passwd \
-  pgcli \
-  pinentry \
-  prettyping \
-  procps-ng \
-  python-pip \
-  rcm \
-  ripgrep \
-  shadow-utils \
-  tig \
-  tldr \
-  tmux \
-  util-linux \
-  util-linux-user \
-  vte-profile \
-  wget \
-  which \
   zsh && \
   dnf clean all
+  # ansible \
+  # autojump-zsh \
+  # bat \
+  # bc \
+  # curl \
+  # diffutils \
+  # entr \
+  # exa \
+  # findutils \
+  # fzf \
+  # gcc \
+  # gcc-c++ \
+  # gh \
+  # git \
+  # git-delta \
+  # httpie \
+  # jq \
+  # just \
+  # kubectl \
+  # less \
+  # litecli \
+  # make \
+  # man \
+  # mycli \
+  # ncdu \
+  # ncurses \
+  # neofetch \
+  # neovim \
+  # openssl \
+  # passwd \
+  # pgcli \
+  # pinentry \
+  # prettyping \
+  # procps-ng \
+  # python-pip \
+  # rcm \
+  # ripgrep \
+  # shadow-utils \
+  # tig \
+  # tldr \
+  # tmux \
+  # util-linux \
+  # util-linux-user \
+  # vte-profile \
+  # wget \
+  # which \
 
 # install neovim dependency
 # RUN pip install neovim
@@ -71,8 +71,6 @@ COPY ./ci/files/sudo_group /etc/sudoers.d/
 
 # Setup kevindurb user
 RUN useradd -s /usr/bin/zsh -c Kevin -m kevindurb
-RUN groupadd sudo
-RUN usermod -a -G sudo kevindurb
 USER kevindurb
 # ENV GCM_CREDENTIAL_STORE=cache
 # RUN git-credential-manager configure
