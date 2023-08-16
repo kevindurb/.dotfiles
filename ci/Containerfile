@@ -7,8 +7,14 @@ FROM docker.io/library/fedora:37
 
 RUN dnf update -y && \
   dnf install -y \
+  openssl \
+  passwd \
+  ncurses \
+  less \
+  shadow-utils \
   util-linux \
   util-linux-user \
+  vte-profile \
   zsh && \
   dnf clean all
   # ansible \
@@ -30,17 +36,13 @@ RUN dnf update -y && \
   # jq \
   # just \
   # kubectl \
-  # less \
   # litecli \
   # make \
   # man \
   # mycli \
   # ncdu \
-  # ncurses \
   # neofetch \
   # neovim \
-  # openssl \
-  # passwd \
   # pgcli \
   # pinentry \
   # prettyping \
@@ -48,11 +50,9 @@ RUN dnf update -y && \
   # python-pip \
   # rcm \
   # ripgrep \
-  # shadow-utils \
   # tig \
   # tldr \
   # tmux \
-  # vte-profile \
   # wget \
   # which \
 
