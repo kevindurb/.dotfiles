@@ -7,6 +7,9 @@ source "${ANTIGEN_DIR:-"$HOME"}/antigen.zsh"
 
 antigen use oh-my-zsh
 
+# brew must be first to ensure $PATH for the rest of the plugins
+antigen bundle brew
+
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
@@ -20,7 +23,6 @@ antigen bundle autojump
 antigen bundle fzf
 antigen bundle yarn
 antigen bundle npm
-antigen bundle brew
 antigen bundle docker
 antigen bundle kubectl
 antigen bundle docker-compose
