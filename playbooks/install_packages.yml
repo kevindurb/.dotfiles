@@ -6,10 +6,26 @@
   vars_files:
     - ../vars/main.yml
   tasks:
+    - name: Check if homebrew is available
+      block:
+        - name: try using homebrew in check_mode (no changes)
+          community.general.homebrew:
+            update_homebrew: true
+          check_mode: true
+
+        - name: Use homebrew packages
+          ansible.builtin.set_fact:
+            package_list: Homebrew
+
+      rescue:
+        - name: Use homebrew packages
+          ansible.builtin.set_fact:
+            package_list: RedHat
+
     - name: Gather os specific variables
       ansible.builtin.include_vars: '{{ item }}'
       with_first_found:
-        - "../vars/{{ ansible_facts['os_family'] }}.yml"
+        - "../vars/{{ ansible_facts['package_list'] }}.yml"
 
     - name: Add kubernetes repository
       ansible.builtin.yum_repository:
@@ -38,6 +54,7 @@
         url: https://starship.rs/install.sh
         dest: /tmp/install_starship.sh
         mode: 'u+rwx'
+      when: ansible_facts.package_list == "RedHat"
       register: download_starship
       tags: starship
 
@@ -52,6 +69,7 @@
         url: 'https://raw.githubusercontent.com/nvm-sh/nvm/{{ nvm_version }}/install.sh'
         dest: /tmp/install_nvm.sh
         mode: 'u+rwx'
+      when: ansible_facts.package_list == "RedHat"
       register: download_nvm
       tags: nvm
 
