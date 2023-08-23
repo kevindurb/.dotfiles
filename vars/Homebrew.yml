@@ -35,7 +35,6 @@ host_packages:
   - 'neovim'
   - 'nmap'
   - 'noti'
-  - 'nvm'
   - 'openssh'
   - 'pgcli'
   - 'podman'
