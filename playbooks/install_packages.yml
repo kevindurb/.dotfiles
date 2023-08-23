@@ -25,7 +25,7 @@
     - name: Gather os specific variables
       ansible.builtin.include_vars: '{{ item }}'
       with_first_found:
-        - "../vars/{{ ansible_facts['package_list'] }}.yml"
+        - '../vars/{{ package_list }}.yml'
 
     - name: Add kubernetes repository
       ansible.builtin.yum_repository:
@@ -35,7 +35,7 @@
         enabled: true
         gpgcheck: true
         gpgkey: https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-      when: ansible_facts.os_family == "RedHat"
+      when: package_list == "RedHat"
 
     - name: Install packages
       ansible.builtin.package:
@@ -54,7 +54,7 @@
         url: https://starship.rs/install.sh
         dest: /tmp/install_starship.sh
         mode: 'u+rwx'
-      when: ansible_facts.package_list == "RedHat"
+      when: package_list == "RedHat"
       register: download_starship
       tags: starship
 
@@ -69,7 +69,7 @@
         url: 'https://raw.githubusercontent.com/nvm-sh/nvm/{{ nvm_version }}/install.sh'
         dest: /tmp/install_nvm.sh
         mode: 'u+rwx'
-      when: ansible_facts.package_list == "RedHat"
+      when: package_list == "RedHat"
       register: download_nvm
       tags: nvm
 
