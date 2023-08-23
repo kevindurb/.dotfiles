@@ -39,9 +39,17 @@
 
     - name: Install packages
       ansible.builtin.package:
-        state: latest
+        state: present
         name: '{{ host_packages }}'
       tags: packages
+      when: package_list != "Homebrew"
+
+    - name: Install packages with homebrew
+      community.general.homebrew:
+        state: present
+        name: '{{ host_packages }}'
+      tags: packages
+      when: package_list == "Homebrew"
 
     - name: Install pip packages
       ansible.builtin.pip:
