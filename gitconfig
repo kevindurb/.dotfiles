@@ -43,9 +43,9 @@
 [credential]
   helper = 
   helper = manager
+  credentialStore = cache
   credentialStore = secretservice
   credentialStore = keychain
-  credentialStore = cache
 [pull]
   rebase = false
 [init]
