@@ -12,9 +12,6 @@ up:
     cp ~/.dotfiles/.rcrc ~/.rcrc
     rcup -fv
 
-create:
-    distrobox create
-
 build:
     podman build -f ./ci/Containerfile .
 
@@ -26,3 +23,15 @@ get-k8s:
 
 install-packages:
     ansible-playbook ./playbooks/install_packages.yml
+
+dark-mode:
+    kitty +kitten themes --reload-in=all Catppuccin-Macchiato
+    echo "vim.o.background = 'dark'" > ~/.config/nvim/after/plugin/theme-color.lua
+    sed -i .bak 's/latte/macchiato/g' ./tmux.conf
+    tmux source ~/.tmux.conf
+
+light-mode:
+    kitty +kitten themes --reload-in=all Catppuccin-Latte
+    echo "vim.o.background = 'light'" > ~/.config/nvim/after/plugin/theme-color.lua
+    sed -i .bak 's/macchiato/latte/g' ./tmux.conf
+    tmux source ~/.tmux.conf
