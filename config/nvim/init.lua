@@ -19,6 +19,7 @@ require('packer').startup(function(use)
   use('onsails/lspkind.nvim') -- Vscode style icons
   use('L3MON4D3/LuaSnip') -- snippet engine
   use('NoahTheDuke/vim-just') -- justfile
+  use({ 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } })
   use('Glench/Vim-Jinja2-Syntax')
   use('lewis6991/gitsigns.nvim')
   use('kevinhwang91/nvim-hlslens')
