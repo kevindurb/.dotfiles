@@ -54,3 +54,4 @@ require('null-ls').setup({
 })
 
 require('mason-null-ls').setup({ automatic_setup = true, handlers = {} })
+require('mason-nvim-dap').setup({ automatic_setup = true })

@@ -37,11 +37,11 @@ vim.keymap.set('n', '<Leader>ds', function()
   widgets.centered_float(widgets.scopes)
 end)
 
-require('dap').configurations.typescript = {
-  {
-    type = '',
-    request = 'attach',
-    name = 'Launch file',
-    cwd = '${workspaceFolder}',
-  },
-}
+-- require('dap').configurations.typescript = {
+--   {
+--     type = 'pwa-node',
+--     request = 'attach',
+--     name = 'Attach to process',
+--     cwd = '${workspaceFolder}',
+--   },
+-- }
