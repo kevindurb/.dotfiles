@@ -11,6 +11,7 @@ require('packer').startup(function(use)
   use('tpope/vim-surround') -- surround with things
   use('tpope/vim-unimpaired') -- mappings for things with '['
   use('tpope/vim-eunuch') -- helpful unixy commands
+  use('tpope/vim-abolish') -- messing with words and casing
   use('alvan/vim-closetag') -- autoclose tags
   use('Raimondi/delimitMate') -- auto close everything else
   use('christoomey/vim-tmux-navigator') -- navigate panes in tmux && vim
