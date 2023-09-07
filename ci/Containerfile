@@ -24,7 +24,7 @@ RUN dnf update -y && \
   # curl \
   # diffutils \
   # entr \
-  # exa \
+  # eza \
   # findutils \
   # fzf \
   # gcc \

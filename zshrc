@@ -56,8 +56,8 @@ if [ -x "$(command -v kubecolor)" ]; then
   compdef kubecolor=kubectl
 fi
 
-if [ -x "$(command -v exa)" ]; then
-  alias ll="exa -laF"
+if [ -x "$(command -v eza)" ]; then
+  alias ll="eza -laF"
 else
   alias ll="ls -lahF"
 fi
