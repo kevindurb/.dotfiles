@@ -26,60 +26,50 @@ require('packer').startup(function(use)
     'Glench/Vim-Jinja2-Syntax', -- jinja2 syntax
     'lewis6991/gitsigns.nvim', -- pretty gitsigns in gutter
     'petertriho/nvim-scrollbar', -- a scrollbar
-    {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'nvim-tree/nvim-web-devicons', opt = true },
-    }, -- pretty lower bar
-    {
-      'akinsho/bufferline.nvim',
-      tag = '*',
-      requires = 'nvim-tree/nvim-web-devicons',
-    }, -- pretty tabs
+    'nvim-lualine/lualine.nvim', -- pretty lower bar
+    'akinsho/bufferline.nvim', -- pretty tabs
     {
       'nvim-telescope/telescope.nvim',
       tag = '0.1.x',
-      requires = { { 'nvim-lua/plenary.nvim' } },
+      requires = {
+        'nvim-lua/plenary.nvim',
+        {
+          'nvim-telescope/telescope-fzf-native.nvim',
+          run = 'make',
+        },
+      },
     }, -- pretty search
-    { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }, -- use native fzf
-  })
-  use({
-    'nvim-treesitter/nvim-treesitter',
-    run = function()
-      local ts_update = require('nvim-treesitter.install').update({
-        with_sync = true,
-      })
-      ts_update()
-    end,
-  })
-
-  use({
-    'williamboman/mason.nvim',
-    'williamboman/mason-lspconfig.nvim',
-    'neovim/nvim-lspconfig',
-  })
-
-  use('mhartington/formatter.nvim')
-  use('nvim-tree/nvim-web-devicons')
-  use({
-    'hrsh7th/cmp-nvim-lsp',
-    'hrsh7th/cmp-buffer',
-    'hrsh7th/nvim-cmp',
-    'f3fora/cmp-spell',
-    'petertriho/cmp-git',
-    'davidsierradz/cmp-conventionalcommits',
-  })
-  use('b0o/schemastore.nvim')
-  use('folke/twilight.nvim')
-  use('folke/zen-mode.nvim')
-  use({ 'utilyre/barbecue.nvim', requires = { 'SmiteshP/nvim-navic' } })
-
-  use('mfussenegger/nvim-lint')
-
-  use({
-    'numToStr/Comment.nvim',
-    config = function()
-      require('Comment').setup()
-    end,
+    {
+      'nvim-treesitter/nvim-treesitter',
+      run = function()
+        local ts_update = require('nvim-treesitter.install').update({
+          with_sync = true,
+        })
+        ts_update()
+      end,
+    },
+    'williamboman/mason.nvim', -- manages external editor tools
+    'williamboman/mason-lspconfig.nvim', -- connects mason to lspconfig
+    'neovim/nvim-lspconfig', -- language server configurations
+    'hrsh7th/nvim-cmp', -- auto complete menu
+    'hrsh7th/cmp-nvim-lsp', -- lsp in auto complete menu
+    'hrsh7th/cmp-buffer', -- auto complete buffer text
+    'f3fora/cmp-spell', -- auto complete spelling
+    'petertriho/cmp-git', -- auto complete git things
+    'davidsierradz/cmp-conventionalcommits', -- auto complete conventional commits
+    'mhartington/formatter.nvim',
+    'nvim-tree/nvim-web-devicons',
+    'b0o/schemastore.nvim',
+    'folke/twilight.nvim',
+    'folke/zen-mode.nvim',
+    { 'utilyre/barbecue.nvim', requires = { 'SmiteshP/nvim-navic' } }, -- breadcrumb bar
+    'mfussenegger/nvim-lint',
+    {
+      'numToStr/Comment.nvim',
+      config = function()
+        require('Comment').setup()
+      end,
+    },
   })
 
   if packer_bootstrap then
