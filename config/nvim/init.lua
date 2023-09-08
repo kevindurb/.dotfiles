@@ -21,7 +21,6 @@ require('packer').startup(function(use)
   use('L3MON4D3/LuaSnip') -- snippet engine
   use('NoahTheDuke/vim-just') -- justfile
   use({
-    'mxsdev/nvim-dap-vscode-js',
     'rcarriga/nvim-dap-ui',
     'mfussenegger/nvim-dap',
     'jay-babu/mason-nvim-dap.nvim',
