@@ -6,7 +6,7 @@ if [ $# -eq 0 ]
     exit 1
 fi
 
-TOPIC=$1
+TOPIC="$*"
 NOTE_NAME="$(date -u +%Y-%m-%d)_${TOPIC// /_}"
 FILE_PATH="$HOME/Dropbox/Notes/$NOTE_NAME.md"
 
