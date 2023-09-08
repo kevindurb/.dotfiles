@@ -1,10 +1,15 @@
 require('mason').setup({
   ensure_installed = {
-    'typescript-language-server',
-    'prettierd',
+    'bash-language-server',
     'eslint-lsp',
     'eslint_d',
     'js-debug-adapter',
+    'prettierd',
+    'shellcheck',
+    'sqlfluff',
+    'sqlls',
+    'stylua',
+    'typescript-language-server',
   },
 })
 require('mason-lspconfig').setup()
