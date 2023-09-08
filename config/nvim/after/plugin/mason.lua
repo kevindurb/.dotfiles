@@ -41,5 +41,3 @@ require('lspconfig').graphql.setup({ capabilities = capabilities })
 require('lspconfig').html.setup({ capabilities = capabilities })
 require('lspconfig').intelephense.setup({ capabilities = capabilities })
 require('lspconfig').sqlls.setup({ capabilities = capabilities })
-
-require('mason-nvim-dap').setup({ automatic_setup = true })

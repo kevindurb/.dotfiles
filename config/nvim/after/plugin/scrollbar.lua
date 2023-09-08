@@ -7,9 +7,7 @@ require('scrollbar').setup({
     diagnostic = true,
     gitsigns = true,
     handle = true,
-    search = true,
     ale = false,
   },
 })
-require('scrollbar.handlers.search').setup()
 require('scrollbar.handlers.gitsigns').setup()
