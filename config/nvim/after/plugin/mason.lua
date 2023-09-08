@@ -1,4 +1,12 @@
-require('mason').setup()
+require('mason').setup({
+  ensure_installed = {
+    'typescript-language-server',
+    'prettierd',
+    'eslint-lsp',
+    'eslint_d',
+    'js-debug-adapter',
+  },
+})
 require('mason-lspconfig').setup()
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -33,25 +41,5 @@ require('lspconfig').graphql.setup({ capabilities = capabilities })
 require('lspconfig').html.setup({ capabilities = capabilities })
 require('lspconfig').intelephense.setup({ capabilities = capabilities })
 require('lspconfig').sqlls.setup({ capabilities = capabilities })
-require('lspconfig').rnix.setup({ capabilities = capabilities })
 
--- TODO: switch to formatter.nvim and mfussenegger/nvim-lint
-local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
-require('null-ls').setup({
-  temp_dir = '/tmp',
-  on_attach = function(client, bufnr)
-    if client.supports_method('textDocument/formatting') then
-      vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-      vim.api.nvim_create_autocmd('BufWritePre', {
-        group = augroup,
-        buffer = bufnr,
-        callback = function()
-          vim.lsp.buf.format({ async = false })
-        end,
-      })
-    end
-  end,
-})
-
-require('mason-null-ls').setup({ automatic_setup = true, handlers = {} })
 require('mason-nvim-dap').setup({ automatic_setup = true })

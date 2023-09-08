@@ -80,7 +80,7 @@ require('packer').startup(function(use)
   use('folke/zen-mode.nvim')
   use({ 'utilyre/barbecue.nvim', requires = { 'SmiteshP/nvim-navic' } })
 
-  use({ 'jay-babu/mason-null-ls.nvim', 'jose-elias-alvarez/null-ls.nvim' })
+  use('mfussenegger/nvim-lint')
 
   use({
     'numToStr/Comment.nvim',
