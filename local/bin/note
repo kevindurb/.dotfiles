@@ -1,0 +1,22 @@
+#! /bin/bash
+
+if [ $# -eq 0 ]
+  then
+    echo "Usage: note <topic>"
+    exit 1
+fi
+
+TOPIC=$1
+NOTE_NAME="$(date -u +%Y-%m-%d)_${TOPIC// /_}"
+FILE_PATH="$HOME/Dropbox/Notes/$NOTE_NAME.md"
+
+cat << EOF > "$FILE_PATH"
+name: $NOTE_NAME
+date: $(date -u +%Y-%m-%d)
+tags:
+---
+# $TOPIC
+
+EOF
+
+$EDITOR "$FILE_PATH"

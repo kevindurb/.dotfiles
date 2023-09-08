@@ -1,0 +1,4 @@
+#! /bin/bash
+
+touch "$HOME/scratch.md"
+$EDITOR "$HOME/scratch.md"
