@@ -5,6 +5,7 @@ local options = {
     'dockerfile-language-server',
     'eslint-lsp',
     'eslint_d',
+    'firefox-debug-adapter',
     'graphql-language-service-cli',
     'html-lsp',
     'js-debug-adapter',

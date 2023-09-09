@@ -9,12 +9,17 @@ dap.adapters['pwa-node'] = {
   },
 }
 
+dap.adapters['firefox'] = {
+  type = 'executable',
+  command = 'firefox-debug-adapter',
+}
+
 for _, language in ipairs({ 'typescript', 'javascript' }) do
   require('dap').configurations[language] = {
     {
       type = 'pwa-node',
       request = 'launch',
-      name = 'Launch file',
+      name = 'Launch node',
       program = '${file}',
       cwd = '${workspaceFolder}',
       runtimeExecutable = 'node',
@@ -22,8 +27,14 @@ for _, language in ipairs({ 'typescript', 'javascript' }) do
     {
       type = 'pwa-node',
       request = 'attach',
-      name = 'Attach',
+      name = 'Attach node',
       processId = require('dap.utils').pick_process,
+      cwd = '${workspaceFolder}',
+    },
+    {
+      type = 'firefox',
+      request = 'attach',
+      name = 'Attach firefox',
       cwd = '${workspaceFolder}',
     },
   }
