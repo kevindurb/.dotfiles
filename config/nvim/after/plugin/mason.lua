@@ -1,17 +1,32 @@
-require('mason').setup({
+local options = {
   ensure_installed = {
     'bash-language-server',
+    'css-lsp',
+    'dockerfile-language-server',
     'eslint-lsp',
     'eslint_d',
+    'graphql-language-service-cli',
+    'html-lsp',
     'js-debug-adapter',
+    'lua-language-server',
     'prettierd',
     'shellcheck',
     'sqlfluff',
     'sqlls',
     'stylua',
     'typescript-language-server',
+    'yaml-language-server',
+    'yamlfmt',
+    'yamllint',
   },
-})
+}
+
+require('mason').setup(options)
+
+vim.api.nvim_create_user_command('MasonInstallAll', function()
+  vim.cmd('MasonInstall ' .. table.concat(options.ensure_installed, ' '))
+end, {})
+
 require('mason-lspconfig').setup()
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
