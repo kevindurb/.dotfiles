@@ -56,4 +56,5 @@ require('lazy').setup({
   { 'utilyre/barbecue.nvim', dependencies = { 'SmiteshP/nvim-navic' } }, -- breadcrumb bar
   'mfussenegger/nvim-lint', -- linting based on lsp
   'numToStr/Comment.nvim', -- commenting based on lsp
+  'lukas-reineke/indent-blankline.nvim', -- indent guides
 })
