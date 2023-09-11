@@ -1,8 +1,7 @@
 return {
   'mhartington/formatter.nvim', -- auto format files
-  config = function()
-    local formatter = require('formatter')
-    formatter.setup({
+  opts = function()
+    return {
       filetype = {
         typescript = {
           require('formatter.filetypes.typescript').prettierd,
@@ -21,8 +20,9 @@ return {
         yaml = { require('formatter.filetypes.yaml').prettierd },
       },
       ['*'] = { require('formatter.filetypes.any').remove_trailing_whitespace },
-    })
-
+    }
+  end,
+  init = function()
     vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
       command = 'FormatWriteLock',
     })

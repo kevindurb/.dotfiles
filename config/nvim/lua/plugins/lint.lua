@@ -6,7 +6,9 @@ return {
       typescript = { 'eslint_d' },
       javascript = { 'eslint_d' },
     }
-
+  end,
+  init = function()
+    local lint = require('lint')
     vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
       callback = function()
         lint.try_lint()
