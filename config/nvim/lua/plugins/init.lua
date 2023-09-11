@@ -1,7 +1,6 @@
 -- Just basic plugins that dont need
 -- any setup
 return {
-  'tpope/vim-sensible', -- a good place to start
   'tpope/vim-vinegar', -- best navigation with -
   'tpope/vim-fugitive', -- git commands in vim
   'tpope/vim-repeat', -- repeating plugin commands
