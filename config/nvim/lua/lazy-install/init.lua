@@ -1,6 +1,6 @@
-local lazy_install = {}
+local M = {}
 
-lazy_install.ensure_lazy = function()
+M.ensure_installed = function()
   local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
   if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
@@ -15,4 +15,4 @@ lazy_install.ensure_lazy = function()
   vim.opt.rtp:prepend(lazypath)
 end
 
-return lazy_install
+return M

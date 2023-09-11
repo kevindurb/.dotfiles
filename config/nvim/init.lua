@@ -1,5 +1,5 @@
-require('kevindurb')
-require('lazy-install').ensure_lazy()
+require('kevindurb').setup()
+require('lazy-install').ensure_installed()
 require('lazy').setup({
   { 'catppuccin/nvim', name = 'catppuccin' },
   'tpope/vim-sensible', -- a good place to start
