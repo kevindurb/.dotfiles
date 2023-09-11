@@ -47,7 +47,7 @@ require('packer').startup(function(use)
         })
         ts_update()
       end,
-    },
+    }, -- the base for all things better
     'williamboman/mason.nvim', -- manages external editor tools
     'williamboman/mason-lspconfig.nvim', -- connects mason to lspconfig
     'neovim/nvim-lspconfig', -- language server configurations
@@ -57,19 +57,12 @@ require('packer').startup(function(use)
     'f3fora/cmp-spell', -- auto complete spelling
     'petertriho/cmp-git', -- auto complete git things
     'davidsierradz/cmp-conventionalcommits', -- auto complete conventional commits
-    'mhartington/formatter.nvim',
-    'nvim-tree/nvim-web-devicons',
-    'b0o/schemastore.nvim',
-    'folke/twilight.nvim',
-    'folke/zen-mode.nvim',
+    'mhartington/formatter.nvim', -- auto format files
+    'nvim-tree/nvim-web-devicons', -- cool icons
+    'b0o/schemastore.nvim', -- json schemas
     { 'utilyre/barbecue.nvim', requires = { 'SmiteshP/nvim-navic' } }, -- breadcrumb bar
-    'mfussenegger/nvim-lint',
-    {
-      'numToStr/Comment.nvim',
-      config = function()
-        require('Comment').setup()
-      end,
-    },
+    'mfussenegger/nvim-lint', -- linting based on lsp
+    'numToStr/Comment.nvim', -- commenting based on lsp
   })
 
   if packer_bootstrap then
