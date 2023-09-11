@@ -9,6 +9,7 @@ local options = {
     'graphql-language-service-cli',
     'html-lsp',
     'js-debug-adapter',
+    'json-lsp',
     'lua-language-server',
     'prettierd',
     'shellcheck',
