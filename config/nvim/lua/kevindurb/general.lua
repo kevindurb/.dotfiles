@@ -14,11 +14,11 @@ M.setup = function()
   vim.opt.mouse = 'a'
 
   -- Appearence
-  vim.opt.cmdheight = 2
+  -- vim.opt.cmdheight = 2
   vim.opt.colorcolumn = '80' -- color line at 80 columns
   vim.opt.cursorcolumn = true -- turn on cursor vertical line
   vim.opt.cursorline = true -- turn on cursor horizontal line
-  vim.opt.lazyredraw = true -- dont redraw during macros
+  -- vim.opt.lazyredraw = true -- dont redraw during macros
   vim.opt.number = true -- but still show current line number
   vim.opt.relativenumber = true -- show relative line numbers
   vim.opt.showtabline = 2 -- always show the tabline

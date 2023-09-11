@@ -1,6 +1,7 @@
 require('telescope').setup({
   defaults = { mappings = { i = { ['<Esc>'] = require('telescope.actions').close } } },
   extensions = {
+    noice = true,
     fzf = {
       fuzzy = true,
       override_generic_sorter = true,
