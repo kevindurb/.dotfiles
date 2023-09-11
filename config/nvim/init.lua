@@ -1,7 +1,6 @@
 require('kevindurb')
 require('lazy-install').ensure_lazy()
 require('lazy').setup({
-  'wbthomason/packer.nvim',
   { 'catppuccin/nvim', name = 'catppuccin' },
   'tpope/vim-sensible', -- a good place to start
   'tpope/vim-vinegar', -- best navigation with -
