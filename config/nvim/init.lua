@@ -25,7 +25,7 @@ require('lazy').setup({
   'petertriho/nvim-scrollbar', -- a scrollbar
   'nvim-lualine/lualine.nvim', -- pretty lower bar
   'akinsho/bufferline.nvim', -- pretty tabs
-  {
+  { -- pretty search
     'nvim-telescope/telescope.nvim',
     tag = '0.1.2',
     dependencies = {
@@ -35,11 +35,11 @@ require('lazy').setup({
         build = 'make',
       },
     },
-  }, -- pretty search
-  {
+  },
+  { -- the base for all things better
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
-  }, -- the base for all things better
+  },
   'williamboman/mason.nvim', -- manages external editor tools
   'williamboman/mason-lspconfig.nvim', -- connects mason to lspconfig
   'neovim/nvim-lspconfig', -- language server configurations
