@@ -31,12 +31,23 @@ end
 
 return {
   'nvim-tree/nvim-tree.lua',
-  opts = {},
+  opts = {
+    actions = {
+      open_file = {
+        quit_on_open = true,
+      },
+    },
+  },
   config = function(lazy, opts)
     require('nvim-tree').setup(opts)
     local api = require('nvim-tree.api')
 
     -- Open file on create
+    api.events.subscribe(api.events.Event.FileCreated, function(file)
+      vim.cmd('edit ' .. file.fname)
+    end)
+
+    -- Close on file open
     api.events.subscribe(api.events.Event.FileCreated, function(file)
       vim.cmd('edit ' .. file.fname)
     end)
