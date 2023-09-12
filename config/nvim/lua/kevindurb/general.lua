@@ -1,8 +1,11 @@
 local M = {}
 
 M.setup = function()
+  -- Leader Key
+  vim.keymap.set('n', ' ', '<Nop>', { silent = true, remap = false })
+  vim.g.mapleader = ' '
+
   -- General
-  vim.g.mapleader = ','
   vim.opt.encoding = 'utf-8'
   vim.opt.title = true -- set title in terminal
   vim.opt.wildmode = 'longest:list,full' -- make command completion more like zsh
