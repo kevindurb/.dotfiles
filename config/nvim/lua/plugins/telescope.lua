@@ -24,13 +24,18 @@ return {
   end,
   config = function(lazy, opts)
     local telescope = require('telescope')
+    local builtin = require('telescope.builtin')
+
     telescope.setup(opts)
     telescope.load_extension('fzf')
-
-    local builtin = require('telescope.builtin')
+    telescope.load_extension('refactoring')
 
     vim.keymap.set('n', '<C-p>', builtin.find_files, {})
     vim.keymap.set('n', '<C-o>', builtin.commands, {})
     vim.keymap.set('n', '<leader>b', builtin.buffers, {})
+
+    vim.keymap.set({ 'n', 'x' }, '<leader>rr', function()
+      telescope.extensions.refactoring.refactors()
+    end)
   end,
 }
