@@ -69,3 +69,5 @@
   conflictstyle = diff3
 [diff]
   colorMoved = default
+[credential "https://github.com"]
+	username = kevindurb
