@@ -31,6 +31,7 @@ end
 
 return {
   'nvim-tree/nvim-tree.lua',
+  enabled = false,
   opts = {
     actions = {
       open_file = {
