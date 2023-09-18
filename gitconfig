@@ -43,8 +43,6 @@
 [credential]
   helper = 
   helper = manager
-  credentialStore = cache
-  credentialStore = secretservice
 [pull]
   rebase = false
 [init]

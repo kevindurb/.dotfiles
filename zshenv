@@ -12,6 +12,12 @@ export HISTFILE=$HOME/.zhistory
 export ASPNETCORE_ENVIRONMENT="Development"
 export DISABLE_AUTO_TITLE="true"
 
+if [[ "$(uname)" == 'Darwin' ]]; then
+  export GCM_CREDENTIAL_STORE='keychain'
+else
+  export GCM_CREDENTIAL_STORE='secretstore'
+fi
+
 # Package Manager Bins
 CARGO_BIN=$HOME/.cargo/bin
 GO_BIN=/usr/local/go/bin
