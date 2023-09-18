@@ -11,6 +11,7 @@ local options = {
     'js-debug-adapter',
     'json-lsp',
     'lua-language-server',
+    'openscad-lsp',
     'prettierd',
     'shellcheck',
     'sqlfluff',

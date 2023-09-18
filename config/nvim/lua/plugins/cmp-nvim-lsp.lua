@@ -36,5 +36,6 @@ return {
     require('lspconfig').html.setup({ capabilities = capabilities })
     require('lspconfig').intelephense.setup({ capabilities = capabilities })
     require('lspconfig').sqlls.setup({ capabilities = capabilities })
+    require('lspconfig').openscad_ls.setup({ capabilities = capabilities })
   end,
 }
