@@ -1,5 +1,7 @@
 local options = {
   ensure_installed = {
+    'ansible-language-server',
+    'ansible-lint',
     'bash-language-server',
     'css-lsp',
     'dockerfile-language-server',
@@ -11,11 +13,13 @@ local options = {
     'js-debug-adapter',
     'json-lsp',
     'lua-language-server',
+    'marksman',
     'openscad-lsp',
     'prettierd',
     'shellcheck',
     'sqlfluff',
     'sqlls',
+    'stylelint',
     'stylua',
     'typescript-language-server',
     'yaml-language-server',
