@@ -4,11 +4,10 @@ return {
     local lint = require('lint')
     lint.linters_by_ft = {
       ansible = { 'ansible-lint' },
-      graphql = { 'prettierd' },
       javascript = { 'eslint_d' },
       shell = { 'shellcheck' },
       typescript = { 'eslint_d' },
-      yaml = { 'prettierd' },
+      yaml = { 'yamllint' },
     }
   end,
   init = function()

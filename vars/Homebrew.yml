@@ -6,6 +6,7 @@ host_packages:
   - 'awscli'
   - 'bash'
   - 'bat'
+  - 'buku'
   - 'cmatrix'
   - 'coreutils'
   - 'curl'
