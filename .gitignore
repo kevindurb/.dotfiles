@@ -2,3 +2,4 @@
 tags
 !.rgignore
 *.bak
+node_modules
