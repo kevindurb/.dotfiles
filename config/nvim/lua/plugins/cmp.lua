@@ -68,6 +68,7 @@ return {
     cmp.setup.filetype('markdown', {
       sources = cmp.config.sources({
         { name = 'spell' },
+        { name = 'nvim_lsp' },
       }, {
         { name = 'buffer' },
       }),
