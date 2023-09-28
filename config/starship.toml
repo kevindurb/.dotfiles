@@ -18,7 +18,10 @@ ssh_only = false
 show_always = true
 [directory.substitutions]
 "~" = '🏠'
-"~/projects" = '🚧'
+"projects" = '🚧'
+'Notes' = '📝'
+'Dropbox' = '📦'
+'.dotfiles' = '💾'
 
 [shell]
 disabled = false
