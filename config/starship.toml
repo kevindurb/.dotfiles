@@ -7,21 +7,17 @@ disabled = true
 disabled = true
 
 [cmd_duration]
-format = ''
 
 [hostname]
-ssh_only = false
+ssh_only = true
 
 [php]
 
 [username]
-show_always = true
+show_always = false
+
 [directory.substitutions]
 "~" = '🏠'
-"projects" = '🚧'
-'Notes' = '📝'
-'Dropbox' = '📦'
-'.dotfiles' = '💾'
 
 [shell]
 disabled = false
