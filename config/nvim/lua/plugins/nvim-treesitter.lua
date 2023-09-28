@@ -10,6 +10,8 @@ return {
       'query',
       'typescript',
       'javascript',
+      'http',
+      'json',
     },
     sync_install = false,
     auto_install = true,
