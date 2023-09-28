@@ -16,6 +16,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle git-auto-fetch
 antigen bundle ssh-agent
+antigen bundle emoji-clock
 antigen bundle git
 antigen bundle nvm
 antigen bundle tmux
@@ -23,9 +24,8 @@ antigen bundle autojump
 antigen bundle fzf
 antigen bundle yarn
 antigen bundle npm
-antigen bundle docker
-antigen bundle kubectl
 antigen bundle docker-compose
+antigen bundle docker
 antigen bundle kubectl
 antigen bundle colored-man-pages
 antigen bundle command-not-found
@@ -62,6 +62,7 @@ else
   alias ll="ls -lahF"
 fi
 
+alias b="buku --suggest"
 alias c="clear"
 alias maketags="ctags -R ."
 alias weather="curl wttr.in"
