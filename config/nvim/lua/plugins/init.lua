@@ -1,7 +1,6 @@
 -- Just basic plugins that dont need
 -- any setup
 return {
-  -- 'tpope/vim-vinegar', -- the best form of navigation
   'tpope/vim-fugitive', -- git commands in vim
   'tpope/vim-repeat', -- repeating plugin commands
   'tpope/vim-surround', -- surround with things

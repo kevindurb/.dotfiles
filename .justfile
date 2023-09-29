@@ -23,3 +23,6 @@ get-k8s:
 
 install-packages:
     ansible-playbook ./playbooks/install_packages.yml
+
+reload-kitty:
+    kill -SIGUSR1 $(pgrep kitty)
