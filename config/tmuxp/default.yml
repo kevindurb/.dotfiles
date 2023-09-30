@@ -1,0 +1,7 @@
+---
+session_name: default
+start_directory: ~
+windows:
+  - window_name: 1
+    panes:
+      - blank
