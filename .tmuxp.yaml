@@ -1,0 +1,7 @@
+---
+session_name: dotfiles
+start_directory: ./
+windows:
+  - window_name: dotfiles
+    panes:
+      - blank
