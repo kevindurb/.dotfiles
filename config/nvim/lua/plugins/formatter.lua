@@ -11,6 +11,14 @@ return {
           require('formatter.filetypes.javascript').prettierd,
           require('formatter.filetypes.javascript').eslint_d,
         },
+        typescriptreact = {
+          require('formatter.filetypes.typescript').prettierd,
+          require('formatter.filetypes.typescript').eslint_d,
+        },
+        javascriptreact = {
+          require('formatter.filetypes.javascript').prettierd,
+          require('formatter.filetypes.javascript').eslint_d,
+        },
         css = { require('formatter.filetypes.css').prettierd },
         graphql = { require('formatter.filetypes.graphql').prettierd },
         html = { require('formatter.filetypes.html').prettierd },
