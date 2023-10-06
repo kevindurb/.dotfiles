@@ -15,6 +15,8 @@ local options = {
     'lua-language-server',
     'marksman',
     'openscad-lsp',
+    'php-cs-fixer',
+    'phpcs',
     'prettierd',
     'shellcheck',
     'sqlfluff',

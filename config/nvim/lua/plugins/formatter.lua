@@ -25,6 +25,7 @@ return {
         json = { require('formatter.filetypes.json').prettierd },
         lua = { require('formatter.filetypes.lua').stylua },
         markdown = { require('formatter.filetypes.markdown').prettierd },
+        php = { require('formatter.filetypes.php').php_cs_fixer },
         yaml = { require('formatter.filetypes.yaml').prettierd },
       },
       ['*'] = { require('formatter.filetypes.any').remove_trailing_whitespace },

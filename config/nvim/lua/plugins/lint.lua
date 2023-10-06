@@ -10,6 +10,7 @@ return {
       typescript = { 'eslint_d' },
       typescriptreact = { 'eslint_d' },
       yaml = { 'yamllint' },
+      php = { 'phpcs' },
     }
   end,
   init = function()
