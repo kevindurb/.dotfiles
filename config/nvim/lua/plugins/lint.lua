@@ -5,9 +5,12 @@ return {
     lint.linters_by_ft = {
       ansible = { 'ansible-lint' },
       javascript = { 'eslint_d' },
+      javascriptreact = { 'eslint_d' },
       shell = { 'shellcheck' },
       typescript = { 'eslint_d' },
+      typescriptreact = { 'eslint_d' },
       yaml = { 'yamllint' },
+      php = { 'phpcs' },
     }
   end,
   init = function()
