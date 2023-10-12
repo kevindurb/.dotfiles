@@ -15,7 +15,7 @@ export DISABLE_AUTO_TITLE="true"
 if [[ "$(uname)" == 'Darwin' ]]; then
   export GCM_CREDENTIAL_STORE='keychain'
 else
-  export GCM_CREDENTIAL_STORE='secretstore'
+  export GCM_CREDENTIAL_STORE='secretservice'
 fi
 
 # Package Manager Bins
