@@ -4,6 +4,7 @@ return {
     'L3MON4D3/LuaSnip', -- snippet engine
     'onsails/lspkind.nvim', -- Vscode style icons
     'hrsh7th/cmp-buffer', -- auto complete buffer text
+    'hrsh7th/cmp-emoji', -- auto complete emoji
     'f3fora/cmp-spell', -- auto complete spelling
     'petertriho/cmp-git', -- auto complete git things
     'davidsierradz/cmp-conventionalcommits', -- auto complete conventional commits
@@ -60,6 +61,7 @@ return {
         { name = 'spell' },
         { name = 'git' },
         { name = 'conventionalcommits' },
+        { name = 'emoji' },
       }, {
         { name = 'buffer' },
       }),
@@ -69,9 +71,26 @@ return {
       sources = cmp.config.sources({
         { name = 'spell' },
         { name = 'nvim_lsp' },
+        { name = 'emoji' },
       }, {
         { name = 'buffer' },
       }),
     })
+
+    -- cmp.setup.cmdline({ '/', '?' }, {
+    --   mapping = cmp.mapping.preset.cmdline(),
+    --   sources = {
+    --     { name = 'buffer' },
+    --   },
+    -- })
+    --
+    -- cmp.setup.cmdline(':', {
+    --   mapping = cmp.mapping.preset.cmdline(),
+    --   sources = cmp.config.sources({
+    --     { name = 'path' },
+    --   }, {
+    --     { name = 'cmdline' },
+    --   }),
+    -- })
   end,
 }
