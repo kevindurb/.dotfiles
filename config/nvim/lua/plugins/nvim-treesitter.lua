@@ -1,5 +1,8 @@
 return {
   'nvim-treesitter/nvim-treesitter', -- the base for all things better
+  dependencies = {
+    'pfeiferj/nvim-hurl',
+  },
   build = ':TSUpdate',
   opts = {
     ensure_installed = {
