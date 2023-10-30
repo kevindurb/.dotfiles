@@ -1,3 +1,4 @@
+---
 git_protocol: https
 editor:
 prompt: enabled
@@ -7,5 +8,6 @@ aliases:
   myprs: pr list -S 'author:@me is:open'
   prurl: pr view --json url -q '.url'
   prv: pr view --comments
+  i: issue
 http_unix_socket:
 browser:
