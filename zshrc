@@ -62,6 +62,7 @@ else
   alias ll="ls -lahF"
 fi
 
+alias t="todo.sh"
 alias b="buku --suggest"
 alias c="clear"
 alias maketags="ctags -R ."
