@@ -30,6 +30,7 @@ antigen bundle kubectl
 antigen bundle colored-man-pages
 antigen bundle command-not-found
 antigen bundle chrissicool/zsh-256color
+antigen bundle thefuck
 
 antigen apply
 # }}}
