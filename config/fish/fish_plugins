@@ -9,3 +9,5 @@ acomagu/fish-async-prompt
 franciscolourenco/done
 jhillyerd/plugin-git
 danhper/fish-ssh-agent
+oh-my-fish/plugin-tmux
+jethrokuan/z
