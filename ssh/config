@@ -9,3 +9,4 @@ Host steamdeck
 
 ServerAliveInterval 5
 ServerAliveCountMax 1
+AddKeysToAgent yes
