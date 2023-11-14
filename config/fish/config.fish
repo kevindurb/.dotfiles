@@ -25,18 +25,14 @@ if status is-interactive
     alias ll="ls -lahF"
   end
 
-  alias t="todo.sh"
-  alias b="buku --suggest"
-  alias c="clear"
-  alias maketags="ctags -R ."
-  alias weather="curl 'wttr.in?0Q'"
-  alias forecast="curl wttr.in"
-  alias httpserver='python -m http.server 8080'
+  abbr --add t todo.sh
+  abbr --add c clear
   alias dadjoke='curl -H "Accept: text/plain" https://icanhazdadjoke.com/'
-  alias wtf="clear;cal;date;echo;pwd;echo;git branch"
 
-  function kubectl
-    kubecolor $argv
+  if type -q kubecolor
+    function kubectl
+      kubecolor $argv
+    end
   end
 
   set fish_greeting
@@ -46,6 +42,8 @@ if status is-interactive
   else
     set -Ux GCM_CREDENTIAL_STORE secretservice
   end
+
+  fish_vi_key_bindings
 end
 
 starship init fish | source
