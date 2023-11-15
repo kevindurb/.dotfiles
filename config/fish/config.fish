@@ -25,6 +25,7 @@ if status is-interactive
     alias ll="ls -lahF"
   end
 
+  abbr --add k kubectl
   abbr --add t todo.sh
   abbr --add c clear
   alias dadjoke='curl -H "Accept: text/plain" https://icanhazdadjoke.com/'
@@ -44,6 +45,9 @@ if status is-interactive
   end
 
   fish_vi_key_bindings
+
+  # Ensure node is always available
+  nvm use node > /dev/null 2>&1
 end
 
 starship init fish | source

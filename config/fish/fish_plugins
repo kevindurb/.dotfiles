@@ -3,7 +3,6 @@ oh-my-fish/plugin-brew
 jorgebucaran/autopair.fish
 evanlucas/fish-kubectl-completions
 patrickf1/fzf.fish
-jorgebucaran/fish-nvm
 laughedelic/brew-completions
 acomagu/fish-async-prompt
 franciscolourenco/done
@@ -15,3 +14,7 @@ nickeb96/puffer-fish
 decors/fish-colored-man
 edheltzel/fisher-plugin-macos
 gazorby/fish-abbreviation-tips
+oh-my-fish/plugin-config
+oh-my-fish/plugin-weather
+oh-my-fish/plugin-foreign-env
+edc/bass
