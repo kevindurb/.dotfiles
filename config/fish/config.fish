@@ -48,6 +48,8 @@ if status is-interactive
 
   # Ensure node is always available
   nvm use node > /dev/null 2>&1
+
+  fish_add_path ~/.local/bin
 end
 
 starship init fish | source
