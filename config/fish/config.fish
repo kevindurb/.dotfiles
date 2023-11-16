@@ -25,6 +25,7 @@ if status is-interactive
     alias ll="ls -lahF"
   end
 
+  abbr --add clock tty-clock -ct
   abbr --add k kubectl
   abbr --add t todo.sh
   abbr --add c clear
