@@ -8,8 +8,6 @@ antidote load
 # }}}
 
 # {{{ Aliases
-alias dot="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
-
 [ -x "$(command -v bat)" ] && alias cat="bat"
 [ -x "$(command -v batcat)" ] && alias cat="batcat"
 [ -x "$(command -v prettyping)" ] && alias ping="prettyping"
