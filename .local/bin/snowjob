@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env bash
 # https://gist.github.com/sontek/1505483/ed3449161c88f3ca5f96c1286009fc68d326d4e8
 
 LINES=$(tput lines)
@@ -16,11 +16,11 @@ function move_flake() {
         snowflakes[$i]=0
     else
         if [ "${lastflakes[$i]}" != "" ]; then
-            printf "\033[%s;%sH \033[1;1H " ${lastflakes[$i]} $i
+            printf "\033[%s;%sH \033[1;1H " "${lastflakes[$i]}" "$i"
         fi
     fi
 
-    printf "\033[%s;%sH❄\033[1;1H" ${snowflakes[$i]} $i
+    printf "\033[%s;%sH❄\033[1;1H" "${snowflakes[$i]}" "$i"
 
     lastflakes[$i]=${snowflakes[$i]}
     snowflakes[$i]=$((${snowflakes[$i]}+1))
@@ -28,7 +28,7 @@ function move_flake() {
 
 while :
 do
-    i=$(($RANDOM % $COLUMNS))
+    i=$((RANDOM % COLUMNS))
 
     move_flake $i
 
