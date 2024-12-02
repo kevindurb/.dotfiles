@@ -62,3 +62,20 @@
   conflictstyle = zdiff3
 [diff]
   colorMoved = default
+[alias]
+  d = diff
+  f = fetch
+  fa = fetch --all --prune
+  l = log
+  a = add
+  aa = add --all
+  ss = status -s
+  gp = push origin
+  gl = pull origin
+  cam = commit -am
+  cb = checkout -b
+  bd = branch -d
+  bD = branch -D
+  co = checkout
+  cp = cherry-pick
+  rhh = reset --hard
