@@ -66,12 +66,13 @@
   d = diff
   f = fetch
   fa = fetch --all --prune
-  l = log
+  ll = log --oneline
   a = add
   aa = add --all
-  ss = status -s
-  gp = push origin
-  gl = pull origin
+  s = status -sb
+  p = push
+  pu = pull
+  cm = commit -m
   cam = commit -am
   cb = checkout -b
   bd = branch -d
