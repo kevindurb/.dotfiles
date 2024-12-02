@@ -1,0 +1,6 @@
+[submodule "/Users/kevindurbin/.tmux/plugins/tpm"]
+	path = /Users/kevindurbin/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "/Users/kevindurbin/.antidote"]
+	path = /Users/kevindurbin/.antidote
+	url = https://github.com/mattmc3/antidote.git
