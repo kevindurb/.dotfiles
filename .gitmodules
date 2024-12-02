@@ -1,6 +1,6 @@
-[submodule "/Users/kevindurbin/.tmux/plugins/tpm"]
-	path = /Users/kevindurbin/.tmux/plugins/tpm
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule "/Users/kevindurbin/.antidote"]
-	path = /Users/kevindurbin/.antidote
+[submodule ".antidote"]
+	path = .antidote
 	url = https://github.com/mattmc3/antidote.git
