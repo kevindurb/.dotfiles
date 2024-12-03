@@ -9,11 +9,20 @@ return {
     'petertriho/cmp-git', -- auto complete git things
     'davidsierradz/cmp-conventionalcommits', -- auto complete conventional commits
     'saadparwaiz1/cmp_luasnip',
+    'zbirenbaum/copilot-cmp',
   },
   event = 'InsertEnter',
   config = function()
     local cmp = require('cmp')
     local lspkind = require('lspkind')
+
+    lspkind.init({
+      symbol_map = {
+        Copilot = '',
+      },
+    })
+
+    vim.api.nvim_set_hl(0, 'CmpItemKindCopilot', { fg = '#6CC644' })
 
     cmp.setup({
       snippet = {
@@ -39,6 +48,7 @@ return {
         ['<C-Space>'] = cmp.mapping.confirm({ select = true }),
       },
       sources = {
+        { name = 'copilot' },
         { name = 'luasnip' },
         { name = 'nvim_lsp' },
         { name = 'path' },
@@ -61,6 +71,7 @@ return {
     -- Set configuration for specific filetype.
     cmp.setup.filetype('gitcommit', {
       sources = cmp.config.sources({
+        { name = 'copilot' },
         { name = 'spell' },
         { name = 'git' },
         { name = 'conventionalcommits' },
@@ -72,6 +83,7 @@ return {
 
     cmp.setup.filetype('markdown', {
       sources = cmp.config.sources({
+        { name = 'copilot' },
         { name = 'spell' },
         { name = 'nvim_lsp' },
         { name = 'emoji' },
@@ -80,20 +92,20 @@ return {
       }),
     })
 
-    -- cmp.setup.cmdline({ '/', '?' }, {
-    --   mapping = cmp.mapping.preset.cmdline(),
-    --   sources = {
-    --     { name = 'buffer' },
-    --   },
-    -- })
-    --
-    -- cmp.setup.cmdline(':', {
-    --   mapping = cmp.mapping.preset.cmdline(),
-    --   sources = cmp.config.sources({
-    --     { name = 'path' },
-    --   }, {
-    --     { name = 'cmdline' },
-    --   }),
-    -- })
+    cmp.setup.cmdline({ '/', '?' }, {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = {
+        { name = 'buffer' },
+      },
+    })
+
+    cmp.setup.cmdline(':', {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = cmp.config.sources({
+        { name = 'path' },
+      }, {
+        { name = 'cmdline' },
+      }),
+    })
   end,
 }
