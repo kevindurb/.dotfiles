@@ -9,6 +9,7 @@ antidote load
 
 # {{{ Aliases
 alias dot="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
+compdef dot="git"
 
 [ -x "$(command -v bat)" ] && alias cat="bat"
 [ -x "$(command -v batcat)" ] && alias cat="batcat"
@@ -22,6 +23,8 @@ else
   alias ll="ls -lahF"
 fi
 
+alias g="git"
+compdef g="git"
 alias c="clear"
 alias weather="curl 'wttr.in?0Q'"
 alias forecast="curl wttr.in"
@@ -31,6 +34,8 @@ if ! type pbcopy > /dev/null; then
   alias pbcopy='xclip -selection clipboard'
   alias pbpaste='xclip -selection clipboard -o'
 fi
+
+setopt complete_aliases
 # }}}
 
 # {{{ Config
@@ -68,12 +73,3 @@ setopt SHARE_HISTORY
 # {{{ Add Starship Prompt
 eval "$(starship init zsh)"
 # }}}
-
-# Keep this here to prevent fzf from adding
-# unneeded line
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Keep this here to prevent nvm from adding
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
