@@ -1,4 +1,3 @@
-import = ['~/.config/alacritty/catppuccin-macchiato.toml']
 [font]
 size = 13
 [font.normal]
@@ -8,6 +7,11 @@ TERM = "xterm-256color"
 [window]
 opacity = 0.95
 blur = false
-[shell]
+
+[general]
+import = ['~/.config/alacritty/catppuccin-macchiato.toml']
+
+[terminal]
+[terminal.shell]
 program = "zsh"
 args = ["-l"]
