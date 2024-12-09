@@ -74,7 +74,7 @@
   pu = pull
   cm = commit -m
   cam = commit -am
-  cb = checkout -b
+  b = checkout -b
   bd = branch -d
   bD = branch -D
   co = checkout
