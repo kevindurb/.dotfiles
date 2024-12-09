@@ -1,2 +1,43 @@
+# Default Ignore All
 *
+
+# Repo Configs
+!.gitmodules
+!.gitignore
+
+# ZSH Configs
+!.zshrc
+!.zshenv
+!.zsh_plugins.txt
+!.antidote
+
+# App Configs
+!.myclirc
+!.tmux.conf
+!.tmux/plugins/tpm
 !.config/nvim
+!.config/k9s/aliases.yaml
+!.config/k9s/config.yaml
+!.config/k9s/skins
+!.config/alacritty
+!.config/gh/config.yml
+!.config/topgrade.toml
+!.config/starship.toml
+
+# Global Settings
+!Taskfile.yml
+!Brewfile
+!.yamlfmt
+!.ssh/config
+!.prettierrc
+!.local/share/fonts
+!.dir_colors
+
+# Global Git Configs
+!.stCommitMsg
+!.config/git/config
+!.config/git/ignore
+
+# Custom Scripts
+!.local/bin/whale
+!.local/bin/snowjob
