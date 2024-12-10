@@ -71,7 +71,7 @@
   aa = add --all
   s = status -sb
   p = push
-  pu = pull
+  l = pull
   cm = commit -m
   cam = commit -am
   b = checkout -b
