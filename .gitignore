@@ -13,6 +13,7 @@
 
 # App Configs
 !.myclirc
+!.gitmux.conf
 !.tmux.conf
 !.tmux/plugins/tpm
 !.config/nvim
