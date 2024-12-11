@@ -5,7 +5,7 @@ family = "Hack Nerd Font"
 [env]
 TERM = "xterm-256color"
 [window]
-opacity = 0.95
+opacity = 1
 blur = false
 
 [general]
