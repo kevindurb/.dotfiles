@@ -169,6 +169,7 @@ symbol = " "
 symbol = " "
 
 [python]
+disabled = true
 symbol = " "
 
 [rlang]
