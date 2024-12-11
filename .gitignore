@@ -16,6 +16,9 @@
 !.gitmux.conf
 !.tmux.conf
 !.tmux/plugins/tpm
+!.config/tmux/tmux.conf
+!.config/tmux/plugins/tpm
+!.config/tmux/tmux-nerd-font-window-name.yml
 !.config/nvim
 !.config/k9s/aliases.yaml
 !.config/k9s/config.yaml

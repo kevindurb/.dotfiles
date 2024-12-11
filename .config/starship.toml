@@ -21,7 +21,7 @@ symbol = " "
 show_always = false
 
 [directory.substitutions]
-"~" = '🏠'
+"~" = '󰋜'
 
 [shell]
 disabled = false
