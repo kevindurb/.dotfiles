@@ -1,6 +1,7 @@
 [core]
   editor = nvim
   excludesfile = ~/.config/git/ignore
+  pager = delta
 [user]
   name = Kevin Durbin
   email = kevindurb@fastmail.com
