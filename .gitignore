@@ -47,3 +47,6 @@
 # Custom Scripts
 !.local/bin/whale
 !.local/bin/snowjob
+
+# Nix Configs
+!.config/home-manager
