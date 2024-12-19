@@ -49,4 +49,4 @@
 !.local/bin/snowjob
 
 # Nix Configs
-!.config/home-manager
+!.config/nix

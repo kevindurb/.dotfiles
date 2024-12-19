@@ -1,12 +1,9 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 let
   isMacos = pkgs.stdenv.isDarwin;
 in {
   home = {
-    username = if isMacos then "kevindurbin" else "kevindurb";
-    homeDirectory = if isMacos then "/Users/kevindurbin" else "/home/kevindurb";
-
     stateVersion = "24.11"; # Please read the comment before changing.
     packages = with pkgs; [
       aws-vault
@@ -63,9 +60,8 @@ in {
   };
 
   services = {
-      syncthing = {
-          enable = true;
-      };
+      syncthing.enable = true;
+      # ollama.enable = true;
   };
 
   programs.home-manager.enable = true;

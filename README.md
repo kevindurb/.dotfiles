@@ -11,3 +11,14 @@
 
 1. Add to `~/.gitignore`
 2. `dot add path/to/file`
+
+## Nix
+
+### Bootstraping
+
+1. Install Nix
+2. `nix --extra-experimental-features nix-command --extra-experimental-features flakes run nix-darwin -- switch --flake ~/.config/nix`
+
+### Updating
+
+`darwin-rebuild switch --flake ~/.config/nix`
