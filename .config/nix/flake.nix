@@ -25,5 +25,19 @@
         ];
       };
     };
+    nixosConfigurations = {
+      tablet = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./tablet/configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.kevindurb = import ./common/home.nix;
+          }
+        ];
+      };
+    };
   };
 }
