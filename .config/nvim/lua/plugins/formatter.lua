@@ -41,6 +41,7 @@ return {
         toml = { require('formatter.filetypes.toml').taplo },
         cs = { require('formatter.filetypes.cs').dotnetformat },
         go = { require('formatter.filetypes.go').gofmt },
+        nix = { require('formatter.filetypes.nix').nixfmt },
       },
       ['*'] = { require('formatter.filetypes.any').remove_trailing_whitespace },
     }
