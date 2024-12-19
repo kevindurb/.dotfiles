@@ -20,7 +20,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.kevindurbin = import ./workmac/home.nix;
+            home-manager.users.kevindurbin = import ./common/home.nix;
           }
         ];
       };

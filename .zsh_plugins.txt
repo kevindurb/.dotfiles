@@ -1,5 +1,3 @@
-ohmyzsh/ohmyzsh path:plugins/brew
-
 zsh-users/zsh-completions
 belak/zsh-utils path:completion
 belak/zsh-utils path:editor
