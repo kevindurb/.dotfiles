@@ -27,8 +27,9 @@
       htop
       httpie
       jq
-      kubectl
+      k9s
       krew
+      kubectl
       kustomize
       lazygit
       litecli
