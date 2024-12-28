@@ -18,11 +18,11 @@ return {
       'jsonls',
       'lua_ls',
       'marksman',
-      'openscad_lsp',
+      -- 'openscad_lsp',
       'sqlls',
       'ts_ls',
       'yamlls',
-      'nil_ls',
+      -- 'nil_ls',
     },
     handlers = {
       function(server_name)
