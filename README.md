@@ -14,11 +14,11 @@
 
 ## Nix
 
-### Bootstraping
+### MacOS
 
-1. Install Nix
-2. `nix --extra-experimental-features nix-command --extra-experimental-features flakes run nix-darwin -- switch --flake ~/.config/nix`
+- `nix --extra-experimental-features nix-command --extra-experimental-features flakes run nix-darwin -- switch --flake ~/.config/nix`
+- `darwin-rebuild switch --flake ~/.config/nix`
 
-### Updating
+### Linux
 
-`darwin-rebuild switch --flake ~/.config/nix`
+- `nix flake update --flake .config/nix`

@@ -7,11 +7,13 @@
       aws-vault
       awscli
       bat
+      cargo
       cmatrix
       cowsay
       curl
-      duf
+      delta
       difftastic
+      duf
       entr
       eza
       fastfetch
@@ -20,7 +22,6 @@
       gd
       gh
       git
-      delta
       git-extras
       gitmux
       go-task
@@ -28,6 +29,7 @@
       httpie
       jq
       k9s
+      kubectl
       krew
       kubectl
       kustomize
@@ -38,6 +40,7 @@
       mycli
       ncdu
       neovim
+      nodejs
       noti
       nyancat
       ollama
@@ -45,6 +48,7 @@
       pgcli
       prettyping
       pv
+      python3
       ripgrep
       starship
       tig
@@ -59,8 +63,8 @@
   };
 
   services = {
-      syncthing.enable = true;
-      # ollama.enable = true;
+    syncthing.enable = true;
+    # ollama.enable = true;
   };
 
   programs.home-manager.enable = true;

@@ -35,6 +35,7 @@ return {
         toml = { 'taplo' },
         cs = { 'dotnetformat' },
         go = { 'gofmt' },
+        nix = { 'nixfmt' },
         ['_'] = { 'trim_whitespace' },
       },
       format_on_save = {

@@ -13,6 +13,7 @@ return {
       php = { 'phpcs' },
       go = { 'golangcilint' },
       dockerfile = { 'hadolint' },
+      nix = { 'nix' },
     },
     linters = {
       eslint_d = {

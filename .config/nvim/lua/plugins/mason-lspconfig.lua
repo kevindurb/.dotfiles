@@ -22,6 +22,7 @@ return {
       'sqlls',
       'ts_ls',
       'yamlls',
+      'nil_ls',
     },
     handlers = {
       function(server_name)
