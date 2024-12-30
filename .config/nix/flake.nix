@@ -10,12 +10,13 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, darwin, ... }: {
+  outputs = { nixpkgs, home-manager, darwin, ... }: {
     darwinConfigurations = {
       "Kevin-LWNFHQYQ5K" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
           ./workmac/configuration.nix
+          ./common/configuration.nix
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -29,6 +30,7 @@
       tablet = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
+          ./common/configuration.nix
           ./tablet/configuration.nix
           home-manager.nixosModules.home-manager
           {
