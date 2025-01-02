@@ -1,5 +1,8 @@
 #! /usr/bin/env zsh
 
+autoload -Uz compinit
+compinit
+
 # Load ~/.config/zsh/*.zsh
 for FILE in $HOME/.config/zsh/*.zsh; do
   if [ -f "$FILE" ]; then
