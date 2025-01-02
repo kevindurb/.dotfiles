@@ -1,13 +1,17 @@
 # Default Ignore All
 /**
-!/.config/
 
-# Repo Configs
+# Repo
 !/README.md
 !/.gitmodules
 !/.gitignore
+!/.config/
 
-# ZSH Configs
+# Nix
+!/.config/nix/
+!/.config/nix/*
+
+# ZSH
 !/.zshrc
 !/.zshenv
 !/.zsh_plugins.txt
@@ -15,28 +19,30 @@
 !/.config/zsh/
 !/.config/zsh/*
 
-# App Configs
-!/.myclirc
+# Tmux
 !/.gitmux.conf
 !/.tmux.conf
 !/.tmux/plugins/tpm
 !/.config/tmux/tmux.conf
 !/.config/tmux/plugins/tpm
 !/.config/tmux/tmux-nerd-font-window-name.yml
+
+# Neovim
 !/.config/nvim/
 !/.config/nvim/**
+
+# K9s
 !/.config/k9s/
 !/.config/k9s/aliases.yaml
 !/.config/k9s/config.yaml
 !/.config/k9s/skins/
 !/.config/k9s/skins/*
+
+# Alactritty
 !/.config/alacritty/
 !/.config/alacritty/*
-!/.config/gh/config.yml
-!/.config/topgrade.toml
-!/.config/starship.toml
 
-# Global Settings
+# Global
 !/Taskfile.yml
 !/Brewfile
 !/.Brewfile
@@ -56,6 +62,8 @@
 !/.local/bin/whale
 !/.local/bin/snowjob
 
-# Nix Configs
-!/.config/nix/
-!/.config/nix/*
+# Other
+!/.myclirc
+!/.config/gh/config.yml
+!/.config/topgrade.toml
+!/.config/starship.toml
