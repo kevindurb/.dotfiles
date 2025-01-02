@@ -1,53 +1,54 @@
 # Default Ignore All
-*
+/**
+!/.config/
 
 # Repo Configs
-!README.md
-!.gitmodules
-!.gitignore
+!/README.md
+!/.gitmodules
+!/.gitignore
 
 # ZSH Configs
-!.zshrc
-!.zshenv
-!.zsh_plugins.txt
-!.antidote
-!.config/zsh
+!/.zshrc
+!/.zshenv
+!/.zsh_plugins.txt
+!/.antidote
+!/.config/zsh/*
 
 # App Configs
-!.myclirc
-!.gitmux.conf
-!.tmux.conf
-!.tmux/plugins/tpm
-!.config/tmux/tmux.conf
-!.config/tmux/plugins/tpm
-!.config/tmux/tmux-nerd-font-window-name.yml
-!.config/nvim
-!.config/k9s/aliases.yaml
-!.config/k9s/config.yaml
-!.config/k9s/skins
-!.config/alacritty
-!.config/gh/config.yml
-!.config/topgrade.toml
-!.config/starship.toml
+!/.myclirc
+!/.gitmux.conf
+!/.tmux.conf
+!/.tmux/plugins/tpm
+!/.config/tmux/tmux.conf
+!/.config/tmux/plugins/tpm
+!/.config/tmux/tmux-nerd-font-window-name.yml
+!/.config/nvim/*
+!/.config/k9s/aliases.yaml
+!/.config/k9s/config.yaml
+!/.config/k9s/skins/*
+!/.config/alacritty/*
+!/.config/gh/config.yml
+!/.config/topgrade.toml
+!/.config/starship.toml
 
 # Global Settings
-!Taskfile.yml
-!Brewfile
-!.Brewfile
-!.yamlfmt
-!.ssh/config
-!.prettierrc
-!.local/share/fonts
-!.dir_colors
+!/Taskfile.yml
+!/Brewfile
+!/.Brewfile
+!/.yamlfmt
+!/.ssh/config
+!/.prettierrc
+!/.local/share/fonts/*
+!/.dir_colors
 
 # Global Git Configs
-!.stCommitMsg
-!.config/git/config
-!.config/git/ignore
+!/.stCommitMsg
+!/.config/git/config
+!/.config/git/ignore
 
 # Custom Scripts
-!.local/bin/whale
-!.local/bin/snowjob
+!/.local/bin/whale
+!/.local/bin/snowjob
 
 # Nix Configs
-!.config/nix
+!/.config/nix/*
