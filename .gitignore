@@ -5,6 +5,7 @@
 !/README.md
 !/.gitmodules
 !/.gitignore
+!/.rgignore
 !/.config/
 
 # Nix
