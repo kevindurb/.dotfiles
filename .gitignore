@@ -12,6 +12,7 @@
 !/.zshenv
 !/.zsh_plugins.txt
 !/.antidote
+!/.config/zsh/
 !/.config/zsh/*
 
 # App Configs
@@ -22,10 +23,14 @@
 !/.config/tmux/tmux.conf
 !/.config/tmux/plugins/tpm
 !/.config/tmux/tmux-nerd-font-window-name.yml
-!/.config/nvim/*
+!/.config/nvim/
+!/.config/nvim/**
+!/.config/k9s/
 !/.config/k9s/aliases.yaml
 !/.config/k9s/config.yaml
+!/.config/k9s/skins/
 !/.config/k9s/skins/*
+!/.config/alacritty/
 !/.config/alacritty/*
 !/.config/gh/config.yml
 !/.config/topgrade.toml
@@ -38,6 +43,7 @@
 !/.yamlfmt
 !/.ssh/config
 !/.prettierrc
+!/.local/share/fonts/
 !/.local/share/fonts/*
 !/.dir_colors
 
@@ -51,4 +57,5 @@
 !/.local/bin/snowjob
 
 # Nix Configs
+!/.config/nix/
 !/.config/nix/*
