@@ -1,3 +1,3 @@
 #! /usr/bin/env zsh
 
-eval "$(direnv hook zsh)"
+[ -x "$(command -v direnv)" ] && eval "$(direnv hook zsh)"
