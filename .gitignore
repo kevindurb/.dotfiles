@@ -48,17 +48,7 @@
 !/.config/taskfiles/
 !/.config/taskfiles/**
 
-# Global
-!/Brewfile
-!/.Brewfile
-!/.yamlfmt
-!/.ssh/config
-!/.prettierrc
-!/.local/share/fonts/
-!/.local/share/fonts/*
-!/.dir_colors
-
-# Global Git Configs
+# Git
 !/.stCommitMsg
 !/.config/git/config
 !/.config/git/ignore
@@ -68,6 +58,14 @@
 !/.local/bin/snowjob
 
 # Other
+!/Brewfile
+!/.Brewfile
+!/.yamlfmt
+!/.ssh/config
+!/.prettierrc
+!/.local/share/fonts/
+!/.local/share/fonts/*
+!/.dir_colors
 !/.myclirc
 !/.config/gh/config.yml
 !/.config/topgrade.toml

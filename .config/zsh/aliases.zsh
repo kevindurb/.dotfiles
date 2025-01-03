@@ -5,7 +5,6 @@ compdef dot="git"
 
 [ -x "$(command -v bat)" ] && alias cat="bat"
 [ -x "$(command -v prettyping)" ] && alias ping="prettyping"
-[ -x "$(command -v nvim)" ] && alias vim="nvim"
 [ -x "$(command -v eza)" ] && alias ll="eza -laF"
 [ -x "$(command -v go-task)" ] && alias task="go-task"
 
