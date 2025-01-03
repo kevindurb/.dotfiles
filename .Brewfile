@@ -52,6 +52,8 @@ brew "minijinja-cli"
 brew "mycli"
 brew "ncdu"
 brew "neovim"
+brew "node@20"
+brew "node@22", link: true
 brew "noti"
 brew "nyancat"
 brew "ollama", restart_service: :changed, start_service: true

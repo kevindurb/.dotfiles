@@ -43,8 +43,12 @@
 !/.config/alacritty/
 !/.config/alacritty/*
 
-# Global
+# Taskfile
 !/Taskfile.yml
+!/.config/taskfiles/
+!/.config/taskfiles/**
+
+# Global
 !/Brewfile
 !/.Brewfile
 !/.yamlfmt
