@@ -4,16 +4,11 @@ alias dot="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
 compdef dot="git"
 
 [ -x "$(command -v bat)" ] && alias cat="bat"
-[ -x "$(command -v batcat)" ] && alias cat="batcat"
 [ -x "$(command -v prettyping)" ] && alias ping="prettyping"
-[ -x "$(command -v ncdu)" ] && alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 [ -x "$(command -v nvim)" ] && alias vim="nvim"
+[ -x "$(command -v eza)" ] && alias ll="eza -laF"
 
-if [ -x "$(command -v eza)" ]; then
-  alias ll="eza -laF"
-else
-  alias ll="ls -lahF"
-fi
+alias bb="brew bundle install --global --cleanup"
 
 alias g="git"
 compdef g="git"

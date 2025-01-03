@@ -4,7 +4,6 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CACHE_HOME=$HOME/.cache
 
-export DOTFILES=$HOME/.dotfiles
 export SHELL=$(which zsh)
 export CLICOLOR=1
 export EDITOR='nvim'
@@ -13,18 +12,10 @@ export FZF_DEFAULT_COMMAND='rg --files'
 export LESS='-SRXF'
 export ASPNETCORE_ENVIRONMENT='Development'
 export DISABLE_AUTO_TITLE='true'
-export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY='latest_available'
-
-if [[ "$(uname)" == 'Darwin' ]]; then
-  export GCM_CREDENTIAL_STORE='keychain'
-else
-  export GCM_CREDENTIAL_STORE='secretservice'
-fi
 
 # Package Manager Bins
 CARGO_BIN=$HOME/.cargo/bin
 GO_BIN=/usr/local/go/bin
-BREW_BIN=/opt/homebrew/bin
 
 # Custom Bins
 DOT_LOCAL_BIN=$HOME/.local/bin
@@ -40,7 +31,6 @@ USR_LOCAL_SBIN=/usr/local/sbin
 
 # path
 export PATH=\
-$BREW_BIN:\
 $PATH:\
 $ROOT_BIN:\
 $ROOT_SBIN:\
