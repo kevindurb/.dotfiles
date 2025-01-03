@@ -15,6 +15,8 @@ else
   alias ll="ls -lahF"
 fi
 
+alias bb="brew bundle install --global --cleanup"
+
 alias g="git"
 compdef g="git"
 alias c="clear"
