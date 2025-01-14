@@ -18,6 +18,7 @@ return {
       'markdown_inline',
       'query',
       'regex',
+      'styled',
       'typescript',
       'vim',
       'vimdoc',
