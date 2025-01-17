@@ -43,6 +43,10 @@
 !/.config/alacritty/
 !/.config/alacritty/*
 
+# Wezterm
+!/.config/wezterm/
+!/.config/wezterm/*
+
 # Taskfile
 !/Taskfile.yml
 !/.config/taskfiles/

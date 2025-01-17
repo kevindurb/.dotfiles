@@ -83,7 +83,6 @@ brew "zoxide"
 
 cask_args appdir: "~/Applications", require_sha: true
 
-cask "alacritty"
 cask "bluesnooze"
 cask "firefox"
 cask "font-caskaydia-cove-nerd-font"
@@ -105,3 +104,4 @@ cask "tailscale"
 cask "tidal"
 cask "utm"
 cask "vlc"
+cask "wezterm"
