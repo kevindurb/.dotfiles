@@ -6,5 +6,6 @@ config.font_size = 13
 config.color_scheme = 'Catppuccin Macchiato'
 config.default_prog = { 'zsh', '-l' }
 config.hide_tab_bar_if_only_one_tab = true
+config.enable_wayland = true
 
 return config
