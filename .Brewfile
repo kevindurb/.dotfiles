@@ -65,7 +65,7 @@ brew "nyancat"
 brew "ollama", restart_service: :changed, start_service: true
 brew "openssh"
 brew "pgcli"
-brew "php@8.1"
+brew "php@8.1", link: true
 brew "podman"
 brew "prettyping"
 brew "procs"
@@ -80,6 +80,7 @@ brew "tldr"
 brew "tmux"
 brew "tree"
 brew "tty-clock"
+brew "wego"
 brew "yq"
 brew "zoxide"
 
