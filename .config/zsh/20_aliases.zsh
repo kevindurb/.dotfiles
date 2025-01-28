@@ -9,10 +9,12 @@ compdef dot="git"
 [ -x "$(command -v go-task)" ] && alias task="go-task"
 
 alias g="git"
+compdef g="git"
+
 alias c="clear"
-alias weather="curl 'wttr.in?0Q'"
-alias forecast="curl wttr.in"
-alias dadjoke='curl -H "Accept: text/plain" https://icanhazdadjoke.com/'
+compdef c="clear"
+
 alias gt="task --global"
+compdef gt="task"
 
 setopt complete_aliases
