@@ -60,12 +60,14 @@ brew "minijinja-cli"
 brew "mycli"
 brew "ncdu"
 brew "neovim"
+brew "nmap"
 brew "node@20"
 brew "node@22", link: true
 brew "noti"
 brew "nyancat"
 brew "ollama", restart_service: :changed, start_service: true
 brew "openssh"
+brew "ouch"
 brew "pgcli"
 brew "php@8.1", link: true
 brew "podman"
