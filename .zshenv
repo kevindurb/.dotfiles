@@ -15,7 +15,7 @@ export DISABLE_AUTO_TITLE='true'
 
 # Package Manager Bins
 CARGO_BIN=$HOME/.cargo/bin
-GO_BIN=/usr/local/go/bin
+GO_BIN=$HOME/go/bin
 
 # Custom Bins
 DOT_LOCAL_BIN=$HOME/.local/bin
