@@ -38,6 +38,8 @@
 !/.config/k9s/config.yaml
 !/.config/k9s/skins/
 !/.config/k9s/skins/*
+!/.config/k9s/plugins/
+!/.config/k9s/plugins/*
 
 # Alactritty
 !/.config/alacritty/
