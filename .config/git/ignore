@@ -22,3 +22,4 @@ node_modules
 .starscope.db
 cscope.out
 .rgignore
+.aider*
