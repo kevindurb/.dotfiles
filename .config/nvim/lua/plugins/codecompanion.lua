@@ -5,7 +5,7 @@ return {
     'nvim-treesitter/nvim-treesitter',
   },
   keys = {
-    { '<C-a>', '<cmd>CodeCompanionActions<cr>' },
+    { '<C-a>',     '<cmd>CodeCompanionActions<cr>' },
     { '<leader>a', '<cmd>CodeCompanionChat Toggle<cr>' },
   },
   opts = {
@@ -22,7 +22,7 @@ return {
         return require('codecompanion.adapters').extend('ollama', {
           schema = {
             model = {
-              default = 'llama3.2:latest',
+              default = 'deepseek-coder-v2',
             },
           },
         })
