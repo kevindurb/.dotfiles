@@ -7,6 +7,7 @@
 !/.gitignore
 !/.rgignore
 !/.config/
+!/.local/
 
 # Nix
 !/.config/nix/
@@ -59,14 +60,17 @@
 
 # Git
 !/.stCommitMsg
+!/.config/git/
 !/.config/git/config
 !/.config/git/ignore
 
 # Custom Scripts
+!/.local/bin/
 !/.local/bin/whale
 !/.local/bin/snowjob
 
 # Fonts
+!/.local/share/
 !/.local/share/fonts/
 !/.local/share/fonts/*
 
@@ -89,3 +93,6 @@
 !/.myclirc
 !/.config/topgrade.toml
 !/.config/starship.toml
+
+# Always Ignore
+.DS_Store
