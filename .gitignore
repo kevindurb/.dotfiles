@@ -41,6 +41,9 @@
 !/.config/k9s/plugins/
 !/.config/k9s/plugins/*
 
+# Aider
+!/.aider.conf.yml
+
 # Alactritty
 !/.config/alacritty/
 !/.config/alacritty/*
