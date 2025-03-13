@@ -66,16 +66,26 @@
 !/.local/bin/whale
 !/.local/bin/snowjob
 
+# Fonts
+!/.local/share/fonts/
+!/.local/share/fonts/*
+
+# Code Formatting
+!/.yamlfmt
+!/.prettierrc
+
+# SSH
+!/.ssh/
+!/.ssh/config
+
+# gh
+!/.config/gh/
+!/.config/gh/config.yml
+
 # Other
 !/Brewfile
 !/.Brewfile
-!/.yamlfmt
-!/.ssh/config
-!/.prettierrc
-!/.local/share/fonts/
-!/.local/share/fonts/*
 !/.dir_colors
 !/.myclirc
-!/.config/gh/config.yml
 !/.config/topgrade.toml
 !/.config/starship.toml
