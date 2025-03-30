@@ -81,5 +81,7 @@
   co = checkout
   cp = cherry-pick
   rhh = reset --hard
+  sw = switch
+  m = merge
 [help]
 	autocorrect = prompt
