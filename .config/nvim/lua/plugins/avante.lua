@@ -5,8 +5,8 @@ return {
   opts = {
     provider = "ollama",
     ollama = {
-      model = "gemma3:12b",
-    }
+      model = "llama3.2",
+    },
   },
   build = "make",
   dependencies = {
