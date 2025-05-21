@@ -1,7 +1,6 @@
 tap "FelixKratz/formulae"
 tap "arl/arl"
 tap "homebrew/bundle"
-tap "homebrew/linux-fonts"
 tap "homebrew/services"
 tap "localsend/localsend"
 tap "microsoft/git"
@@ -102,10 +101,6 @@ cask_args appdir: "~/Applications", require_sha: true
 
 cask "bluesnooze"
 cask "firefox"
-cask "font-caskaydia-cove-nerd-font"
-cask "font-fira-code-nerd-font"
-cask "font-hack-nerd-font"
-cask "font-jetbrains-mono-nerd-font"
 cask "keepingyouawake"
 cask "localsend"
 cask "moonlight"

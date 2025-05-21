@@ -81,6 +81,11 @@
 !/.config/gh/
 !/.config/gh/config.yml
 
+# fonts
+!/.local/share/
+!/.local/share/fonts/
+!/.local/share/fonts/*
+
 # Other
 !/Brewfile
 !/.Brewfile
@@ -88,6 +93,7 @@
 !/.myclirc
 !/.config/topgrade.toml
 !/.config/starship.toml
+!/.distroboxrc
 
 # Always Ignore
 .DS_Store
