@@ -23,3 +23,5 @@ node_modules
 cscope.out
 .rgignore
 .aider*
+
+**/.claude/settings.local.json
