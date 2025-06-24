@@ -6,3 +6,6 @@ for FILE in $HOME/.config/zsh/*.zsh; do
     source "$FILE"
   fi
 done
+
+# bun completions
+[ -s "/Users/kevindurbin/.bun/_bun" ] && source "/Users/kevindurbin/.bun/_bun"
