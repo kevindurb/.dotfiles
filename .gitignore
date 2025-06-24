@@ -9,6 +9,10 @@
 !/.config/
 !/.local/
 
+# Claude
+!/.claude
+!/.claude/CLAUDE.md
+
 # Nix
 !/.config/nix/
 !/.config/nix/*
@@ -20,6 +24,7 @@
 !/.antidote
 !/.config/zsh/
 !/.config/zsh/*
+.config/zsh/100_claude_bedrock.zsh
 
 # Tmux
 !/.gitmux.conf
