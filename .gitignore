@@ -26,6 +26,11 @@
 !/.config/zsh/*
 .config/zsh/100_claude_bedrock.zsh
 
+# Zellij
+!/.config/zellij/
+!/.config/zellij/*
+/.config/zellij/*.bak
+
 # Tmux
 !/.gitmux.conf
 !/.tmux.conf
