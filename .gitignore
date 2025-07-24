@@ -10,8 +10,12 @@
 !/.local/
 
 # Claude
-!/.claude
+!/.claude/
 !/.claude/CLAUDE.md
+
+# Rectangle
+!/.config/rectangle/
+!/.config/rectangle/config.json
 
 # Nix
 !/.config/nix/
