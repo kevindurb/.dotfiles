@@ -12,6 +12,8 @@
 # Claude
 !/.claude/
 !/.claude/CLAUDE.md
+!/.claude/agents/
+!/.claude/agents/*
 
 # Rectangle
 !/.config/rectangle/
