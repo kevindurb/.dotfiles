@@ -38,6 +38,8 @@
 !/.config/zellij/
 !/.config/zellij/*
 /.config/zellij/*.bak
+!/.config/zellij/layouts/
+!/.config/zellij/layouts/*
 
 # Tmux
 !/.gitmux.conf
