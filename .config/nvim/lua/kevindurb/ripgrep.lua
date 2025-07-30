@@ -1,25 +1,43 @@
 local M = {}
 
 M.setup = function()
-  -- if you have rg use rg for vimgrep
-  vim.cmd([[
-    if executable('rg')
-      set grepprg=rg\ --vimgrep
-    endif
+  -- Check if ripgrep is executable and set grepprg
+  if vim.fn.executable('rg') == 1 then
+    vim.opt.grepprg = 'rg --vimgrep'
+  end
 
-    " Rg command for searching in vim
-    command! -nargs=+ -complete=file -bar Rg silent! grep! <args>|cwindow|redraw!
+  -- Create Rg command for searching
+  vim.api.nvim_create_user_command('Rg', function(opts)
+    vim.cmd('silent! grep! ' .. opts.args)
+    vim.cmd('cwindow')
+    vim.cmd('redraw!')
+  end, {
+    nargs = '+',
+    complete = 'file',
+    bar = true
+  })
 
-    " Auto open quickfix after search
-    augroup quickfix
-        autocmd!
-        autocmd QuickFixCmdPost [^l]* cwindow
-        autocmd QuickFixCmdPost l* lwindow
-    augroup END
+  -- Auto open quickfix after search
+  local quickfix_group = vim.api.nvim_create_augroup('quickfix', { clear = true })
 
-    " K keymap for searching word under cursor
-    nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-  ]])
+  vim.api.nvim_create_autocmd('QuickFixCmdPost', {
+    group = quickfix_group,
+    pattern = '[^l]*',
+    command = 'cwindow'
+  })
+
+  vim.api.nvim_create_autocmd('QuickFixCmdPost', {
+    group = quickfix_group,
+    pattern = 'l*',
+    command = 'lwindow'
+  })
+
+  -- K keymap for searching word under cursor
+  vim.keymap.set('n', 'K', function()
+    local word = vim.fn.expand('<cword>')
+    vim.cmd('grep! "\\b' .. word .. '\\b"')
+    vim.cmd('cw')
+  end)
 end
 
 return M

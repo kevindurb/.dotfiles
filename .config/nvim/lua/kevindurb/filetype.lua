@@ -1,49 +1,92 @@
 local M = {}
 
 M.setup = function()
-  vim.cmd([[
-    " spelling in markdown and commit messages
-    autocmd FileType markdown setlocal spell
-    autocmd FileType gitcommit setlocal spell
+  local augroup = vim.api.nvim_create_augroup
+  local autocmd = vim.api.nvim_create_autocmd
 
-    " wordwrap for markdown
-    autocmd FileType markdown setlocal wrap
+  -- Spelling in markdown and commit messages
+  autocmd('FileType', {
+    pattern = { 'markdown', 'gitcommit' },
+    callback = function()
+      vim.opt_local.spell = true
+    end,
+    desc = 'Enable spell checking for markdown and git commit messages'
+  })
 
-    " folding xml files
-    augroup XML
-      autocmd!
-      autocmd FileType xml setlocal foldmethod=indent
-    augroup END
+  -- Word wrap for markdown
+  autocmd('FileType', {
+    pattern = 'markdown',
+    callback = function()
+      vim.opt_local.wrap = true
+    end,
+    desc = 'Enable word wrap for markdown files'
+  })
 
-    " folding json files
-    augroup JSON
-      autocmd!
-      autocmd FileType json setlocal foldmethod=syntax
-    augroup END
+  -- Folding XML files
+  local xml_group = augroup('XML', { clear = true })
+  autocmd('FileType', {
+    group = xml_group,
+    pattern = 'xml',
+    callback = function()
+      vim.opt_local.foldmethod = 'indent'
+    end,
+    desc = 'Set indent folding for XML files'
+  })
 
-    " add syntax for rollback
-    augroup rollback
-      autocmd!
-      autocmd BufNewFile,BufRead *.rollback set syntax=sql
-    augroup END
+  -- Folding JSON files
+  local json_group = augroup('JSON', { clear = true })
+  autocmd('FileType', {
+    group = json_group,
+    pattern = 'json',
+    callback = function()
+      vim.opt_local.foldmethod = 'syntax'
+    end,
+    desc = 'Set syntax folding for JSON files'
+  })
 
-    " add syntax for dbt
-    augroup dbt
-      autocmd!
-      autocmd BufNewFile,BufRead *.sql set ft=jinja.sql
-    augroup END
+  -- Add syntax for rollback files
+  local rollback_group = augroup('rollback', { clear = true })
+  autocmd({ 'BufNewFile', 'BufRead' }, {
+    group = rollback_group,
+    pattern = '*.rollback',
+    callback = function()
+      vim.bo.syntax = 'sql'
+    end,
+    desc = 'Set SQL syntax for rollback files'
+  })
 
-    " add syntax for babelrc
-    augroup babelrc
-      autocmd!
-      autocmd BufNewFile,BufRead .babelrc set syntax=json
-    augroup END
+  -- Add syntax for dbt files
+  local dbt_group = augroup('dbt', { clear = true })
+  autocmd({ 'BufNewFile', 'BufRead' }, {
+    group = dbt_group,
+    pattern = '*.sql',
+    callback = function()
+      vim.bo.filetype = 'jinja.sql'
+    end,
+    desc = 'Set jinja.sql filetype for SQL files (dbt)'
+  })
 
-    augroup jenkinsfile
-      autocmd!
-      autocmd BufRead,BufNewFile Jenkinsfile set filetype=groovy
-    augroup END
-  ]])
+  -- Add syntax for babelrc files
+  local babelrc_group = augroup('babelrc', { clear = true })
+  autocmd({ 'BufNewFile', 'BufRead' }, {
+    group = babelrc_group,
+    pattern = '.babelrc',
+    callback = function()
+      vim.bo.syntax = 'json'
+    end,
+    desc = 'Set JSON syntax for .babelrc files'
+  })
+
+  -- Jenkinsfile syntax
+  local jenkinsfile_group = augroup('jenkinsfile', { clear = true })
+  autocmd({ 'BufRead', 'BufNewFile' }, {
+    group = jenkinsfile_group,
+    pattern = 'Jenkinsfile',
+    callback = function()
+      vim.bo.filetype = 'groovy'
+    end,
+    desc = 'Set groovy filetype for Jenkinsfile'
+  })
 end
 
 return M

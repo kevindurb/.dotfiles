@@ -1,23 +1,19 @@
 local M = {}
 
 M.setup = function()
-  vim.cmd([[
-    " horizontal splits open down
-    set splitbelow
+  -- Split behavior settings
+  vim.opt.splitbelow = true -- horizontal splits open down
+  vim.opt.splitright = true -- vertical splits open right
 
-    " vertical splits open right
-    set splitright
+  -- Quick splits keymaps
+  vim.keymap.set('n', '<leader>v', ':vsp<CR>', { desc = 'Vertical split' })
+  vim.keymap.set('n', '<leader>V', ':sp<CR>', { desc = 'Horizontal split' })
 
-    " quick splits
-    nmap <leader>v :vsp<CR>
-    nmap <leader>V :sp<CR>
-
-    " split navigation
-    nmap <C-h> <C-w><C-h>
-    nmap <C-j> <C-w><C-j>
-    nmap <C-k> <C-w><C-k>
-    nmap <C-l> <C-w><C-l>
-  ]])
+  -- Split navigation keymaps
+  vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move to left split' })
+  vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move to bottom split' })
+  vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move to top split' })
+  vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move to right split' })
 end
 
 return M
