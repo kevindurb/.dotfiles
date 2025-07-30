@@ -1,5 +1,6 @@
 return {
-  'hrsh7th/nvim-cmp',                        -- auto complete menu
+  'hrsh7th/nvim-cmp', -- auto complete menu
+  enabled = false,
   dependencies = {
     'L3MON4D3/LuaSnip',                      -- snippet engine
     'onsails/lspkind.nvim',                  -- Vscode style icons

@@ -1,5 +1,6 @@
 return {
   'hrsh7th/cmp-nvim-lsp', -- lsp in auto complete menu
+  enabled = false,
   dependencies = {
     'williamboman/mason-lspconfig.nvim',
     'hrsh7th/nvim-cmp',

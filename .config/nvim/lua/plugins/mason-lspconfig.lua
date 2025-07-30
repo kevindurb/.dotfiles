@@ -2,7 +2,7 @@ return {
   'williamboman/mason-lspconfig.nvim', -- connects mason to lspconfig
   dependencies = {
     'b0o/schemastore.nvim',
-    'hrsh7th/cmp-nvim-lsp',
+    -- 'hrsh7th/cmp-nvim-lsp',
     'williamboman/mason.nvim',
   },
   opts = {
@@ -26,22 +26,22 @@ return {
     },
     handlers = {
       function(server_name)
-        local capabilities = require('cmp_nvim_lsp').default_capabilities()
-        require('lspconfig')[server_name].setup({
-          capabilities = capabilities,
-        })
+        -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        -- require('lspconfig')[server_name].setup({
+        --   capabilities = capabilities,
+        -- })
       end,
       ['lua_ls'] = function()
-        local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
         require('lspconfig').lua_ls.setup({
-          capabilities = capabilities,
+          -- capabilities = capabilities,
           settings = { Lua = { diagnostics = { globals = { 'vim' } } } },
         })
       end,
       ['yamlls'] = function()
-        local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
         require('lspconfig').yamlls.setup({
-          capabilities = capabilities,
+          -- capabilities = capabilities,
           on_new_config = function(new_config)
             new_config.settings.yaml.schemas = vim.tbl_deep_extend(
               'force',

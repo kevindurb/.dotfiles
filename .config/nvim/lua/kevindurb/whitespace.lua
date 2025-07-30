@@ -1,1 +1,0 @@
-/Users/kevindurbin/.dotfiles/config/nvim/lua/kevindurb/whitespace.lua
