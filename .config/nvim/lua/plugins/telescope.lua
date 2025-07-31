@@ -1,5 +1,6 @@
 return {
   'nvim-telescope/telescope.nvim', -- pretty search
+  enabled = false,
   dependencies = {
     'nvim-lua/plenary.nvim',
     'echasnovski/mini.icons',
