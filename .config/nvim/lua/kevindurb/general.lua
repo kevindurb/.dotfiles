@@ -4,12 +4,11 @@ M.setup = function()
   -- General
   vim.g.mapleader = ','
   vim.opt.encoding = 'utf-8'
-  vim.opt.title = true                   -- set title in terminal
-  vim.opt.wildmode = 'longest:list,full' -- make command completion more like zsh
-  vim.opt.autowrite = true               -- save when you change buffers
-  vim.opt.clipboard = 'unnamedplus'      -- copy and paste in system clipboard
-  vim.opt.path = '.,src,**'              -- gf search current, src and recurrsive dir
-  vim.opt.suffixesadd = '.js,/index.js'  -- gf try adding .js to files
+  vim.opt.title = true                  -- set title in terminal
+  vim.opt.autowrite = true              -- save when you change buffers
+  vim.opt.clipboard = 'unnamedplus'     -- copy and paste in system clipboard
+  vim.opt.path = '.,src,**'             -- gf search current, src and recurrsive dir
+  vim.opt.suffixesadd = '.js,/index.js' -- gf try adding .js to files
   vim.opt.updatetime = 300
   vim.opt.mouse = 'a'
 
@@ -33,6 +32,7 @@ M.setup = function()
   vim.opt.expandtab = true   -- use soft tabs
 
   -- Searching
+  vim.opt.infercase = true
   vim.opt.hlsearch = true   -- highlight all search matches
   vim.opt.showmatch = true  -- highlight matching brace
   vim.opt.ignorecase = true -- ignore search case
