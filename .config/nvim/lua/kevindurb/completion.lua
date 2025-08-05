@@ -18,19 +18,13 @@ M.setup = function()
 
   -- Auto-trigger completion after typing characters
   local function auto_complete()
-    local col = vim.fn.col('.') - 1
-    local line = vim.fn.getline('.')
-    local char = line:sub(col, col)
-
-    -- Only trigger if we're not already in completion mode
     if vim.fn.pumvisible() == 0 then
-      -- Trigger after typing a word character
-      if char:match('%w') and col > 0 then
-        local prev_char = line:sub(col - 1, col - 1)
-        if prev_char:match('%w') then
-          -- We're in the middle of a word, trigger completion
-          vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-x><C-o>', true, false, true), 'n', false)
-        end
+      local line = vim.api.nvim_get_current_line()
+      local col = vim.api.nvim_win_get_cursor(0)[2]
+
+      -- Trigger as long as there's any non-whitespace character before cursor
+      if col > 0 and line:sub(col, col):match('%S') then
+        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-x><C-o>', true, false, true), 'n', false)
       end
     end
   end

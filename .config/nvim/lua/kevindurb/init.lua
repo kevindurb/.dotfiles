@@ -7,7 +7,7 @@ M.setup = function()
   require('kevindurb.general').setup()
   require('kevindurb.ripgrep').setup()
   require('kevindurb.splits').setup()
-  require('kevindurb.cmp').setup()
+  require('lua.kevindurb.completion').setup()
 end
 
 return M
