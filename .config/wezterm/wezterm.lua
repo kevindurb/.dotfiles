@@ -5,7 +5,8 @@ config.font = wezterm.font('CaskaydiaMono Nerd Font')
 config.font_size = 13
 config.color_scheme = 'Catppuccin Macchiato'
 config.default_prog = { 'zsh', '-l' }
-config.hide_tab_bar_if_only_one_tab = true
+config.hide_tab_bar_if_only_one_tab = false
 config.enable_wayland = true
+config.use_fancy_tab_bar = false
 
 return config
