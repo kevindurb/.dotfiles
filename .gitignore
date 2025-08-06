@@ -45,6 +45,7 @@
 !/.gitmux.conf
 !/.config/tmux/
 !/.config/tmux/tmux.conf
+!/.config/tmux/load-plugins.sh
 !/.config/tmux/plugins/
 !/.config/tmux/plugins/*
 !/.config/tmux/tmux-nerd-font-window-name.yml
