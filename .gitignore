@@ -46,14 +46,7 @@
 !/.config/tmux/
 !/.config/tmux/tmux.conf
 !/.config/tmux/plugins/
-!/.config/tmux/plugins/tpm
-!/.config/tmux/plugins/tmux-sensible
-!/.config/tmux/plugins/sensible
-!/.config/tmux/plugins/nord
-!/.config/tmux/plugins/yank
-!/.config/tmux/plugins/sessionist
-!/.config/tmux/plugins/nerd-font-window-name
-!/.config/tmux/plugins/pain-control
+!/.config/tmux/plugins/*
 !/.config/tmux/tmux-nerd-font-window-name.yml
 
 # Neovim
