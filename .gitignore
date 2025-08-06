@@ -50,6 +50,8 @@
 !/.config/tmux/plugins/
 !/.config/tmux/plugins/tpm
 !/.config/tmux/plugins/tmux-sensible
+!/.config/tmux/plugins/sensible
+!/.config/tmux/plugins/nord
 !/.config/tmux/tmux-nerd-font-window-name.yml
 
 # Neovim

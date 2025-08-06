@@ -4,6 +4,9 @@
 [submodule ".antidote"]
 	path = .antidote
 	url = https://github.com/mattmc3/antidote.git
-[submodule ".config/tmux/plugins/tmux-sensible"]
-	path = .config/tmux/plugins/tmux-sensible
+[submodule ".config/tmux/plugins/sensible"]
+	path = .config/tmux/plugins/sensible
 	url = git@github.com:tmux-plugins/tmux-sensible
+[submodule ".config/tmux/plugins/nord"]
+	path = .config/tmux/plugins/nord
+	url = git@github.com:nordtheme/tmux
