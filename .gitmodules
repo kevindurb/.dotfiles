@@ -10,3 +10,15 @@
 [submodule ".config/tmux/plugins/nord"]
 	path = .config/tmux/plugins/nord
 	url = git@github.com:nordtheme/tmux
+[submodule ".config/tmux/plugins/yank"]
+	path = .config/tmux/plugins/yank
+	url = git@github.com:tmux-plugins/tmux-yank
+[submodule ".config/tmux/plugins/pain-control"]
+	path = .config/tmux/plugins/pain-control
+	url = git@github.com:tmux-plugins/tmux-pain-control
+[submodule ".config/tmux/plugins/sessionist"]
+	path = .config/tmux/plugins/sessionist
+	url = git@github.com:tmux-plugins/tmux-sessionist
+[submodule ".config/tmux/plugins/nerd-font-window-name"]
+	path = .config/tmux/plugins/nerd-font-window-name
+	url = git@github.com:joshmedeski/tmux-nerd-font-window-name
