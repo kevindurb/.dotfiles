@@ -27,3 +27,5 @@ cscope.out
 **/.claude/settings.local.json
 
 **/CLAUDE.local.md
+
+**/.crush/

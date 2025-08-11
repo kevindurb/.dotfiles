@@ -1,3 +1,5 @@
+# vim: set ft=ruby:
+
 tap "FelixKratz/formulae"
 tap "arl/arl"
 tap "localsend/localsend"
@@ -13,6 +15,7 @@ brew "bash"
 brew "bat"
 brew "bottom"
 brew "bun"
+brew "charmbracelet/tap/crush"
 brew "chezmoi"
 brew "cmake"
 brew "cmatrix"
@@ -30,6 +33,7 @@ brew "fastfetch"
 brew "figlet"
 brew "fzf"
 brew "gd"
+brew "gemini-cli"
 brew "gh"
 brew "git"
 brew "git-delta"
@@ -67,14 +71,14 @@ brew "ncdu"
 brew "neovim"
 brew "nmap"
 brew "node@20"
-brew "node@22", link: true, overwrite: true
+brew "node@22", { link: true, overwrite: true }
 brew "noti"
 brew "nyancat"
-brew "ollama", restart_service: :changed, start_service: true
+brew "ollama", { restart_service: :changed, start_service: true } unless OS.mac?
 brew "openssh"
 brew "ouch"
 brew "pgcli"
-brew "php@8.1", link: true
+brew "php@8.1", { link: true }
 brew "podman"
 brew "prettyping"
 brew "procs"
@@ -86,7 +90,7 @@ brew "sops"
 brew "speedtest-cli"
 brew "spotify_player"
 brew "starship"
-brew "syncthing", restart_service: :changed, start_service: true
+brew "syncthing", { restart_service: :changed, start_service: true }
 brew "talhelper"
 brew "talosctl"
 brew "tig"
@@ -106,14 +110,15 @@ brew "zsh"
 
 cask_args appdir: "~/Applications", require_sha: true
 
-cask "claude"
 cask "bluesnooze"
+cask "claude"
 cask "firefox"
 cask "keepingyouawake"
 cask "localsend"
 cask "moonlight"
 cask "multiviewer-for-f1"
 cask "obsidian"
+cask "ollama-app"
 cask "openscad@snapshot"
 cask "podman-desktop"
 cask "powershell"
