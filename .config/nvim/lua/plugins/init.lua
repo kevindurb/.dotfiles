@@ -8,7 +8,7 @@ return {
   'godlygeek/tabular',
   { 'lukas-reineke/indent-blankline.nvim', opts = {}, main = 'ibl' },
   { 'echasnovski/mini.completion',         opts = {} },
-  { 'echasnovski/mini.git',                opts = {} },
+  { 'echasnovski/mini-git',                opts = {} },
   { 'echasnovski/mini.comment',            opts = {}, event = 'VeryLazy' },
   { 'windwp/nvim-ts-autotag',              opts = {} },
   { 'stevearc/dressing.nvim',              opts = {} },
