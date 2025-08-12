@@ -50,6 +50,10 @@
 !/.config/tmux/plugins/*
 !/.config/tmux/tmux-nerd-font-window-name.yml
 
+# Tmuxinator
+!/.config/tmuxinator/
+!/.config/tmuxinator/*
+
 # Neovim
 !/.config/nvim/
 !/.config/nvim/**

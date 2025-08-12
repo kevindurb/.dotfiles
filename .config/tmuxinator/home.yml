@@ -1,0 +1,15 @@
+---
+name: home
+root: '~'
+
+windows:
+  - dashboard:
+      layout: main-vertical
+      panes:
+        - nvim ~/TODO.md
+        - tty-clock -c
+        - '~'
+  - top:
+      - btop
+  - dotfiles:
+      root: '~/projects/.dotfiles'
