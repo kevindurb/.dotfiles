@@ -8,7 +8,7 @@ windows:
       panes:
         - nvim ~/TODO.md
         - tty-clock -c
-        - '~'
+        - clear
   - top:
       - btop
   - dotfiles:
