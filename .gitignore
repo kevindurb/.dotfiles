@@ -108,6 +108,10 @@
 !/.local/share/fonts/
 !/.local/share/fonts/*
 
+# Btop
+!/.config/btop/
+!/.config/btop/btop.conf
+
 # Other
 !/Brewfile
 !/.Brewfile
