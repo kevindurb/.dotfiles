@@ -53,6 +53,7 @@
 # Neovim
 !/.config/nvim/
 !/.config/nvim/**
+/.config/nvim/spell
 
 # K9s
 !/.config/k9s/
