@@ -1,5 +1,5 @@
 return {
-  'nvim-lualine/lualine.nvim', -- pretty lower bar
+  'nvim-lualine/lualine.nvim',
   dependencies = {
     'SmiteshP/nvim-navic',
   },
