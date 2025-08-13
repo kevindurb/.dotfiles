@@ -6,6 +6,7 @@ return {
   'tpope/vim-eunuch',
   'tpope/vim-abolish',
   'godlygeek/tabular',
+  'Bekaboo/dropbar.nvim',
   { 'lukas-reineke/indent-blankline.nvim', opts = {}, main = 'ibl' },
   { 'echasnovski/mini.completion',         opts = {} },
   { 'echasnovski/mini-git',                opts = {}, main = 'mini.git' },
