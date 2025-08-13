@@ -6,6 +6,7 @@ return {
     'williamboman/mason-lspconfig.nvim',
     'b0o/schemastore.nvim',
     'folke/neoconf.nvim',
+    'SmiteshP/nvim-navic',
   },
   init = function()
     -- Global mappings.
