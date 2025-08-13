@@ -7,6 +7,5 @@ config.color_scheme = 'nord'
 config.default_prog = { 'zsh', '-l' }
 config.hide_tab_bar_if_only_one_tab = true
 config.enable_wayland = true
-config.window_background_opacity = 0.9
 
 return config

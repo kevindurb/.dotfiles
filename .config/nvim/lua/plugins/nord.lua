@@ -9,6 +9,5 @@ return {
     vim.g.nord_italic = true
     vim.g.nord_italic_comments = true
     vim.cmd.colorscheme('nord')
-    vim.cmd("hi Normal guibg=NONE")
   end,
 }
