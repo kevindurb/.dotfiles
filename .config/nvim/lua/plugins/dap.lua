@@ -1,6 +1,7 @@
 return {
   'mfussenegger/nvim-dap',
   dependencies = {
+    'nvim-lua/plenary.nvim',
     'rcarriga/nvim-dap-ui',
   },
   -- stylua: ignore
@@ -38,6 +39,12 @@ return {
       'DapStopped',
       { text = '▶️', texthl = 'DiagnosticSignWarn', linehl = 'Visual', numhl = 'DiagnosticSignWarn' }
     )
+
+    -- setup dap config by VsCode launch.json file
+    local json = require('plenary.json')
+    vscode.json_decode = function(str)
+      return vim.json.decode(json.json_strip_comments(str))
+    end
 
     -- Extends dap.configurations with entries read from .vscode/launch.json
     if vim.fn.filereadable('.vscode/launch.json') then
