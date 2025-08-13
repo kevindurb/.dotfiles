@@ -22,14 +22,6 @@ return {
       'yamlls',
     },
     handlers = {
-      function(server_name)
-        local navic = require('nvim-navic');
-        require('lspconfig')[server_name].setup({
-          on_attach = function(client, bufnr)
-            navic.attach(client, bufnr)
-          end
-        })
-      end,
       ['lua_ls'] = function()
         require('lspconfig').lua_ls.setup({
           settings = { Lua = { diagnostics = { globals = { 'vim' } } } },
