@@ -4,6 +4,7 @@ return {
     'neovim/nvim-lspconfig',
   },
   opts = {
+    highlight = true,
     icons = {
       File = ' ',
       Module = ' ',
