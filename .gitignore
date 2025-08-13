@@ -3,6 +3,7 @@
 
 # Repo
 !/README.md
+!/CLAUDE.md
 !/.gitmodules
 !/.gitignore
 !/.rgignore

@@ -18,11 +18,6 @@ return {
   { 'folke/neoconf.nvim',                  opts = {} },
   { 'folke/ts-comments.nvim',              opts = {}, event = 'VeryLazy' },
   {
-    'utilyre/barbecue.nvim',
-    opts = {},
-    dependencies = { 'SmiteshP/nvim-navic', 'echasnovski/mini.icons' },
-  },
-  {
     'akinsho/bufferline.nvim',
     opts = {
       options = {

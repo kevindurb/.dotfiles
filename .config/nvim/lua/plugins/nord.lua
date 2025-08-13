@@ -4,7 +4,11 @@ return {
   priority = 1000,
   enabled = true,
   init = function()
-    vim.o.background = 'dark'
+    vim.g.nord_bold = true
+    vim.g.nord_underline = true
+    vim.g.nord_italic = true
+    vim.g.nord_italic_comments = true
     vim.cmd.colorscheme('nord')
+    vim.cmd("hi Normal guibg=NONE")
   end,
 }
