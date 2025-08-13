@@ -1,5 +1,8 @@
 return {
   'nvim-lualine/lualine.nvim', -- pretty lower bar
+  dependencies = {
+    'SmiteshP/nvim-navic',
+  },
   opts = {
     options = {
       icons_enabled = true,
@@ -7,5 +10,14 @@ return {
       component_separators = '',
       section_separators = { left = '', right = '' },
     },
+    winbar = {
+      lualine_c = {
+        {
+          "navic",
+          color_correction = nil,
+          navic_opts = nil
+        }
+      }
+    }
   },
 }
