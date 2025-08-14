@@ -11,6 +11,9 @@ return {
       section_separators = { left = '', right = '' },
     },
     winbar = {
+      lualine_a = {
+        'filename'
+      },
       lualine_c = {
         {
           "navic",
