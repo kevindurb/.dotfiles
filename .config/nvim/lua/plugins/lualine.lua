@@ -10,6 +10,11 @@ return {
       component_separators = '',
       section_separators = { left = '', right = '' },
     },
+    winbar_inactive = {
+      lualine_a = {
+        'filename'
+      },
+    },
     winbar = {
       lualine_a = {
         'filename'
