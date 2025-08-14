@@ -23,6 +23,7 @@ return {
       options = {
         separator_style = 'slant',
         diagnostics = 'nvim_lsp',
+        buffer_close_icon = '',
       },
     },
   },
