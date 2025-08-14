@@ -6,7 +6,7 @@ windows:
   - dashboard:
       layout: main-vertical
       panes:
-        - nvim ~/TODO.md
+        - nvim ~/journal/
         - tty-clock -c
         - clear
   - top:

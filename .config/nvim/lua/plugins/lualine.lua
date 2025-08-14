@@ -4,20 +4,49 @@ return {
     'SmiteshP/nvim-navic',
   },
   opts = {
+    extensions = {
+      'man',
+      'mason',
+      'oil',
+      'quickfix',
+    },
     options = {
       icons_enabled = true,
       theme = 'auto',
       component_separators = '',
       section_separators = { left = '', right = '' },
     },
-    winbar_inactive = {
-      lualine_a = {
-        'filename'
+    sections = {
+      lualine_x = {
+        'encoding',
+        'fileformat',
+        'filetype',
+        {
+          'lsp_status',
+          icon = '',
+          symbols = {
+            spinner = { '⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏' },
+            done = '✓',
+            separator = ' ',
+          },
+          ignore_lsp = {},
+        }
+      }
+    },
+    inactive_winbar = {
+      lualine_c = {
+        {
+          'filename',
+          path = 4,
+        }
       },
     },
     winbar = {
       lualine_a = {
-        'filename'
+        {
+          'filename',
+          path = 4,
+        }
       },
       lualine_c = {
         {
