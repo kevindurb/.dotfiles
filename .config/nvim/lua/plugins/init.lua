@@ -17,15 +17,15 @@ return {
   { 'nvimdev/hlsearch.nvim',               opts = {} },
   { 'folke/neoconf.nvim',                  opts = {} },
   { 'folke/ts-comments.nvim',              opts = {}, event = 'VeryLazy' },
-  -- {
-  --   'akinsho/bufferline.nvim',
-  --   opts = {
-  --     options = {
-  --       separator_style = 'thin',
-  --       diagnostics = 'nvim_lsp',
-  --     },
-  --   },
-  -- },
+  {
+    'akinsho/bufferline.nvim',
+    opts = {
+      options = {
+        separator_style = 'slant',
+        diagnostics = 'nvim_lsp',
+      },
+    },
+  },
   {
     'MeanderingProgrammer/render-markdown.nvim',
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' },
