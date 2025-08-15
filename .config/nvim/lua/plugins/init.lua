@@ -12,7 +12,6 @@ return {
   { 'echasnovski/mini.comment',            opts = {}, event = 'VeryLazy' },
   { 'windwp/nvim-ts-autotag',              opts = {} },
   { 'stevearc/dressing.nvim',              opts = {} },
-  { 'j-hui/fidget.nvim',                   opts = {}, event = 'LspAttach' },
   { 'lewis6991/gitsigns.nvim',             opts = {} },
   { 'nvimdev/hlsearch.nvim',               opts = {} },
   { 'folke/neoconf.nvim',                  opts = {} },
