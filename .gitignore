@@ -118,6 +118,7 @@
 !/.config/btop/btop.conf
 
 # Other
+!/.envrc
 !/Brewfile
 !/.Brewfile
 !/.dir_colors
