@@ -3,12 +3,6 @@ name: home
 root: '~'
 
 windows:
-  - dashboard:
-      layout: main-vertical
-      panes:
-        - nvim ~/journal/
-        - tty-clock -c
-        - clear
   - top:
       - btop
   - dotfiles:
