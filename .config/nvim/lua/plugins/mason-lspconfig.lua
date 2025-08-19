@@ -22,11 +22,6 @@ return {
       'yamlls',
     },
     handlers = {
-      ['graphql'] = function()
-        require('lspconfig').lua_ls.setup({
-          priority = 100,
-        })
-      end,
       ['lua_ls'] = function()
         require('lspconfig').lua_ls.setup({
           settings = { Lua = { diagnostics = { globals = { 'vim' } } } },
