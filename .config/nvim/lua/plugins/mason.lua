@@ -19,7 +19,7 @@ local options = {
 }
 
 return {
-  'williamboman/mason.nvim', -- manages external editor tools
+  'mason-org/mason.nvim', -- manages external editor tools
   opts = options,
   init = function()
     vim.api.nvim_create_user_command('MasonInstallAll', function()

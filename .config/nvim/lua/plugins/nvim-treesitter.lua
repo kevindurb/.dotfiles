@@ -1,6 +1,8 @@
 return {
   'nvim-treesitter/nvim-treesitter', -- the base for all things better
   build = ':TSUpdate',
+  branch = 'master',
+  lazy = false,
   opts = {
     ensure_installed = {
       'bash',
@@ -13,6 +15,7 @@ return {
       'lua',
       'markdown',
       'markdown_inline',
+      'prisma',
       'query',
       'regex',
       'styled',
@@ -23,7 +26,6 @@ return {
     sync_install = false,
     auto_install = true,
 
-    highlight = { enable = true, additional_vim_regex_highlighting = false },
-    indent = { enable = true },
+    highlight = { enable = true },
   },
 }

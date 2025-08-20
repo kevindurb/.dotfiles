@@ -11,6 +11,7 @@ M.setup = function()
   vim.opt.suffixesadd = '.js,/index.js' -- gf try adding .js to files
   vim.opt.updatetime = 300
   vim.opt.mouse = 'a'
+  vim.opt.backupcopy = 'yes'
 
   -- Appearence
   vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
