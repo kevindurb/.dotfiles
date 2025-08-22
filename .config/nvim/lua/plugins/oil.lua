@@ -6,6 +6,7 @@ return {
     view_options = {
       show_hidden = true,
     },
+    use_default_keymaps = false,
     keymaps = {
       ["g?"] = { "actions.show_help", mode = "n" },
       ["<CR>"] = "actions.select",
