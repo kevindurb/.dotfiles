@@ -7,6 +7,7 @@ return {
   'tpope/vim-abolish',
   'godlygeek/tabular',
   { 'lukas-reineke/indent-blankline.nvim', opts = {}, main = 'ibl' },
+  { 'echasnovski/mini.snippets',           opts = {} },
   { 'echasnovski/mini.completion',         opts = {} },
   { 'echasnovski/mini-git',                opts = {}, main = 'mini.git' },
   { 'echasnovski/mini.comment',            opts = {}, event = 'VeryLazy' },
