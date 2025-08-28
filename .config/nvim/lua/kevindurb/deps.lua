@@ -11,7 +11,7 @@ M.setup = function()
   add('nvim-mini/mini.snippets')
   add({
     source = 'nvim-mini/mini.completion',
-    depends = { 'nvim-mini/mini.snippets', 'nvim-mini/mini.icons' }
+    depends = { 'nvim-mini/mini.snippets', 'nvim-mini/mini.icons' },
   })
   add('nvim-mini/mini-git')
   add('folke/ts-comments.nvim')
@@ -24,6 +24,7 @@ M.setup = function()
     depends = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' },
   })
   add('catgoose/nvim-colorizer.lua')
+  add('akinsho/bufferline.nvim')
 
   now(function()
     vim.cmd.colorscheme('nord')
@@ -41,6 +42,14 @@ M.setup = function()
       require('mini.icons').mock_nvim_web_devicons()
       return package.loaded['nvim-web-devicons']
     end
+
+    require('bufferline').setup({
+      options = {
+        separator_style = 'slant',
+        diagnostics = 'nvim_lsp',
+        buffer_close_icon = '',
+      },
+    })
   end)
 
   later(function()
@@ -55,7 +64,7 @@ M.setup = function()
     require('hlsearch').setup()
     require('render-markdown').setup()
     require('colorizer').setup({
-      filetypes = { 'css', 'html', 'typescript', 'openscad' }
+      filetypes = { 'css', 'html', 'typescript', 'openscad' },
     })
   end)
 end

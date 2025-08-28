@@ -6,17 +6,6 @@ M.setup = function()
     source = 'nvim-lualine/lualine.nvim',
     depends = { 'SmiteshP/nvim-navic' },
   })
-  add('akinsho/bufferline.nvim')
-
-  now(function()
-    require('bufferline').setup({
-      options = {
-        separator_style = 'slant',
-        diagnostics = 'nvim_lsp',
-        buffer_close_icon = '',
-      },
-    })
-  end)
 
   now(function()
     require('lualine').setup({
@@ -46,15 +35,15 @@ M.setup = function()
               separator = ' ',
             },
             ignore_lsp = {},
-          }
-        }
+          },
+        },
       },
       inactive_winbar = {
         lualine_c = {
           {
             'filename',
             path = 4,
-          }
+          },
         },
       },
       winbar = {
@@ -62,15 +51,15 @@ M.setup = function()
           {
             'filename',
             path = 4,
-          }
+          },
         },
         lualine_c = {
           {
-            "navic",
+            'navic',
             color_correction = nil,
-            navic_opts = nil
-          }
-        }
+            navic_opts = nil,
+          },
+        },
       },
     })
   end)
