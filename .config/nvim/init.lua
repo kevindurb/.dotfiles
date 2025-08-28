@@ -1,3 +1,4 @@
 require('kevindurb').setup()
-require('lazy-install').ensure_installed()
-require('lazy').setup('plugins')
+require('deps-install').setup()
+-- require('lazy-install').setup()
+-- require('lazy').setup('plugins')
