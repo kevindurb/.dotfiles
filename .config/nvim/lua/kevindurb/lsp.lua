@@ -37,7 +37,22 @@ M.setup = function()
     local lspconfig = require('lspconfig')
 
     lspconfig.lua_ls.setup({
-      settings = { Lua = { diagnostics = { globals = { 'vim' } } } },
+      settings = {
+        Lua = {
+          workspace = {
+            checkThirdParty = false, -- Avoids issues with certain plugins
+            library = vim.api.nvim_get_runtime_file('', true),
+          },
+          -- Do not send telemetry data containing a randomized but unique identifier
+          telemetry = {
+            enable = false,
+          },
+          -- Add 'vim' to the list of known globals
+          diagnostics = {
+            globals = { 'vim' },
+          },
+        },
+      },
     })
 
     lspconfig.yamlls.setup({
@@ -77,10 +92,21 @@ M.setup = function()
     })
 
     vim.lsp.enable({
-      'prismals',
-      'lua_ls',
-      'yamlls',
+      'ansiblels',
+      'bashls',
+      'cssls',
+      'dockerls',
+      'eslint',
+      'graphql',
+      'html',
+      'intelephense',
       'jsonls',
+      'lua_ls',
+      'marksman',
+      'prismals',
+      'sqlls',
+      'ts_ls',
+      'yamlls',
     })
   end)
 end

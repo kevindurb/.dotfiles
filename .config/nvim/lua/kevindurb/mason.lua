@@ -21,6 +21,7 @@ M.ensure_installed = {
   'php-debug-adapter',
   'phpstan',
   'prettierd',
+  'prisma-language-server',
   'shellcheck',
   'sqlfluff',
   'sqlls',
