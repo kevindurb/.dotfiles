@@ -7,15 +7,15 @@ M.setup = function()
   add('tpope/vim-repeat')
   add('tpope/vim-unimpaired')
   add('lukas-reineke/indent-blankline.nvim')
-  add('mini.snippets')
+  add('nvim-mini/mini.icons')
+  add('nvim-mini/mini.snippets')
   add({
-    source = 'mini.completion',
-    depends = { 'mini.snippets', 'mini.icons' }
+    source = 'nvim-mini/mini.completion',
+    depends = { 'nvim-mini/mini.snippets', 'nvim-mini/mini.icons' }
   })
-  add('mini-git')
+  add('nvim-mini/mini-git')
   add('folke/ts-comments.nvim')
-  add('mini.comment')
-  add('mini.icons')
+  add('nvim-mini/mini.comment')
   add('windwp/nvim-ts-autotag')
   add('lewis6991/gitsigns.nvim')
   add('nvimdev/hlsearch.nvim')
