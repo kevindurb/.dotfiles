@@ -1,21 +1,21 @@
 local M = {}
 
 M.ensure_installed = {
+  'ansible-language-server',
   'ansible-lint',
-  'ansiblels',
-  'bashls',
+  'bash-language-server',
   'biome',
-  'cssls',
-  'dockerls',
-  'eslint',
+  'css-lsp',
+  'dockerfile-language-server',
+  'eslint-lsp',
   'eslint_d',
   'firefox-debug-adapter',
-  'graphql',
-  'html',
+  'graphql-language-service-cli',
+  'html-lsp',
   'intelephense',
   'js-debug-adapter',
-  'jsonls',
-  'lua_ls',
+  'json-lsp',
+  'lua-language-server',
   'marksman',
   'php-cs-fixer',
   'php-debug-adapter',
@@ -26,10 +26,10 @@ M.ensure_installed = {
   'sqlls',
   'stylelint',
   'stylua',
-  'ts_ls',
+  'typescript-language-server',
+  'yaml-language-server',
   'yamlfmt',
   'yamllint',
-  'yamlls',
 }
 
 M.setup = function()
@@ -37,7 +37,6 @@ M.setup = function()
   add('mason-org/mason.nvim')
 
   later(function()
-    require('mason').setup()
     vim.api.nvim_create_user_command('MasonInstallAll', function()
       vim.cmd('MasonInstall ' .. table.concat(M.ensure_installed, ' '))
     end, {})
