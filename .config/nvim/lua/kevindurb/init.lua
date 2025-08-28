@@ -8,16 +8,17 @@ M.setup = function()
   require('kevindurb.ripgrep').setup()
   require('kevindurb.splits').setup()
   -- Uncomment for mini.deps
-  require('kevindurb.deps').setup();
-  require('kevindurb.format').setup();
-  require('kevindurb.lint').setup();
-  require('kevindurb.mason').setup();
-  require('kevindurb.lsp').setup();
-  require('kevindurb.treesitter').setup();
-  require('kevindurb.pairs').setup();
-  require('kevindurb.pick').setup();
-  require('kevindurb.navigator').setup();
-  require('kevindurb.oil').setup();
+  require('kevindurb.deps').setup()
+  require('kevindurb.format').setup()
+  require('kevindurb.lint').setup()
+  require('kevindurb.mason').setup()
+  require('kevindurb.lsp').setup()
+  require('kevindurb.treesitter').setup()
+  require('kevindurb.pairs').setup()
+  require('kevindurb.pick').setup()
+  require('kevindurb.navigator').setup()
+  require('kevindurb.oil').setup()
+  require('kevindurb.dap').setup()
 end
 
 return M
