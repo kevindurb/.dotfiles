@@ -8,7 +8,7 @@ M.setup = function()
     source = 'neovim/nvim-lspconfig',
     depends = {
       'b0o/schemastore.nvim',
-    }
+    },
   })
 
   later(function()
@@ -17,7 +17,7 @@ M.setup = function()
       lsp = {
         auto_attach = true,
         preference = { 'ts_ls', 'graphql' },
-      }
+      },
     })
     vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
     vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
@@ -42,11 +42,8 @@ M.setup = function()
 
     lspconfig.yamlls.setup({
       on_new_config = function(new_config)
-        new_config.settings.yaml.schemas = vim.tbl_deep_extend(
-          'force',
-          new_config.settings.yaml.schemas or {},
-          require('schemastore').yaml.schemas()
-        )
+        new_config.settings.yaml.schemas =
+          vim.tbl_deep_extend('force', new_config.settings.yaml.schemas or {}, require('schemastore').yaml.schemas())
       end,
       settings = {
         redhat = { telemetry = { enabled = false } },
@@ -77,6 +74,13 @@ M.setup = function()
           validate = { enable = true },
         },
       },
+    })
+
+    vim.lsp.enable({
+      'prismals',
+      'lua_ls',
+      'yamlls',
+      'jsonls',
     })
   end)
 end
