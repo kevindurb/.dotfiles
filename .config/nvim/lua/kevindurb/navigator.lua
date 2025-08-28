@@ -5,7 +5,7 @@ M.setup = function()
   add('numToStr/Navigator.nvim')
 
   later(function()
-    require('numToStr/Navigator.nvim').setup()
+    require('Navigator').setup()
 
     vim.keymap.set({ 'n', 'i', 'v' }, "<c-h>", "<cmd>NavigatorLeft<cr>", { silent = true, desc = "navigate left" })
     vim.keymap.set({ 'n', 'i', 'v' }, "<c-j>", "<cmd>NavigatorDown<cr>", { silent = true, desc = "navigate down" })

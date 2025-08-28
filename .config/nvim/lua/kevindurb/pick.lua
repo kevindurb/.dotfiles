@@ -3,8 +3,8 @@ local M = {}
 M.setup = function()
   local later, add = require('mini.deps').later, require('mini.deps').add
   add({
-    source = 'mini.pick',
-    depends = { 'mini.extra', 'mini.icons' }
+    source = 'nvim-mini/mini.pick',
+    depends = { 'nvim-mini/mini.extra', 'nvim-mini/mini.icons' }
   })
 
   later(function()
