@@ -2,7 +2,7 @@ local M = {}
 
 M.setup = function()
   local later, add = require('mini.deps').later, require('mini.deps').add
-  add('mini.pairs')
+  add('nvim-mini/mini.pairs')
 
   later(function()
     require('mini.pairs').setup({
