@@ -11,9 +11,9 @@ M.setup = function()
   require('kevindurb.deps').setup();
   require('kevindurb.format').setup();
   require('kevindurb.lint').setup();
+  require('kevindurb.mason').setup();
   require('kevindurb.lsp').setup();
   require('kevindurb.treesitter').setup();
-  require('kevindurb.mason').setup();
   require('kevindurb.pairs').setup();
   require('kevindurb.pick').setup();
   require('kevindurb.navigator').setup();

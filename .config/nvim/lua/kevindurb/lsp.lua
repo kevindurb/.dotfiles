@@ -10,6 +10,7 @@ M.setup = function()
       'b0o/schemastore.nvim',
     }
   })
+  add('mason-org/mason-lspconfig.nvim')
 
   later(function()
     require('neoconf').setup()
@@ -77,6 +78,23 @@ M.setup = function()
           validate = { enable = true },
         },
       },
+    })
+
+    require('mason-lspconfig').setup({
+      'ansiblels',
+      'bashls',
+      'cssls',
+      'dockerls',
+      'eslint',
+      'graphql',
+      'html',
+      'intelephense',
+      'jsonls',
+      'lua_ls',
+      'marksman',
+      'sqlls',
+      'ts_ls',
+      'yamlls',
     })
   end)
 end
