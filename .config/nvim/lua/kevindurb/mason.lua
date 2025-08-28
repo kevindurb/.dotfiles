@@ -37,6 +37,7 @@ M.setup = function()
   add('mason-org/mason.nvim')
 
   later(function()
+    require('mason').setup()
     vim.api.nvim_create_user_command('MasonInstallAll', function()
       vim.cmd('MasonInstall ' .. table.concat(M.ensure_installed, ' '))
     end, {})
