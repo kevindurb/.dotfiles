@@ -21,7 +21,6 @@ M.setup = function()
         'php',
         'js',
         'firefox',
-        'chrome',
       },
       handlers = {},
     })
