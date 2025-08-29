@@ -58,7 +58,7 @@ M.setup = function()
   -- pick
   map('n', '<C-p>', builtin.files, {})
   map('n', '<C-o>', pickers.commands, {})
-  map('n', '<leader>xx', pickers.diagnostics, {})
+  map('n', '<leader>xx', pickers.diagnostic, {})
   map('n', '<leader>b', builtin.buffers, {})
 
   -- K keymap for searching word under cursor
