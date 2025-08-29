@@ -8,7 +8,9 @@ M.setup = function()
   add('tpope/vim-unimpaired')
   add('lukas-reineke/indent-blankline.nvim')
   add('nvim-mini/mini.icons')
+  add('nvim-mini/mini.extra')
   add('nvim-mini/mini.snippets')
+  add('nvim-mini/mini.pick')
   add({
     source = 'nvim-mini/mini.completion',
     depends = { 'nvim-mini/mini.snippets', 'nvim-mini/mini.icons' },
@@ -25,6 +27,7 @@ M.setup = function()
   })
   add('catgoose/nvim-colorizer.lua')
   add('akinsho/bufferline.nvim')
+  add('numToStr/Navigator.nvim')
 
   now(function()
     vim.cmd.colorscheme('nord')
@@ -56,6 +59,7 @@ M.setup = function()
     require('ibl').setup()
     require('mini.snippets').setup()
     require('mini.completion').setup()
+    require('mini.pick').setup()
     require('mini.git').setup()
     require('ts-comments').setup()
     require('mini.comment').setup()
@@ -66,6 +70,7 @@ M.setup = function()
     require('colorizer').setup({
       filetypes = { 'css', 'html', 'typescript', 'openscad' },
     })
+    require('Navigator').setup()
   end)
 end
 

@@ -14,7 +14,7 @@ M.setup = function()
   end, {
     nargs = '+',
     complete = 'file',
-    bar = true
+    bar = true,
   })
 
   -- Auto open quickfix after search
@@ -23,21 +23,14 @@ M.setup = function()
   vim.api.nvim_create_autocmd('QuickFixCmdPost', {
     group = quickfix_group,
     pattern = '[^l]*',
-    command = 'cwindow'
+    command = 'cwindow',
   })
 
   vim.api.nvim_create_autocmd('QuickFixCmdPost', {
     group = quickfix_group,
     pattern = 'l*',
-    command = 'lwindow'
+    command = 'lwindow',
   })
-
-  -- K keymap for searching word under cursor
-  vim.keymap.set('n', 'K', function()
-    local word = vim.fn.expand('<cword>')
-    vim.cmd('grep! "\\b' .. word .. '\\b"')
-    vim.cmd('cw')
-  end)
 end
 
 return M
