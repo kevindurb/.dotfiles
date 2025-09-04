@@ -95,6 +95,7 @@
 !/.local/bin/
 !/.local/bin/whale
 !/.local/bin/snowjob
+!/.local/bin/popuptmux
 
 # Code Formatting
 !/.yamlfmt
