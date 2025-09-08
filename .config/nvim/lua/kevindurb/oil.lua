@@ -1,10 +1,10 @@
 local M = {}
 
 M.setup = function()
-  local later, add = require('mini.deps').later, require('mini.deps').add
+  local now, add = require('mini.deps').now, require('mini.deps').add
   add('stevearc/oil.nvim')
 
-  later(function()
+  now(function()
     require('oil').setup({
       view_options = {
         show_hidden = true,
