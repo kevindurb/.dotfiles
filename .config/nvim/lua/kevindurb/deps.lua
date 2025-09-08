@@ -3,7 +3,6 @@ local M = {}
 M.setup = function()
   local now, later, add = require('mini.deps').now, require('mini.deps').later, require('mini.deps').add
 
-  add('tpope/vim-repeat')
   add('tpope/vim-unimpaired')
   add('nvim-mini/mini.icons')
   add('nvim-mini/mini.extra')
