@@ -26,9 +26,7 @@ M.setup = function()
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
     end
 
-    local lspconfig = require('lspconfig')
-
-    lspconfig.lua_ls.setup({
+    vim.lsp.config('lua_ls', {
       settings = {
         Lua = {
           workspace = {
@@ -47,7 +45,7 @@ M.setup = function()
       },
     })
 
-    lspconfig.yamlls.setup({
+    vim.lsp.config('yamlls', {
       on_new_config = function(new_config)
         new_config.settings.yaml.schemas =
           vim.tbl_deep_extend('force', new_config.settings.yaml.schemas or {}, require('schemastore').yaml.schemas())
@@ -68,7 +66,7 @@ M.setup = function()
       },
     })
 
-    lspconfig.jsonls.setup({
+    vim.lsp.config('jsonls', {
       on_new_config = function(new_config)
         new_config.settings.json.schemas = new_config.settings.json.schemas or {}
         vim.list_extend(new_config.settings.json.schemas, require('schemastore').json.schemas())

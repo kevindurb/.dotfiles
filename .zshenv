@@ -12,6 +12,7 @@ export FZF_DEFAULT_COMMAND='rg --files'
 export LESS='-SRXF'
 export ASPNETCORE_ENVIRONMENT='Development'
 export DISABLE_AUTO_TITLE='true'
+export FX_THEME="1"
 
 # Package Manager Bins
 CARGO_BIN=$HOME/.cargo/bin
