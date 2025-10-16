@@ -56,24 +56,29 @@
 [diff]
   colorMoved = default
 [alias]
+  a = add
+  aa = add --all
+  b = checkout -b
+  bD = branch -D
+  bd = branch -d
+  cam = commit -am
+  cm = commit -m
+  co = checkout
+  cp = cherry-pick
   d = diff
   f = fetch
   fa = fetch --all --prune
-  ll = log --oneline
-  a = add
-  aa = add --all
-  s = status -sb
-  p = push
   l = pull
-  cm = commit -m
-  cam = commit -am
-  b = checkout -b
-  bd = branch -d
-  bD = branch -D
-  co = checkout
-  cp = cherry-pick
-  rhh = reset --hard
-  sw = switch
+  ll = log --oneline
   m = merge
+  p = push
+  rhh = reset --hard
+  s = status -sb
+  sw = switch
+  wt = worktree
+  wta = worktree add
+  wtl = worktree list
+  wtrm = worktree remove
+  wtp = worktree prune
 [help]
 	autocorrect = prompt
