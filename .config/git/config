@@ -77,7 +77,7 @@
   sw = switch
   wt = worktree
   wta = worktree add
-  wtl = worktree list
+  wtls = worktree list
   wtrm = worktree remove
   wtp = worktree prune
 [help]
