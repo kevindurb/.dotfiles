@@ -13,6 +13,7 @@ export LESS='-SRXF'
 export ASPNETCORE_ENVIRONMENT='Development'
 export DISABLE_AUTO_TITLE='true'
 export FX_THEME="1"
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # Package Manager Bins
 CARGO_BIN=$HOME/.cargo/bin
