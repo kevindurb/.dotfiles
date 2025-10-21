@@ -19,3 +19,6 @@
 [submodule ".config/tmux/plugins/nerd-font-window-name"]
 	path = .config/tmux/plugins/nerd-font-window-name
 	url = git@github.com:joshmedeski/tmux-nerd-font-window-name
+[submodule ".config/tmux/plugins/catppuccin"]
+	path = .config/tmux/plugins/catppuccin
+	url = git@github.com:catppuccin/tmux.git
