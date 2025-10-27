@@ -61,6 +61,8 @@
   b = checkout -b
   bD = branch -D
   bd = branch -d
+  c = commit
+  ca = commit -a
   cam = commit -am
   cm = commit -m
   co = checkout
