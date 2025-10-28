@@ -129,6 +129,10 @@
 !/.config/topgrade.toml
 !/.config/starship.toml
 !/.distroboxrc
+!/.config/bat/
+!/.config/bat/**
+!/.config/delta/
+!/.config/delta/**
 
 # Always Ignore
 .DS_Store
