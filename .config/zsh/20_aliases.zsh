@@ -17,4 +17,7 @@ compdef c="clear"
 alias gt="task --global"
 compdef gt="task"
 
+alias werk='GIT_SSH_COMMAND="ssh -i ~/.ssh/work -o IdentitiesOnly=yes" git'
+compdef werk="git"
+
 setopt complete_aliases
