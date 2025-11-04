@@ -20,4 +20,6 @@ compdef gt="task"
 alias werk='GIT_SSH_COMMAND="ssh -i ~/.ssh/work -o IdentitiesOnly=yes" git'
 compdef werk="git"
 
+alias jme="jira issue list -q 'statusCategory != Done and assignee = currentUser()' --plain --order-by status"
+
 setopt complete_aliases
