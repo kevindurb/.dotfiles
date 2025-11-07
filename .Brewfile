@@ -69,8 +69,7 @@ brew "mycli"
 brew "ncdu"
 brew "neovim"
 brew "nmap"
-brew "node@22", { link: true, overwrite: true }
-brew "node@20"
+brew "node@24", { link: :overwrite }
 brew "noti"
 brew "nyancat"
 brew "ollama", { restart_service: :changed, start_service: true } unless OS.mac?
