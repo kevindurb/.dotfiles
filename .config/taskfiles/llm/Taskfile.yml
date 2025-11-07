@@ -8,7 +8,10 @@ tasks:
     vars:
       DIFF:
         sh: git --no-pager diff -p HEAD
+      MSG:
+        sh: >
+          ollama run --hidethinking gpt-oss:120b-cloud
+          "Output ONLY a well formed git conventional commit message for the following diff
+          {{.DIFF | shellQuote}}"
     cmd: >
-      ollama run gpt-oss:120b-cloud
-      "Output ONLY a well formed git conventional commit message for the following diff
-      {{.DIFF | shellQuote}}"
+      git commit -am "{{.MSG | trim}}"
