@@ -7,6 +7,6 @@ config.color_scheme = 'Catppuccin Macchiato'
 config.default_prog = { 'zsh', '-l' }
 config.hide_tab_bar_if_only_one_tab = true
 config.enable_wayland = true
-config.window_decorations = 'RESIZE'
+config.window_decorations = 'TITLE | RESIZE'
 
 return config
