@@ -76,6 +76,9 @@ M.setup = function()
     -- Quick splits keymaps
     map('n', '<leader>v', ':vsp<CR>', { desc = 'Vertical split' })
     map('n', '<leader>V', ':sp<CR>', { desc = 'Horizontal split' })
+
+    -- Claude Code
+    map('n', '<leader>cc', '<cmd>ClaudeCode<CR>', { desc = 'Toggle Claude Code' })
   end)
 end
 

@@ -3,6 +3,7 @@
 tap "FelixKratz/formulae"
 tap "ankitpokhrel/jira-cli"
 tap "arl/arl"
+tap "go-task/tap"
 tap "localsend/localsend"
 tap "microsoft/git"
 tap "oven-sh/bun"
