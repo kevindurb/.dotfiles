@@ -10,7 +10,6 @@ alias c=clear
 alias gt="task --global"
 alias werk='GIT_SSH_COMMAND="ssh -i ~/.ssh/work -o IdentitiesOnly=yes" git'
 alias jme="jira issue list -q 'statusCategory != Done and assignee = currentUser()' --plain --order-by status"
-alias go-task="npx @go-task/cli"
 
 compdef dot=git g=git gt=task werk=git jme=jira
 setopt complete_aliases
