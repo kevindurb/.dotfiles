@@ -14,9 +14,11 @@
 !/.claude/
 !/.claude/CLAUDE.md
 !/.claude/agents/
-!/.claude/agents/*
+!/.claude/agents/**
 !/.claude/commands/
-!/.claude/commands/*
+!/.claude/commands/**
+!/.claude/skills/
+!/.claude/skills/**
 
 # Rectangle
 !/.config/rectangle/
