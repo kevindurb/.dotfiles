@@ -1,8 +1,22 @@
 # vi: ft=zsh
 
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_DATA_HOME=$HOME/.local/share
-export XDG_CACHE_HOME=$HOME/.cache
+: ${XDG_CONFIG_HOME:=$HOME/.config}
+: ${XDG_DATA_HOME:=$HOME/.local/share}
+: ${XDG_STATE_HOME:=$HOME/.local/state}
+: ${XDG_CACHE_HOME:=$HOME/.cache}
+: ${XDG_RUNTIME_DIR:=${DARWIN_USER_TEMP_DIR:-/run/user/$UID}}
+export XDG_{CONFIG,DATA,STATE,CACHE}_HOME XDG_RUNTIME_DIR
+
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export ANSIBLE_HOME="$XDG_DATA_HOME/ansible"
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
+export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
+export GOPATH="$XDG_DATA_HOME/go"
+export DOTNET_CLI_HOME="$XDG_DATA_HOME/dotnet"
+export MYCLI_HISTFILE="$XDG_DATA_HOME/mycli/history"
+export LESSHISTFILE="$XDG_STATE_HOME/less/history"
+export TLDR_CACHE_DIR="$XDG_CACHE_HOME/tldr"
+export PLATFORMIO_CORE_DIR="$XDG_DATA_HOME/platformio"
 
 export SHELL=$(which zsh)
 export CLICOLOR=1

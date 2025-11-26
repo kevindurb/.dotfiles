@@ -34,7 +34,7 @@
 !/.zsh_plugins.txt
 !/.antidote
 !/.config/zsh/
-!/.config/zsh/*
+!/.config/zsh/**
 
 # Zellij
 !/.config/zellij/
@@ -121,12 +121,16 @@
 !/.config/btop/themes/*
 !/.config/btop/btop.conf
 
+# Mycli
+!/.myclirc
+!/.config/mycli/
+!/.config/mycli/**
+
 # Other
 !/.envrc
 !/Brewfile
 !/.Brewfile
 !/.dir_colors
-!/.myclirc
 !/.config/topgrade.toml
 !/.config/starship.toml
 !/.distroboxrc
