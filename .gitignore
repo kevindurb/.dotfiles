@@ -127,6 +127,10 @@
 !/.config/mycli/
 !/.config/mycli/**
 
+# Distrobox
+!/.config/distrobox/
+!/.config/distrobox/**
+
 # Other
 !/.envrc
 !/Brewfile
@@ -134,7 +138,6 @@
 !/.dir_colors
 !/.config/topgrade.toml
 !/.config/starship.toml
-!/.distroboxrc
 !/.config/bat/
 !/.config/bat/**
 !/.config/delta/
