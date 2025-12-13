@@ -87,6 +87,7 @@ M.setup = function()
       'cssls',
       'dockerls',
       'eslint',
+      'gopls',
       'graphql',
       'html',
       'intelephense',

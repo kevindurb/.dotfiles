@@ -24,6 +24,7 @@ M.setup = function()
   vim.opt.signcolumn = 'yes' -- always show the gutter
   vim.opt.termguicolors = true -- better colors??
   vim.wo.wrap = false -- NO WRAPPING LINES
+  vim.diagnostic.config({ virtual_text = true }) -- show inline error messages
 
   -- Indentation
   vim.opt.smartindent = true -- auto indents c-like blocks
