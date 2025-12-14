@@ -44,28 +44,6 @@ M.setup = function()
     desc = 'Set syntax folding for JSON files'
   })
 
-  -- Add syntax for rollback files
-  local rollback_group = augroup('rollback', { clear = true })
-  autocmd({ 'BufNewFile', 'BufRead' }, {
-    group = rollback_group,
-    pattern = '*.rollback',
-    callback = function()
-      vim.bo.syntax = 'sql'
-    end,
-    desc = 'Set SQL syntax for rollback files'
-  })
-
-  -- Add syntax for dbt files
-  local dbt_group = augroup('dbt', { clear = true })
-  autocmd({ 'BufNewFile', 'BufRead' }, {
-    group = dbt_group,
-    pattern = '*.sql',
-    callback = function()
-      vim.bo.filetype = 'jinja.sql'
-    end,
-    desc = 'Set jinja.sql filetype for SQL files (dbt)'
-  })
-
   -- Add syntax for babelrc files
   local babelrc_group = augroup('babelrc', { clear = true })
   autocmd({ 'BufNewFile', 'BufRead' }, {

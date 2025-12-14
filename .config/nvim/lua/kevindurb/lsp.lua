@@ -95,7 +95,7 @@ M.setup = function()
       'lua_ls',
       'marksman',
       'prismals',
-      'sqlls',
+      'sqls',
       'ts_ls',
       'yamlls',
     })
