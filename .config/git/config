@@ -59,11 +59,13 @@
 [alias]
   a = add
   aa = add --all
+  ap = add --patch
   b = checkout -b
   bD = branch -D
   bd = branch -d
   c = commit
   ca = commit -a
+  cai = !task -g llm:commit
   cam = commit -am
   cm = commit -m
   co = checkout
