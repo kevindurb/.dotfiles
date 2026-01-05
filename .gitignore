@@ -13,12 +13,16 @@
 # Claude
 !/.claude/
 !/.claude/CLAUDE.md
-!/.claude/agents/
+!/.claude/agents
 !/.claude/agents/**
-!/.claude/commands/
+!/.claude/commands
 !/.claude/commands/**
-!/.claude/skills/
+!/.claude/skills
 !/.claude/skills/**
+
+# Agents
+!/.config/agents/
+!/.config/agents/**
 
 # Rectangle
 !/.config/rectangle/
