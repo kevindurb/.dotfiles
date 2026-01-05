@@ -6,7 +6,11 @@ M.setup = function()
     source = 'nvim-treesitter/nvim-treesitter',
     checkout = 'master',
     monitor = 'main',
-    hooks = { post_checkout = function() vim.cmd('TSUpdate') end },
+    hooks = {
+      post_checkout = function()
+        vim.cmd('TSUpdate')
+      end,
+    },
   })
 
   now(function()
@@ -14,7 +18,9 @@ M.setup = function()
       ensure_installed = {
         'bash',
         'c',
+        'go',
         'gotmpl',
+        'html',
         'http',
         'hurl',
         'javascript',

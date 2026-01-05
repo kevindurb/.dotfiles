@@ -10,7 +10,7 @@ M.setup = function()
     callback = function()
       vim.opt_local.spell = true
     end,
-    desc = 'Enable spell checking for markdown and git commit messages'
+    desc = 'Enable spell checking for markdown and git commit messages',
   })
 
   -- Word wrap for markdown
@@ -19,7 +19,7 @@ M.setup = function()
     callback = function()
       vim.opt_local.wrap = true
     end,
-    desc = 'Enable word wrap for markdown files'
+    desc = 'Enable word wrap for markdown files',
   })
 
   -- Folding XML files
@@ -30,7 +30,7 @@ M.setup = function()
     callback = function()
       vim.opt_local.foldmethod = 'indent'
     end,
-    desc = 'Set indent folding for XML files'
+    desc = 'Set indent folding for XML files',
   })
 
   -- Folding JSON files
@@ -41,7 +41,7 @@ M.setup = function()
     callback = function()
       vim.opt_local.foldmethod = 'syntax'
     end,
-    desc = 'Set syntax folding for JSON files'
+    desc = 'Set syntax folding for JSON files',
   })
 
   -- Add syntax for babelrc files
@@ -52,7 +52,7 @@ M.setup = function()
     callback = function()
       vim.bo.syntax = 'json'
     end,
-    desc = 'Set JSON syntax for .babelrc files'
+    desc = 'Set JSON syntax for .babelrc files',
   })
 
   -- Jenkinsfile syntax
@@ -63,7 +63,13 @@ M.setup = function()
     callback = function()
       vim.bo.filetype = 'groovy'
     end,
-    desc = 'Set groovy filetype for Jenkinsfile'
+    desc = 'Set groovy filetype for Jenkinsfile',
+  })
+
+  vim.filetype.add({
+    extension = {
+      gohtml = 'html.gotmpl',
+    },
   })
 end
 
