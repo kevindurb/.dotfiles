@@ -46,7 +46,7 @@ Based on feedback:
 
 After all tasks complete and verified:
 - Dispatch code-reviewer agent to review entire implementation
-- Use superpowers:requesting-code-review process
+- Use requesting-code-review process
 - Get git SHAs for base (start) and head (current)
 - Review agent checks code quality, architecture, testing, requirements
 - Fix any Critical or Important issues found

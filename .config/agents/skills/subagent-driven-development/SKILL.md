@@ -227,7 +227,7 @@ Done!
 ## Integration
 
 **Required workflow skills:**
-- **superpowers:requesting-code-review** - Code review template for reviewer subagents
+- **requesting-code-review** - Code review template for reviewer subagents
 
 **Alternative workflow:**
-- **superpowers:executing-plans** - Use for parallel session instead of same-session execution
+- **executing-plans** - Use for parallel session instead of same-session execution

@@ -1,9 +1,9 @@
 ---
-name: working-github-cli
+name: using-github
 description: Use when working with GitHub repositories, pull requests, issues, releases, or other GitHub operations via the gh CLI
 ---
 
-# Working with GitHub CLI
+# Using GitHub CLI
 
 Use the `gh` CLI tool via the Bash tool for all GitHub operations.
 
