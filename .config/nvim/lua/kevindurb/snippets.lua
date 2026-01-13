@@ -10,7 +10,7 @@ M.setup = function()
 
     vim.api.nvim_create_autocmd('InsertLeave', {
       callback = function()
-        if MiniSnippets.session.get() ~= nil then
+        while MiniSnippets.session.get() do
           MiniSnippets.session.stop()
         end
       end,
