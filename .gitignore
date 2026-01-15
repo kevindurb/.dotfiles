@@ -40,6 +40,7 @@
 !/.config/zsh/
 !/.config/zsh/**
 /.config/zsh/.zsh_plugins.zsh
+/.config/zsh/.zcompdump
 
 # Zellij
 !/.config/zellij/

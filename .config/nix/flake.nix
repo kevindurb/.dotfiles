@@ -12,7 +12,7 @@
 
   outputs = { nixpkgs, home-manager, darwin, ... }: {
     darwinConfigurations = {
-      "Kevin-LWNFHQYQ5K" = darwin.lib.darwinSystem {
+      "Kevin-DQ5WX664HG" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
           ./workmac/configuration.nix

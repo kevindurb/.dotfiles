@@ -11,6 +11,7 @@ M.setup = function()
       javascript = { 'eslint', 'biomejs', 'snyk_iac' },
       javascriptreact = { 'eslint', 'biomejs' },
       shell = { 'shellcheck' },
+      sql = { 'sqlfluff' },
       typescript = { 'eslint', 'biomejs' },
       typescriptreact = { 'eslint', 'biomejs' },
       yaml = { 'yamllint' },
