@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  nixpkgs.config.allowUnfree = true;
   environment = {
     systemPackages = with pkgs; [
       ansible
@@ -8,6 +9,7 @@
       awscli
       bat
       cargo
+      claude-code
       cmatrix
       cowsay
       curl
@@ -29,10 +31,10 @@
       httpie
       jq
       k9s
-      kubectl
-      kubeseal
       krew
       kubectl
+      kubectl
+      kubeseal
       kustomize
       lazygit
       litecli
@@ -42,7 +44,7 @@
       mycli
       ncdu
       neovim
-      nodejs
+      nodejs_22
       noti
       nyancat
       ollama
@@ -53,11 +55,13 @@
       pv
       python3
       ripgrep
+      sesh
       starship
       tig
       tldr
       tmux
       tree
+      (yarn.override { nodejs = nodejs_22; })
       yq
       zoxide
     ];

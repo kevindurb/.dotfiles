@@ -7,6 +7,7 @@ includes:
     taskfile: ./.config/taskfiles/homebrew
     aliases: [brew, b]
   llm: ./.config/taskfiles/llm
+  nix: ./.config/taskfiles/nix
 
 dotenv: [.env]
 
