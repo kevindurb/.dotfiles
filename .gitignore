@@ -141,6 +141,7 @@
 !/Brewfile
 !/.Brewfile
 !/.dir_colors
+!/.tool-versions
 !/.config/topgrade.toml
 !/.config/starship.toml
 !/.config/bat/
