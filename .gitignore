@@ -10,6 +10,10 @@
 !/.config/
 !/.local/
 
+# Homebrew
+!/.config/homebrew
+!/.config/homebrew/**
+
 # Claude
 !/.claude/
 !/.claude/CLAUDE.md

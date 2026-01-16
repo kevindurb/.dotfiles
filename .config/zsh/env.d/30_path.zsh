@@ -7,6 +7,7 @@ USR_SBIN=/usr/sbin
 USR_LOCAL_BIN=/usr/local/bin
 USR_LOCAL_SBIN=/usr/local/sbin
 DOT_LOCAL_BIN=$HOME/.local/bin
+NPM_BIN=${XDG_DATA_HOME}/npm/bin
 
 export PATH=\
 $PATH:\
@@ -16,4 +17,5 @@ $USR_BIN:\
 $USR_SBIN:\
 $USR_LOCAL_BIN:\
 $USR_LOCAL_SBIN:\
+$NPM_BIN:\
 $DOT_LOCAL_BIN
