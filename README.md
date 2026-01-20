@@ -12,13 +12,13 @@
 1. Add to `~/.gitignore`
 2. `dot add path/to/file`
 
-## Nix
+## Migrating to `stow`
 
-### MacOS
-
-- `sudo nix --extra-experimental-features nix-command --extra-experimental-features flakes run nix-darwin -- switch --flake ~/.config/nix`
-- `darwin-rebuild switch --flake ~/.config/nix`
-
-### Linux
-
-- `nix flake update --flake .config/nix`
+1. Add files to stow package
+2. `stow --verbose --simulate --dotfiles --adopt [package]`
+3. `stow --verbose --dotfiles --adopt [package]`
+4. `dot status`
+5. `dot rm --cached ~/path/to/file`
+6. Remove from `~/.gitignore`
+7. Commit change with `dot`
+8. Commit change to dotfiles repo
