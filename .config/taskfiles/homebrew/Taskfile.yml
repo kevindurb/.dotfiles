@@ -2,6 +2,9 @@
 ---
 version: '3'
 
+env:
+  HOMEBREW_BUNDLE_FILE_GLOBAL: ~/.config/homebrew/Brewfile
+
 tasks:
   install: brew bundle --global
   cleanup: brew bundle cleanup --global
