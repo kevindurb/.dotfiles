@@ -13,4 +13,4 @@ export LESSHISTFILE="$XDG_STATE_HOME/less/history"
 export TLDR_CACHE_DIR="$XDG_CACHE_HOME/tldr"
 export PLATFORMIO_CORE_DIR="$XDG_DATA_HOME/platformio"
 export NODE_REPL_HISTORY="$XDG_DATA_HOME/node_repl_history"
-
+export TLRC_CONFIG="$XDG_CONFIG_HOME/tlrc/config.toml"
