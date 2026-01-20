@@ -3,6 +3,6 @@
 version: '3'
 
 tasks:
-  bundle:
-    aliases: [bu, b]
-    cmd: brew bundle --global --cleanup
+  install: brew bundle --global
+  cleanup: brew bundle cleanup --global
+  cleanup:force: brew bundle cleanup --global --force
