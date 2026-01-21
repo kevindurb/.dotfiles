@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+---
+version: '3'
+
+env:
+  HOMEBREW_BUNDLE_FILE_GLOBAL: ~/.config/homebrew/Brewfile
+
+tasks:
+  install: brew bundle --global
+  cleanup: brew bundle cleanup --global
+  cleanup:force: brew bundle cleanup --global --force

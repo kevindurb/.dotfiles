@@ -1,17 +1,1 @@
-# Default Ignore All
-/**
-
-# Repo
-!/README.md
-!/CLAUDE.md
-!/.gitmodules
-!/.gitignore
-!/.config/
-!/.local/
-
-# Code Formatting
-!/.yamlfmt
-!/.prettierrc
-
-# Always Ignore
 .DS_Store
