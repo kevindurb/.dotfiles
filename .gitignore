@@ -10,10 +10,6 @@
 !/.config/
 !/.local/
 
-# Homebrew
-!/.config/homebrew
-!/.config/homebrew/**
-
 # Claude
 !/.claude/
 !/.claude/CLAUDE.md
@@ -28,10 +24,6 @@
 !/.config/agents/
 !/.config/agents/**
 
-# Rectangle
-!/.config/rectangle/
-!/.config/rectangle/config.json
-
 # Nix
 !/.config/nix/
 !/.config/nix/*
@@ -45,11 +37,6 @@
 /.config/zellij/*.bak
 !/.config/zellij/layouts/
 !/.config/zellij/layouts/*
-
-# Tmux
-!/.gitmux.conf
-!/.config/tmux/
-!/.config/tmux/**
 
 # Tmuxinator
 !/.config/tmuxinator/
@@ -76,20 +63,10 @@
 !/.config/alacritty/
 !/.config/alacritty/*
 
-# Wezterm
-!/.config/wezterm/
-!/.config/wezterm/*
-
 # Taskfile
 !/Taskfile.yml
 !/.config/taskfiles/
 !/.config/taskfiles/**
-
-# Git
-!/.stCommitMsg
-!/.config/git/
-!/.config/git/config
-!/.config/git/ignore
 
 # Custom Scripts
 !/.local/bin/
