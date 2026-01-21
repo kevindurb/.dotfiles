@@ -34,17 +34,6 @@
 !/.local/share/fonts/
 !/.local/share/fonts/*
 
-# Btop
-!/.config/btop/
-!/.config/btop/themes/
-!/.config/btop/themes/*
-!/.config/btop/btop.conf
-
-# Mycli
-!/.myclirc
-!/.config/mycli/
-!/.config/mycli/**
-
 # Other
 !/.envrc
 !/Brewfile
