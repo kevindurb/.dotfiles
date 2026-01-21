@@ -53,14 +53,6 @@
 !/.envrc
 !/Brewfile
 !/.Brewfile
-!/.dir_colors
-!/.tool-versions
-!/.config/topgrade.toml
-!/.config/starship.toml
-!/.config/bat/
-!/.config/bat/**
-!/.config/delta/
-!/.config/delta/**
 
 # Always Ignore
 .DS_Store
