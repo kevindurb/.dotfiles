@@ -19,12 +19,6 @@
 !/.config/taskfiles/
 !/.config/taskfiles/**
 
-# Custom Scripts
-!/.local/bin/
-!/.local/bin/whale
-!/.local/bin/snowjob
-!/.local/bin/popuptmux
-
 # Code Formatting
 !/.yamlfmt
 !/.prettierrc
@@ -33,11 +27,6 @@
 !/.local/share/
 !/.local/share/fonts/
 !/.local/share/fonts/*
-
-# Other
-!/.envrc
-!/Brewfile
-!/.Brewfile
 
 # Always Ignore
 .DS_Store
