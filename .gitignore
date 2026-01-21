@@ -78,10 +78,6 @@
 !/.yamlfmt
 !/.prettierrc
 
-# gh
-!/.config/gh/
-!/.config/gh/config.yml
-
 # fonts
 !/.local/share/
 !/.local/share/fonts/
