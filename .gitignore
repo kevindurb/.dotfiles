@@ -6,7 +6,6 @@
 !/CLAUDE.md
 !/.gitmodules
 !/.gitignore
-!/.rgignore
 !/.config/
 !/.local/
 
@@ -14,9 +13,6 @@
 !/.config/nvim/
 !/.config/nvim/**
 /.config/nvim/spell
-
-# Aider
-!/.aider.conf.yml
 
 # Taskfile
 !/Taskfile.yml
