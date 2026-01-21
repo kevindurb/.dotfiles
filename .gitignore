@@ -78,10 +78,6 @@
 !/.yamlfmt
 !/.prettierrc
 
-# SSH
-!/.ssh/
-!/.ssh/config
-
 # gh
 !/.config/gh/
 !/.config/gh/config.yml
