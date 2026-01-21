@@ -1,0 +1,7 @@
+{
+  "workspace.library": [
+    "~/.local/share/nvim/lazy/neodev.nvim/types/stable",
+    "${3rd}/luv/library"
+  ]
+}
+
