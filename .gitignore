@@ -9,11 +9,6 @@
 !/.config/
 !/.local/
 
-# Taskfile
-!/Taskfile.yml
-!/.config/taskfiles/
-!/.config/taskfiles/**
-
 # Code Formatting
 !/.yamlfmt
 !/.prettierrc
