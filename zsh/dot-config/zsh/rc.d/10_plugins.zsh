@@ -1,7 +1,9 @@
 #! /usr/bin/env zsh
-#
-if [[ -f "$HOME/.antidote/antidote.zsh" ]]; then
+
+local ANTIDOTE_ZSH="$(brew --prefix)/opt/antidote/share/antidote/antidote.zsh"
+
+if [[ -f "$ANTIDOTE_ZSH" ]]; then
   zstyle ':antidote:static' file $XDG_STATE_HOME/zsh/.zsh_plugins.zsh
-  source $HOME/.antidote/antidote.zsh
+  source "$ANTIDOTE_ZSH"
   antidote load
 fi

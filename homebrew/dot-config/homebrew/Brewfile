@@ -8,6 +8,7 @@ tap "microsoft/git"
 tap "utkuozdemir/pv-migrate"
 
 brew "ansible"
+brew "antidote"
 brew "asdf"
 brew "aws-vault"
 brew "awscli"
