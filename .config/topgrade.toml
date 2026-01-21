@@ -1,2 +1,0 @@
-[misc]
-disable = ["pnpm", "rcm", "node", "yarn", "containers", "mas"]

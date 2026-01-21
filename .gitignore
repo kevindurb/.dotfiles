@@ -1,0 +1,165 @@
+<<<<<<< HEAD
+||||||| e990e52
+# Default Ignore All
+/**
+
+# Repo
+!/README.md
+!/CLAUDE.md
+!/.gitmodules
+!/.gitignore
+!/.rgignore
+!/.config/
+!/.local/
+
+# Claude
+!/.claude/
+!/.claude/CLAUDE.md
+!/.claude/agents
+!/.claude/agents/**
+!/.claude/commands
+!/.claude/commands/**
+!/.claude/skills
+!/.claude/skills/**
+
+# Agents
+!/.config/agents/
+!/.config/agents/**
+
+# Nix
+!/.config/nix/
+!/.config/nix/*
+
+# Zellij
+!/.config/zellij/
+!/.config/zellij/*
+/.config/zellij/*.bak
+!/.config/zellij/layouts/
+!/.config/zellij/layouts/*
+
+# Tmuxinator
+!/.config/tmuxinator/
+!/.config/tmuxinator/*
+
+# Neovim
+!/.config/nvim/
+!/.config/nvim/**
+/.config/nvim/spell
+
+# Aider
+!/.aider.conf.yml
+
+# Alactritty
+!/.config/alacritty/
+!/.config/alacritty/*
+
+# Taskfile
+!/Taskfile.yml
+!/.config/taskfiles/
+!/.config/taskfiles/**
+
+# Custom Scripts
+!/.local/bin/
+!/.local/bin/whale
+!/.local/bin/snowjob
+!/.local/bin/popuptmux
+
+# Code Formatting
+!/.yamlfmt
+!/.prettierrc
+
+# fonts
+!/.local/share/
+!/.local/share/fonts/
+!/.local/share/fonts/*
+
+# Btop
+!/.config/btop/
+!/.config/btop/themes/
+!/.config/btop/themes/*
+!/.config/btop/btop.conf
+
+# Mycli
+!/.myclirc
+!/.config/mycli/
+!/.config/mycli/**
+
+# Distrobox
+!/.config/distrobox/
+!/.config/distrobox/**
+
+# Other
+!/.envrc
+!/Brewfile
+!/.Brewfile
+!/.dir_colors
+!/.tool-versions
+!/.config/topgrade.toml
+!/.config/starship.toml
+!/.config/bat/
+!/.config/bat/**
+!/.config/delta/
+!/.config/delta/**
+
+# Always Ignore
+.DS_Store
+=======
+# Default Ignore All
+/**
+
+# Repo
+!/README.md
+!/CLAUDE.md
+!/.gitmodules
+!/.gitignore
+!/.rgignore
+!/.config/
+!/.local/
+
+# Neovim
+!/.config/nvim/
+!/.config/nvim/**
+/.config/nvim/spell
+
+# Aider
+!/.aider.conf.yml
+
+# Taskfile
+!/Taskfile.yml
+!/.config/taskfiles/
+!/.config/taskfiles/**
+
+# Custom Scripts
+!/.local/bin/
+!/.local/bin/whale
+!/.local/bin/snowjob
+!/.local/bin/popuptmux
+
+# Code Formatting
+!/.yamlfmt
+!/.prettierrc
+
+# fonts
+!/.local/share/
+!/.local/share/fonts/
+!/.local/share/fonts/*
+
+# Btop
+!/.config/btop/
+!/.config/btop/themes/
+!/.config/btop/themes/*
+!/.config/btop/btop.conf
+
+# Mycli
+!/.myclirc
+!/.config/mycli/
+!/.config/mycli/**
+
+# Other
+!/.envrc
+!/Brewfile
+!/.Brewfile
+
+# Always Ignore
+.DS_Store
+>>>>>>> origin/main
