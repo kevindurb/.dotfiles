@@ -18,10 +18,5 @@
 !/.yamlfmt
 !/.prettierrc
 
-# fonts
-!/.local/share/
-!/.local/share/fonts/
-!/.local/share/fonts/*
-
 # Always Ignore
 .DS_Store
