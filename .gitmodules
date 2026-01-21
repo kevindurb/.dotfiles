@@ -1,9 +1,6 @@
 [submodule ".config/tmux/plugins/sensible"]
 	path = tmux/dot-config/tmux/plugins/sensible
 	url = git@github.com:tmux-plugins/tmux-sensible
-[submodule ".config/tmux/plugins/yank"]
-	path = tmux/dot-config/tmux/plugins/yank
-	url = git@github.com:tmux-plugins/tmux-yank
 [submodule ".config/tmux/plugins/pain-control"]
 	path = tmux/dot-config/tmux/plugins/pain-control
 	url = git@github.com:tmux-plugins/tmux-pain-control
