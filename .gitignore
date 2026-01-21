@@ -10,35 +10,6 @@
 !/.config/
 !/.local/
 
-# Claude
-!/.claude/
-!/.claude/CLAUDE.md
-!/.claude/agents
-!/.claude/agents/**
-!/.claude/commands
-!/.claude/commands/**
-!/.claude/skills
-!/.claude/skills/**
-
-# Agents
-!/.config/agents/
-!/.config/agents/**
-
-# Nix
-!/.config/nix/
-!/.config/nix/*
-
-# Zellij
-!/.config/zellij/
-!/.config/zellij/*
-/.config/zellij/*.bak
-!/.config/zellij/layouts/
-!/.config/zellij/layouts/*
-
-# Tmuxinator
-!/.config/tmuxinator/
-!/.config/tmuxinator/*
-
 # Neovim
 !/.config/nvim/
 !/.config/nvim/**
@@ -46,10 +17,6 @@
 
 # Aider
 !/.aider.conf.yml
-
-# Alactritty
-!/.config/alacritty/
-!/.config/alacritty/*
 
 # Taskfile
 !/Taskfile.yml
@@ -81,10 +48,6 @@
 !/.myclirc
 !/.config/mycli/
 !/.config/mycli/**
-
-# Distrobox
-!/.config/distrobox/
-!/.config/distrobox/**
 
 # Other
 !/.envrc
