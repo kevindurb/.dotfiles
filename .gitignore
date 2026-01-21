@@ -9,11 +9,6 @@
 !/.config/
 !/.local/
 
-# Neovim
-!/.config/nvim/
-!/.config/nvim/**
-/.config/nvim/spell
-
 # Taskfile
 !/Taskfile.yml
 !/.config/taskfiles/
