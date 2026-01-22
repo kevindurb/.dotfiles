@@ -1,2 +1,5 @@
 [misc]
-disable = ["pnpm", "rcm", "node", "yarn", "containers", "mas"]
+disable = ["pnpm", "node", "yarn", "containers", "mas"]
+
+[linux]
+bootc = true
