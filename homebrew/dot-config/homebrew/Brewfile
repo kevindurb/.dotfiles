@@ -130,6 +130,7 @@ cask "tailscale-app"
 cask "utm"
 cask "vlc"
 cask "wezterm"
+cask "font-cascadia-code-nf"
 
 flatpak "com.bitwarden.desktop"
 flatpak "com.fastmail.Fastmail"
