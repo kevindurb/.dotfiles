@@ -89,3 +89,7 @@
 	autocorrect = prompt
 [include]
   path = ~/.config/delta/themes/catppuccin.gitconfig
+[credential "https://github.com"]
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !gh auth git-credential
