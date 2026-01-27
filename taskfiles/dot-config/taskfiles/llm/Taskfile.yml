@@ -10,7 +10,7 @@ tasks:
         sh: git --no-pager diff -p --cached
       PROMPT: "Output ONLY a well formed git conventional commit message for the following diff:\n{{.DIFF}}"
       MSG:
-        sh: ollama run --hidethinking gpt-oss:120b-cloud {{.PROMPT | q}}
+        sh: ollama run --hidethinking gpt-oss:20b {{.PROMPT | q}}
     prompt: "{{.MSG | trim}}\nCommit?"
     cmd: >
       git commit -m {{.MSG | trim | q}}

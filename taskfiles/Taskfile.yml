@@ -8,6 +8,9 @@ includes:
     aliases: [brew, b]
   llm: ./.config/taskfiles/llm
   nix: ./.config/taskfiles/nix
+  dotfiles:
+    taskfile: ./.config/taskfiles/dotfiles
+    aliases: [dot, d]
 
 dotenv: [.env]
 
