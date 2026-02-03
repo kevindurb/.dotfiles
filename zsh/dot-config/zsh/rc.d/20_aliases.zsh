@@ -6,7 +6,7 @@
 
 alias g=git
 alias c=clear
-alias jme="jira issue list -q 'statusCategory != Done and assignee = currentUser()' --plain --order-by status"
+alias jira-me="jira issue list -q 'statusCategory != Done and assignee = currentUser()' --plain --order-by status"
 
 compdef dot=git g=git werk=git
 setopt complete_aliases
