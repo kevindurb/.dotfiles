@@ -3,7 +3,7 @@ local M = {}
 M.setup = function()
   local now, add = require('mini.deps').now, require('mini.deps').add
 
-  add({ source = 'catppuccin/nvim', name = 'catppuccin' })
+  add({ source = 'ellisonleao/gruvbox.nvim', name = 'gruvbox' })
   add('akinsho/bufferline.nvim')
   add({
     source = 'nvim-lualine/lualine.nvim',
@@ -11,7 +11,7 @@ M.setup = function()
   })
 
   now(function()
-    vim.cmd.colorscheme('catppuccin-macchiato')
+    vim.cmd.colorscheme('gruvbox')
     require('bufferline').setup({
       options = {
         separator_style = 'thick',
