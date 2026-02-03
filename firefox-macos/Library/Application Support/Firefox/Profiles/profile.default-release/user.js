@@ -1,0 +1,1 @@
+firefox/dot-mozilla/firefox/Profiles/profile.default-release/user.js
