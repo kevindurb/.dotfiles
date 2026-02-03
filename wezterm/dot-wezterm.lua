@@ -6,11 +6,12 @@ config.font_size = 13
 config.color_scheme = "Gruvbox Dark (Gogh)"
 config.hide_tab_bar_if_only_one_tab = true
 config.enable_wayland = true
-config.window_decorations = "TITLE | RESIZE"
+config.window_decorations = "RESIZE"
 config.freetype_load_target = "Light"
+config.window_background_opacity = 0.9
 
 config.keys = {
-  {key="Enter", mods="SHIFT", action=wezterm.action{SendString="\x1b\r"}},
+	{ key = "Enter", mods = "SHIFT", action = wezterm.action({ SendString = "\x1b\r" }) },
 }
 
 return config
