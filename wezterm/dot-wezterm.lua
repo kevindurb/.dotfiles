@@ -9,4 +9,8 @@ config.enable_wayland = true
 config.window_decorations = "TITLE | RESIZE"
 config.freetype_load_target = "Light"
 
+config.keys = {
+  {key="Enter", mods="SHIFT", action=wezterm.action{SendString="\x1b\r"}},
+}
+
 return config
