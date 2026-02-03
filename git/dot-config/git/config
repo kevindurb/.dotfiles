@@ -51,7 +51,6 @@
   diffFilter = delta --color-only
 [delta]
   navigate = true
-  features=catppuccin-macchiato
 [merge]
   conflictstyle = zdiff3
 [diff]
@@ -87,8 +86,6 @@
   wtp = worktree prune
 [help]
 	autocorrect = prompt
-[include]
-  path = ~/.config/delta/themes/catppuccin.gitconfig
 [credential "https://github.com"]
   helper =
 	helper = !gh auth git-credential
