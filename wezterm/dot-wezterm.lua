@@ -3,7 +3,7 @@ local config = wezterm.config_builder()
 
 config.font = wezterm.font({
 	family = "Cascadia Code NF",
-	harfbuzz_features = { "zero", "ss01" },
+	harfbuzz_features = { "zero" },
 })
 config.font_size = 13
 config.color_scheme = "Gruvbox Dark (Gogh)"
