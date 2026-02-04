@@ -1,7 +1,10 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.font = wezterm.font("Cascadia Code NF")
+config.font = wezterm.font({
+	family = "Cascadia Code NF",
+	harfbuzz_features = { "calt", "liga", "zero", "ss01", "ss02" },
+})
 config.font_size = 13
 config.color_scheme = "Gruvbox Dark (Gogh)"
 config.hide_tab_bar_if_only_one_tab = true
