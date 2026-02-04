@@ -106,6 +106,7 @@ brew "yazi"
 brew "yq"
 brew "zoxide"
 brew "zsh"
+brew "m-cli" if OS.mac?
 
 cask_args appdir: "~/Applications", require_sha: true
 

@@ -2,15 +2,12 @@
 
 osascript -e 'tell application "System Preferences" to quit'
 
-# === Accessibility ===
-defaults write com.apple.universalaccess reduceMotion -bool true
-
 # === Appearance ===
-defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+m appearance --darkmode enable --transparency disable
+m wallpaper --set "$HOME/Pictures/gruvbox-lines.png"
 
 # === Dock ===
-defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock magnification -bool true
+m dock --autohide enable --magnification enable --position bottom --prune
 defaults write com.apple.dock tilesize -int 31
 defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock mru-spaces -bool false
@@ -55,14 +52,7 @@ defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
 # === Finder ===
-# Show hidden files
-defaults write com.apple.finder AppleShowAllFiles -bool true
-
-# Show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
-# Show path bar
-defaults write com.apple.finder ShowPathbar -bool true
+m finder --showhiddenfiles enable --showextensions enable --showdesktop enable --showpath enable
 
 # Show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
