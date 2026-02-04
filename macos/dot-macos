@@ -25,7 +25,6 @@ defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool fa
 defaults write com.apple.WindowManager EnableTilingByEdgeDrag -bool false
 defaults write com.apple.WindowManager EnableTilingOptionAccelerator -bool false
 defaults write com.apple.WindowManager EnableTopTilingByEdgeDrag -bool false
-defaults write com.apple.WindowManager HideDesktop -bool true
 
 # === Screenshots ===
 defaults write com.apple.screencapture target clipboard
@@ -52,7 +51,7 @@ defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
 # === Finder ===
-m finder --showhiddenfiles enable --showextensions enable --showdesktop enable --showpath enable
+m finder --showhiddenfiles enable --showextensions enable --showdesktop disable --showpath enable
 
 # Show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
