@@ -3,8 +3,9 @@
 osascript -e 'tell application "System Preferences" to quit'
 
 # === Appearance ===
-m appearance --darkmode enable --transparency disable
+m appearance --darkmode enable --transparency disable --maincolor graphite --highlightcolor graphite --iconsize medium
 m wallpaper --set "$HOME/Pictures/gruvbox-lines.png"
+defaults write -g NSRequiresAquaSystemAppearance -bool true
 
 # === Dock ===
 m dock --autohide enable --magnification enable --position bottom --prune
