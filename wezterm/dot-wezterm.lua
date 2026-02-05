@@ -2,8 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.font = wezterm.font({
-	family = "Cascadia Code NF",
-	harfbuzz_features = { "zero" },
+	family = "FiraCode Nerd Font",
 })
 config.font_size = 13
 config.color_scheme = "Gruvbox Dark (Gogh)"
