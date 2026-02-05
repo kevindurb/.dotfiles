@@ -132,7 +132,7 @@ cask "tailscale-app"
 cask "utm"
 cask "vlc"
 cask "wezterm"
-cask "font-cascadia-code-nf"
+cask "font-fira-code-nerd-font"
 cask "claude"
 
 flatpak "com.bitwarden.desktop"
