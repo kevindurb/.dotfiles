@@ -82,7 +82,6 @@ brew "speedtest-cli"
 brew "spotify_player"
 brew "starship"
 brew "stow"
-brew "syncthing", { restart_service: :changed, start_service: true }
 brew "tlrc"
 brew "tmux"
 brew "tmuxinator"
