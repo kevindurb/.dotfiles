@@ -8,8 +8,6 @@ Host github.com
 
 Host tablet steamdeck hoth corellia
   User kevindurb
-  RequestTTY yes
-  RemoteCommand zsh -l
 
 Host unimatrix-01
   HostName 192.168.42.11
