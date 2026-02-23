@@ -32,3 +32,6 @@ cscope.out
 CRUSH.md
 
 .repoql
+
+.claude/worktrees/**
+.worktrees/**
