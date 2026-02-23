@@ -5,6 +5,7 @@ config:
   show-name: true
 
 icons:
+  claude: '󰛄'
   alacritty: ""
   ansible: ""
   ant: ""
