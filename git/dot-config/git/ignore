@@ -34,4 +34,5 @@ CRUSH.md
 .repoql
 
 .claude/worktrees/**
+.claude/docs/**
 .worktrees/**
