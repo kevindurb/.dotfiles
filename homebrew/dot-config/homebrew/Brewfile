@@ -1,6 +1,7 @@
 # vim: set ft=ruby:
 cask_args appdir: "~/Applications", require_sha: true
 
+brew "yamllint"
 brew "ankitpokhrel/jira-cli/jira-cli"
 brew "ansible"
 brew "ansible-lint"
