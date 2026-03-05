@@ -138,14 +138,18 @@ end
 if OS.linux?
   brew "ollama", { restart_service: :changed, start_service: true }
   flatpak "com.bitwarden.desktop"
+  flatpak "com.discordapp.Discord"
   flatpak "com.fastmail.Fastmail"
+  flatpak "com.github.tchx84.Flatseal"
   flatpak "com.rustdesk.RustDesk"
   flatpak "com.spotify.Client"
   flatpak "com.usebottles.bottles"
   flatpak "com.valvesoftware.Steam"
+  flatpak "io.missioncenter.MissionCenter"
   flatpak "io.podman_desktop.PodmanDesktop"
   flatpak "it.mijorus.smile"
   flatpak "md.obsidian.Obsidian"
+  flatpak "net.davidotek.pupgui2"
   flatpak "org.jellyfin.JellyfinDesktop"
   flatpak "org.kde.gwenview"
   flatpak "org.kde.isoimagewriter"
@@ -155,5 +159,6 @@ if OS.linux?
   flatpak "org.openscad.OpenSCAD"
   flatpak "org.signal.Signal"
   flatpak "org.videolan.VLC"
+  flatpak "org.videolan.vlc"
   flatpak "org.wezfurlong.wezterm"
 end
