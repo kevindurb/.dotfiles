@@ -68,7 +68,9 @@ M.setup = function()
 
   vim.filetype.add({
     extension = {
-      gohtml = 'html.gotmpl',
+      tmpl = 'gotmpl',
+      gotmpl = 'gotmpl',
+      gohtml = 'gotmpl',
     },
   })
 end

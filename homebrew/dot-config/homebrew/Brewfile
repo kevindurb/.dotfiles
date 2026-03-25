@@ -67,6 +67,7 @@ brew "pgcli"
 brew "php@8.4", { link: true }
 brew "pipx"
 brew "podman"
+brew "pre-commit"
 brew "prettyping"
 brew "procs"
 brew "pv"
