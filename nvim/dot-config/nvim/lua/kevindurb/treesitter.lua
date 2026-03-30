@@ -4,8 +4,7 @@ M.setup = function()
   local now, add = require('mini.deps').now, require('mini.deps').add
   add({
     source = 'nvim-treesitter/nvim-treesitter',
-    checkout = 'master',
-    monitor = 'main',
+    checkout = 'main',
     hooks = {
       post_checkout = function()
         vim.cmd('TSUpdate')
@@ -14,7 +13,7 @@ M.setup = function()
   })
 
   now(function()
-    require('nvim-treesitter.configs').setup({
+    require('nvim-treesitter').install({
       ensure_installed = {
         'bash',
         'c',
@@ -36,10 +35,7 @@ M.setup = function()
         'vim',
         'vimdoc',
       },
-      sync_install = false,
       auto_install = true,
-
-      highlight = { enable = true },
     })
   end)
 end
