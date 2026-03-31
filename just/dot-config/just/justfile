@@ -2,3 +2,12 @@ use-node version:
   brew install node@{{version}}
   brew unlink node
   brew link --overwrite node@{{version}}
+
+brew-bundle *args:
+  brew bundle --global {{args}}
+
+brew-bundle-cleanup:
+  @just -g brew-bundle cleanup
+
+brew-bundle-cleanup-force:
+  @just -g brew-bundle cleanup --force
