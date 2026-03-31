@@ -2,6 +2,7 @@
 
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export HOMEBREW_BUNDLE_NO_UPGRADE=1
+export HOMEBREW_NO_ENV_HINTS=1
 
 test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
 test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

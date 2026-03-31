@@ -1,5 +1,10 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+[env_var.HOMEBREW_INSIDE_BUNDLE]
+symbol = "🍺 "
+format = "[$symbol]($style)"
+style = "bold yellow"
+
 [jobs]
 disabled = false
 symbol_threshold = 1
@@ -8,21 +13,7 @@ number_threshold = 1
 [package]
 disabled = true
 
-[nodejs]
-symbol = " "
-
-[ruby]
-symbol = " "
-disabled = true
-
 [cmd_duration]
-
-[hostname]
-ssh_symbol = " "
-ssh_only = false
-
-[php]
-symbol = " "
 
 [username]
 show_always = false
@@ -40,89 +31,8 @@ disabled = true
 success_symbol = '[➜](bold green) '
 error_symbol = '[✗](bold red) '
 
-[aws]
-symbol = "  "
-
-[buf]
-symbol = " "
-
-[c]
-symbol = " "
-
-[conda]
-symbol = " "
-
-[crystal]
-symbol = " "
-
-[dart]
-symbol = " "
-
-[directory]
-read_only = " 󰌾"
-
-[docker_context]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
-
-[fennel]
-symbol = " "
-
-[fossil_branch]
-symbol = " "
-
-[git_branch]
-symbol = " "
-
-[git_commit]
-tag_symbol = '  '
-
-[golang]
-symbol = " "
-
-[guix_shell]
-symbol = " "
-
-[haskell]
-symbol = " "
-
-[haxe]
-symbol = " "
-
-[hg_branch]
-symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
-[kotlin]
-symbol = " "
-
-[lua]
-symbol = " "
-
-[memory_usage]
-symbol = "󰍛 "
-
-[meson]
-symbol = "󰔷 "
-
-[nim]
-symbol = "󰆥 "
-
-[nix_shell]
-symbol = " "
-
-[ocaml]
-symbol = " "
+[os]
+disabled = false
 
 [os.symbols]
 Alpaquita = " "
@@ -168,31 +78,3 @@ Ubuntu = " "
 Unknown = " "
 Void = " "
 Windows = "󰍲 "
-
-[perl]
-symbol = " "
-
-[pijul_channel]
-symbol = " "
-
-[python]
-disabled = true
-symbol = " "
-
-[rlang]
-symbol = "󰟔 "
-
-[rust]
-symbol = "󱘗 "
-
-[scala]
-symbol = " "
-
-[swift]
-symbol = " "
-
-[zig]
-symbol = " "
-
-[gradle]
-symbol = " "
