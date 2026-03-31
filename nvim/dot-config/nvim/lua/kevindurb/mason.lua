@@ -1,27 +1,23 @@
+-- @DEPRECATED
 local M = {}
 
 M.ensure_installed = {
   'ansible-language-server',
   'ansible-lint',
   'bash-language-server',
-  'biome',
   'css-lsp',
   'dockerfile-language-server',
   'eslint-lsp',
   'eslint_d',
-  'firefox-debug-adapter',
   'graphql-language-service-cli',
   'html-lsp',
   'intelephense',
-  'js-debug-adapter',
   'json-lsp',
   'lua-language-server',
   'marksman',
   'php-cs-fixer',
-  'php-debug-adapter',
   'phpstan',
   'prettierd',
-  'prisma-language-server',
   'shellcheck',
   'sqlfluff',
   'sqlls',
