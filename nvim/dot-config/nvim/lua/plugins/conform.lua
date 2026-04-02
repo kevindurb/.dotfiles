@@ -34,9 +34,7 @@ vim.schedule(function()
       lua = { 'stylua' },
       php = { 'php_cs_fixer' },
       toml = { 'taplo' },
-      cs = { 'dotnetformat' },
       go = { 'gofmt' },
-      nix = { 'nixfmt' },
       ['_'] = { 'trim_whitespace' },
     },
     format_on_save = {

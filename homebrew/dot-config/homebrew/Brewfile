@@ -59,6 +59,11 @@ brew "litecli"
 brew "mycli"
 brew "pgcli"
 
+# neovim
+npm "neovim"
+brew "neovim"
+brew "utftex"
+
 # other
 brew "ankitpokhrel/jira-cli/jira-cli"
 brew "ansible"
@@ -94,7 +99,6 @@ brew "jq"
 brew "just"
 brew "lolcat"
 brew "mariadb"
-brew "neovim"
 brew "nmap"
 brew "noti"
 brew "nyancat"

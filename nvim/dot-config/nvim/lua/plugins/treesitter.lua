@@ -12,6 +12,8 @@ require('nvim-treesitter').install({
     'hurl',
     'javascript',
     'json',
+    'jsonc',
+    'latex',
     'lua',
     'markdown',
     'markdown_inline',
@@ -22,6 +24,7 @@ require('nvim-treesitter').install({
     'typescript',
     'vim',
     'vimdoc',
+    'yaml',
   },
   auto_install = true,
 })
