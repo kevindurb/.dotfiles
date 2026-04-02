@@ -34,11 +34,11 @@ require('plugins.treesitter')
 
 -- appearance
 require('plugins.gruvbox')
+require('plugins.icons')
 require('plugins.bufferline')
 require('plugins.navic')
 require('plugins.lualine')
 require('plugins.colorizer')
-require('plugins.icons')
 
 -- format/lint
 require('plugins.conform')
