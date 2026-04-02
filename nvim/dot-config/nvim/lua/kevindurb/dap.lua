@@ -9,22 +9,11 @@ M.setup = function()
       'nvim-neotest/nvim-nio',
       'theHamsta/nvim-dap-virtual-text',
       'rcarriga/nvim-dap-ui',
-      -- 'jay-babu/mason-nvim-dap.nvim',
     },
   })
 
   later(function()
     require('nvim-dap-virtual-text').setup()
-    -- require('mason-nvim-dap').setup({
-    --   automatic_installation = true,
-    --   ensure_installed = {
-    --     'php',
-    --     'js',
-    --     'firefox',
-    --   },
-    --   handlers = {},
-    -- })
-
     local dapui = require('dapui')
     local dap = require('dap')
     dapui.setup()
@@ -54,7 +43,7 @@ M.setup = function()
     vim.fn.sign_define('DapLogPoint', { text = '', texthl = 'DiagnosticSignInfo', linehl = '', numhl = '' })
     vim.fn.sign_define(
       'DapStopped',
-      { text = '▶️', texthl = 'DiagnosticSignWarn', linehl = 'Visual', numhl = 'DiagnosticSignWarn' }
+      { text = '', texthl = 'DiagnosticSignWarn', linehl = 'Visual', numhl = 'DiagnosticSignWarn' }
     )
   end)
 end

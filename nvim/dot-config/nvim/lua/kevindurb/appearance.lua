@@ -53,7 +53,6 @@ M.setup = function()
     require('lualine').setup({
       extensions = {
         'man',
-        'mason',
         'oil',
         'quickfix',
       },
