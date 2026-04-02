@@ -59,3 +59,4 @@ require('plugins.snippets')
 
 -- other
 require('plugins.neoconf')
+require('plugins.lazydev')
