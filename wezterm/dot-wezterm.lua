@@ -11,6 +11,8 @@ config.enable_wayland = true
 config.window_decorations = "RESIZE"
 config.freetype_load_target = "Light"
 config.window_background_opacity = 0.95
+-- config.kde_window_background_blur = true
+config.macos_window_background_blur = 20
 
 config.keys = {
 	{ key = "Enter", mods = "SHIFT", action = wezterm.action({ SendString = "\x1b\r" }) },
