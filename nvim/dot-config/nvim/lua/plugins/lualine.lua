@@ -1,4 +1,5 @@
-vim.pack.add({ 'SmiteshP/nvim-navic', 'nvim-lualine/lualine.nvim' })
+local gh = require('kevindurb.utils').gh
+vim.pack.add({ gh('nvim-lualine/lualine.nvim') })
 
 require('lualine').setup({
   extensions = {

@@ -1,7 +1,6 @@
-local add, later = require('mini.deps').add, require('mini.deps').later
+local gh = require('kevindurb.utils').gh
+vim.pack.add({ gh('folke/trouble.nvim') })
 
-add('folke/trouble.nvim')
-
-later(function()
+vim.schedule(function()
   require('trouble').setup()
 end)

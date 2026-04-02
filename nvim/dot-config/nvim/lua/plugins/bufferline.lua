@@ -1,4 +1,6 @@
-vim.pack.add({ 'akinsho/bufferline.nvim' })
+local gh = require('kevindurb.utils').gh
+
+vim.pack.add({ gh('akinsho/bufferline.nvim') })
 require('bufferline').setup({
   options = {
     separator_style = 'thick',
