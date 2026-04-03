@@ -1,7 +1,7 @@
 local gh = require('kevindurb.utils').gh
 vim.pack.add({ gh('nvim-treesitter/nvim-treesitter') })
 
-require('nvim-treesitter').install({
+require('nvim-treesitter').setup({
   ensure_installed = {
     'bash',
     'c',
