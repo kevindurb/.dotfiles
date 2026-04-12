@@ -50,7 +50,6 @@ require('plugins.dap')
 -- ui
 require('plugins.oil')
 require('plugins.render-markdown')
--- require('plugins.trouble')
 
 -- text
 require('plugins.pairs')
@@ -60,4 +59,3 @@ require('plugins.snippets')
 -- other
 require('plugins.neoconf')
 require('plugins.lazydev')
-require('plugins.neogit')
