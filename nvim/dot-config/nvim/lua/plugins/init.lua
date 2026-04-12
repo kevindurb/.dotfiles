@@ -50,7 +50,7 @@ require('plugins.dap')
 -- ui
 require('plugins.oil')
 require('plugins.render-markdown')
-require('plugins.trouble')
+-- require('plugins.trouble')
 
 -- text
 require('plugins.pairs')

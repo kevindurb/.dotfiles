@@ -59,7 +59,7 @@ vim.schedule(function()
   map('n', '<leader>b', builtin.buffers, {})
 
   -- pick
-  map('n', '<leader>xx', '<cmd> Trouble diagnostics toggle<cr>', { silent = true })
+  map('n', '<leader>xx', pickers.diagnostic, {})
 
   -- K keymap for searching word under cursor
   map('n', 'K', function()
@@ -71,7 +71,4 @@ vim.schedule(function()
   -- Quick splits keymaps
   map('n', '<leader>v', ':vsp<CR>', { desc = 'Vertical split' })
   map('n', '<leader>V', ':sp<CR>', { desc = 'Horizontal split' })
-
-  -- Claude Code
-  map('n', '<leader>cc', '<cmd>ClaudeCode<CR>', { desc = 'Toggle Claude Code' })
 end)
