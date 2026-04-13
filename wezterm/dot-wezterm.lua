@@ -8,11 +8,9 @@ config.font_size = 13
 config.color_scheme = "Gruvbox Dark (Gogh)"
 config.hide_tab_bar_if_only_one_tab = true
 config.enable_wayland = true
-config.window_decorations = "RESIZE"
+config.window_decorations = "RESIZE|TITLE"
 config.freetype_load_target = "Light"
-config.window_background_opacity = 0.95
--- config.kde_window_background_blur = true
-config.macos_window_background_blur = 20
+config.window_background_opacity = 1
 
 config.keys = {
 	{ key = "Enter", mods = "SHIFT", action = wezterm.action({ SendString = "\x1b\r" }) },
