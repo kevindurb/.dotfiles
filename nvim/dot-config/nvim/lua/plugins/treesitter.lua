@@ -2,30 +2,6 @@ local gh = require('kevindurb.utils').gh
 vim.pack.add({ gh('nvim-treesitter/nvim-treesitter') })
 
 require('nvim-treesitter').setup({
-  ensure_installed = {
-    'bash',
-    'c',
-    'go',
-    'gotmpl',
-    'html',
-    'http',
-    'hurl',
-    'javascript',
-    'json',
-    'jsonc',
-    'latex',
-    'lua',
-    'markdown',
-    'markdown_inline',
-    'prisma',
-    'query',
-    'regex',
-    'styled',
-    'typescript',
-    'vim',
-    'vimdoc',
-    'yaml',
-  },
   auto_install = true,
 })
 

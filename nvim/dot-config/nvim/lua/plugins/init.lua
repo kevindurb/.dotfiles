@@ -21,7 +21,8 @@ require('plugins.conform')
 require('plugins.lint')
 
 -- dap
-require('plugins.dap')
+-- TODO: need a good way of loading plugin adapters
+-- require('plugins.dap')
 
 -- ui
 require('plugins.oil')
@@ -47,4 +48,3 @@ require('plugins.completion')
 require('plugins.pick')
 require('plugins.git')
 require('plugins.diff')
-require('plugins.starter')
