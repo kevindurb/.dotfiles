@@ -11,7 +11,7 @@ require('plugins.treesitter')
 -- appearance
 require('plugins.gruvbox')
 require('plugins.icons')
-require('plugins.bufferline')
+require('plugins.tabline')
 require('plugins.navic')
 require('plugins.lualine')
 require('plugins.hipatterns')
