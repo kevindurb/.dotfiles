@@ -14,7 +14,7 @@ require('plugins.icons')
 require('plugins.bufferline')
 require('plugins.navic')
 require('plugins.lualine')
-require('plugins.colorizer')
+require('plugins.hipatterns')
 
 -- format/lint
 require('plugins.conform')
