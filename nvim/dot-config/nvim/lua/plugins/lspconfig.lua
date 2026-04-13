@@ -7,24 +7,24 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
-vim.lsp.config('lua_ls', {
-  settings = {
-    Lua = {
-      workspace = {
-        checkThirdParty = false, -- Avoids issues with certain plugins
-        library = vim.api.nvim_get_runtime_file('', true),
-      },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
-      -- Add 'vim' to the list of known globals
-      diagnostics = {
-        globals = { 'vim' },
-      },
-    },
-  },
-})
+-- vim.lsp.config('lua_ls', {
+--   settings = {
+--     Lua = {
+--       workspace = {
+--         checkThirdParty = false, -- Avoids issues with certain plugins
+--         library = vim.api.nvim_get_runtime_file('', true),
+--       },
+--       -- Do not send telemetry data containing a randomized but unique identifier
+--       telemetry = {
+--         enable = false,
+--       },
+--       -- Add 'vim' to the list of known globals
+--       diagnostics = {
+--         globals = { 'vim' },
+--       },
+--     },
+--   },
+-- })
 
 vim.lsp.config('yamlls', {
   on_new_config = function(new_config)

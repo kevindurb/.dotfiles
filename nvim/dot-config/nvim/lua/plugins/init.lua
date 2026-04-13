@@ -12,7 +12,6 @@ vim.pack.add(vim.tbl_map(gh, {
   'windwp/nvim-ts-autotag',
   'lewis6991/gitsigns.nvim',
   'nvimdev/hlsearch.nvim',
-  'numToStr/Navigator.nvim',
 }))
 
 vim.schedule(function()
@@ -25,7 +24,6 @@ vim.schedule(function()
   require('nvim-ts-autotag').setup()
   require('gitsigns').setup()
   require('hlsearch').setup()
-  require('Navigator').setup()
 end)
 
 -- lsp/treesitter
@@ -59,3 +57,4 @@ require('plugins.snippets')
 -- other
 require('plugins.neoconf')
 require('plugins.lazydev')
+require('plugins.navigator')
