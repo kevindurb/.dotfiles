@@ -25,7 +25,7 @@ require('plugins.lint')
 -- require('plugins.dap')
 
 -- ui
-require('plugins.oil')
+require('plugins.files')
 require('plugins.render-markdown')
 require('plugins.hlsearch')
 require('plugins.gitsigns')

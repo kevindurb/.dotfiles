@@ -4,6 +4,7 @@ vim.schedule(function()
   -- local widgets = require('dap.ui.widgets')
   local builtin = require('mini.pick').builtin
   local pickers = require('mini.extra').pickers
+  local files = require('mini.files')
   local map = vim.keymap.set
 
   -- Saner search directions
@@ -37,8 +38,12 @@ vim.schedule(function()
   -- map('n', '<leader>dw', widgets.hover)
 
   -- lsp
-  map('n', '[d', vim.diagnostic.goto_prev)
-  map('n', ']d', vim.diagnostic.goto_next)
+  map('n', '[d', function()
+    vim.diagnostic.jump({ count = -1 })
+  end)
+  map('n', ']d', function()
+    vim.diagnostic.jump({ count = 1 })
+  end)
   map('n', 'gD', vim.lsp.buf.declaration)
   map('n', 'gd', vim.lsp.buf.definition)
   map('n', 'gr', vim.lsp.buf.hover)
@@ -50,15 +55,15 @@ vim.schedule(function()
   map({ 'n', 'i', 'v' }, '<c-k>', '<cmd>NavigatorUp<cr>', { silent = true, desc = 'navigate up' })
   map({ 'n', 'i', 'v' }, '<c-l>', '<cmd>NavigatorRight<cr>', { silent = true, desc = 'navigate right' })
 
-  -- oil
-  map('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+  -- mini.files
+  map('n', '-', function()
+    files.open(vim.api.nvim_buf_get_name(0))
+  end, { desc = 'Open parent directory' })
 
-  -- pick
+  -- mini.pick
   map('n', '<C-p>', builtin.files, {})
   map('n', '<C-o>', pickers.commands, {})
   map('n', '<leader>b', builtin.buffers, {})
-
-  -- pick
   map('n', '<leader>xx', pickers.diagnostic, {})
 
   -- K keymap for searching word under cursor
