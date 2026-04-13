@@ -1,6 +1,3 @@
-local gh = require('kevindurb.utils').gh
-vim.pack.add({ gh('nvim-mini/mini.pairs') })
-
 vim.schedule(function()
   require('mini.pairs').setup({
     modes = { insert = true, command = true, terminal = false },

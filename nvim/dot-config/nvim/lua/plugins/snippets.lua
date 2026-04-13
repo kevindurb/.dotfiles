@@ -1,6 +1,3 @@
-local gh = require('kevindurb.utils').gh
-vim.pack.add({ gh('nvim-mini/mini.snippets') })
-
 vim.schedule(function()
   local MiniSnippets = require('mini.snippets')
   MiniSnippets.setup()

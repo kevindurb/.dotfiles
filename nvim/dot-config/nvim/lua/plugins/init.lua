@@ -1,30 +1,8 @@
 local gh = require('kevindurb.utils').gh
-vim.pack.add(vim.tbl_map(gh, {
-  'tpope/vim-repeat',
-  'tpope/vim-unimpaired',
-  'nvim-mini/mini.extra',
-  'nvim-mini/mini.pick',
-  'nvim-mini/mini.diff',
-  'nvim-mini/mini.completion',
-  'nvim-mini/mini-git',
-  'folke/ts-comments.nvim',
-  'nvim-mini/mini.comment',
-  'windwp/nvim-ts-autotag',
-  'lewis6991/gitsigns.nvim',
-  'nvimdev/hlsearch.nvim',
-}))
-
-vim.schedule(function()
-  require('mini.completion').setup()
-  require('mini.pick').setup()
-  require('mini.git').setup()
-  require('mini.diff').setup()
-  require('ts-comments').setup()
-  require('mini.comment').setup()
-  require('nvim-ts-autotag').setup()
-  require('gitsigns').setup()
-  require('hlsearch').setup()
-end)
+vim.pack.add({
+  gh('nvim-mini/mini.nvim'),
+  gh('nvim-mini/mini.extra'),
+})
 
 -- lsp/treesitter
 require('plugins.lspconfig')
@@ -48,13 +26,24 @@ require('plugins.dap')
 -- ui
 require('plugins.oil')
 require('plugins.render-markdown')
+require('plugins.hlsearch')
+require('plugins.gitsigns')
 
 -- text
 require('plugins.pairs')
 require('plugins.surround')
 require('plugins.snippets')
+require('plugins.ts-autotag')
+
+-- comments
+require('plugins.ts-comments')
+require('plugins.comment')
 
 -- other
 require('plugins.neoconf')
 require('plugins.lazydev')
 require('plugins.navigator')
+require('plugins.completion')
+require('plugins.pick')
+require('plugins.git')
+require('plugins.diff')

@@ -1,6 +1,3 @@
-local gh = require('kevindurb.utils').gh
-vim.pack.add({ gh('nvim-mini/mini.surround') })
-
 vim.schedule(function()
   require('mini.surround').setup({
     mappings = {

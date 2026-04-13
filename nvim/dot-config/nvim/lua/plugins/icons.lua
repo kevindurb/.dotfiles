@@ -1,6 +1,3 @@
-local gh = require('kevindurb.utils').gh
-vim.pack.add({ gh('nvim-mini/mini.icons') })
-
 require('mini.icons').setup({
   file = {
     ['.keep'] = { glyph = '󰊢', hl = 'MiniIconsGrey' },
