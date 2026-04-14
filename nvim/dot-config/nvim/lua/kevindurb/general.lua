@@ -31,10 +31,7 @@ vim.opt.ignorecase = true -- ignore search case
 vim.opt.smartcase = true -- dont ignore case once you use a capital
 
 -- Undo and backups
-vim.opt.undodir = '~/.vimundodir' -- store undo history in a directory
 vim.opt.undofile = true -- so if i close and reopen a file i can still undo
-vim.opt.backupdir = '~/.vimbackup' -- backup files in one place
-vim.opt.directory = '~/.vimbackup' -- swp files in one place
 
 -- Split behavior settings
 vim.opt.splitbelow = true -- horizontal splits open down
