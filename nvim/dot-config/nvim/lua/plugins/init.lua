@@ -27,7 +27,6 @@ require('plugins.lint')
 -- ui
 require('plugins.files')
 require('plugins.render-markdown')
-require('plugins.gitsigns')
 
 -- text
 require('plugins.pairs')
