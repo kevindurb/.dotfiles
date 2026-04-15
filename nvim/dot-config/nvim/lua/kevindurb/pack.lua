@@ -46,3 +46,23 @@ end, {
   complete = pack_names,
   desc = 'Remove inactive/orphaned vim.pack plugins from disk',
 })
+
+-- :PackList  — show all managed plugins and their status
+vim.api.nvim_create_user_command('PackList', function()
+  local plugins = vim.pack.get()
+  if #plugins == 0 then
+    vim.notify('vim.pack: no plugins', vim.log.levels.WARN)
+    return
+  end
+
+  local lines = vim
+    .iter(plugins)
+    :map(function(p)
+      local status = p.active and '+' or '-'
+      return ('[%s] %s  %s'):format(status, p.spec.name, p.spec.src or '')
+    end)
+    :totable()
+
+  table.sort(lines)
+  vim.notify(table.concat(lines, '\n'), vim.log.levels.INFO)
+end, { desc = 'List vim.pack plugins' })
