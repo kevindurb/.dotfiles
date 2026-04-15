@@ -1,11 +1,11 @@
 local gh = require('kevindurb.utils').gh
-vim.pack.add(vim.tbl_map(gh, {
-  'nvim-lua/plenary.nvim',
-  'nvim-neotest/nvim-nio',
-  'theHamsta/nvim-dap-virtual-text',
-  'rcarriga/nvim-dap-ui',
-  'mfussenegger/nvim-dap',
-}))
+vim.pack.add({
+  gh('nvim-lua/plenary.nvim'),
+  gh('nvim-neotest/nvim-nio'),
+  gh('theHamsta/nvim-dap-virtual-text'),
+  gh('rcarriga/nvim-dap-ui'),
+  gh('mfussenegger/nvim-dap'),
+})
 
 vim.schedule(function()
   require('nvim-dap-virtual-text').setup()

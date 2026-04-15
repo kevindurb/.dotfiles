@@ -1,5 +1,5 @@
 local gh = require('kevindurb.utils').gh
-vim.pack.add(vim.tbl_map(gh, { 'b0o/schemastore.nvim', 'neovim/nvim-lspconfig' }))
+vim.pack.add({ gh('b0o/schemastore.nvim'), gh('neovim/nvim-lspconfig') })
 
 vim.lsp.config('yamlls', {
   settings = {
