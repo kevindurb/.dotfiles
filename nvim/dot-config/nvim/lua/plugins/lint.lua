@@ -5,17 +5,18 @@ vim.schedule(function()
   local lint = require('lint')
   lint.linters_by_ft = {
     ansible = { 'ansible_lint' },
-    javascript = { 'eslint', 'biomejs', 'snyk_iac' },
-    javascriptreact = { 'eslint', 'biomejs' },
-    shell = { 'shellcheck' },
-    sql = { 'sqlfluff' },
-    typescript = { 'eslint', 'biomejs' },
-    typescriptreact = { 'eslint', 'biomejs' },
-    yaml = { 'yamllint' },
-    php = { 'phpcs' },
-    go = { 'golangcilint' },
+    bash = { 'shellcheck' },
     dockerfile = { 'hadolint' },
-    nix = { 'nix' },
+    go = { 'golangcilint' },
+    javascript = { 'eslint_d', 'biomejs' },
+    javascriptreact = { 'eslint_d', 'biomejs' },
+    php = { 'phpcs' },
+    sh = { 'shellcheck' },
+    sql = { 'sqlfluff' },
+    typescript = { 'eslint_d', 'biomejs' },
+    typescriptreact = { 'eslint_d', 'biomejs' },
+    yaml = { 'yamllint' },
+    zsh = { 'shellcheck' },
   }
   vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
     callback = function()
