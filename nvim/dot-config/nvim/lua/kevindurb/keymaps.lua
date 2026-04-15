@@ -15,6 +15,9 @@ vim.schedule(function()
   map('x', 'N', "'nN'[v:searchforward]", { expr = true, desc = 'Prev Search Result' })
   map('o', 'N', "'nN'[v:searchforward]", { expr = true, desc = 'Prev Search Result' })
 
+  -- Clear search on esc
+  map('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
   -- -- dap
   -- map('n', '<leader>du', dapui.toggle)
   -- map({ 'n', 'v' }, '<leader>de', dapui.eval)
