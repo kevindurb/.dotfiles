@@ -36,3 +36,23 @@ vim.opt.undofile = true -- so if i close and reopen a file i can still undo
 -- Split behavior settings
 vim.opt.splitbelow = true -- horizontal splits open down
 vim.opt.splitright = true -- vertical splits open right
+
+-- Enable Treesitter Highlighting
+vim.api.nvim_create_autocmd('FileType', {
+  callback = function()
+    pcall(vim.treesitter.start)
+  end,
+})
+
+-- Enable Treesitter Folding
+vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.wo[0][0].foldmethod = 'expr'
+
+-- Diagnostic Signs
+vim.fn.sign_define(
+  'DiagnosticSignError',
+  { text = ' ', texthl = 'DiagnosticSignError', numhl = 'DiagnosticSignError' }
+)
+vim.fn.sign_define('DiagnosticSignWarn', { text = ' ', texthl = 'DiagnosticSignWarn', numhl = 'DiagnosticSignWarn' })
+vim.fn.sign_define('DiagnosticSignHint', { text = ' ', texthl = 'DiagnosticSignHint', numhl = 'DiagnosticSignHint' })
+vim.fn.sign_define('DiagnosticSignInfo', { text = ' ', texthl = 'DiagnosticSignInfo', numhl = 'DiagnosticSignInfo' })
