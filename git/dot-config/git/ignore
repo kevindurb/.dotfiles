@@ -1,3 +1,5 @@
+# vi: ft=gitignore
+
 .*.sw[o-z]
 .DS_Store
 tags
@@ -22,17 +24,11 @@ node_modules
 .starscope.db
 cscope.out
 .rgignore
-.aider*
-
-**/.claude/settings.local.json
-
-**/CLAUDE.local.md
-
-**/.crush/
-CRUSH.md
+.worktrees/**
 
 .repoql
 
+**/.claude/settings.local.json
+**/CLAUDE.local.md
 .claude/worktrees/**
 .claude/docs/**
-.worktrees/**

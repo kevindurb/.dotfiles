@@ -1,3 +1,4 @@
+# vi: ft=gitconfig
 [core]
   editor = nvim
   excludesfile = ~/.config/git/ignore
@@ -86,9 +87,11 @@
   wtp = worktree prune
 [help]
 	autocorrect = prompt
-[credential "https://github.com"]
-  helper =
-	helper = !gh auth git-credential
-[credential "https://gist.github.com"]
-  helper =
-	helper = !gh auth git-credential
+; [credential "https://github.com"]
+;   helper =
+; 	helper = !gh auth git-credential
+; [credential "https://gist.github.com"]
+;   helper =
+; 	helper = !gh auth git-credential
+[includeIf "gitdir:~/Development/"]
+  path = ~/Development/.gitconfig
