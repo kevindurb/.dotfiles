@@ -86,15 +86,9 @@
   wtrm = worktree remove
   wtp = worktree prune
 [help]
-	autocorrect = prompt
-; [credential "https://github.com"]
-;   helper =
-; 	helper = !gh auth git-credential
-; [credential "https://gist.github.com"]
-;   helper =
-; 	helper = !gh auth git-credential
- [credential "https://forgejo.beaver-cloud.xyz"]
-   helper =
- 	 helper = bw
+  autocorrect = prompt
+[credential "https://forgejo.beaver-cloud.xyz"]
+  helper =
+  helper = bw
 [includeIf "gitdir:~/Development/"]
   path = ~/Development/.gitconfig
