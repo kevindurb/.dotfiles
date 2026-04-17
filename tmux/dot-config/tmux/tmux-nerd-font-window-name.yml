@@ -6,7 +6,7 @@ config:
 
 icons:
   alacritty: ''
-  ansible: ''
+  ansible: ''
   ant: ''
   apache2: ''
   apt: ''
@@ -44,7 +44,7 @@ icons:
   emacs: ''
   fdisk: ''
   firebase: ''
-  fish: ''
+  fish: ''
   flutter: ''
   gcc: ''
   gcloud: ''
