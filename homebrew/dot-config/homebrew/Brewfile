@@ -7,8 +7,8 @@ brew "bash"
 brew "dotnet"
 brew "golang"
 brew "node@22"
-brew "node@24", { link: true }
-brew "php@8.4", { link: true }
+brew "node@24", link: true
+brew "php@8.4", link: true
 brew "python@3.14"
 brew "zsh"
 
@@ -22,6 +22,7 @@ npm "yarn"
 brew "ansible-language-server"
 brew "bash-language-server"
 brew "dockerfile-language-server"
+brew "fish-lsp"
 brew "lua-language-server"
 brew "sql-language-server"
 brew "typescript-language-server"

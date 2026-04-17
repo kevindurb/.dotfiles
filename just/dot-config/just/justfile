@@ -2,10 +2,10 @@ default:
   @just -l
 
 use-node version:
-  brew install node@{{version}}
   brew unlink node
-  brew link --overwrite node@{{version}}
+  brew install node@{{version}}
   brew postinstall node@{{version}}
+  brew link --overwrite node@{{version}}
 
 brew-bundle *args:
   brew bundle --global {{args}}
