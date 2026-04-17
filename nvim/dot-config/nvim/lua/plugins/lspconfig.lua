@@ -37,6 +37,7 @@ vim.lsp.enable({
   'cssls',
   'dockerls',
   'eslint',
+  'fish_lsp',
   'gopls',
   'graphql',
   'html',
