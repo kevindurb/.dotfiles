@@ -93,5 +93,8 @@
 ; [credential "https://gist.github.com"]
 ;   helper =
 ; 	helper = !gh auth git-credential
+ [credential "https://forgejo.beaver-cloud.xyz"]
+   helper =
+ 	 helper = bw
 [includeIf "gitdir:~/Development/"]
   path = ~/Development/.gitconfig
