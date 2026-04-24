@@ -166,6 +166,7 @@ if OS.linux?
   flatpak "com.github.tchx84.Flatseal"
   flatpak "com.rustdesk.RustDesk"
   flatpak "com.spotify.Client"
+  flatpak "com.todoist.Todoist"
   flatpak "com.usebottles.bottles"
   flatpak "com.valvesoftware.Steam"
   flatpak "io.missioncenter.MissionCenter"
