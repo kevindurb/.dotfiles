@@ -5,6 +5,7 @@ ENV["PATH"] = "#{HOMEBREW_PREFIX}/bin:#{ENV["PATH"]}"
 # runtimes
 brew "bash"
 brew "dotnet"
+brew "fish"
 brew "golang"
 brew "node@22"
 brew "node@24", link: true
@@ -13,9 +14,10 @@ brew "python@3.14"
 brew "zsh"
 
 # package managers
-brew "uv"
-brew "pipx"
 brew "antidote"
+brew "fisher"
+brew "pipx"
+brew "uv"
 npm "yarn"
 
 # lsp
