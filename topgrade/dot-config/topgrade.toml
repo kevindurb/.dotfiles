@@ -3,3 +3,6 @@ disable = ["pnpm", "node", "yarn", "containers", "mas"]
 
 [linux]
 bootc = true
+
+[git]
+repos = ["~/.config/tmux/plugins/*/"]
