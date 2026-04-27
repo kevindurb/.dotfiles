@@ -3,8 +3,16 @@ tmux_plugins_dir := "~/.config/tmux/plugins"
 default:
   @just -l
 
+sync:
+  stow */
+
+overwrite package:
+  stow --adopt {{package}}
+  git checkout {{package}}
+  stow --restow {{package}}
+
 bootstrap: tmux-install-all-plugins
-  stow -R */
+  stow --restow */
 
 tmux-install-all-plugins:
   mkdir -p {{tmux_plugins_dir}}
