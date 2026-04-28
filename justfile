@@ -24,7 +24,7 @@ packages := replace("""
 default:
   @just -l
 
-stow +args:
+stow *args:
   @stow {{args}} {{packages}}
 
 overwrite package:
