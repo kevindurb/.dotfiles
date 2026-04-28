@@ -3,7 +3,7 @@ tmux_plugins_dir := "~/.config/tmux/plugins"
 default:
   @just -l
 
-sync:
+stow:
   stow */
 
 overwrite package:
