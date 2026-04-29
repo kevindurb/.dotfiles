@@ -1,10 +1,39 @@
-tmux_plugins_dir := "~/.config/tmux/plugins"
+tmux_plugins_dir := x"~/.config/tmux/plugins"
+packages := replace("""
+  bat
+  btop
+  fish
+  gh
+  git
+  homebrew
+  just
+  k9s
+  ls
+  macos
+  mycli
+  nvim
+  rg
+  ssh
+  starship
+  tmux
+  topgrade
+  wallpapers
+  wezterm
+""", "\n", " ")
 
 default:
   @just -l
 
+stow +args:
+  @stow {{args}} {{packages}}
+
+overwrite package:
+  stow --adopt {{package}}
+  git checkout {{package}}
+  stow --restow {{package}}
+
 bootstrap: tmux-install-all-plugins
-  stow -R */
+  @stow --restow {{packages}}
 
 tmux-install-all-plugins:
   mkdir -p {{tmux_plugins_dir}}

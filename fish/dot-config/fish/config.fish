@@ -8,6 +8,8 @@ if status is-interactive
 
   abbr --add c clear
   abbr --add g git
+  abbr --add k kubectl
+  abbr --add ll ls -lah
 
   starship init fish | source
 
