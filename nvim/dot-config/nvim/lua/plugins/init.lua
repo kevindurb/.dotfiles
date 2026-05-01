@@ -25,7 +25,7 @@ require('plugins.lint')
 -- require('plugins.dap')
 
 -- ui
-require('plugins.files')
+require('plugins.oil')
 require('plugins.render-markdown')
 
 -- text
