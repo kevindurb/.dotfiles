@@ -1,5 +1,6 @@
 tmux_plugins_dir := x"~/.config/tmux/plugins"
 packages := replace("""
+  ansible
   bat
   btop
   fish
