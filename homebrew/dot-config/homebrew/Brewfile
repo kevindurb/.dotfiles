@@ -5,6 +5,7 @@ ENV["PATH"] = "#{HOMEBREW_PREFIX}/bin:#{ENV["PATH"]}"
 # runtimes
 brew "bash"
 brew "dotnet"
+brew "fish"
 brew "golang"
 brew "node@22"
 brew "node@24", link: true
@@ -13,9 +14,10 @@ brew "python@3.14"
 brew "zsh"
 
 # package managers
-brew "uv"
-brew "pipx"
 brew "antidote"
+brew "fisher"
+brew "pipx"
+brew "uv"
 npm "yarn"
 
 # lsp
@@ -164,6 +166,7 @@ if OS.linux?
   flatpak "com.github.tchx84.Flatseal"
   flatpak "com.rustdesk.RustDesk"
   flatpak "com.spotify.Client"
+  flatpak "com.todoist.Todoist"
   flatpak "com.usebottles.bottles"
   flatpak "com.valvesoftware.Steam"
   flatpak "io.missioncenter.MissionCenter"
