@@ -1,7 +1,25 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.default_prog = { "/usr/local/bin/fish", "-l" }
+local function first_existing(paths)
+	for _, p in ipairs(paths) do
+		local f = io.open(p, "r")
+		if f then
+			f:close()
+			return p
+		end
+	end
+end
+
+config.default_prog = {
+	first_existing({
+		"/opt/homebrew/bin/fish",
+		"/home/linuxbrew/.linuxbrew/bin/fish",
+		"/usr/local/bin/fish",
+		"/usr/bin/fish",
+	}),
+	"-l",
+}
 
 config.font = wezterm.font({
 	family = "FiraCode Nerd Font",
