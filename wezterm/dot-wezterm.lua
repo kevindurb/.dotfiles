@@ -1,6 +1,8 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
+config.default_prog = { "/usr/local/bin/fish", "-l" }
+
 config.font = wezterm.font({
 	family = "FiraCode Nerd Font",
 })
