@@ -1,5 +1,17 @@
 // vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4:
 
+theme "gruvbox-dark"
+default_mode "normal"
+default_shell "fish"
+show_startup_tips false
+pane_frames false
+session_serialization false
+default_layout "default"
+
+ui {
+    terminal_title "{session_name}"
+}
+
 keybinds clear-defaults=true {
     locked {
         bind "Ctrl g" { SwitchToMode "normal"; }
@@ -49,6 +61,18 @@ keybinds clear-defaults=true {
 
     shared_among "session" "tmux" {
         bind "d" { Detach; }
+    }
+
+    scroll {
+        bind "j" "Down" { ScrollDown; }
+        bind "k" "Up" { ScrollUp; }
+        bind "Ctrl d" { HalfPageScrollDown; }
+        bind "Ctrl u" { HalfPageScrollUp; }
+        bind "Ctrl f" "PageDown" { PageScrollDown; }
+        bind "Ctrl b" "PageUp" { PageScrollUp; }
+        bind "g" { ScrollToTop; }
+        bind "G" { ScrollToBottom; }
+        bind "Esc" "q" "Ctrl c" { SwitchToMode "Normal"; }
     }
 
     tmux {
@@ -120,14 +144,4 @@ plugins {
 
 load_plugins {
     autolock
-}
-
-theme "gruvbox-dark"
-default_mode "normal"
-default_shell "fish"
-show_startup_tips false
-pane_frames false
-
-ui {
-    terminal_title "{session_name}"
 }

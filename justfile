@@ -20,6 +20,7 @@ packages := replace("""
   topgrade
   wallpapers
   wezterm
+  zellij
 """, "\n", " ")
 
 default:
