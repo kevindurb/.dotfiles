@@ -127,6 +127,7 @@ brew "tty-clock"
 brew "watch"
 brew "wget"
 brew "yq"
+brew "zellij"
 brew "zoxide"
 cask "font-fira-code-nerd-font"
 
