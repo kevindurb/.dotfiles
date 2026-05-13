@@ -32,3 +32,4 @@ cscope.out
 **/CLAUDE.local.md
 .claude/worktrees/**
 .claude/docs/**
+.cocoindex_code/
