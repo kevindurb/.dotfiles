@@ -12,7 +12,6 @@ brew "m-cli"
 brew "mas"
 brew "octopusdeploy/taps/octopus-cli"
 brew "php-cs-fixer"
-brew "php@8.4", link: true
 brew "phpstan"
 
 cask "aws-vpn-client"
