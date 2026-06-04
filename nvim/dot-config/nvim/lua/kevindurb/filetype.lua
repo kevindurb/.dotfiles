@@ -25,3 +25,9 @@ vim.filetype.add({
     gohtml = 'gotmpl',
   },
 })
+
+vim.filetype.add({
+  extension = {
+    ocl = 'hcl',
+  },
+})
