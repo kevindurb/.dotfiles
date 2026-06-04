@@ -2,7 +2,7 @@
 cask_args appdir: "~/Applications", require_sha: true
 ENV["PATH"] = "#{HOMEBREW_PREFIX}/bin:#{ENV["PATH"]}"
 
-brew "ankitpokhrel/jira-cli/jira-cli"
+brew "atlassian/homebrew-acli/acli"
 brew "aws-vault"
 brew "awscli"
 brew "docker-compose"
