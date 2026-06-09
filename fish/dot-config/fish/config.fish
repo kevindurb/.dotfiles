@@ -6,6 +6,11 @@ if status is-interactive
 
   theme_gruvbox dark medium
 
+  set -g fish_color_command brgreen
+  set -g fish_color_keyword brgreen
+  set -g fish_color_error red --bold
+  set -g fish_color_param cyan
+
   abbr --add c clear
   abbr --add g git
   abbr --add k kubectl
