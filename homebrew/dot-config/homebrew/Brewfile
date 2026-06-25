@@ -62,6 +62,7 @@ brew "utftex"
 brew "opencode"
 npm "tilth"
 uv "cocoindex-code[full]"
+brew "ast-grep"
 brew "ollama", restart_service: :changed, start_service: true
 
 # other
