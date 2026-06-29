@@ -63,7 +63,7 @@ brew "opencode"
 npm "tilth"
 uv "cocoindex-code[full]"
 brew "ast-grep"
-brew "ollama", restart_service: :changed, start_service: true
+brew "ollama"
 
 # other
 brew "ansible"
@@ -109,7 +109,7 @@ brew "ripgrep"
 brew "sesh"
 brew "starship"
 brew "stow"
-brew "syncthing", restart_service: :changed, start_service: true
+brew "syncthing"
 brew "tlrc"
 brew "tmux"
 brew "topgrade"
