@@ -11,6 +11,7 @@ packages := replace("""
   k9s
   ls
   macos
+  mise
   mycli
   nvim
   rg
@@ -20,7 +21,6 @@ packages := replace("""
   topgrade
   wallpapers
   wezterm
-  zellij
 """, "\n", " ")
 
 default:
@@ -34,8 +34,9 @@ overwrite package:
   git checkout {{package}}
   stow --restow {{package}}
 
-bootstrap: tmux-install-all-plugins
-  @stow --restow {{packages}}
+bootstrap:
+  just tmux-install-all-plugins
+  just stow --restow
 
 tmux-install-all-plugins:
   mkdir -p {{tmux_plugins_dir}}
