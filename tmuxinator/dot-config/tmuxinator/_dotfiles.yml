@@ -1,0 +1,4 @@
+name: _dotfiles
+root: ~/.dotfiles
+windows:
+  - main:
