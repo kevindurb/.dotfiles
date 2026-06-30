@@ -31,6 +31,7 @@ config.enable_wayland = true
 config.window_decorations = "RESIZE|TITLE"
 config.freetype_load_target = "Light"
 config.window_background_opacity = 1
+config.use_fancy_tab_bar = false
 
 config.keys = {
 	{ key = "Enter", mods = "SHIFT", action = wezterm.action({ SendString = "\x1b\r" }) },
