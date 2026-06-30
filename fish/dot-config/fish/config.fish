@@ -24,10 +24,6 @@ if status is-interactive
   command -q htop; and alias top 'htop'
   command -q prettyping; and alias ping 'prettyping --nolegend'
 
-  function mux
-    tmuxinator $argv --suppress-tmux-version-warning
-  end
-
   starship init fish | source
 
 end
