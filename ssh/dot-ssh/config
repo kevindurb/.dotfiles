@@ -53,3 +53,5 @@ Host dev-pod
   ControlMaster auto
   ControlPath ~/.ssh/sockets/%r@%h:%p
   ControlPersist 1h
+  RequestTTY yes
+  RemoteCommand tmux attach 2>/dev/null || tmux new
