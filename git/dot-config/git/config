@@ -92,3 +92,5 @@
   helper = bw
 [includeIf "gitdir:~/Development/"]
   path = ~/Development/.gitconfig
+[safe]
+	directory = /work

@@ -37,6 +37,7 @@ brew "yamllint"
 npm "@fsouza/prettierd"
 npm "eslint_d"
 npm "stylelint"
+npm "golangci-lint"
 
 # ...but better
 brew "bat"
