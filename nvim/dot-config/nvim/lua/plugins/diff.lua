@@ -1,7 +1,3 @@
 vim.schedule(function()
-  require('mini.diff').setup({
-    view = {
-      style = 'sign',
-    },
-  })
+  require('mini.diff').setup()
 end)

@@ -52,7 +52,6 @@ vim.wo[0][0].foldmethod = 'expr'
 vim.diagnostic.config({
   underline = true,
   signs = {
-    priority = 200,
     text = {
       [vim.diagnostic.severity.ERROR] = ' ',
       [vim.diagnostic.severity.WARN] = ' ',
