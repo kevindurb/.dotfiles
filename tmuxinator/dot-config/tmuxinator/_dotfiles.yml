@@ -4,3 +4,4 @@ root: ~/.dotfiles/
 windows:
   - editor: nvim
   - files: yazi
+  - cmd:
