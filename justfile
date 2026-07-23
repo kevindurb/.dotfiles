@@ -18,7 +18,7 @@ packages := replace("""
   ssh
   starship
   tmux
-  tmuxp
+  tmuxinator
   topgrade
   wallpapers
   wezterm

@@ -1,0 +1,6 @@
+---
+name: _dotfiles
+root: ~/.dotfiles/
+windows:
+  - editor: nvim
+  - files: yazi

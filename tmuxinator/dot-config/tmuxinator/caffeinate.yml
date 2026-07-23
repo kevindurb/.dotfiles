@@ -1,0 +1,5 @@
+---
+name: caffeinate
+root: ~/
+windows:
+  - caffeinate: caffeinate -disu
