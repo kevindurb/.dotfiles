@@ -1,18 +1,33 @@
-default:
-  @just -l
+@default:
+  just -l
 
-setup:
-  mise install
-  ya pkg install
+@setup:
+  echo "=== HOMEBREW ==="
   just -g brew-bundle install
+  echo "=== MISE ==="
+  mise install
+  echo "=== YAZI ==="
+  ya pkg install
+  echo "=== FISHER ==="
   just -g fisher update
 
-upgrade:
-  mise upgrade
-  ya pkg upgrade
+@upgrade:
+  echo "=== HOMEBREW ==="
   brew update
   brew upgrade
+  echo "=== MISE ==="
+  mise upgrade
+  echo "=== YAZI ==="
+  ya pkg upgrade
+  echo "=== FISHER ==="
   just -g fisher update
+  echo "=== MACOS ==="
+  just -g upgrade-macos
+
+@upgrade-macos:
+  m update --list
+  gum confirm "Update all?" || (echo "Cancelled" && exit 1)
+  m update --install-all
 
 use-node version:
   brew unlink node
@@ -29,6 +44,6 @@ brew-bundle-cleanup:
 brew-bundle-cleanup-force:
   @just -g brew-bundle cleanup --force
 
-fisher *args:
+@fisher *args:
   #! /usr/bin/env fish
   fisher {{args}}
