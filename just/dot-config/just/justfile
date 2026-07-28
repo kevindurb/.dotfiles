@@ -4,6 +4,15 @@ default:
 setup:
   mise install
   ya pkg install
+  just -g brew-bundle install
+  fish -c "fisher update"
+
+upgrade:
+  mise upgrade
+  ya pkg upgrade
+  brew update
+  brew upgrade
+  fish -c "fisher update"
 
 use-node version:
   brew unlink node
