@@ -19,9 +19,9 @@ packages := replace("""
   starship
   tmux
   tmuxinator
-  topgrade
   wallpapers
   wezterm
+  yazi
 """, "\n", " ")
 
 default:
