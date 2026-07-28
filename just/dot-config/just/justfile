@@ -5,14 +5,14 @@ setup:
   mise install
   ya pkg install
   just -g brew-bundle install
-  fish -c "fisher update"
+  just -g fisher update
 
 upgrade:
   mise upgrade
   ya pkg upgrade
   brew update
   brew upgrade
-  fish -c "fisher update"
+  just -g fisher update
 
 use-node version:
   brew unlink node
@@ -28,3 +28,7 @@ brew-bundle-cleanup:
 
 brew-bundle-cleanup-force:
   @just -g brew-bundle cleanup --force
+
+fisher *args:
+  #! /usr/bin/env fish
+  fisher {{args}}
