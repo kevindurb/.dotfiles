@@ -1,6 +1,10 @@
 default:
   @just -l
 
+setup:
+  mise install
+  ya pkg install
+
 use-node version:
   brew unlink node
   brew install node@{{version}}
