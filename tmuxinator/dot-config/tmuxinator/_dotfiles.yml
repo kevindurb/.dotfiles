@@ -2,6 +2,8 @@
 name: _dotfiles
 root: ~/.dotfiles/
 windows:
-  - editor: nvim
-  - files: yazi
-  - cmd:
+  - editor:
+      layout: main-vertical
+      panes:
+        - nvim
+        -

@@ -1,0 +1,5 @@
+enable_audio_visualization = true
+theme = "gruvbox_dark"
+
+[device]
+volume = 100

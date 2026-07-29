@@ -15,6 +15,7 @@ packages := replace("""
   mycli
   nvim
   rg
+  spotify_player
   ssh
   starship
   tmux
