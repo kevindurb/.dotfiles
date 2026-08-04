@@ -83,13 +83,11 @@
   wt = worktree
   wta = worktree add
   wtls = worktree list
+  wtmv = worktree move
   wtrm = worktree remove
   wtp = worktree prune
 [help]
   autocorrect = prompt
-[credential "https://forgejo.beaver-cloud.xyz"]
-  helper =
-  helper = bw
 [includeIf "gitdir:~/Development/"]
   path = ~/Development/.gitconfig
 [safe]
