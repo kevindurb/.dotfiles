@@ -4,8 +4,6 @@ if status is-interactive
 
   set -g fish_greeting
 
-  theme_gruvbox dark medium
-
   set -g fish_color_command brgreen
   set -g fish_color_keyword brgreen
   set -g fish_color_error red --bold
