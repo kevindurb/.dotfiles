@@ -92,3 +92,8 @@
   path = ~/Development/.gitconfig
 [safe]
 	directory = /work
+[sendemail]
+  smtpServer = smtp.fastmail.com
+  smtpUser = kevindurb@fastmail.com
+  smtpEncryption = ssl
+  smtpServerPort = 465
