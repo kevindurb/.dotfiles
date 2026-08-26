@@ -3,8 +3,8 @@
 osascript -e 'tell application "System Preferences" to quit'
 
 # === Appearance ===
-m appearance --darkmode enable --transparency disable --maincolor graphite --highlightcolor graphite --iconsize medium
-m wallpaper --set "$HOME/Pictures/hailmary.jpg"
+m appearance --darkmode enable --transparency disable --maincolor blue --highlightcolor blue --iconsize medium
+m wallpaper --set "$HOME/Pictures/retrowave.jpg"
 
 # === Dock ===
 m dock --autohide enable --magnification enable --position bottom --prune
