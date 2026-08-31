@@ -23,6 +23,7 @@ packages := replace("""
   wallpapers
   wezterm
   yazi
+  tailscale
 """, "\n", " ")
 
 default:
