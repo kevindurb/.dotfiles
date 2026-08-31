@@ -47,6 +47,7 @@ tmux-install-all-plugins:
   @just tmux-install-plugin "tmux-plugins/tmux-sessionist"
   @just tmux-install-plugin "joshmedeski/tmux-nerd-font-window-name"
   @just tmux-install-plugin "folke/tokyonight.nvim"
+  @just tmux-install-plugin "janoamaral/tokyo-night-tmux"
 
 tmux-install-plugin repo:
   #!/usr/bin/env bash
