@@ -9,7 +9,6 @@ require('plugins.lspconfig')
 require('plugins.treesitter')
 
 -- appearance
--- require('plugins.gruvbox')
 require('plugins.tokyo-night')
 require('plugins.icons')
 require('plugins.tabline')
