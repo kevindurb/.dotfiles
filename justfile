@@ -2,7 +2,6 @@ tmux_plugins_dir := x"~/.config/tmux/plugins"
 packages := replace("""
   ansible
   bat
-  btop
   fish
   gh
   git
@@ -15,13 +14,11 @@ packages := replace("""
   mycli
   nvim
   rg
-  spotify_player
   ssh
   starship
   tmux
   wallpapers
   wezterm
-  yazi
   tailscale
 """, "\n", " ")
 
