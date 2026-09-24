@@ -1,11 +1,11 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "aperture/deepseek-v4.1-flash",
+  "model": "aperture-openai-compatible/deepseek-v4.1-flash",
   "enabled_providers": [
-    "aperture"
+    "aperture-openai-compatible"
   ],
   "provider": {
-    "aperture": {
+    "aperture-openai-compatible": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "Aperture",
       "options": {

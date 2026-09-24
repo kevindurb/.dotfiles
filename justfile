@@ -13,13 +13,14 @@ packages := replace("""
   mise
   mycli
   nvim
+  opencode
   rg
   ssh
   starship
+  tailscale
   tmux
   wallpapers
   wezterm
-  tailscale
 """, "\n", " ")
 
 default:
