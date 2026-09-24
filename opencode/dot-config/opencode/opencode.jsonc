@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "lsp": true,
   "model": "aperture-openai-compatible/deepseek-v4.1-flash",
   "enabled_providers": [
     "aperture-openai-compatible"
