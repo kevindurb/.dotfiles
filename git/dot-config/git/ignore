@@ -34,3 +34,4 @@ cscope.out
 .claude/docs/**
 .cocoindex_code/
 .claude/scheduled_tasks.lock
+.serena
