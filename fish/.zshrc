@@ -14,3 +14,5 @@ if [[ -z "$HOMEBREW_PREFIX" ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 fi
+
+eval "$(mise activate zsh)"
