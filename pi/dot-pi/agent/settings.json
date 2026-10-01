@@ -2,5 +2,5 @@
   "lastChangelogVersion": "0.99.1",
   "defaultProvider": "aperture",
   "defaultModel": "glm-5.3-flash",
-  "packages": ["npm:pi-mcp-adapter", "npm:pi-lens"]
+  "packages": ["npm:pi-mcp-adapter", "npm:pi-lens", "npm:pi-subagents"]
 }
