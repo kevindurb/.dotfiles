@@ -14,6 +14,7 @@ packages := replace("""
   mycli
   nvim
   opencode
+  pi
   rg
   ssh
   starship
